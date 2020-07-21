@@ -9,6 +9,7 @@ Index of miscellaneous non official gists/tools for Rancher
 - [Retrieve kubeconfig for custom cluster from Rancher](https://gist.github.com/superseb/f6cd637a7ad556124132ca39961789a4)
 - [Retrieve kubeconfig from RKE v0.1.x or Rancher v2.0.x/v2.1.x custom cluster controlplane node](https://gist.github.com/superseb/3d8de6092ebc4b1581185197583f472a)
 - [Retrieve kubeconfig from RKE v0.2.x or Rancher v2.2.x custom cluster controlplane node](https://gist.github.com/superseb/b14ed3b5535f621ad3d2aa6a4cd6443b)
+- [Recover cluster.rkestate using kubeconfig](https://gist.github.com/superseb/649a64bdbca51e0cba5341d94608ae48)
 - [Recover cluster.rkestate file from controlplane node](https://gist.github.com/superseb/e9f2628d1033cb20e54f6ee268683a7a)
 - [Rancher v2.1.8 single install embedded etcd maintenance](https://gist.github.com/superseb/48037c0323147e603bc0197bd5ecb9b5)
 - [Rancher v2.2.0 single install embedded etcd maintenance](https://gist.github.com/superseb/f223b15949c031983da2cb850f56a897)
