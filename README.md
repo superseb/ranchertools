@@ -40,6 +40,7 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 ## Repositories
 
 - [tf-do-rancher2: Automated Rancher single install and custom cluster with nodes using API and shell scripts](https://github.com/superseb/tf-do-rancher2)
+- [tf-do-rancher2-airgap: Terraform config to launch Rancher 2.0 in a simulated airgapped environment](https://github.com/superseb/tf-do-rancher2-airgap/)
 - [tf-do-rancher16: Automated Rancher 1.6 single install and custom cluster with nodes using API and shell scripts](https://github.com/superseb/tf-do-rancher16)
 
 ## Playgrounds
