@@ -45,5 +45,4 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 
 ## Playgrounds
 
-- [Katacoda: Explore k3s](https://www.katacoda.com/superseb/scenarios/k3s)
-- [Katacoda: Import k3s into Rancher](https://www.katacoda.com/superseb/scenarios/rancher2-k3s-import)
+- [Katacoda scenarios (Rancher/K3s/RKE2)](https://github.com/superseb/katacoda-scenarios)
