@@ -32,6 +32,8 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [Extract self signed CA certificate from Rancher](https://gist.github.com/superseb/2732303f0c85d6aca8fab617ea262ebb)
 - [Debug EKS cluster created in Rancher](https://gist.github.com/superseb/c6e8581eef5d01518b17544c07ea4032)
 - [PLEG tester](https://gist.github.com/superseb/af32314125aac8e0aa7546239db55f82)
+- [k3s etcd commands](https://gist.github.com/superseb/0c06164eef5a097c66e810fe91a9d408)
+- [RKE2/rancherd2 commands](https://gist.github.com/superseb/3b78f47989e0dbc1295486c186e944bf)
 
 ## Tools
 
