@@ -47,6 +47,7 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [tf-do-rancherd: Automated rancherd single install and custom cluster with nodes using API and shell scripts](https://github.com/superseb/tf-do-rancherd)
 - [multipass-rke: RKE cluster on multipass instances](https://github.com/superseb/multipass-rke)
 - [multipass-k3s: k3s cluster on multipass instances](https://github.com/superseb/multipass-k3s)
+- [multipass-rke2: rke2 cluster on multipass instances](https://github.com/superseb/multipass-rke2)
 
 ## Playgrounds
 
