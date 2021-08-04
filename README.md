@@ -34,6 +34,7 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [PLEG tester](https://gist.github.com/superseb/af32314125aac8e0aa7546239db55f82)
 - [k3s etcd commands](https://gist.github.com/superseb/0c06164eef5a097c66e810fe91a9d408)
 - [RKE2/rancherd2 commands](https://gist.github.com/superseb/3b78f47989e0dbc1295486c186e944bf)
+- [Minio using Let's Encrypt certbot obtained certificates](https://gist.github.com/superseb/b8fd848525d68168cbaa4c8f1f44608e)
 
 ## Tools
 
