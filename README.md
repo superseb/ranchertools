@@ -11,9 +11,9 @@ Index of miscellaneous non official gists/tools for Rancher
 - [Retrieve kubeconfig from RKE v0.2.x or Rancher v2.2.x custom cluster controlplane node](https://gist.github.com/superseb/b14ed3b5535f621ad3d2aa6a4cd6443b)
 - [Recover cluster.rkestate using kubeconfig](https://gist.github.com/superseb/649a64bdbca51e0cba5341d94608ae48)
 - [Recover cluster.rkestate file from controlplane node](https://gist.github.com/superseb/e9f2628d1033cb20e54f6ee268683a7a)
-- [Rancher v2.1.8 single install embedded etcd maintenance](https://gist.github.com/superseb/48037c0323147e603bc0197bd5ecb9b5)
-- [Rancher v2.2.0 single install embedded etcd maintenance](https://gist.github.com/superseb/f223b15949c031983da2cb850f56a897)
-- [Rancher v2.2.0 single install embedded etcd query](https://gist.github.com/superseb/d27253befe5e180334162c18187212fb)
+- [Rancher v2.5.x single install embedded etcd maintenance](https://gist.github.com/superseb/c8d0188302fdbd0127e52cf6ce93ce94)
+- [Rancher v2.6.x single install embedded etcd maintenance](https://gist.github.com/superseb/566960fa1ebbb0891cf11b0cdf255369)
+- [Rancher v2.x single install embedded etcd query](https://gist.github.com/superseb/d27253befe5e180334162c18187212fb)
 - [Check kubelet nodefs/imagefs](https://gist.github.com/superseb/a4fa9640d801c54452132db8af51f2e4)
 - [Run WebSocket test for Rancher 2](https://gist.github.com/superseb/89972344508e99b9336ad7eff78cb928)
 - [Roll nodes in a Rancher 2 custom cluster using DigitalOcean droplets](https://gist.github.com/superseb/922f3be6eacc89fcc31a45353dc5aaf5)
@@ -35,6 +35,11 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [k3s etcd commands](https://gist.github.com/superseb/0c06164eef5a097c66e810fe91a9d408)
 - [RKE2/rancherd2 commands](https://gist.github.com/superseb/3b78f47989e0dbc1295486c186e944bf)
 - [Minio using Let's Encrypt certbot obtained certificates](https://gist.github.com/superseb/b8fd848525d68168cbaa4c8f1f44608e)
+
+### Deprecated Gists
+
+- [Rancher v2.1.8 single install embedded etcd maintenance](https://gist.github.com/superseb/48037c0323147e603bc0197bd5ecb9b5)
+- [Rancher v2.2.0 single install embedded etcd maintenance](https://gist.github.com/superseb/f223b15949c031983da2cb850f56a897)
 
 ## Tools
 
