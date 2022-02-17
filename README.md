@@ -13,6 +13,7 @@ Index of miscellaneous non official gists/tools for Rancher
 - [Recover cluster.rkestate file from controlplane node](https://gist.github.com/superseb/e9f2628d1033cb20e54f6ee268683a7a)
 - [Rancher v2.5.x single install embedded etcd maintenance](https://gist.github.com/superseb/c8d0188302fdbd0127e52cf6ce93ce94)
 - [Rancher v2.6.x single install embedded etcd maintenance](https://gist.github.com/superseb/566960fa1ebbb0891cf11b0cdf255369)
+- [Rancher v2.6.3 and up single install embedded etcd maintenance](https://gist.github.com/superseb/bcfeb07931b70b8722b77f1fbd791e99)
 - [Rancher v2.x single install embedded etcd query](https://gist.github.com/superseb/d27253befe5e180334162c18187212fb)
 - [Check kubelet nodefs/imagefs](https://gist.github.com/superseb/a4fa9640d801c54452132db8af51f2e4)
 - [Run WebSocket test for Rancher 2](https://gist.github.com/superseb/89972344508e99b9336ad7eff78cb928)
@@ -40,6 +41,8 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [RKE2/rancherd2 commands](https://gist.github.com/superseb/3b78f47989e0dbc1295486c186e944bf)
 - [Minio using Let's Encrypt certbot obtained certificates](https://gist.github.com/superseb/b8fd848525d68168cbaa4c8f1f44608e)
 - [Minio + NGINX in Docker using self signed certificates](https://gist.github.com/superseb/32c439aac5097723f395acc77c47e829)
+- [Rancher check stored cluster secret for fullState and state](https://gist.github.com/superseb/84025e1eeb7158ed97015aa9331fe3db)
+- [Retrieve cluster.rkestate for Rancher c-c-XXXXX cluster secret reconstruction](https://gist.github.com/superseb/4a78a0ac34a36eacaa9e6440729619c3)
 
 ### Deprecated Gists
 
