@@ -61,6 +61,7 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [multipass-rke: RKE cluster on multipass instances](https://github.com/superseb/multipass-rke)
 - [multipass-k3s: k3s cluster on multipass instances](https://github.com/superseb/multipass-k3s)
 - [multipass-rke2: rke2 cluster on multipass instances](https://github.com/superseb/multipass-rke2)
+- [kdmq (kdmquery): show/diff kontainer-driver-metadata data (k8s/images/addons)](https://github.com/superseb/kdmq)
 
 ### Deprecated repositories
 
