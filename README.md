@@ -25,9 +25,8 @@ Index of miscellaneous non official gists/tools for Rancher
 - [Run kube-dns preferably on controlplane nodes and else on etcd nodes on a Rancher 2 custom cluster](https://gist.github.com/superseb/893e1d5b1e4fd19160d9611dbe63d073)
 - [Create local user and generate kubeconfig in Rancher 2 via API](https://gist.github.com/superseb/cad9b87c844f166b9c9bf97f5dea1609)
 - [Extended Rancher 2 cleanup for custom cluster hosts](https://gist.github.com/superseb/06539c6dcd377e118d72bfefdd444f81)
-- [curl a gist to generate self signed certificates](https://gist.github.com/superseb/b2c1d6c9baa32609a49ee117a27bc700)
 - [Single command etcd snapshot restore to inspect etcd contents](https://gist.github.com/superseb/d6560a18ce5df47bac01477203b87950)
-- 
+- [curl a gist to generate self signed certificates](https://gist.github.com/superseb/b2c1d6c9baa32609a49ee117a27bc700) 
 ```
 curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc700/raw/7cb196e974e13b213ac6ec3105971dd5e21e4c66/selfsignedcert.sh | bash -s -- test.example.com
 ```
