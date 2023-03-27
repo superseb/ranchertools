@@ -1,3 +1,27 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.22.17+k3s1 | Dec 21 2022 | 12/21/22 | 2022-12-21 |
+| v1.22.16+k3s1 | Nov 18 2022 | 11/18/22 | 2022-11-18 |
+| v1.22.15+k3s1 | Sep 28 2022 | 09/28/22 | 2022-09-28 |
+| v1.22.13+k3s1 | Aug 25 2022 | 08/25/22 | 2022-08-25 |
+| v1.22.12+k3s1 | Jul 19 2022 | 07/19/22 | 2022-07-19 |
+| v1.22.11+k3s2 | Jul 06 2022 | 07/06/22 | 2022-07-06 |
+| v1.22.11+k3s1 | Jun 27 2022 | 06/27/22 | 2022-06-27 |
+| v1.22.10+k3s1 | Jun 11 2022 | 06/11/22 | 2022-06-11 |
+| v1.22.9+k3s1 | Apr 28 2022 | 04/28/22 | 2022-04-28 |
+| v1.22.8+k3s1 | Mar 31 2022 | 03/31/22 | 2022-03-31 |
+| v1.22.7+k3s1 | Feb 24 2022 | 02/24/22 | 2022-02-24 |
+| v1.22.6+k3s1 | Jan 25 2022 | 01/25/22 | 2022-01-25 |
+| v1.22.5+k3s2 | Jan 14 2022 | 01/14/22 | 2022-01-14 |
+| v1.22.5+k3s1 | Dec 18 2021 | 12/18/21 | 2021-12-18 |
+| v1.22.4+k3s1 | Nov 29 2021 | 11/29/21 | 2021-11-29 |
+| v1.22.3+k3s1 | Nov 04 2021 | 11/04/21 | 2021-11-04 |
+| v1.22.2+k3s2 | Oct 05 2021 | 10/05/21 | 2021-10-05 |
+| v1.22.2+k3s1 | Sep 23 2021 | 09/23/21 | 2021-09-23 |
+
+
+
+# Release v1.22.17+k3s1
 <!-- v1.22.17+k3s1 -->
 This release updates Kubernetes to v1.22.17, and fixes a number of issues.
 
@@ -33,6 +57,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.16+k3s1
 <!-- v1.22.16+k3s1 -->
 This release updates Kubernetes to v1.22.16, and fixes a number of issues.
 
@@ -68,6 +93,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.15+k3s1
 <!-- v1.22.15+k3s1 -->
 This release updates Kubernetes to v1.22.15, and fixes a number of issues.
 
@@ -104,6 +130,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.22.13+k3s1
 <!-- v1.22.13+k3s1 -->
 This release updates Kubernetes to v1.22.13, and fixes a number of issues.
 
@@ -149,6 +176,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.12+k3s1
 <!-- v1.22.12+k3s1 -->
 This release updates Kubernetes to v1.22.12, and fixes a number of issues.
 
@@ -191,6 +219,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.11+k3s2
 <!-- v1.22.11+k3s2 -->
 This fixes several issues in the v1.22.11+k3s1 and prior releases.
 
@@ -228,6 +257,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.11+k3s1
 <!-- v1.22.11+k3s1 -->
 This release updates Kubernetes to v1.22.11, and fixes a number of issues.
 
@@ -272,6 +302,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.10+k3s1
 <!-- v1.22.10+k3s1 -->
 This release updates Kubernetes to v1.22.10, and fixes a number of issues.
 
@@ -320,6 +351,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.22.9+k3s1
 <!-- v1.22.9+k3s1 -->
 This release updates Kubernetes to v1.22.9, and fixes a number of issues.
 
@@ -370,6 +402,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.8+k3s1
 <!-- v1.22.8+k3s1 -->
 This release updates Kubernetes to v1.22.8, and fixes a number of issues.
 
@@ -426,6 +459,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.22.7+k3s1
 <!-- v1.22.7+k3s1 -->
 This release updates Kubernetes to v1.22.7, and fixes a number of issues.
 
@@ -474,6 +508,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.6+k3s1
 <!-- v1.22.6+k3s1 -->
 This release updates Kubernetes to v1.22.6, and fixes a number of issues.
 
@@ -529,6 +564,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.5+k3s2
 <!-- v1.22.5+k3s2 -->
 This release fixes several issues, including an issue with the --agent-token flag that could prevent servers from joining managed etcd clusters when this flag was used.
 <!--
@@ -580,6 +616,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.5+k3s1
 <!-- v1.22.5+k3s1 -->
 This release updates Kubernetes to v1.22.5, and fixes a number of issues.
 
@@ -624,6 +661,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.22.4+k3s1
 <!-- v1.22.4+k3s1 -->
 This release updates Kubernetes to v1.22.4, and fixes a number of issues.
 
@@ -678,6 +716,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.22.3+k3s1
 <!-- v1.22.3+k3s1 -->
 This release updates Kubernetes to v1.22.3, and fixes a number of issues.
 
@@ -727,6 +766,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.22.2+k3s2
 <!-- v1.22.2+k3s2 -->
 This release updates containerd to v1.5.7+k3s1 to address CVE-2021-41103 / GHSA-c2h3-6mxw-7mvq.
 <!--
@@ -774,6 +814,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.22.2+k3s1
 <!-- v1.22.2+k3s1 -->
 This release is K3s's first in the v1.22 line. It updates Kubernetes to [v1.22.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.22.md#changelog-since-v1210)
 

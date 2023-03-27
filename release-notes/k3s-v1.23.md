@@ -1,3 +1,27 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.23.17+k3s1 | Mar 10 2023 | 03/10/23 | 2023-03-10 |
+| v1.23.16+k3s1 | Jan 26 2023 | 01/26/23 | 2023-01-26 |
+| v1.23.15+k3s1 | Dec 20 2022 | 12/20/22 | 2022-12-20 |
+| v1.23.14+k3s1 | Nov 18 2022 | 11/18/22 | 2022-11-18 |
+| v1.23.13+k3s1 | Oct 25 2022 | 10/25/22 | 2022-10-25 |
+| v1.23.12+k3s1 | Sep 28 2022 | 09/28/22 | 2022-09-28 |
+| v1.23.10+k3s1 | Aug 25 2022 | 08/25/22 | 2022-08-25 |
+| v1.23.9+k3s1 | Jul 19 2022 | 07/19/22 | 2022-07-19 |
+| v1.23.8+k3s2 | Jul 06 2022 | 07/06/22 | 2022-07-06 |
+| v1.23.8+k3s1 | Jun 27 2022 | 06/27/22 | 2022-06-27 |
+| v1.23.7+k3s1 | Jun 11 2022 | 06/11/22 | 2022-06-11 |
+| v1.23.6+k3s1 | Apr 28 2022 | 04/28/22 | 2022-04-28 |
+| v1.23.5+k3s1 | Mar 31 2022 | 03/31/22 | 2022-03-31 |
+| v1.23.4+k3s1 | Feb 24 2022 | 02/24/22 | 2022-02-24 |
+| v1.23.3+k3s1 | Jan 27 2022 | 01/27/22 | 2022-01-27 |
+| v1.23.2+k3s1 | Jan 25 2022 | 01/25/22 | 2022-01-25 |
+| v1.23.1+k3s2 | Jan 14 2022 | 01/14/22 | 2022-01-14 |
+| v1.23.1+k3s1 | Jan 05 2022 | 01/05/22 | 2022-01-05 |
+
+
+
+# Release v1.23.17+k3s1
 <!-- v1.23.17+k3s1 -->
 This release updates Kubernetes to v1.23.17, and fixes a number of issues.
 
@@ -57,6 +81,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.16+k3s1
 <!-- v1.23.16+k3s1 -->
 This release updates Kubernetes to v1.23.16, and fixes a number of issues.
 
@@ -97,6 +122,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.15+k3s1
 <!-- v1.23.15+k3s1 -->
 This release updates Kubernetes to v1.23.15, and fixes a number of issues.
 
@@ -152,6 +178,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.14+k3s1
 <!-- v1.23.14+k3s1 -->
 This release updates Kubernetes to v1.23.14, and fixes a number of issues.
 
@@ -214,6 +241,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.13+k3s1
 <!-- v1.23.13+k3s1 -->
 This release updates Kubernetes to v1.23.13, and fixes a number of issues.
 
@@ -264,6 +292,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.12+k3s1
 <!-- v1.23.12+k3s1 -->
 This release updates Kubernetes to v1.23.12, and fixes a number of issues.
 
@@ -301,6 +330,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.10+k3s1
 <!-- v1.23.10+k3s1 -->
 This release updates Kubernetes to v1.23.10, and fixes a number of issues.
 
@@ -346,6 +376,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.9+k3s1
 <!-- v1.23.9+k3s1 -->
 This release updates Kubernetes to v1.23.9, and fixes a number of issues.
 
@@ -391,6 +422,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.23.8+k3s2
 <!-- v1.23.8+k3s2 -->
 This fixes several issues in the v1.23.8+k3s1 and prior releases.
 
@@ -431,6 +463,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 
 -----
+# Release v1.23.8+k3s1
 <!-- v1.23.8+k3s1 -->
 This release updates Kubernetes to v1.23.8, and fixes a number of issues.
 
@@ -476,6 +509,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.7+k3s1
 <!-- v1.23.7+k3s1 -->
 This release updates Kubernetes to v1.23.7, and fixes a number of issues.
 
@@ -525,6 +559,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.6+k3s1
 <!-- v1.23.6+k3s1 -->
 This release updates Kubernetes to v1.23.6, and fixes a number of issues.
 
@@ -590,6 +625,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.5+k3s1
 <!-- v1.23.5+k3s1 -->
 This release updates Kubernetes to v1.23.5, and fixes a number of issues.
 
@@ -657,6 +693,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.4+k3s1
 This release updates Kubernetes to v1.23.4, and fixes a number of issues.
 
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md#changelog-since-v1233).
@@ -707,6 +744,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.23.3+k3s1
 <!-- v1.23.3+k3s1 -->
 This release updates Kubernetes to v1.23.3, and fixes a small number of issues. Upstream Kubernetes identified [an issue](https://github.com/kubernetes/kubernetes/issues/107690) with v1.23.x around custom resources. As such, v1.23.3 is being released sooner than expected. 
 
@@ -748,6 +786,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.2+k3s1
 <!-- v1.23.2+k3s1 -->
 NOTE: Upstream Kubernetes has identified [an issue](https://github.com/kubernetes/kubernetes/issues/107690) with v1.23.x around custom resources. As such, v1.23.3 is being released sooner than expected. 
 
@@ -806,6 +845,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.1+k3s2
 <!-- v1.23.1+k3s2 -->
 This release fixes several issues, including an issue with the --agent-token flag that could prevent servers from joining managed etcd clusters when this flag was used.
 <!--
@@ -858,6 +898,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 
 -----
+# Release v1.23.1+k3s1
 <!-- v1.23.1+k3s1 -->
 This release is K3s's first in the v1.23 line. It updates Kubernetes to [v1.23.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md#changelog-since-v1220)
 

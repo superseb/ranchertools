@@ -1,3 +1,20 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.24.11+rke2r1 | Mar 10 2023 | 03/10/23 | 2023-03-10 |
+| v1.24.10+rke2r1 | Jan 27 2023 | 01/27/23 | 2023-01-27 |
+| v1.24.9+rke2r2 | Jan 10 2023 | 01/10/23 | 2023-01-10 |
+| v1.24.9+rke2r1 | Dec 20 2022 | 12/20/22 | 2022-12-20 |
+| v1.24.8+rke2r1 | Nov 18 2022 | 11/18/22 | 2022-11-18 |
+| v1.24.7+rke2r1 | Oct 20 2022 | 10/20/22 | 2022-10-20 |
+| v1.24.6+rke2r1 | Sep 27 2022 | 09/27/22 | 2022-09-27 |
+| v1.24.4+rke2r1 | Aug 26 2022 | 08/26/22 | 2022-08-26 |
+| v1.24.3+rke2r1 | Jul 21 2022 | 07/21/22 | 2022-07-21 |
+| v1.24.2+rke2r1 | Jul 05 2022 | 07/05/22 | 2022-07-05 |
+| v1.24.1+rke2r2 | Jun 13 2022 | 06/13/22 | 2022-06-13 |
+
+
+
+# Release v1.24.11+rke2r1
 <!-- v1.24.11+rke2r1 -->
 
 This release updates Kubernetes to v1.24.11, and fixes a number of issues.
@@ -56,6 +73,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.10+rke2r1
 <!-- v1.24.10+rke2r1 -->
 
 This release updates Kubernetes to v1.24.10 to backport registry changes and fix two critical issues.
@@ -119,6 +137,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.9+rke2r2
 <!-- v1.24.9+rke2r2 -->
 
 This release updates containerd to v1.6.14 to resolve an issue where pods would lose their CNI information when containerd was restarted.
@@ -179,6 +198,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.9+rke2r1
 <!-- v1.24.9+rke2r1 -->
 
 > ## ⚠️ WARNING
@@ -252,6 +272,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.24.8+rke2r1
 <!-- v1.24.8+rke2r1 -->
 
 This release updates Kubernetes to v1.24.8, fixes a number of minor issues, and includes security updates.
@@ -317,6 +338,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.24.7+rke2r1
 <!-- v1.24.7+rke2r1 -->
 
 This release updates Kubernetes to v1.24.7, fixes a number of minor issues, and includes security updates.
@@ -381,6 +403,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.24.6+rke2r1
 <!-- v1.24.6+rke2r1 -->
 
 This release updates Kubernetes to v1.24.6, fixes a number of minor issues, and includes security updates.
@@ -451,6 +474,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.4+rke2r1
 <!-- v1.24.4+rke2r1 -->
 
 This release updates Kubernetes to v1.24.4, fixes a number of minor issues, and includes security updates.
@@ -527,6 +551,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.3+rke2r1
 <!-- v1.24.3+rke2r1 -->
 
 This release updates Kubernetes to v1.24.3, fixes a number of minor issues, and includes security updates.
@@ -592,6 +617,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.2+rke2r1
 <!-- v1.24.2+rke2r1 -->
 
 This release updates Kubernetes to v1.24.2, fixes a number of minor issues, and includes security updates.
@@ -669,6 +695,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.24.1+rke2r2
 <!-- v1.24.1+rke2r2 -->
 
 This release is RKE2's first in the v1.24 line. This release updates Kubernetes to v1.24.1.

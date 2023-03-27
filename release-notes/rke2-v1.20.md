@@ -1,5 +1,28 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.20.15+rke2r2 | Feb 23 2022 | 02/23/22 | 2022-02-23 |
+| v1.20.15+rke2r1 | Jan 26 2022 | 01/26/22 | 2022-01-26 |
+| v1.20.14+rke2r2 | Jan 11 2022 | 01/11/22 | 2022-01-11 |
+| v1.20.14+rke2r1 | Dec 23 2021 | 12/23/21 | 2021-12-23 |
+| v1.20.13+rke2r1 | Dec 02 2021 | 12/02/21 | 2021-12-02 |
+| v1.20.12+rke2r1 | Oct 30 2021 | 10/30/21 | 2021-10-30 |
+| v1.20.11+rke2r2 | Oct 07 2021 | 10/07/21 | 2021-10-07 |
+| v1.20.11+rke2r1 | Sep 23 2021 | 09/23/21 | 2021-09-23 |
+| v1.20.10+rke2r1 | Aug 26 2021 | 08/26/21 | 2021-08-26 |
+| v1.20.9+rke2r2 | Aug 09 2021 | 08/09/21 | 2021-08-09 |
+| v1.20.8+rke2r1 | Jun 23 2021 | 06/23/21 | 2021-06-23 |
+| v1.20.7+rke2r2 | May 26 2021 | 05/26/21 | 2021-05-26 |
+| v1.20.7+rke2r1 | May 22 2021 | 05/22/21 | 2021-05-22 |
+| v1.20.6+rke2r1 | Apr 21 2021 | 04/21/21 | 2021-04-21 |
+| v1.20.5+rke2r1 | Apr 02 2021 | 04/02/21 | 2021-04-02 |
+| v1.20.4+rke2r1 | Mar 09 2021 | 03/09/21 | 2021-03-09 |
+
+
+
+# Release v1.20.15+rke2r2
 
 -----
+# Release v1.20.15+rke2r1
 <!-- v1.20.15+rke2r1 -->
 
 This release updates Kubernetes to v1.20.15, fixes a number of minor issues, and includes security updates.
@@ -61,6 +84,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.20.14+rke2r2
 <!-- v1.20.14+rke2r2 -->
 This release fixes several issues, including an issue with the --agent-token flag that could prevent servers from joining managed etcd clusters when this flag was used.
 <!--
@@ -108,6 +132,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.20.14+rke2r1
 <!-- v1.20.14+rke2r1 -->
 This release updates Kubernetes to v1.20.14, and fixes a number of minor issues.
 
@@ -162,6 +187,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.13+rke2r1
 <!-- v1.20.13+rke2r1 -->
 This release updates Kubernetes to v1.20.13, fixes a number of minor issues, and includes security updates.
 
@@ -223,6 +249,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.12+rke2r1
 <!-- v1.20.12+rke2r1 -->
 This release updates Kubernetes to v1.20.12, fixes a number of minor issues, and includes an update to ingress-nginx that resolves CVE-2021-25742.
 
@@ -284,6 +311,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.11+rke2r2
 <!-- v1.20.11+rke2r2 -->
 This release updates containerd to v1.4.11+k3s1 to address CVE-2021-41103 / GHSA-c2h3-6mxw-7mvq.
 <!--
@@ -339,6 +367,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.11+rke2r1
 <!-- v1.20.11+rke2r1 -->
 This release updates Kubernetes to v1.20.11, and fixes a number of minor issues.
 
@@ -398,6 +427,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.20.10+rke2r1
 <!-- v1.20.10+rke2r1 -->
 This release updates Kubernetes to v1.20.10, and fixes a number of minor issues.
 
@@ -454,6 +484,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.9+rke2r2
 <!-- v1.20.9+rke2r2 -->
 This release resolves issue [#1530](https://github.com/rancher/rke2/issues/1530) by building Kubernetes with the correct Go version.
 
@@ -503,6 +534,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.8+rke2r1
 <!-- v1.20.8+rke2r1 -->
 This release updates Kubernetes to v1.20.8
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#changelog-since-v1207)
@@ -556,6 +588,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.7+rke2r2
 <!-- v1.20.7+rke2r2 -->
 This release resolves a bug ([#1052](https://github.com/rancher/rke2/issues/1052)) with the `--cluster-reset` flag which causes a goroutine panic when attempting to reset the etcd cluster membership. It is required to upgrade to this version of RKE2 if you intend to leverage etcd cluster reset or etcd restore functionality.
 
@@ -595,6 +628,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.7+rke2r1
 <!-- v1.20.7+rke2r1 -->
 
 # Notice
@@ -643,6 +677,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.6+rke2r1
 <!-- v1.20.6+rke2r1 -->
 This release updates Kubernetes to v1.20.6
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#changelog-since-v1205).  If you are coming from v1.19 or earlier, it is recommended that you read the [Urgent Upgrade Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#urgent-upgrade-notes).
@@ -686,6 +721,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.20.5+rke2r1
 <!-- v1.20.5+rke2r1 -->
 This release updates Kubernetes to v1.20.5
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#changelog-since-v1204).  If you are coming from v1.19 or earlier, it is recommended that you read the [Urgent Upgrade Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#urgent-upgrade-notes).
@@ -724,6 +760,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 
 -----
+# Release v1.20.4+rke2r1
 <!-- v1.20.4+rke2r1 -->
 This release is RKE2's first in the v1.20 line. This release updates Kubernetes to v1.20.4
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#changelog-since-v1190).  If you are coming from v1.19 or earlier, it is recommended that you read the [Urgent Upgrade Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#urgent-upgrade-notes).
