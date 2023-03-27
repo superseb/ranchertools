@@ -1,3 +1,12 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.4.3 | Mar 07 2023 | 03/07/23 | 2023-03-07 |
+| v1.4.2 | Jan 24 2023 | 01/24/23 | 2023-01-24 |
+| v1.4.1 | Nov 28 2022 | 11/28/22 | 2022-11-28 |
+| v1.4.0 | Nov 11 2022 | 11/11/22 | 2022-11-11 |
+
+
+
 # Release v1.4.3
 
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you’re running.

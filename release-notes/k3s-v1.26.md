@@ -1,3 +1,13 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.26.2+k3s1 | Mar 10 2023 | 03/10/23 | 2023-03-10 |
+| v1.26.1+k3s1 | Jan 26 2023 | 01/26/23 | 2023-01-26 |
+| v1.26.0+k3s2 | Jan 11 2023 | 01/11/23 | 2023-01-11 |
+| v1.26.0+k3s1 | Dec 21 2022 | 12/21/22 | 2022-12-21 |
+
+
+
+# Release v1.26.2+k3s1
 <!-- v1.26.2+k3s1 -->
 This release updates Kubernetes to v1.26.2, and fixes a number of issues.
 
@@ -69,6 +79,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.26.1+k3s1
 <!-- v1.26.1+k3s1 -->
 This release updates Kubernetes to v1.26.1, and fixes a number of issues.
 
@@ -122,6 +133,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.26.0+k3s2
 <!-- v1.26.0+k3s2 -->
 
 This release updates containerd to v1.6.14 to resolve an issue where pods would lose their CNI information when containerd was restarted, as well as a number of other stability and administrative changes.
@@ -163,6 +175,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
 - [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
 -----
+# Release v1.26.0+k3s1
 <!-- v1.26.0+k3s1 -->
 
 > ## ⚠️ WARNING

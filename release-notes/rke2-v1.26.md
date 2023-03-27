@@ -1,3 +1,13 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.26.2+rke2r1 | Mar 10 2023 | 03/10/23 | 2023-03-10 |
+| v1.26.1+rke2r1 | Jan 26 2023 | 01/26/23 | 2023-01-26 |
+| v1.26.0+rke2r2 | Jan 10 2023 | 01/10/23 | 2023-01-10 |
+| v1.26.0+rke2r1 | Dec 15 2022 | 12/15/22 | 2022-12-15 |
+
+
+
+# Release v1.26.2+rke2r1
 <!-- v1.26.2+rke2r1 -->
 
 This release updates Kubernetes to v1.26.2, and fixes a number of issues.
@@ -62,6 +72,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.26.1+rke2r1
 <!-- v1.26.1+rke2r1 -->
 
 This release updates Kubernetes to v1.26.1 to backport registry changes and fix two critical issues.
@@ -128,6 +139,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.26.0+rke2r2
 <!-- v1.26.0+rke2r2 -->
 
 This release updates containerd to v1.6.14 to resolve an issue where pods would lose their CNI information when containerd was restarted.
@@ -165,6 +177,7 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 - [Join our Slack channel](https://slack.rancher.io/)
 - [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
 -----
+# Release v1.26.0+rke2r1
 <!-- v1.26.0+rke2r1 -->
 
 > ## ⚠️ WARNING

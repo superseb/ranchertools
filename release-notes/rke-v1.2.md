@@ -1,3 +1,32 @@
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| v1.2.23 | Sep 21 2022 | 09/21/22 | 2022-09-21 |
+| v1.2.22 | Aug 17 2022 | 08/17/22 | 2022-08-17 |
+| v1.2.21 | Jun 15 2022 | 06/15/22 | 2022-06-15 |
+| v1.2.20 | Apr 29 2022 | 04/29/22 | 2022-04-29 |
+| v1.2.19 | Mar 30 2022 | 03/30/22 | 2022-03-30 |
+| v1.2.18 | Feb 08 2022 | 02/08/22 | 2022-02-08 |
+| v1.2.17 | Jan 24 2022 | 01/24/22 | 2022-01-24 |
+| v1.2.16 | Jan 05 2022 | 01/05/22 | 2022-01-05 |
+| v1.2.15 | Dec 17 2021 | 12/17/21 | 2021-12-17 |
+| v1.2.14 | Nov 03 2021 | 11/03/21 | 2021-11-03 |
+| v1.2.13 | Sep 17 2021 | 09/17/21 | 2021-09-17 |
+| v1.2.12 | Sep 01 2021 | 09/01/21 | 2021-09-01 |
+| v1.2.11 | Jul 28 2021 | 07/28/21 | 2021-07-28 |
+| v1.2.10 | Jul 26 2021 | 07/26/21 | 2021-07-26 |
+| v1.2.9 | Jun 22 2021 | 06/22/21 | 2021-06-22 |
+| v1.2.8 | May 03 2021 | 05/03/21 | 2021-05-03 |
+| v1.2.7 | Mar 30 2021 | 03/30/21 | 2021-03-30 |
+| v1.2.6 | Mar 02 2021 | 03/02/21 | 2021-03-02 |
+| v1.2.5 | Jan 25 2021 | 01/25/21 | 2021-01-25 |
+| v1.2.4 | Jan 07 2021 | 01/07/21 | 2021-01-07 |
+| v1.2.3 | Nov 13 2020 | 11/13/20 | 2020-11-13 |
+| v1.2.2 | Nov 09 2020 | 11/09/20 | 2020-11-09 |
+| v1.2.1 | Oct 16 2020 | 10/16/20 | 2020-10-16 |
+| v1.2.0 | Oct 05 2020 | 10/05/20 | 2020-10-05 |
+
+
+
 # Release v1.2.23
 
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you’re running.
