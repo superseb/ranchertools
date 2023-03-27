@@ -56,7 +56,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     echo "| ------- | ---- | ------- | ------- |" >> $rke2versiontmp
     for patch in $(gh release list -R "rancher/${product}" --exclude-drafts --exclude-pre-releases --limit=1000 | awk -F '\t' '{ print $3 }' | grep ^"${minor}"); do
         publish_date=$(gh release view "${patch}" -R "rancher/${product}" --json publishedAt -q '.publishedAt' | awk -F'T' '{ print $1 }')
-        echo "| [${patch}](${product}-${minor}#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") |" >> $rke2versiontmp
+        echo "| [${patch}](${product}-${minor}.md#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") |" >> $rke2versiontmp
         echo "# Release ${patch}" >> release-notes/${product}-${minor}.md
         gh release view "${patch}" -R "rancher/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
         echo "-----" >> release-notes/${product}-${minor}.md
@@ -77,7 +77,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     echo "| ------- | ---- | ------- | ------- |" >> $k3sversiontmp
     for patch in $(gh release list -R "k3s-io/${product}" --exclude-drafts --exclude-pre-releases --limit=1000 | awk -F '\t' '{ print $3 }' | grep ^"${minor}"); do
         publish_date=$(gh release view "${patch}" -R "k3s-io/${product}" --json publishedAt -q '.publishedAt' | awk -F'T' '{ print $1 }')
-        echo "| [${patch}](${product}-${minor}#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") |" >> $k3sversiontmp
+        echo "| [${patch}](${product}-${minor}.md#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") |" >> $k3sversiontmp
         echo "# Release ${patch}" >> release-notes/${product}-${minor}.md
         gh release view "${patch}" -R "k3s-io/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
         echo "-----" >> release-notes/${product}-${minor}.md
