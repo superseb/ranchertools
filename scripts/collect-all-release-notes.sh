@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 > release-notes/README.md
+echo "# RKE" >> release-notes/README.md
 for minor in v1.2 v1.3 v1.4; do
     product=rke
     > release-notes/${product}-${minor}.md
@@ -19,6 +20,7 @@ for minor in v1.2 v1.3 v1.4; do
     echo -e "\n" >> release-notes/README.md
 done
 
+echo "# Rancher" >> release-notes/README.md
 for minor in v2.5 v2.6 v2.7; do
     product=rancher
     > release-notes/${product}-${minor}.md
@@ -38,6 +40,7 @@ for minor in v2.5 v2.6 v2.7; do
     echo -e "\n" >> release-notes/README.md
 done
 
+echo "# RKE2" >> release-notes/README.md
 for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     product=rke2
     > release-notes/${product}-${minor}.md
@@ -58,6 +61,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     echo -e "\n" >> release-notes/README.md
 done
 
+echo "# k3s" >> release-notes/README.md
 for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     product=k3s
     > release-notes/${product}-${minor}.md
