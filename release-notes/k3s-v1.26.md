@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.26.3+k3s1](k3s-v1.26.md#release-v1263k3s1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.26.2+k3s1](k3s-v1.26.md#release-v1262k3s1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.26.1+k3s1](k3s-v1.26.md#release-v1261k3s1) | Jan 26 2023 | 01/26/23 | 2023-01-26 |
 | [v1.26.0+k3s2](k3s-v1.26.md#release-v1260k3s2) | Jan 11 2023 | 01/11/23 | 2023-01-11 |
@@ -7,6 +8,61 @@
 
 
 
+# Release v1.26.3+k3s1
+<!-- v1.26.3+k3s1 -->
+This release updates Kubernetes to v1.26.3, and fixes a number of issues.
+
+For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#changelog-since-v1262).
+
+## Changes since v1.26.2+k3s1:
+
+* Add E2E to Drone [(#6890)](https://github.com/k3s-io/k3s/pull/6890)
+* Add flannel adr [(#6973)](https://github.com/k3s-io/k3s/pull/6973)
+* Update flannel and kube-router [(#7039)](https://github.com/k3s-io/k3s/pull/7039)
+* Bump various dependencies for CVEs [(#7044)](https://github.com/k3s-io/k3s/pull/7044)
+* Adds a warning about editing to the containerd config.toml file [(#7057)](https://github.com/k3s-io/k3s/pull/7057)
+* Update stable version in channel server [(#7066)](https://github.com/k3s-io/k3s/pull/7066)
+* Wait for kubelet port to be ready before setting [(#7041)](https://github.com/k3s-io/k3s/pull/7041)
+  * The agent tunnel authorizer now waits for the kubelet to be ready before reading the kubelet port from the node object.
+* Improve support for rotating the default self-signed certs [(#7032)](https://github.com/k3s-io/k3s/pull/7032)
+  * The `k3s certificate rotate-ca` checks now support rotating self-signed certificates without the `--force` option.
+* Skip all pipelines based on what is in the PR [(#6996)](https://github.com/k3s-io/k3s/pull/6996)
+* Add missing kernel config checks [(#6946)](https://github.com/k3s-io/k3s/pull/6946)
+* Remove deprecated nodeSelector label beta.kubernetes.io/os [(#6970)](https://github.com/k3s-io/k3s/pull/6970)
+* MultiClusterCIDR for v1.26 [(#6885)](https://github.com/k3s-io/k3s/pull/6885)
+  * MultiClusterCIDR feature
+* Remove Nikolai from MAINTAINERS list [(#7088)](https://github.com/k3s-io/k3s/pull/7088)
+* Add automation for Restart command for K3s [(#7002)](https://github.com/k3s-io/k3s/pull/7002)
+* Fix to Rotate CA e2e test [(#7101)](https://github.com/k3s-io/k3s/pull/7101)
+* Drone: Cleanup E2E VMs on test panic [(#7104)](https://github.com/k3s-io/k3s/pull/7104)
+* Update to v1.26.3-k3s1 [(#7108)](https://github.com/k3s-io/k3s/pull/7108)
+* Pin golangci-lint version to v1.51.2 [(#7113)](https://github.com/k3s-io/k3s/pull/7113)
+* Clean E2E VMs before testing [(#7109)](https://github.com/k3s-io/k3s/pull/7109)
+* Update flannel to fix NAT issue with old iptables version [(#7136)](https://github.com/k3s-io/k3s/pull/7136)
+
+## Embedded Component Versions
+| Component | Version |
+|---|---|
+| Kubernetes | [v1.26.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1263) |
+| Kine | [v0.9.9](https://github.com/k3s-io/kine/releases/tag/v0.9.9) |
+| SQLite | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) |
+| Etcd | [v3.5.5-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.5-k3s1) |
+| Containerd | [v1.6.19-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.19-k3s1) |
+| Runc | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) |
+| Flannel | [v0.21.4](https://github.com/flannel-io/flannel/releases/tag/v0.21.4) | 
+| Metrics-server | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) |
+| Traefik | [v2.9.4](https://github.com/traefik/traefik/releases/tag/v2.9.4) |
+| CoreDNS | [v1.9.4](https://github.com/coredns/coredns/releases/tag/v1.9.4) | 
+| Helm-controller | [v0.13.1](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.1) |
+| Local-path-provisioner | [v0.0.23](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.23) |
+
+## Helpful Links
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/k3s/issues/new/choose)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
+- [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
+-----
 # Release v1.26.2+k3s1
 <!-- v1.26.2+k3s1 -->
 This release updates Kubernetes to v1.26.2, and fixes a number of issues.
