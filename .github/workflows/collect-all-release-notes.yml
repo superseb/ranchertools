@@ -16,7 +16,7 @@ jobs:
         run: |
           bash scripts/collect-all-release-notes.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       - name: Check for repository changes
         run: |
           if git diff --name-only --exit-code; then
