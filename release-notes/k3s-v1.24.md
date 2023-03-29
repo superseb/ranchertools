@@ -1,3 +1,21 @@
+| k3s version| Kubernetes | Kine | SQLite | Etcd | Containerd | Runc | Flannel | Metrics-server | Traefik | CoreDNS | Helm-controller | Local-path-provisioner  |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | -----  |
+| v1.24.12+k3s1  |
+| v1.24.11+k3s1  |
+| v1.24.10+k3s1  |
+| v1.24.9+k3s2  |
+| v1.24.9+k3s1  |
+| v1.24.8+k3s1  |
+| v1.24.7+k3s1  |
+| v1.24.6+k3s1  |
+| v1.24.4+k3s1  |
+| v1.24.3+k3s1  |
+| v1.24.2+k3s2  |
+| v1.24.2+k3s1  |
+| v1.24.1+k3s1  |
+
+
+
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
 | [v1.24.12+k3s1](k3s-v1.24.md#release-v12412k3s1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
