@@ -93,7 +93,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
             echo " |" >> $k3stable
         fi
         echo -n "| $patch " >> $k3stable
-        echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $3 }'; while read column; do echo -n "| $column " >> $k3stable; done
+        echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $3 }' | while read column; do echo -n "| $column " >> $k3stable; done
         echo " |" >> $k3stable
         previous=$patch
     done
