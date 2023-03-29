@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.24.12+k3s1](k3s-v1.24.md#release-v12412k3s1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.24.11+k3s1](k3s-v1.24.md#release-v12411k3s1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.24.10+k3s1](k3s-v1.24.md#release-v12410k3s1) | Jan 26 2023 | 01/26/23 | 2023-01-26 |
 | [v1.24.9+k3s2](k3s-v1.24.md#release-v1249k3s2) | Jan 11 2023 | 01/11/23 | 2023-01-11 |
@@ -15,6 +16,47 @@
 
 
 
+# Release v1.24.12+k3s1
+<!-- v1.24.12+k3s1 -->
+This release updates Kubernetes to v1.24.12, and fixes a number of issues.
+
+For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md#changelog-since-v12411).
+
+## Changes since v1.24.11+k3s1:
+
+* Update flannel and kube-router [(#7063)](https://github.com/k3s-io/k3s/pull/7063)
+* Bump various dependencies for CVEs [(#7042)](https://github.com/k3s-io/k3s/pull/7042)
+* Enable dependabot [(#7046)](https://github.com/k3s-io/k3s/pull/7046)
+* Wait for kubelet port to be ready before setting [(#7065)](https://github.com/k3s-io/k3s/pull/7065)
+  * The agent tunnel authorizer now waits for the kubelet to be ready before reading the kubelet port from the node object.
+* Improve support for rotating the default self-signed certs [(#7080)](https://github.com/k3s-io/k3s/pull/7080)
+  * The `k3s certificate rotate-ca` checks now support rotating self-signed certificates without the `--force` option.
+* Adds a warning about editing to the containerd config.toml file [(#7076)](https://github.com/k3s-io/k3s/pull/7076)
+* Update to v1.24.12-k3s1 [(#7105)](https://github.com/k3s-io/k3s/pull/7105)
+
+## Embedded Component Versions
+| Component | Version |
+|---|---|
+| Kubernetes | [v1.24.12](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md#v12412) |
+| Kine | [v0.9.9](https://github.com/k3s-io/kine/releases/tag/v0.9.9) |
+| SQLite | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) |
+| Etcd | [v3.5.3-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.3-k3s1) |
+| Containerd | [v1.6.19-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.19-k3s1) |
+| Runc | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) |
+| Flannel | [v0.21.3-k3s1.23](https://github.com/flannel-io/flannel/releases/tag/v0.21.3-k3s1.23) | 
+| Metrics-server | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) |
+| Traefik | [v2.9.4](https://github.com/traefik/traefik/releases/tag/v2.9.4) |
+| CoreDNS | [v1.9.4](https://github.com/coredns/coredns/releases/tag/v1.9.4) | 
+| Helm-controller | [v0.13.1](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.1) |
+| Local-path-provisioner | [v0.0.23](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.23) |
+
+## Helpful Links
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/k3s/issues/new/choose)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
+- [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
+-----
 # Release v1.24.11+k3s1
 <!-- v1.24.11+k3s1 -->
 This release updates Kubernetes to v1.24.11, and fixes a number of issues.
