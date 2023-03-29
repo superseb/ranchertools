@@ -86,14 +86,14 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
         body=$(gh release view "${patch}" -R "k3s-io/${product}" --json body -q '.body')
         if [ -z "${previous}" ]; then
             echo -n "| k3s version" >> $k3stable
-            for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }'); do echo -n "| $column " >> $k3stable; done
+            echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }' | while read column; do echo -n "| $column " >> $k3stable; done
             echo " |" >> $k3stable
             echo -n "| ----- " >> $k3stable
-            for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }'); do echo -n "| ----- " >> $k3stable; done
+            echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }' | while read column; do echo -n "| ----- " >> $k3stable; done
             echo " |" >> $k3stable
         fi
         echo -n "| $patch " >> $k3stable
-        for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $3 }'); do echo -n "| $column " >> $k3stable; done
+        echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $3 }'; while read column; do echo -n "| $column " >> $k3stable; done
         echo " |" >> $k3stable
         previous=$patch
     done
