@@ -51,7 +51,10 @@ echo "# RKE2" >> release-notes/README.md
 for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     product=rke2
     > release-notes/${product}-${minor}.md
+    rke2table=$(mktemp)
     rke2versiontmp=$(mktemp)
+    previous=""
+    columns=""
     echo "| Version | Date | US date | EU date |" >> $rke2versiontmp
     echo "| ------- | ---- | ------- | ------- |" >> $rke2versiontmp
     for patch in $(gh release list -R "rancher/${product}" --exclude-drafts --exclude-pre-releases --limit=1000 | awk -F '\t' '{ print $3 }' | grep ^"${minor}"); do
@@ -60,10 +63,33 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
         echo "# Release ${patch}" >> release-notes/${product}-${minor}.md
         gh release view "${patch}" -R "rancher/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
         echo "-----" >> release-notes/${product}-${minor}.md
+        body=$(gh release view "${patch}" -R "rancher/${product}" --json body -q '.body')
+        if [ -z "${previous}" ]; then
+            if [ -z "${body}" ]; then
+                continue
+            fi
+            columns=$(echo "$body"  | grep "^|" | tail -n+3 | grep -v "^| Component" | grep -v "\---" | grep -v "CNI Plugins" | awk -F'|' '{ print $2 }' | wc -l)
+            echo -n "| RKE2 version" >> $rke2table
+            echo "$body"  | grep "^|" | tail -n+3 | grep -v "^| Component" | grep -v "\---" | grep -v "CNI Plugins" | awk -F'|' '{ print $2 }' | while read column; do echo -n "| $column " >> $rke2table; done
+            echo " |" >> $rke2table
+            echo -n "| ----- " >> $rke2table
+            echo "$body"  | grep "^|" | tail -n+3 | grep -v "^| Component" | grep -v "\---" | grep -v "CNI Plugins" | awk -F'|' '{ print $2 }' | while read column; do echo -n "| ----- " >> $rke2table; done
+            echo " |" >> $rke2table
+        fi
+        echo -n "| $patch " >> $rke2table
+        if [ -n "${body}" ]; then
+            echo "$body"  | grep "^|" | tail -n+3 | grep -v "^| Component" | grep -v "\---" | grep -v "CNI Plugins" | awk -F'|' '{ print $3 }' | while read column; do echo -n "| $column " >> $rke2table; done
+            echo " |" >> $rke2table
+        else
+            for i in `seq 1 $columns`; do echo -n " | " >> $rke2table; done
+            echo "" >> $rke2table
+        fi
+        previous=$patch
     done
+    echo -e "\n\n" >> $rke2table
     echo -e "\n\n" >> $rke2versiontmp
     rke2tmp=$(mktemp)
-    cat $rke2versiontmp release-notes/${product}-${minor}.md > $rke2tmp && mv $rke2tmp release-notes/${product}-${minor}.md
+    cat $rke2table $rke2versiontmp release-notes/${product}-${minor}.md > $rke2tmp && mv $rke2tmp release-notes/${product}-${minor}.md
     cat $rke2versiontmp >> release-notes/README.md
     echo -e "\n" >> release-notes/README.md
 done
