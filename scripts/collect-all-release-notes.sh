@@ -72,7 +72,9 @@ echo "# k3s" >> release-notes/README.md
 for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
     product=k3s
     > release-notes/${product}-${minor}.md
+    k3stable=$(mktemp)
     k3sversiontmp=$(mktemp)
+    previous=""
     echo "| Version | Date | US date | EU date |" >> $k3sversiontmp
     echo "| ------- | ---- | ------- | ------- |" >> $k3sversiontmp
     for patch in $(gh release list -R "k3s-io/${product}" --exclude-drafts --exclude-pre-releases --limit=1000 | awk -F '\t' '{ print $3 }' | grep ^"${minor}"); do
@@ -81,10 +83,24 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
         echo "# Release ${patch}" >> release-notes/${product}-${minor}.md
         gh release view "${patch}" -R "k3s-io/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
         echo "-----" >> release-notes/${product}-${minor}.md
+        body=$(gh release view "${patch}" -R "k3s-io/${product}" --json body -q '.body')
+        if [ -z "${previous}" ]; then
+            echo -n "| k3s version" >> $k3stable
+            for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }'); do echo -n "| $column " >> $k3stable; done
+            echo " |" >> $k3stable
+            echo -n "| ----- " >> $k3stable
+            for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $2 }'); do echo -n "| ----- " >> $k3stable; done
+            echo " |" >> $k3stable
+        fi
+        echo -n "| $patch " >> $k3stable
+        for column in $(echo "$body"  | grep "^|" | tail -n+3 | awk -F'|' '{ print $3 }'); do echo -n "| $column " >> $k3stable; done
+        echo " |" >> $k3stable
+        previous=$patch
     done
+    echo -e "\n\n" >> $k3stable
     echo -e "\n\n" >> $k3sversiontmp
     k3stmp=$(mktemp)
-    cat $k3sversiontmp release-notes/${product}-${minor}.md > $k3stmp && mv $k3stmp release-notes/${product}-${minor}.md
+    cat $k3stable $k3sversiontmp release-notes/${product}-${minor}.md > $k3stmp && mv $k3stmp release-notes/${product}-${minor}.md
     cat $k3sversiontmp >> release-notes/README.md
     echo -e "\n" >> release-notes/README.md
 done
