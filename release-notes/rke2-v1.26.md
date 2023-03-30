@@ -1,5 +1,6 @@
 | RKE2 version| Kubernetes | Etcd | Containerd | Runc | Metrics-server | CoreDNS | Ingress-Nginx | Helm-controller | Canal (Default) | Calico | Cilium | Multus  |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | -----  |
+| v1.26.3+rke2r1 | [v1.26.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1263) | [v3.5.5-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.5-k3s1) | [v1.6.19-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.19-k3s1) | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v1.9.3](https://github.com/coredns/coredns/releases/tag/v1.9.3) | [4.1.0](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.1.0) | [v0.13.2](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.2) | [Flannel v0.21.3](https://github.com/k3s-io/flannel/releases/tag/v0.21.3)<br/>[Calico v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250) | [v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250) | [v1.13.0](https://github.com/cilium/cilium/releases/tag/v1.13.0) | [v3.9.3](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v3.9.3)  |
 | v1.26.2+rke2r1 | [v1.26.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1262) | [v3.5.5-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.5-k3s1) | [v1.6.15-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.15-k3s1) | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v1.9.3](https://github.com/coredns/coredns/releases/tag/v1.9.3) | [4.1.0](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.1.0) | [v0.13.2](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.2) | [Flannel v0.21.1](https://github.com/k3s-io/flannel/releases/tag/v0.21.1)<br/>[Calico v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250) | [v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250) | [v1.12.5](https://github.com/cilium/cilium/releases/tag/v1.12.5) | [v3.9.3](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v3.9.3)  |
 | v1.26.1+rke2r1 | [v1.26.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1261) | [v3.5.5-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.5-k3s1) | [v1.6.15-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.15-k3s1) | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v1.9.3](https://github.com/coredns/coredns/releases/tag/v1.9.3) | [4.1.0](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.1.0) | [v0.13.1](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.1) | [Flannel v0.20.2](https://github.com/k3s-io/flannel/releases/tag/v0.20.2)<br/>[Calico v3.24.5](https://projectcalico.docs.tigera.io/archive/v3.24/release-notes/#v3245) | [v3.24.5](https://projectcalico.docs.tigera.io/archive/v3.24/release-notes/#v3245) | [v1.12.4](https://github.com/cilium/cilium/releases/tag/v1.12.4) | [v3.9.3](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v3.9.3)  |
 | v1.26.0+rke2r2 | [v1.26.0](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1260) | [v3.5.5](https://github.com/k3s-io/etcd/releases/tag/v3.5.5) | [v1.6.14-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.14-k3s1) | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v1.9.3](https://github.com/coredns/coredns/releases/tag/v1.9.3) | [4.1.0](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.1.0) | [v0.13.1](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.1) | [Flannel v0.20.2](https://github.com/k3s-io/flannel/releases/tag/v0.20.2)<br/>[Calico v3.24.5](https://projectcalico.docs.tigera.io/archive/v3.24/release-notes/#v3245) | [v3.24.5](https://projectcalico.docs.tigera.io/archive/v3.24/release-notes/#v3245) | [v1.12.4](https://github.com/cilium/cilium/releases/tag/v1.12.4) | [v3.9](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v3.9)  |
@@ -9,6 +10,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.26.3+rke2r1](rke2-v1.26.md#release-v1263rke2r1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.26.2+rke2r1](rke2-v1.26.md#release-v1262rke2r1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.26.1+rke2r1](rke2-v1.26.md#release-v1261rke2r1) | Jan 26 2023 | 01/26/23 | 2023-01-26 |
 | [v1.26.0+rke2r2](rke2-v1.26.md#release-v1260rke2r2) | Jan 10 2023 | 01/10/23 | 2023-01-10 |
@@ -16,6 +18,65 @@
 
 
 
+# Release v1.26.3+rke2r1
+<!-- v1.26.3+rke2r1 -->
+
+This release updates Kubernetes to v1.26.3, and fixes a number of issues.
+
+**Important Note**
+
+If your server (control-plane) nodes were not started with the `--token` CLI flag or config file key, a randomized token was generated during initial cluster startup. This key is used both for joining new nodes to the cluster, and for encrypting cluster bootstrap data within the datastore. Ensure that you retain a copy of this token, as is required when restoring from backup.
+
+You may retrieve the token value from any server already joined to the cluster:
+```bash
+cat /var/lib/rancher/rke2/server/token
+```
+
+## Changes since v1.26.2+rke2r1:
+
+* Remove root `--debug` flag [(#3955)](https://github.com/rancher/rke2/pull/3955)
+* Remove unmounts in killall script [(#3954)](https://github.com/rancher/rke2/pull/3954)
+* Update Flannel version to v0.21.3 on Canal [(#3980)](https://github.com/rancher/rke2/pull/3980)
+* Remove unnecessary bits from testing dockerfile [(#3975)](https://github.com/rancher/rke2/pull/3975)
+* Expand SUC upgrade check to check pods as well as nodes [(#3938)](https://github.com/rancher/rke2/pull/3938)
+* Don't package empty Windows folder in Linux tar [(#3970)](https://github.com/rancher/rke2/pull/3970)
+* Bump K3s [(#3990)](https://github.com/rancher/rke2/pull/3990)
+* Improve uninstallation on RHEL based OS [(#3919)](https://github.com/rancher/rke2/pull/3919)
+* Update cilim to v1.13.0 [(#4003)](https://github.com/rancher/rke2/pull/4003)
+* Bump harvester csi driver to v0.1.16 [(#3999)](https://github.com/rancher/rke2/pull/3999)
+* Update stable channel to v1.24.11+rke2r1 [(#4010)](https://github.com/rancher/rke2/pull/4010)
+* Bump k3s and containerd [(#4015)](https://github.com/rancher/rke2/pull/4015)
+* Add automation for Restart command for Rke2 [(#3962)](https://github.com/rancher/rke2/pull/3962)
+* Update 1.26 and Go [(#4033)](https://github.com/rancher/rke2/pull/4033)
+
+## Packaged Component Versions
+| Component       | Version                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| Kubernetes      | [v1.26.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1263) |
+| Etcd            | [v3.5.5-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.5-k3s1)                            |
+| Containerd      | [v1.6.19-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.19-k3s1)                    |
+| Runc            | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4)                              |
+| Metrics-server  | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2)                   |
+| CoreDNS         | [v1.9.3](https://github.com/coredns/coredns/releases/tag/v1.9.3)                                  |
+| Ingress-Nginx   | [4.1.0](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.1.0)                |
+| Helm-controller | [v0.13.2](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.2)                         |
+
+### Available CNIs
+| Component       | Version                                                                                                                                                                 | FIPS Compliant |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Canal (Default) | [Flannel v0.21.3](https://github.com/k3s-io/flannel/releases/tag/v0.21.3)<br/>[Calico v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250) | Yes            |
+| Calico          | [v3.25.0](https://projectcalico.docs.tigera.io/archive/v3.25/release-notes/#v3250)                                                                                      | No             |
+| Cilium          | [v1.13.0](https://github.com/cilium/cilium/releases/tag/v1.13.0)                                                                                                        | No             |
+| Multus          | [v3.9.3](https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v3.9.3)                                                                                        | No             |
+
+## Helpful Links
+
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/rke2/issues/new)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://docs.rke2.io) for guidance on how to get started.
+
+-----
 # Release v1.26.2+rke2r1
 <!-- v1.26.2+rke2r1 -->
 

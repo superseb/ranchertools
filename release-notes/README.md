@@ -233,6 +233,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.24.12+rke2r1](rke2-v1.24.md#release-v12412rke2r1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.24.11+rke2r1](rke2-v1.24.md#release-v12411rke2r1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.24.10+rke2r1](rke2-v1.24.md#release-v12410rke2r1) | Jan 27 2023 | 01/27/23 | 2023-01-27 |
 | [v1.24.9+rke2r2](rke2-v1.24.md#release-v1249rke2r2) | Jan 10 2023 | 01/10/23 | 2023-01-10 |
@@ -251,6 +252,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.25.8+rke2r1](rke2-v1.25.md#release-v1258rke2r1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.25.7+rke2r1](rke2-v1.25.md#release-v1257rke2r1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.25.6+rke2r1](rke2-v1.25.md#release-v1256rke2r1) | Jan 26 2023 | 01/26/23 | 2023-01-26 |
 | [v1.25.5+rke2r2](rke2-v1.25.md#release-v1255rke2r2) | Jan 10 2023 | 01/10/23 | 2023-01-10 |
@@ -266,6 +268,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.26.3+rke2r1](rke2-v1.26.md#release-v1263rke2r1) | Mar 27 2023 | 03/27/23 | 2023-03-27 |
 | [v1.26.2+rke2r1](rke2-v1.26.md#release-v1262rke2r1) | Mar 10 2023 | 03/10/23 | 2023-03-10 |
 | [v1.26.1+rke2r1](rke2-v1.26.md#release-v1261rke2r1) | Jan 26 2023 | 01/26/23 | 2023-01-26 |
 | [v1.26.0+rke2r2](rke2-v1.26.md#release-v1260rke2r2) | Jan 10 2023 | 01/10/23 | 2023-01-10 |
