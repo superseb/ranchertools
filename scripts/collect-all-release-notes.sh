@@ -111,7 +111,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
         upstream_version=$(echo "${patch}" | awk -F'+' '{ print $1 }')
         upstream_publish_date=$(gh release view "${upstream_version}" -R "kubernetes/kubernetes" --json publishedAt -q '.publishedAt' | awk -F'T' '{ print $1 }')
         let days_since_upstream=($(date +%s -d $publish_date)-$(date +%s -d $upstream_publish_date))/86400
-        echo "| [${patch}](${product}-${minor}.md#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") | $(date +"%b %d %Y" -d "${upstream_publish_date}") | $(date +"%D" -d "${upstream_publish_date}") | $(date +"%F" -d "${upstream_publish_date}") | ${days_since_upstream} days |"" >> $k3sversiontmp
+        echo "| [${patch}](${product}-${minor}.md#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") | $(date +"%b %d %Y" -d "${upstream_publish_date}") | $(date +"%D" -d "${upstream_publish_date}") | $(date +"%F" -d "${upstream_publish_date}") | ${days_since_upstream} days |" >> $k3sversiontmp
         echo "# Release ${patch}" >> release-notes/${product}-${minor}.md
         gh release view "${patch}" -R "k3s-io/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
         echo "-----" >> release-notes/${product}-${minor}.md
