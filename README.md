@@ -4,6 +4,10 @@
 
 Index of miscellaneous non official gists/tools for Rancher
 
+## Release notes
+
+Find all Rancher/RKE/k3s/RKE2 release notes and component info in [./release-notes](./release-notes).
+
 ## Versions
 
 [![Latest stable](https://img.shields.io/badge/dynamic/yaml?label=Rancher%20stable&query=%24.entries.rancher%5B0%5D.appVersion&url=https%3A%2F%2Freleases.rancher.com%2Fserver-charts%2Fstable%2Findex.yaml)](https://github.com/rancher/rancher/releases)
