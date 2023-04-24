@@ -1,11 +1,14 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.3](rancher-v2.7.md#release-v273) | Apr 24 2023 | 04/24/23 | 2023-04-24 |
 | [v2.7.2](rancher-v2.7.md#release-v272) | Apr 12 2023 | 04/12/23 | 2023-04-12 |
 | [v2.7.1](rancher-v2.7.md#release-v271) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
 | [v2.7.0](rancher-v2.7.md#release-v270) | Nov 16 2022 | 11/16/22 | 2022-11-16 |
 
 
 
+
+-----
 # Release v2.7.2
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
