@@ -208,6 +208,11 @@ RancherD was introduced as part of Rancher v2.5.4 through v2.5.10 as an experime
     - Users may receive an error message when logging in for the first time. See [#28800](https://github.com/rancher/rancher/issues/28800).
     - Users may be redirected to the login screen before a password and default view have been set. See [#28798](https://github.com/rancher/rancher/issues/28798).
 
+
+## All issues in v2.5.17 milestone
+
+* [#38815](https://github.com/rancher/rancher/issues/38815) [2.5] [BUG] Unable to interact with downstream clusters after upgrading from 2.5.15 to 2.5.16
+* [#38345](https://github.com/rancher/rancher/issues/38345) [BUG] [2.5]Rancher API Audit Log fails to capture API calls at Audit Level 3
 -----
 # Release v2.5.16
 
@@ -396,10 +401,27 @@ RancherD was introduced as part of Rancher v2.5.4 through v2.5.10 as an experime
     - UI issues may occur due to a longer startup time.
     - Users may receive an error message when logging in for the first time. See [#28800](https://github.com/rancher/rancher/issues/28800).
     - Users may be redirected to the login screen before a password and default view have been set. See [#28798](https://github.com/rancher/rancher/issues/28798).
+
+## All issues in v2.5.16 milestone
+
+* [#38596](https://github.com/rancher/rancher/issues/38596) [BUG] - Cluster Unavailable after moving a fleet cluster from a fleet workspace to other workspace
+* [#38581](https://github.com/rancher/rancher/issues/38581) [2.5] Unable to view cluster's YAML when logged in as a non-administrative user
+* [#38441](https://github.com/rancher/rancher/issues/38441) [BUG] 2.5.x backport of Splunk unable to handle arguments for <buffer ...> section 
+* [#38406](https://github.com/rancher/rancher/issues/38406) No valid AKS k8s versions on rancher 2.5 
+* [#38397](https://github.com/rancher/rancher/issues/38397) [Backport v2.5] Cannot update s3 credentials after cluster has been created.
+* [#37986](https://github.com/rancher/rancher/issues/37986) [2.5] Cluster Explorer caused denial of service in downstream cluster
+* [#37965](https://github.com/rancher/rancher/issues/37965) fix gouroutine leak when sharedcontroller has been started
+* [#37859](https://github.com/rancher/rancher/issues/37859) Upgrade from rancher 2.5.13 to 2.5.14 fails...
+* [#37655](https://github.com/rancher/rancher/issues/37655) [Backport v2.5] Update hyperkube base to Ubuntu 22.04
+* [#37228](https://github.com/rancher/rancher/issues/37228) [Backport 2.5] Update Azure AD API from ADAL to MSAL
 -----
 **Rancher v2.5.15 is a mirror release of [v2.5.14](https://github.com/rancher/rancher/releases/tag/v2.5.14) with one change to address the following issue:**
 
 - A major performance issue was occurring when Rancher was attempting to control large volumes of traffic from downstream clusters. This mechanism was not handling disconnects properly and would result in indefinite locks. See [#38097](https://github.com/rancher/rancher/issues/38097).
+
+## All issues in v2.5.15 milestone
+
+* [#38097](https://github.com/rancher/rancher/issues/38097) [2.5] Clusters become unreachable via UI and kubectl after some times
 -----
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
@@ -564,6 +586,12 @@ RancherD was introduced as part of Rancher v2.5.4 through v2.5.10 as an experime
     - Users may receive an error message when logging in for the first time. See [#28800](https://github.com/rancher/rancher/issues/28800).
     - Users may be redirected to the login screen before a password and default view have been set. See [#28798](https://github.com/rancher/rancher/issues/28798).
 
+
+## All issues in v2.5.14 milestone
+
+* [#37515](https://github.com/rancher/rancher/issues/37515) [Backport v2.5] Unable to create a VMware vSphere cluster with private registry 
+* [#37360](https://github.com/rancher/rancher/issues/37360) [2.5] Add options to lasso that improve performance
+* [#36584](https://github.com/rancher/rancher/issues/36584)  buffer exceeded errors
 -----
 # Release v2.5.13
 
@@ -732,6 +760,22 @@ RancherD was introduced in v2.5 as an easy-to-use installation binary. With the 
     - Users may receive an error message when logging in for the first time. See [#28800](https://github.com/rancher/rancher/issues/28800).
     - Users may be redirected to the login screen before a password and default view have been set. See [#28798](https://github.com/rancher/rancher/issues/28798).
 
+
+## All issues in v2.5.13 milestone
+
+* [#37353](https://github.com/rancher/rancher/issues/37353) [Backport v2.5] Panic in steve when `summary.Relationship` is changed
+* [#37266](https://github.com/rancher/rancher/issues/37266) [Backport v2.5] Airgap - unexpected end of JSON input when provisioning RKE1 Custom clusters
+* [#37257](https://github.com/rancher/rancher/issues/37257) [Backport] v2.5: Reset remotedialer buffer to reduce memory allocation
+* [#37254](https://github.com/rancher/rancher/issues/37254) Fleet - Upgrade to 2.5.13-rc1 doesn't upgrade the fleet controller and agents as expected
+* [#37251](https://github.com/rancher/rancher/issues/37251) Allow lasso resync time to be configured via env var
+* [#36954](https://github.com/rancher/rancher/issues/36954) [2.5 Backport] Backport Steve API Fix
+* [#36621](https://github.com/rancher/rancher/issues/36621) [2.5] Rancher logs spammed with RoleBinding.rbac.authorization.k8s.io is invalid: when any auth group is assigned restricted admin global role
+* [#36599](https://github.com/rancher/rancher/issues/36599) [Backport v2.5] Pass container limits from project in a new namespace if it does not override them
+* [#36267](https://github.com/rancher/rancher/issues/36267) Alerts (v1) do not display alert category or description
+* [#35758](https://github.com/rancher/rancher/issues/35758) [Backport v2.5] Cluster agent fails with error "socket: too many open files"
+* [#35066](https://github.com/rancher/rancher/issues/35066) 2.5.9 -> 2.5.10-rc2 rancher upgrade | Newly added windows 2004 worker node does not get deleted after the upgrade 
+* [#34742](https://github.com/rancher/rancher/issues/34742) [Backport] update driver version to the new version for equinix metal
+* [#33654](https://github.com/rancher/rancher/issues/33654) Cannot create backup in Cluster Explorer after switching to Simplified Chinese
 -----
 
 -----
@@ -898,6 +942,65 @@ RancherD was introduced in v2.5 as an easy-to-use installation binary. With the 
     - Users may receive an error message when logging in for the first time. See [#28800](https://github.com/rancher/rancher/issues/28800).
     - Users may be redirected to the login screen before a password and default view have been set. See [#28798](https://github.com/rancher/rancher/issues/28798).
 
+
+## All issues in v2.5.12 milestone
+
+* [#36184](https://github.com/rancher/rancher/issues/36184) New Charts in v2.5.12
+* [#36120](https://github.com/rancher/rancher/issues/36120) [2.5.12] Adding https://git.rancher.io/helm3-charts does not result in any charts being returned
+* [#36091](https://github.com/rancher/rancher/issues/36091) Can't configure S3-compatible storage using the Rancher Backups chart in the local cluster during chart install
+* [#36040](https://github.com/rancher/rancher/issues/36040) [Backport v2.5] Metrics-server v0.4.1 timeout - already fixed in upstream
+* [#36038](https://github.com/rancher/rancher/issues/36038) [Backport v2.5] s3 etcd backups taking longer than 5 minutes cause backup loop
+* [#36037](https://github.com/rancher/rancher/issues/36037) [Backport v2.5] Rancher reports cluster as active even though the add-on's are not upgraded as part of k8s version upgrade
+* [#36027](https://github.com/rancher/rancher/issues/36027) Inconsistency between CSI chart versions and app readme
+* [#36021](https://github.com/rancher/rancher/issues/36021) [Backport v2.5] Update hyperkube base to using iptables >1.8.5
+* [#35995](https://github.com/rancher/rancher/issues/35995) Issue in Monitoring v1 graphs - All metrics show the same graph and CPU/Memory usage is incorrect
+* [#35994](https://github.com/rancher/rancher/issues/35994) Monitoring v1 is not available in a downstream cluster on Tenant Rancher server 
+* [#35961](https://github.com/rancher/rancher/issues/35961) Rancher logging 3.15.0 fluentd pods go into crashloop with 2.5-head
+* [#35948](https://github.com/rancher/rancher/issues/35948) [Backport] Installing the same helm3 chart in the ember UI after its deleted is updating the existing migrated chart in the explorer UI
+* [#35940](https://github.com/rancher/rancher/issues/35940) [Backport v2.5] Cluster Explorer Apps: Cannot download catalog that responds with a redirect
+* [#35860](https://github.com/rancher/rancher/issues/35860) Verify Rancher Webhook Rotation workaround and Certificate Renewal
+* [#35820](https://github.com/rancher/rancher/issues/35820) Chart Repositories are not showing up on Rancher v2.5-head
+* [#35809](https://github.com/rancher/rancher/issues/35809) [Backport v2.5.12] EKS Node Group deletion piloted by Rancher
+* [#35791](https://github.com/rancher/rancher/issues/35791) [2.5] Kubectl error "You must be logged in to the server"
+* [#35734](https://github.com/rancher/rancher/issues/35734) [Backport v2.5.12] Rancher logging atomatically detect docker root
+* [#35725](https://github.com/rancher/rancher/issues/35725) [2.5] EKS upgrades loop without a default AMI list for v1.19 onwards
+* [#35677](https://github.com/rancher/rancher/issues/35677) [2.5 Back-port] Add functionality to specify limit of app revisions stored 
+* [#35572](https://github.com/rancher/rancher/issues/35572) CSI chart 2.1.1 on k8s version 1.17 fails
+* [#35515](https://github.com/rancher/rancher/issues/35515) [Backport] v2.5: Remove EKS deprecated k8s version 1.17
+* [#35488](https://github.com/rancher/rancher/issues/35488) [Backport] 2.5x - Convert ServerVersion to downstream env var
+* [#35478](https://github.com/rancher/rancher/issues/35478) vsphere CSI charts show incompatible version of chart for clusters on k8s 1.18.20
+* [#35476](https://github.com/rancher/rancher/issues/35476) [2.5] Fix vSphere charts upgrade path
+* [#35410](https://github.com/rancher/rancher/issues/35410) [Backport] v2.5: Add support for annotation that prevents helm install and v1 App deletion when deleting v3 App
+* [#35407](https://github.com/rancher/rancher/issues/35407) [Backport] v2.5: Cannot upgrade apps with deployments that were created in ember
+* [#35393](https://github.com/rancher/rancher/issues/35393) [Backport 2.5][Logging v2] Add option to disable automation JSON parsing
+* [#35377](https://github.com/rancher/rancher/issues/35377) [2.5] Backport: Listing many large resources can be slow on the ember UI
+* [#35341](https://github.com/rancher/rancher/issues/35341) [Backport 2.5][Istio] k8s IP service is set to default IP which does not work for all environments
+* [#35158](https://github.com/rancher/rancher/issues/35158) [Backport 2.5] Include labels on global secret create in Cluster Manager for default namespace
+* [#35102](https://github.com/rancher/rancher/issues/35102) [csi migration] node is unable to upgrade k8s after csi migration -> cpi/csi charts are restarting 
+* [#35068](https://github.com/rancher/rancher/issues/35068) How to rotate cattle-webhook-tls certificate when it has expired?
+* [#35216](https://github.com/rancher/rancher/issues/35216) [rancher-pushprox] duplicate label in ServiceMonitor resource
+* [#35058](https://github.com/rancher/rancher/issues/35058) [2.5] Update fluentbit to the latest version
+* [#35009](https://github.com/rancher/rancher/issues/35009) [Backport 2.5] Unable to update istio configuration in air-gapped environment in Rancher v2.5.x
+* [#34832](https://github.com/rancher/rancher/issues/34832) [Backport 2.5] Cannot upgrade apps with deployments that were created in ember 
+* [#34831](https://github.com/rancher/rancher/issues/34831) [Backport 2.5] Add support for annotation that prevents helm install and v1 App deletion when deleting v3 App
+* [#34819](https://github.com/rancher/rancher/issues/34819) Intermittent health check failure causes unreachable downstream clusters
+* [#34772](https://github.com/rancher/rancher/issues/34772) Logging v2 - fluentbit pods fail to reach the fluentd service 3.14.0
+* [#34770](https://github.com/rancher/rancher/issues/34770) [Logging v1] Backport v2.6.0 fixes to v2.5.10
+* [#34757](https://github.com/rancher/rancher/issues/34757) [backport] [rancher-alerting-drivers] bump prom2teams and sachet
+* [#34669](https://github.com/rancher/rancher/issues/34669) [2.5] Backport Missing Permissions in catalogs-manage GlobalRole
+* [#34625](https://github.com/rancher/rancher/issues/34625) [2.5] Rancher Logging backports
+* [#34604](https://github.com/rancher/rancher/issues/34604) Rancher 2.5.9 uses flannel:v0.13.0 which causes iptables segfault in RHEL 8.4
+* [#33851](https://github.com/rancher/rancher/issues/33851) [Monitoring V2, Backport 2.5] Prometheus -> Classic UI is not working (404 errors) -> proxyURL is added twice to the request URL
+* [#33826](https://github.com/rancher/rancher/issues/33826) [Backport] Remove EKS deprecated k8s version 1.17
+* [#33824](https://github.com/rancher/rancher/issues/33824) [Backport 2.5] Istio 1.10.4
+* [#33724](https://github.com/rancher/rancher/issues/33724) Rancher 2.5.9 uninstall via helm on RKE2 cluster with CIS profile active does not honor podSecurityPolicies for uninstall job
+* [#33038](https://github.com/rancher/rancher/issues/33038) [2.5 backport] Update rancher-images generator to support feature and system charts min/max version constraint
+* [#32934](https://github.com/rancher/rancher/issues/32934) Cluster explorer and websocket connection broken after upgrading to rancher 2.5.8 (fine with 2.5.7)
+* [#32898](https://github.com/rancher/rancher/issues/32898) rancher operator is created rancher-operator-system which is not installed in System project 
+* [#32045](https://github.com/rancher/rancher/issues/32045) Access control cache sees issue when adding namespaces
+* [#31810](https://github.com/rancher/rancher/issues/31810) [CatalogV2] rancher-logging helm chart - Splunk certificate issue
+* [#31982](https://github.com/rancher/rancher/issues/31982) RBAC project role (caching?) issue in Rancher v2.5 Cluster Explorer
+* [#30959](https://github.com/rancher/rancher/issues/30959) Cluster goes to unavailable because failed to communicate with API server: i/o timeout
 -----
 
 -----
@@ -1182,6 +1285,102 @@ RancherD was introduced in 2.5 as an easy-to-use installation binary. With the i
     - Reinstalling Rancher 2.5.x on the same cluster may fail due to a lingering `rancher.cattle.io.` MutatingWebhookConfiguration object from a previous installation. Manually deleting it will resolve the issue.  
   - **Docker installs:** There are UI issues around startup time. See [#28800](https://github.com/rancher/rancher/issues/28800) and [#28798](https://github.com/rancher/rancher/issues/28798).
 
+
+## All issues in v2.5.10 milestone
+
+* [#35131](https://github.com/rancher/rancher/issues/35131) Validate Rocky Linux 8.4
+* [#35130](https://github.com/rancher/rancher/issues/35130) Validate Open SUSE Leap 15.3
+* [#35093](https://github.com/rancher/rancher/issues/35093) [vsphere csi] chart will not install on multi-node setup -> taints are not being removed by cpi chart
+* [#35079](https://github.com/rancher/rancher/issues/35079) Fleet - can't assign clusters to other workspaces after upgrade to v2.5.10-rc4
+* [#35050](https://github.com/rancher/rancher/issues/35050) [Backup-restore] error syncing 'c-89d82/m-4067aa68dd78' is seen for every few minutes upon a restore when a cluster with a finalizer added to a node is removed before backup 
+* [#34980](https://github.com/rancher/rancher/issues/34980) Rancher stuck in Fatal Error (crashing) loop after a harvester cluster is imported  `[FATAL] k3s exited with: exit status 1`
+* [#34977](https://github.com/rancher/rancher/issues/34977) [2.5] Update vSphere CPI
+* [#34961](https://github.com/rancher/rancher/issues/34961) Errors seen after hosted rancher is upgraded to 2.6 and is managing a 2.5 rancher setup
+* [#34952](https://github.com/rancher/rancher/issues/34952) [Backport] Hosted clusters are not deployed on Rancher Hosted setup after upgrade
+* [#34912](https://github.com/rancher/rancher/issues/34912) [Backport 2.5] Rancher crashes after adding a catalog containing a chart with missing name and version
+* [#34877](https://github.com/rancher/rancher/issues/34877) [v2.5.10] Backport: '"unable to create impersonator account ... serviceaccounts not found" error after upgrade from 2.5.9 to 2.6.0'
+* [#34828](https://github.com/rancher/rancher/issues/34828) [v2.5.10] Backport: "helm upgrade/delete intermittently fails with errors like "unable to create impersonator account: error setting up impersonation for user u-xxxxx..Operation cannot be fulfilled on clusterroles.rbac.authorization.k8s.io \"cattle-impersonation-u-8j72f\": the object has been modified; please apply your changes to the latest version and try again.""
+* [#34797](https://github.com/rancher/rancher/issues/34797) vSphere provider CSI should allow setting volume expansion
+* [#34751](https://github.com/rancher/rancher/issues/34751) [vsphere-csi] Allow controller to recover if underlying node becomes unavailable
+* [#34632](https://github.com/rancher/rancher/issues/34632) [v2.5] KDM Update for K8s September patch release
+* [#34630](https://github.com/rancher/rancher/issues/34630) [2.5] Update vSphere CSI to latest upstream
+* [#34627](https://github.com/rancher/rancher/issues/34627) [2.5] back port multiple fixes for rancher-backup
+* [#34554](https://github.com/rancher/rancher/issues/34554) [2.5]Corrupted Backup - No Restore Rancher Management Cluster / Rancher Server
+* [#34553](https://github.com/rancher/rancher/issues/34553) [2.5] [backport] rke2 downstream clusters fail to come active when we perform restore with migration to a new rancher server
+* [#34467](https://github.com/rancher/rancher/issues/34467) [2.5] [Backport] Rancher backup charts backs up rancher deployment
+* [#34466](https://github.com/rancher/rancher/issues/34466) [2.5] [backport] [rancher-backup]  Restore fails on a rollback in the same rancher setup with error "Failed to find system chart fleet will try again in 5 seconds" and Rancher UI is not accessible
+* [#34454](https://github.com/rancher/rancher/issues/34454) [v2.5.10] Backport: "unable to create impersonator account: error getting service account token: serviceaccounts \"cattle-impersonation-system/cattle-impersonation-user-dxx4g\" not found - Error seen for Monitoring and Istio v1 charts and when using downloaded kubeconfig
+* [#34453](https://github.com/rancher/rancher/issues/34453) [2.5] [Backport] service "rancher-webhook" not found error when helm install rancher 
+* [#34383](https://github.com/rancher/rancher/issues/34383) [Backport - 2.5] Validate the latest cert-manager in Rancher server helm chart to the latest version
+* [#34320](https://github.com/rancher/rancher/issues/34320) [2.5] [Backport] [Rancher-webhook] Add support for hardened cluster
+* [#34214](https://github.com/rancher/rancher/issues/34214) [2.5.x] Update xip.io to sslip.io
+* [#34150](https://github.com/rancher/rancher/issues/34150) [release task] Feature charts 2.5 branch
+* [#34141](https://github.com/rancher/rancher/issues/34141) [v2.5.10] Backport: Not able to deploy clusters when external auth provider is enabled
+* [#34140](https://github.com/rancher/rancher/issues/34140) [v2.5.10] Backport: Warnings "will not create impersonation account on cluster" seen on rancher startup
+* [#34084](https://github.com/rancher/rancher/issues/34084) [Backport - v2.5.10]: RKE1 with calico and project network isolation breaks ingress controller to pod communication
+* [#34074](https://github.com/rancher/rancher/issues/34074) rancher-images.txt for rancher 2.5.8 and 2.5.9 is missing docker.io/rancher/kubectl:v1.18.6 -> uninstall crd job fails in image pull due to that
+* [#34026](https://github.com/rancher/rancher/issues/34026) [v2.5] KDM Update for K8s August patch release
+* [#33958](https://github.com/rancher/rancher/issues/33958) [2.5] Backport: Unable to view resources in downstream clusters when my user is associated with a group from an external auth provider
+* [#33940](https://github.com/rancher/rancher/issues/33940) [v2.5.10] Backport: [Logging v2] Ensure Windows paths match internal standards
+* [#33939](https://github.com/rancher/rancher/issues/33939) [v2.5.10] Backport: [Logging v2] - win-agent-rke invalid volume specification when using a non default win_prefix_path
+* [#33938](https://github.com/rancher/rancher/issues/33938) [v2.5.10] Backport: Switch K3S to Journald login plugin for control plane logs.
+* [#33937](https://github.com/rancher/rancher/issues/33937) [v2.5.10] Backport: [Logging v2] Make strip underscores optional in journald logging config
+* [#33936](https://github.com/rancher/rancher/issues/33936) [v2.5.10] Backport: K3S logs don't always have timestamps
+* [#33935](https://github.com/rancher/rancher/issues/33935) [v2.5.10] Backport: RKE2 cluster control plane log do not have metadata fields such as "time" and "pod id"
+* [#33934](https://github.com/rancher/rancher/issues/33934) [v2.5.10] Backport: Collect k3s-agent.service logs in addition to k3s.service
+* [#33933](https://github.com/rancher/rancher/issues/33933) [v2.5.10] Backport: Support configuration of multiple replicas for Rancher-logging chart components such as fluentd
+* [#33876](https://github.com/rancher/rancher/issues/33876) [backport] Downstream clusters on an upgrade to master-head are going into updating state 
+* [#33814](https://github.com/rancher/rancher/issues/33814) RoleBinding creation logs not outputting binding namespace
+* [#33780](https://github.com/rancher/rancher/issues/33780) [v2.5] RKE v1.2.10 defaults to kubernetes v1.20.8
+* [#33762](https://github.com/rancher/rancher/issues/33762) [Backport] Rancher 2.5 (Single Install) not starting after nf_conntrack_max value adjustment
+* [#33697](https://github.com/rancher/rancher/issues/33697) [Backport] Nodes fail to update, with cluster stuck in Upgrading state when attempting to update private registry details in Rancher provisioned cluster
+* [#33682](https://github.com/rancher/rancher/issues/33682) [v2.5 Backport] Manually created duplicate rolebindings are not cleaned up when Rancher is upgraded to 2.5.8
+* [#33673](https://github.com/rancher/rancher/issues/33673) [v2.5] KDM release: k8s july patches
+* [#33659](https://github.com/rancher/rancher/issues/33659) [2.5] Rancher deployed Apps incorrectly add io.cattle.field/appId to NetworkPolicy selector specification 
+* [#33624](https://github.com/rancher/rancher/issues/33624) [Backport] Worker requirement logging not seen on custom cluster
+* [#33596](https://github.com/rancher/rancher/issues/33596) [2.5] Global DNS app gets uninstalled/removed immediately after install due to OwnerReferences cleanup in k8s v1.20
+* [#33528](https://github.com/rancher/rancher/issues/33528) New charts in v2.5.10
+* [#33497](https://github.com/rancher/rancher/issues/33497) [Backport] v2.5: Adding label to EKS managed node group results in continual error
+* [#33458](https://github.com/rancher/rancher/issues/33458) [Backport 2.5] Ability to specify network tags for node pools in GKE cluster
+* [#33442](https://github.com/rancher/rancher/issues/33442) [Backport 2.5, Monitoring V2] Remove pre-install job in favor of Helm annotations
+* [#33420](https://github.com/rancher/rancher/issues/33420) [Backport 2.5, Monitoring V2] Add pushprox for kubelet and node-exporter
+* [#33415](https://github.com/rancher/rancher/issues/33415) [backport 2.5] Ability to specify network tags for node pools in GKE cluster
+* [#33412](https://github.com/rancher/rancher/issues/33412) Validate CentOS 8.4 in v2.5.x
+* [#33411](https://github.com/rancher/rancher/issues/33411) Validate Oracle Linux 8.4 in v2.5.x
+* [#33410](https://github.com/rancher/rancher/issues/33410) Validate RHEL 8.4 in v2.5.x
+* [#33357](https://github.com/rancher/rancher/issues/33357) [Backport 2.5] Add EKS v1.19 
+* [#33351](https://github.com/rancher/rancher/issues/33351) [Backport Monitoring V2] Rebase to kube-prometheus-stack 16.x.x
+* [#33348](https://github.com/rancher/rancher/issues/33348) [2.5.10][Backport] Rancher chart post-delete hook fails on hardened cluster
+* [#33172](https://github.com/rancher/rancher/issues/33172) [2.5 backport] KEv2 - Support Install on Hardened Cluster
+* [#33171](https://github.com/rancher/rancher/issues/33171) [2.5 backport] KEv2- Ensure CIS hardened profile scan passes
+* [#33156](https://github.com/rancher/rancher/issues/33156) [2.5.10] Reduce size of v3.Catalog objects
+* [#33154](https://github.com/rancher/rancher/issues/33154) [2.5] GKEv2 Access scopes for NP: "access to all Cloud APIs" & "Set access for each API"- not getting enabled
+* [#33153](https://github.com/rancher/rancher/issues/33153) [2.5] GKE and EKS, some fields not working fine using rancher go cli
+* [#33152](https://github.com/rancher/rancher/issues/33152) [2.5] GKE Operator Only Issues
+* [#33068](https://github.com/rancher/rancher/issues/33068) [2.5][Backport] Rancher chart post-delete hook fails on hardened cluster
+* [#33053](https://github.com/rancher/rancher/issues/33053) Unable to deploy EKS or GKE on hosted Rancher
+* [#33039](https://github.com/rancher/rancher/issues/33039) [backport 2.5.10] share-mnt container keep restarting
+* [#33015](https://github.com/rancher/rancher/issues/33015) Backport 2.5: [monitoring v2] sometimes unable to upgrade from 9.4.202 -> 14.5.100, workaround to upgrade a 2nd time
+* [#33014](https://github.com/rancher/rancher/issues/33014) Backport 2.5: Rancher-monitoring installation fails on fresh cluster with crd error
+* [#33013](https://github.com/rancher/rancher/issues/33013) Backport Grafana PV validation to 2.5
+* [#32905](https://github.com/rancher/rancher/issues/32905) [2.5 Backport]  Upstream Kubernetes Deprecation: Controller Manager & Scheduler show as Unhealthy in clusters that do not have component status for them (Azure, Tectonic among others)
+* [#32903](https://github.com/rancher/rancher/issues/32903) [Backport] KEv2 operators should get the same ca-additional as the Rancher deployment
+* [#32879](https://github.com/rancher/rancher/issues/32879) [Backport] 2.5.x pushprox-kube-etcd-client does not tolerate node-role.kubernetes.io/master:NoSchedule taint
+* [#32842](https://github.com/rancher/rancher/issues/32842) [Release task] Feature charts release tasks
+* [#32691](https://github.com/rancher/rancher/issues/32691) [Backport] - TTL Token values not respected on External SAML Auth 
+* [#32683](https://github.com/rancher/rancher/issues/32683) [Backport] Enhance agent logging on worker requirement
+* [#32682](https://github.com/rancher/rancher/issues/32682) [Backport] Rancher keeps stale data in /var/lib/rancher/management-state/rke
+* [#32665](https://github.com/rancher/rancher/issues/32665) [Back port] [Rancher Alerting Drivers] Support Hardened Cluster
+* [#32609](https://github.com/rancher/rancher/issues/32609) [backport] gke and eks operators api *string type doesn't match at generated rancher go cli
+* [#32607](https://github.com/rancher/rancher/issues/32607) [2.5] Backport Kubernetes component status filter
+* [#32606](https://github.com/rancher/rancher/issues/32606) [Backport] ingress-nginx in Prometheus Targets of a cluster are down when port 10254 is not open monitoring v2 is enabled 
+* [#32585](https://github.com/rancher/rancher/issues/32585) Setting MaxPodsConstraint for GKE operator fails
+* [#32547](https://github.com/rancher/rancher/issues/32547) Rancher operator fails to deploy on CIS hardened RKE cluster
+* [#32149](https://github.com/rancher/rancher/issues/32149) Global/restricted admin unable to create an EKS cluster in hosted Rancher tenant
+* [#32111](https://github.com/rancher/rancher/issues/32111) Update rancher-images generator to support feature charts min/max
+* [#33128](https://github.com/rancher/rancher/issues/33128) [Backport] Kubernetes components are not restarted after updating cloud provider config file
+* [#31154](https://github.com/rancher/rancher/issues/31154) AKS spinup in switzerlandnorth fails
+* [#30126](https://github.com/rancher/rancher/issues/30126) Deploy ingress-nginx ServiceMonitor in Rancher v2.5 for scraping by Monitoring v2
 -----
 # Release v2.5.9
 
@@ -1316,6 +1515,26 @@ Existing GKE clusters and imported clusters will continue to operate as-is. Only
 
 **Important**: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
 
+
+## All issues in v2.5.9 milestone
+
+* [#33590](https://github.com/rancher/rancher/issues/33590) CVE-2021-25318 - ApiGroup not properly specified when creating Kubernetes RBAC resources
+* [#33589](https://github.com/rancher/rancher/issues/33589) CVE-2021-25320 - Cloud credentials can be used through Rancher's proxy by users without access
+* [#33588](https://github.com/rancher/rancher/issues/33588) CVE-2021-31999 - Privilege escalation vulnerability via malicious "Connection" header in Rancher v2.5.8
+* [#33557](https://github.com/rancher/rancher/issues/33557) New charts in v2.5.9
+* [#33523](https://github.com/rancher/rancher/issues/33523) [2.5] gke v1/v2 - getting error 500 for us-central1 region
+* [#33475](https://github.com/rancher/rancher/issues/33475) Add k8s 1.20 as an option for EKS
+* [#33429](https://github.com/rancher/rancher/issues/33429) GlobalRoleBinding deletion by garbagecollector causing panic in rancher-webhook
+* [#33286](https://github.com/rancher/rancher/issues/33286) Backport: RoleTemplates allowed to be created with no verbs
+* [#33277](https://github.com/rancher/rancher/issues/33277) GKE v1/v2: Backport to 2.5.9 - privateClusterConfig defaults
+* [#33256](https://github.com/rancher/rancher/issues/33256) [2.5.9] Reduce size of v3.Catalog objects
+* [#33180](https://github.com/rancher/rancher/issues/33180) [backport] Services not removed after deleting workload
+* [#32873](https://github.com/rancher/rancher/issues/32873) [Backport 2.5] CleanupDuplicateBindings blocks rancher startup
+* [#32826](https://github.com/rancher/rancher/issues/32826) [Backport] Audit etcd backup logs
+* [#32681](https://github.com/rancher/rancher/issues/32681) [Backport] Creating cluster with multiple nodes, some of the nodes remain in Active until the other nodes provision
+* [#32154](https://github.com/rancher/rancher/issues/32154) Error while registering new clusters to Rancher (ClusterRoleBinding.rbac.authorization.k8s.io "globaladmin-u-tmzgkab7gh" is invalid: subjects[0].name: Required value )
+* [#31999](https://github.com/rancher/rancher/issues/31999) After Rancher upgrade new clusters are up but the nodes will be stuck at "waiting to register"
+* [#27306](https://github.com/rancher/rancher/issues/27306) Removing in-tree vSphere vCenter server entries does not propagate
 -----
 
 -----
@@ -1529,6 +1748,278 @@ Existing GKE clusters and imported clusters will continue to operate as-is. Only
 
 **Important**: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
 
+
+## All issues in v2.5.8 milestone
+
+* [#32538](https://github.com/rancher/rancher/issues/32538) Validate fleet and logging work after deploying wins_upgrader
+* [#32530](https://github.com/rancher/rancher/issues/32530) [monitoring v2] Windows-exporter deploys on linux clusters when installing monitoring
+* [#32522](https://github.com/rancher/rancher/issues/32522) Registration command for windows nodes is not available when edit cluster --> and select Edit as Yaml
+* [#32521](https://github.com/rancher/rancher/issues/32521) Edit as Form/Yaml button seen in Custom cluster in the registration page
+* [#32499](https://github.com/rancher/rancher/issues/32499) monitoring v2 fails too deploy after disabling monitoring v1 on a cluster
+* [#32493](https://github.com/rancher/rancher/issues/32493) GKE V2 - No API error when adding second node pool with duplicate name
+* [#32473](https://github.com/rancher/rancher/issues/32473) Better message to be displayed when a GKEv2 cluster is upgrading
+* [#32467](https://github.com/rancher/rancher/issues/32467) No error displayed when no nodepool name is entered during an Edit of a GKEv2 cluster 
+* [#32460](https://github.com/rancher/rancher/issues/32460) Drop old Logging v2 charts
+* [#32447](https://github.com/rancher/rancher/issues/32447) Error when editing an RKE cluster as a cluster owner.
+* [#32446](https://github.com/rancher/rancher/issues/32446) [GKE] Added cluster owner cannot edit cluster without providing cloud credential.
+* [#32441](https://github.com/rancher/rancher/issues/32441) Added cluster owner for GKEv2 and EKSv2 clusters cannot make edits
+* [#32439](https://github.com/rancher/rancher/issues/32439) Default Location type selected for GKEv2 is different for a hosted vs imported cluster
+* [#32436](https://github.com/rancher/rancher/issues/32436) rancher-post-delete workload missing `/` in image, causes fail to pull image
+* [#32435](https://github.com/rancher/rancher/issues/32435) GKEv2- NP labels not getting set
+* [#32433](https://github.com/rancher/rancher/issues/32433) gkeV2- Labels field at cluster level, is missing 
+* [#32430](https://github.com/rancher/rancher/issues/32430) gkev2UI- description field missing
+* [#32428](https://github.com/rancher/rancher/issues/32428) v2 CIS Benchmark stuck when creating security-scan-runner pod after triggering a scan
+* [#32409](https://github.com/rancher/rancher/issues/32409) [GKE] Rancher cannot connect to GKE cluster created using Terraform
+* [#32404](https://github.com/rancher/rancher/issues/32404) [ui] Make message for custom cluster requiring all three roles more visible 
+* [#32402](https://github.com/rancher/rancher/issues/32402) rancher/wins:v0.1.0 missing for the wins-upgrader chart in v2.5.8-rc10
+* [#32369](https://github.com/rancher/rancher/issues/32369) Longhorn charts 1.1.1
+* [#32360](https://github.com/rancher/rancher/issues/32360) Error seen - "Error 400: Current master version can only be set to one of "REGULAR" channel supported versions [1.18.16-gke.502, 1.18.16-gke.2100, 1.19.8-gke.1600]" on k8s upgrade of a GKEv2 cluster
+* [#32359](https://github.com/rancher/rancher/issues/32359) Incorrect maxNodeCount and minNodeCount seen for an import GKEv2 cluster
+* [#32357](https://github.com/rancher/rancher/issues/32357) [monitoring v2] grafana workloads dashboard shows memory in GiB, should be MiB
+* [#32351](https://github.com/rancher/rancher/issues/32351) GKEv2UI: should not show Subnetwork Name as mandatory
+* [#32350](https://github.com/rancher/rancher/issues/32350) Missing Images in rancher-images.txt on 2.5.8-rc10 when using image list for use with rancher HA AG setup
+* [#32347](https://github.com/rancher/rancher/issues/32347) GKEv2UI: support for 1.20 k8s version 
+* [#32346](https://github.com/rancher/rancher/issues/32346) GKEv2UI- will be nice to match Secondary CIDER Range names with that used in GCP
+* [#32344](https://github.com/rancher/rancher/issues/32344) [Logging v2] - container miss security context after daemonset re-deploy from Rancher
+* [#32339](https://github.com/rancher/rancher/issues/32339) All k8s versions for GKEv2 to be shown in dropdown for an edit cluster
+* [#32328](https://github.com/rancher/rancher/issues/32328) [Logging v2] - dockerRootDirectory is applied to Linux workloads make possible to setup this for Windows nodes
+* [#32323](https://github.com/rancher/rancher/issues/32323) rancher/mirrored-fluent-fluent-bit:1.6.10 missing in rancher-images.txt in v2.5.8-rc9
+* [#32321](https://github.com/rancher/rancher/issues/32321) [monitoring v2] windows exporter fails to come up: json error on check-wins-version pod
+* [#32320](https://github.com/rancher/rancher/issues/32320) [Logging v2] fails to install/upgrade to 3.9.400 on non-Windows clusters
+* [#32318](https://github.com/rancher/rancher/issues/32318) New catalogs do not log `downloading` new charts
+* [#32317](https://github.com/rancher/rancher/issues/32317) Fleet agents bundle on ErrApplied state after upgrade to `v2.5.8-rc9`
+* [#32312](https://github.com/rancher/rancher/issues/32312) [GKE] Error when upgrading GKEv1 cluster to 1.19
+* [#32303](https://github.com/rancher/rancher/issues/32303) GKEv2UI- for private clusters, we should make cluster registration command easily available  
+* [#32298](https://github.com/rancher/rancher/issues/32298) Cannot import k3s v1.21
+* [#32296](https://github.com/rancher/rancher/issues/32296) [rancher alerting drivers]  add links to the upstream examples
+* [#32292](https://github.com/rancher/rancher/issues/32292) [GKE] Cannot get out of error when cluster is provisioned with the same name
+* [#32290](https://github.com/rancher/rancher/issues/32290) Feature charts with Windows images do not have those included in rancher-windows-images.txt
+* [#32286](https://github.com/rancher/rancher/issues/32286) ISTIO kiali graph for egress gateway are not displayed when workloads are created from dashboard
+* [#32282](https://github.com/rancher/rancher/issues/32282) Enable "Auto upgrade" and "Auto repair" for imported GKE by default and add documentation
+* [#32280](https://github.com/rancher/rancher/issues/32280) [rancher-wins-upgrader] rancher/wins image doesn't show up in air gapped setups
+* [#32274](https://github.com/rancher/rancher/issues/32274) [Monitoring V2] Provide a way to prevent deploying Windows components on Windows clusters
+* [#32265](https://github.com/rancher/rancher/issues/32265) rancher/windows_exporter-package missing from rancher-windows-images.txt
+* [#32264](https://github.com/rancher/rancher/issues/32264) [Logging v2] Provide option to only collect Linux node logs on Windows Clusters
+* [#32252](https://github.com/rancher/rancher/issues/32252) Istio after successful installation is not showing istio in the dropdown 
+* [#32251](https://github.com/rancher/rancher/issues/32251) gkev2 UI- User should not be able to "disable Master authorized networks", if private endpoint is enabled
+* [#32249](https://github.com/rancher/rancher/issues/32249) [rancher alerting drivers] Upgrading chart does not deploy configmap for newly selected provider
+* [#32242](https://github.com/rancher/rancher/issues/32242) [UI] Import cluster doesn't show registration command after specifying additional environment variables
+* [#32241](https://github.com/rancher/rancher/issues/32241) gkev2- setting enablePrivateEndpoint=false, results in enablePrivateEndpoint=true
+* [#32225](https://github.com/rancher/rancher/issues/32225) [Monitoring v2] prometheus rules reset on upgrade
+* [#32216](https://github.com/rancher/rancher/issues/32216) RKE Cluster gets Upgraded after upgrade from Rancher v2.4.8 
+* [#32211](https://github.com/rancher/rancher/issues/32211) Unable to deploy v1 logging on hosted GKEv2 - log-aggregator unable to mkdir on read-only file system
+* [#32207](https://github.com/rancher/rancher/issues/32207) "Services CIDR range is smaller than minimum (14 < 16)" error seen on GKEv2 cluster
+* [#32201](https://github.com/rancher/rancher/issues/32201) [monitoring v2] can't install monitoring on hosted eks/gks/aks cluster
+* [#32196](https://github.com/rancher/rancher/issues/32196) [GKE] Cannot switch cloud credentials for imported cluster
+* [#32195](https://github.com/rancher/rancher/issues/32195) GKEv2UI- sets createSubnetwork to true for shared vpc
+* [#32194](https://github.com/rancher/rancher/issues/32194) rancher-monitoring-windows-exporter fails to deploy on a windows cluster with win_prefix_path set
+* [#32190](https://github.com/rancher/rancher/issues/32190) [GKE] Logging and monitoring are automatically enabled
+* [#32184](https://github.com/rancher/rancher/issues/32184) Add Docker 20.10.6
+* [#32176](https://github.com/rancher/rancher/issues/32176) [KEv2][UI] Node autoscaling is mislabeled
+* [#32173](https://github.com/rancher/rancher/issues/32173) [v2.5] KDM release: k8s april patches
+* [#32172](https://github.com/rancher/rancher/issues/32172) [GKE] Adding a node pool with the same name locks naming field
+* [#32169](https://github.com/rancher/rancher/issues/32169) [GKE] Horizonatal Pod Autoscaling defaults to 0 nodes
+* [#32167](https://github.com/rancher/rancher/issues/32167) [GKEv2] [UI] Cannot update image types in node pools independently
+* [#32161](https://github.com/rancher/rancher/issues/32161) GKEv2UI- can have a better way to handle updates to a cluster with wrong parameters 
+* [#32152](https://github.com/rancher/rancher/issues/32152) Not able to install rancher-backup chart
+* [#32150](https://github.com/rancher/rancher/issues/32150) [GKE] Editing cluster during provisioning should not show register command
+* [#32148](https://github.com/rancher/rancher/issues/32148) [GKE] Logging and monitoring cannot be set independently
+* [#32146](https://github.com/rancher/rancher/issues/32146) [rancher/charts] Modify released/ directory to contain release-v2.5 + dev-v2.5 contents and drop old RCs
+* [#32145](https://github.com/rancher/rancher/issues/32145) [monitoring v2] not installing correctly on RKE2 -- ingress-nginx not deploying
+* [#32143](https://github.com/rancher/rancher/issues/32143) [GKE] Node pool k8s version does not change with the cluster k8s version during cluster create
+* [#32141](https://github.com/rancher/rancher/issues/32141) GKEv2- cannot upgrade k8version of CP and NP at the same time
+* [#32136](https://github.com/rancher/rancher/issues/32136) GKEv2UI - it will be nice if by default, Network and Subnet is set to default
+* [#32135](https://github.com/rancher/rancher/issues/32135) gkev2 UI shows Kubernetes Version as Can't Downgrade even before saving a version
+* [#32131](https://github.com/rancher/rancher/issues/32131) rancher-wins-upgrader app is available on Linux clusters
+* [#32124](https://github.com/rancher/rancher/issues/32124) Unable to provision GKE cluster from Rancher UI on upgraded upstream cluster
+* [#32116](https://github.com/rancher/rancher/issues/32116) Rancher pod restarts on 2.5.8-rc3 with ""chart-default-branch" already exists" and "secrets "tls-rancher-internal-ca" already exists"
+* [#32112](https://github.com/rancher/rancher/issues/32112) Etcd logs are not being shipped over from RKE1 cluster to endpoint.
+* [#32106](https://github.com/rancher/rancher/issues/32106) Change Network Provider Dropdown to indicate PNI is available for additional RKE CNIs
+* [#32105](https://github.com/rancher/rancher/issues/32105) Duplicate crb seen on the server after upgrading from 2.4.15 to 2.5-head
+* [#32102](https://github.com/rancher/rancher/issues/32102) GKEv2 UI should allow to select Node Pool's k8s version
+* [#32101](https://github.com/rancher/rancher/issues/32101) [Monitoring V2] Set security.allow_embedding to true
+* [#32098](https://github.com/rancher/rancher/issues/32098) GKEv2 UI should have Zonal Location type as default, instead of Regional
+* [#32092](https://github.com/rancher/rancher/issues/32092) Workload test hits rate limit for Dockerhub
+* [#32087](https://github.com/rancher/rancher/issues/32087) GKEv2 cluster in error state in GCE console, switches between Provisioning state and Error state in Rancher.
+* [#32084](https://github.com/rancher/rancher/issues/32084) [log] View log repeat output
+* [#32082](https://github.com/rancher/rancher/issues/32082) createSubnetwork is set to true by default when deploying a hosted GKEv2 cluster
+* [#32081](https://github.com/rancher/rancher/issues/32081) system project pod restarts in a HA rancher server setup
+* [#32068](https://github.com/rancher/rancher/issues/32068) GKE v2 UI, cannot Edit a registred cluster 
+* [#32065](https://github.com/rancher/rancher/issues/32065) [GKE v2] Deleting registered clusters in Rancher may delete the cluster from GKE
+* [#32060](https://github.com/rancher/rancher/issues/32060) GKEv2 UI, Doesn't show node pools for registered clusters
+* [#32059](https://github.com/rancher/rancher/issues/32059) GKEv2 UI, shows old k8s version on Edit Cluster page when registering an existing GKE v2 cluster
+* [#32058](https://github.com/rancher/rancher/issues/32058) Google Account Access requires Google Project Id, even though CC already contains Project ID
+* [#32057](https://github.com/rancher/rancher/issues/32057) [EKS] Cannot change launch template version
+* [#32046](https://github.com/rancher/rancher/issues/32046) servicesSecondaryRangeName and clusterSecondaryRangeName fields values are set during GKE v2 cluster creation
+* [#32044](https://github.com/rancher/rancher/issues/32044) Not able to select a region other than the default for an Imported GKE v2 cluster
+* [#32032](https://github.com/rancher/rancher/issues/32032) [GKE v2] Cluster Provisioning Fails with masterIpv4CidrBlock unset
+* [#32031](https://github.com/rancher/rancher/issues/32031) [Cluster-Manager] No Access to Cluster Registration Command After Adding First Node
+* [#32030](https://github.com/rancher/rancher/issues/32030) [gke v2] Update Translations Links to Private Custer Provisioning Docs
+* [#32024](https://github.com/rancher/rancher/issues/32024) Monitoring v2 14.5.100-rcx fails to install with error "Error: configmaps "rancher-monitoring-etcd" already exists" 
+* [#32021](https://github.com/rancher/rancher/issues/32021) [Logging v2] Collect RKE node logs on Windows
+* [#32020](https://github.com/rancher/rancher/issues/32020) GKEv2 CC creation gets stuck on validation, when an invalid json used
+* [#32016](https://github.com/rancher/rancher/issues/32016) Manifest unknown when pulling fluent-bit Windows image and missing from rancher-windows-images.txt
+* [#32010](https://github.com/rancher/rancher/issues/32010) Back-off pulling image "rancher/library-nginx:1.19.9-alpine"
+* [#32004](https://github.com/rancher/rancher/issues/32004) Wrong UI in EKS cluster edit
+* [#32002](https://github.com/rancher/rancher/issues/32002) cluster goes into updating state after rancher upgrade
+* [#31998](https://github.com/rancher/rancher/issues/31998) kubectl launch fails on a downstream cluster
+* [#31995](https://github.com/rancher/rancher/issues/31995) Longhorn images not included in rancher-images.txt
+* [#31994](https://github.com/rancher/rancher/issues/31994) [monitoring v2] windows monitoring-windows-exporter pods in crashloopback: failed to connect to proxy
+* [#31993](https://github.com/rancher/rancher/issues/31993) [monitoring v2] windows rancher-monitoring-crd-create in crashloopback on clean install of 14.5.100-rcX
+* [#31991](https://github.com/rancher/rancher/issues/31991) [monitoring v2] cannot install newest version 14.5.100-rcXX
+* [#31990](https://github.com/rancher/rancher/issues/31990) Grafana graphs showing `value`, but should show instance
+* [#31986](https://github.com/rancher/rancher/issues/31986) [GKE V2] Cluster stuck in updating state "Waiting for nodes"
+* [#31983](https://github.com/rancher/rancher/issues/31983) Google cloud credential not available on v2.5
+* [#31980](https://github.com/rancher/rancher/issues/31980) Can't launch machine in AWS ME region 
+* [#31979](https://github.com/rancher/rancher/issues/31979) Update Kiali to 1.32.0
+* [#31974](https://github.com/rancher/rancher/issues/31974) tag rancher webhook as non-alpha 
+* [#31972](https://github.com/rancher/rancher/issues/31972) [monitoring v2] when PV template is used with grafana, upgrade should default to use the PVC already created from said tempate
+* [#31958](https://github.com/rancher/rancher/issues/31958) "Unexpected end of JSON input" error seen when deploying a GKE v2 cluster through API
+* [#31953](https://github.com/rancher/rancher/issues/31953) [monitoring v2] instance reported to prometheus is using pod IP, should use node IP
+* [#31952](https://github.com/rancher/rancher/issues/31952) [GKE V2] Importing Cluster Fails with Duplicate Secret Message
+* [#31950](https://github.com/rancher/rancher/issues/31950) EKS cluster cannot recover from error state
+* [#31945](https://github.com/rancher/rancher/issues/31945) Validate v1 and v2 charts for SLES 15 SP1
+* [#31942](https://github.com/rancher/rancher/issues/31942) [Monitoring V2] Use global.cattle.windows.enabled for windowsExporter
+* [#31925](https://github.com/rancher/rancher/issues/31925) Logging v2 chart fails to deploy
+* [#31923](https://github.com/rancher/rancher/issues/31923) Monitoring V2 on windows can't upgrade to include windowsExporter.enabled=true
+* [#31921](https://github.com/rancher/rancher/issues/31921) [Monitoring V2] Persist dashboards for Rancher Cluster Overview in Grafana
+* [#31920](https://github.com/rancher/rancher/issues/31920) [CIS Benchmark] CRD chart for 1.0.400 is missing
+* [#31919](https://github.com/rancher/rancher/issues/31919) Can't deploy the v2 charts as cluster owner on an SELinux enabled cluster
+* [#31909](https://github.com/rancher/rancher/issues/31909) Error after a k8s upgrade of the eksv2 cluster from EKS console
+* [#31908](https://github.com/rancher/rancher/issues/31908) Instance type is set for a nodegroup when Spot instances is set in a launch template in eksv2
+* [#31896](https://github.com/rancher/rancher/issues/31896) After creating a node group from EKS console, node group is not seen on cluster edit
+* [#31895](https://github.com/rancher/rancher/issues/31895) GKE: private endpoints
+* [#31888](https://github.com/rancher/rancher/issues/31888) Create Rancher SELinux RPM
+* [#31887](https://github.com/rancher/rancher/issues/31887) Upgrade of v2 monitoring helm chart is failing on windows cluster
+* [#31876](https://github.com/rancher/rancher/issues/31876) Given prefixPath of wins-upgrader is not considered
+* [#31874](https://github.com/rancher/rancher/issues/31874) Auth redirect logic change
+* [#31869](https://github.com/rancher/rancher/issues/31869) GKEv2 should support multi-arch
+* [#31860](https://github.com/rancher/rancher/issues/31860) Docs hyperlink on Rancher UI points to Archived docs
+* [#31858](https://github.com/rancher/rancher/issues/31858) Google node driver cluster creation option available
+* [#31844](https://github.com/rancher/rancher/issues/31844) Uninstall and re-install, wins-upgrader with disabled masquerade all windows-exporter pods are failing
+* [#31842](https://github.com/rancher/rancher/issues/31842) windows-exporter pods keep restarting until wins-upgrader is fully deployed on new 2.5.7 win node
+* [#31839](https://github.com/rancher/rancher/issues/31839) Validate vSphere Out Of Tree on an RKE Local cluster
+* [#31832](https://github.com/rancher/rancher/issues/31832) [Monitoring V2] Job label for windows-exporter should be windows-exporter, not kube-windows
+* [#31831](https://github.com/rancher/rancher/issues/31831) [Monitoring V2] Remove PrometheusRules translating windows-exporter to node-exporter
+* [#31827](https://github.com/rancher/rancher/issues/31827) windows_exporter upgrade fails on rancher/windows_exporter-package:v0.0.1 image already present
+* [#31927](https://github.com/rancher/rancher/issues/31927) rancher-wins-upgrader chart offers new install instead of upgrade
+* [#31811](https://github.com/rancher/rancher/issues/31811) Istio 1.7.8
+* [#31789](https://github.com/rancher/rancher/issues/31789) Rewrite GKEv2 cluster refresher
+* [#31784](https://github.com/rancher/rancher/issues/31784) unable to use kubectl, x509: certificate is valid for 127.0.0.1, 172.17.0.2, not rancher server ip errors
+* [#31772](https://github.com/rancher/rancher/issues/31772) Node stuck in unavailable state but the node pool is seen deleted
+* [#31770](https://github.com/rancher/rancher/issues/31770) Scale down does not delete the node from the backend - DO
+* [#31769](https://github.com/rancher/rancher/issues/31769) [Monitoring V2] Non-Helm dashboards in cattle-dashboards get cleaned up on an uninstall
+* [#31765](https://github.com/rancher/rancher/issues/31765) [2.5.7] Deleting a node pool does not delete all of the backend nodes
+* [#31761](https://github.com/rancher/rancher/issues/31761) Istio 1.8.4
+* [#31758](https://github.com/rancher/rancher/issues/31758) rancher-images.txt is missing ToolsSystemImages
+* [#31750](https://github.com/rancher/rancher/issues/31750) GKE operator can have "Enable auto-upgrade" flag for Node Pools
+* [#31742](https://github.com/rancher/rancher/issues/31742) Grafana graphs are not seen for Windows nodes
+* [#31740](https://github.com/rancher/rancher/issues/31740) rancher-windows-exporter is available in feature charts for a windows cluster
+* [#31733](https://github.com/rancher/rancher/issues/31733) [Forwardport]Private Registry authentication with no credentials fails 
+* [#31732](https://github.com/rancher/rancher/issues/31732) Monitoring V2 Grafana root_url not specified
+* [#31731](https://github.com/rancher/rancher/issues/31731) Logging v2 - rke logs not seen in Elasticsearch after upgrading to latest 3.9.x RC
+* [#31729](https://github.com/rancher/rancher/issues/31729) Rancher/rancher-agent out of date (latest available release is v2.4.8)
+* [#31726](https://github.com/rancher/rancher/issues/31726) Private registry not applied to all ACI network provider system images
+* [#31845](https://github.com/rancher/rancher/issues/31845) Rename Aliyun to Alicloud in Node Driver
+* [#31708](https://github.com/rancher/rancher/issues/31708) Bump EC2 AMI
+* [#31704](https://github.com/rancher/rancher/issues/31704) gke operator throws error after cluster creation if k8s version is not provided
+* [#31703](https://github.com/rancher/rancher/issues/31703) [cli] update CLI dependencies
+* [#31678](https://github.com/rancher/rancher/issues/31678) GKE operator: Update proxy calls
+* [#31667](https://github.com/rancher/rancher/issues/31667) use helm template to reduce the redundant label section in Rancher Helm chart
+* [#31663](https://github.com/rancher/rancher/issues/31663) Generate an images sources text file
+* [#31662](https://github.com/rancher/rancher/issues/31662) GKE Operator lets me create 2 clusters with the same subnetwork
+* [#31644](https://github.com/rancher/rancher/issues/31644) Update logging chart to 3.9.4
+* [#31635](https://github.com/rancher/rancher/issues/31635) "error while applying agent YAML for cluster" seen on a cluster edit when "agentEnvVars: []" 
+* [#31617](https://github.com/rancher/rancher/issues/31617) Rancher deployed Fleet doesn't persist workspace changes
+* [#31612](https://github.com/rancher/rancher/issues/31612) EKS Cluster Launch Failure - Invalid Base 64 User Encoding of user data.
+* [#31608](https://github.com/rancher/rancher/issues/31608) Editing EKS cluster during provisioning will cause cluster to stay in provisioning state
+* [#31607](https://github.com/rancher/rancher/issues/31607) [Monitoring V2] Add Rancher RoleTemplate with Project scope that links to monitoring-ui-view from chart
+* [#31630](https://github.com/rancher/rancher/issues/31630) Support providing restricted permissions to Monitoring UIs for a non-System Project member via native K8s
+* [#31594](https://github.com/rancher/rancher/issues/31594) New charts in v2.5.8
+* [#31579](https://github.com/rancher/rancher/issues/31579) New charts in 2.5.7
+* [#31550](https://github.com/rancher/rancher/issues/31550) vSphere CSI Chart - Out of tree cloud provider - Add an option to deploy `csi-resizer`
+* [#31539](https://github.com/rancher/rancher/issues/31539) Add Docker 20.10.4/20.10.5
+* [#31529](https://github.com/rancher/rancher/issues/31529) Custom Cluster edits do not update in registration command before clicking save
+* [#31514](https://github.com/rancher/rancher/issues/31514) Warning: CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+
+* [#31507](https://github.com/rancher/rancher/issues/31507) scaleDownTime set in future does not scale down the node
+* [#31504](https://github.com/rancher/rancher/issues/31504) Add rancher-wins-upgrader on rancher/charts
+* [#31503](https://github.com/rancher/rancher/issues/31503) Validate PostgreSQL 13.1 as a K3s backend
+* [#31499](https://github.com/rancher/rancher/issues/31499) Update Windows bootstrapping to support wins v0.1.x
+* [#31498](https://github.com/rancher/rancher/issues/31498) [Monitoring V2] Add Linux node-selectors / tolerations
+* [#31497](https://github.com/rancher/rancher/issues/31497) [Monitoring V2] Add rancher-windows-exporter
+* [#31493](https://github.com/rancher/rancher/issues/31493) Investigate how to setup and document Rancher integration with new PingFederate server
+* [#31461](https://github.com/rancher/rancher/issues/31461) GKE v2 Provisioner: add Register Cluster option
+* [#31431](https://github.com/rancher/rancher/issues/31431) Rancher "Error connecting to WebSocket" on login when using rke2 as local management cluster
+* [#31430](https://github.com/rancher/rancher/issues/31430) [cli] Cannot add groups as project roles using CLI
+* [#31422](https://github.com/rancher/rancher/issues/31422) agentEnvVars are being applied outside of the cluster they were added to
+* [#31412](https://github.com/rancher/rancher/issues/31412) [Monitoring V2] Support Grafana Dashboards in multiple namespaces across cluster
+* [#31411](https://github.com/rancher/rancher/issues/31411) [Monitoring V2] Create default Role for monitoring UI components + relevant Rancher RBAC pointing to it
+* [#31404](https://github.com/rancher/rancher/issues/31404) [2.4.x 2.5.x] After the certificate expires, the certificate cannot be automatically updated
+* [#31375](https://github.com/rancher/rancher/issues/31375) [rancherd] Bump RKE2 version - 1.20
+* [#31346](https://github.com/rancher/rancher/issues/31346) Add GCP cloud credentials in UI
+* [#31338](https://github.com/rancher/rancher/issues/31338) Project network isolation can be enabled if RKE network plugin supports network policies
+* [#31311](https://github.com/rancher/rancher/issues/31311) [Epic]: Logging and Rancher SELinux RPM
+* [#31309](https://github.com/rancher/rancher/issues/31309) Logging v2 aggregator should not write to the host for rke and rke2
+* [#31286](https://github.com/rancher/rancher/issues/31286) ReplicaSets deployed by Argo don't show their pods
+* [#31281](https://github.com/rancher/rancher/issues/31281) Add GKE to the resourceset for the rancher backup operator
+* [#31265](https://github.com/rancher/rancher/issues/31265) Istio 1.9.2
+* [#31264](https://github.com/rancher/rancher/issues/31264) Feature charts should have rancher min/max version
+* [#31221](https://github.com/rancher/rancher/issues/31221) [UI][KEv2] UI for GKE v2 Provisioner
+* [#31216](https://github.com/rancher/rancher/issues/31216) The default docker engine script 20.10.sh is not available in the drop down to select from
+* [#31501](https://github.com/rancher/rancher/issues/31501) Switch rke2charts to using new charts build scripts
+* [#31172](https://github.com/rancher/rancher/issues/31172) Unable to attach a persistent volume in vsphere in-tree cluster's workload in k8s 1.20
+* [#31158](https://github.com/rancher/rancher/issues/31158) Validate Postgresql 12.5 as a K3s backend
+* [#31148](https://github.com/rancher/rancher/issues/31148) [Monitoring] Fork wmi_exporter-package to windows_exporter-pkg
+* [#31132](https://github.com/rancher/rancher/issues/31132) Rancher docker install scripts are not working anymore on RHEL 7.x
+* [#31120](https://github.com/rancher/rancher/issues/31120) rancher-operator should not overwrite v3 cluster objects
+* [#31110](https://github.com/rancher/rancher/issues/31110) GKE Provisioner: set number of pods per node
+* [#31517](https://github.com/rancher/rancher/issues/31517) kev2: eks-operator arm64 support
+* [#31055](https://github.com/rancher/rancher/issues/31055) [UI] Refer to docs for Windows Server versioning
+* [#31043](https://github.com/rancher/rancher/issues/31043) EPIC: GKE Provisioner 
+* [#31011](https://github.com/rancher/rancher/issues/31011) GKE Provisioner: Handler
+* [#31010](https://github.com/rancher/rancher/issues/31010) GKE Provisioner: Sync
+* [#31009](https://github.com/rancher/rancher/issues/31009) GKE Provisioner: Cloud Credentials
+* [#31042](https://github.com/rancher/rancher/issues/31042) GKE Provisioner: Operator
+* [#30981](https://github.com/rancher/rancher/issues/30981) Add GCP cloud credential option
+* [#30977](https://github.com/rancher/rancher/issues/30977) Local k3s upgrade should not be allowed on single node install
+* [#30949](https://github.com/rancher/rancher/issues/30949) Logging is not working on Selinux enabled setups
+* [#30924](https://github.com/rancher/rancher/issues/30924) helm uninstall rancher leaves fleet, rancher operator, rancher webhook and helm operation remnants 
+* [#30864](https://github.com/rancher/rancher/issues/30864) Google Cloud Platform UI to be able to work with Shared VPC
+* [#30744](https://github.com/rancher/rancher/issues/30744) rancher-istio installation fails when clusters uses PodSecurityPolicies
+* [#30735](https://github.com/rancher/rancher/issues/30735) Launching kubectl/shell for the cluster doesn't use a private registry for the image
+* [#30608](https://github.com/rancher/rancher/issues/30608) Flannel Backend and Project Network Isolation input fields do NOT seem to have any value selected in Dark mode.
+* [#30565](https://github.com/rancher/rancher/issues/30565) The number of etcd snapshots saved in GCS exceeds the retention of backup_config
+* [#30471](https://github.com/rancher/rancher/issues/30471) Allow toleration customization of Fleet agent
+* [#30427](https://github.com/rancher/rancher/issues/30427) RKE cluster can not be accessed via UI if cni is set to none
+* [#30413](https://github.com/rancher/rancher/issues/30413) Am not getting relationship data back from api for Secrets & Configmaps
+* [#30401](https://github.com/rancher/rancher/issues/30401) Can't select groups with Okta integration
+* [#30383](https://github.com/rancher/rancher/issues/30383) [Logging v2] Handle log rotating kubelet logs in cloud providers GKE/AKS/EKS
+* [#30306](https://github.com/rancher/rancher/issues/30306) ADFS Auth fails with Invalid SAML Attributes
+* [#30211](https://github.com/rancher/rancher/issues/30211) CIS scan downstream cluster with project network isolation activated fails at 5.3.2 Hardended:
+* [#30172](https://github.com/rancher/rancher/issues/30172) git-remote-http defunct processes from cluster-register_cattle-cluster-agent
+* [#30234](https://github.com/rancher/rancher/issues/30234) Automate release Docker image digests using Drone plugin
+* [#30135](https://github.com/rancher/rancher/issues/30135) User created network policies are deleted when disabling Network project isolation on the cluster
+* [#29993](https://github.com/rancher/rancher/issues/29993) [Continuous Delivery] Fleet agent should work when running behind proxy
+* [#29973](https://github.com/rancher/rancher/issues/29973) [rancher/charts] assumeOwnershipOfCRDs fails when the ConfigMap is too big
+* [#29968](https://github.com/rancher/rancher/issues/29968) [Monitoring V2] Provide a way to send Rancher Proxy based external URLs
+* [#29951](https://github.com/rancher/rancher/issues/29951) [Monitoring V2] Add rancher-alerting-drivers
+* [#29932](https://github.com/rancher/rancher/issues/29932) Duplicate roleBindings being created
+* [#29871](https://github.com/rancher/rancher/issues/29871) [Monitoring V2] Rebase rancher-monitoring to kube-prometheus-stack 14.x.x
+* [#29821](https://github.com/rancher/rancher/issues/29821) Add validation for generated changes in ci script
+* [#29666](https://github.com/rancher/rancher/issues/29666) Not able to edit cluster for AWS CN
+* [#29247](https://github.com/rancher/rancher/issues/29247) Istio custom answers don't stay visible in UI and don't persist subsequent saves
+* [#29234](https://github.com/rancher/rancher/issues/29234) Cluster monitoring link takes the user to a 503 ClusterUnavailable page when the cluster is still provisioning.
+* [#28721](https://github.com/rancher/rancher/issues/28721) [Logging V2] Windows Support
+* [#28527](https://github.com/rancher/rancher/issues/28527) GKE Service Account is not updated
+* [#31451](https://github.com/rancher/rancher/issues/31451) [Monitoring V2] RFE: Ingress Controller Metrics
+* [#28327](https://github.com/rancher/rancher/issues/28327) EPIC [Monitoring V2] RFE: Windows Node Metrics
+* [#27696](https://github.com/rancher/rancher/issues/27696) GKE Cluster Provisioning - Secondary Range Name dropdowns do not update after changing Node Subnet
+* [#27519](https://github.com/rancher/rancher/issues/27519) Panic in kube-apiserver when there are 10k secrets created in the cluster
+* [#26668](https://github.com/rancher/rancher/issues/26668) Unable to enable external authentication when switching to new ADFS server
+* [#26190](https://github.com/rancher/rancher/issues/26190) Coredns/metrics server pods are not getting evicted when a worker node is powered off
+* [#25222](https://github.com/rancher/rancher/issues/25222) Include Windows image digests with releases
+* [#23256](https://github.com/rancher/rancher/issues/23256) catalog refreshes constantly
+* [#22093](https://github.com/rancher/rancher/issues/22093) Annotations on Rancher defined Pod Security Policies are not applied on Kubernetes cluster PSP
 -----
 
 -----
@@ -1696,6 +2187,10 @@ Recent changes to cert-manager require an upgrade if you have an HA install of R
 
 Important: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
 
+
+## All issues in v2.5.7 milestone
+
+* [#31600](https://github.com/rancher/rancher/issues/31600) Using Private Registry without Authentication fails
 -----
 # Release v2.5.6
 
@@ -1861,6 +2356,248 @@ Please be aware that upon an upgrade to v2.3.0+, any edits to a Rancher launched
 Recent changes to cert-manager require an upgrade if you have an HA install of Rancher using self-signed certificates. If you are using cert-manager older than v0.9.1, please see the documentation on how to upgrade cert-manager.
 
 Important: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
+
+## All issues in v2.5.6 milestone
+
+* [#31583](https://github.com/rancher/rancher/issues/31583) XSS script execution vulnerability 
+* [#31547](https://github.com/rancher/rancher/issues/31547) [UI] Unable to edit import cluster through UI
+* [#31545](https://github.com/rancher/rancher/issues/31545) [UI] Unable to edit Environment Variables on imported k3s cluster
+* [#31540](https://github.com/rancher/rancher/issues/31540) Can't delete istio after kiali is removed
+* [#31532](https://github.com/rancher/rancher/issues/31532) Variable Name for agent Env variables is not marked mandatory which cause error while creating cluster
+* [#31531](https://github.com/rancher/rancher/issues/31531) Secrets listed are incorrect in the UI on cluster create
+* [#31528](https://github.com/rancher/rancher/issues/31528) custom cluster/node driver environment variable types other than key/value pairs should be disabled when creating a cluster
+* [#31513](https://github.com/rancher/rancher/issues/31513) Can't uninstall istio when monitoring is not installed
+* [#31505](https://github.com/rancher/rancher/issues/31505) [UI] show agent env vars on cluster page - Imported Clusters
+* [#31484](https://github.com/rancher/rancher/issues/31484) Drain on delete node does not drain when the node has Pods with emptyDir volumes
+* [#31467](https://github.com/rancher/rancher/issues/31467) View Edit/Yaml for workloads fails for a k8s 1.20 cluster
+* [#31455](https://github.com/rancher/rancher/issues/31455) Drain on delete for nodes in Rancher provisioned clusters fails when node is running Pods with emptyDir volumes
+* [#31452](https://github.com/rancher/rancher/issues/31452) Cannot access custom cluster's details page
+* [#31435](https://github.com/rancher/rancher/issues/31435) Creating resources from YAML in a non-default namespace errors
+* [#31434](https://github.com/rancher/rancher/issues/31434) exec shell on GKE cluster fails with 1006 error
+* [#31427](https://github.com/rancher/rancher/issues/31427) Nodes stuck in Removing state after upgrade to 2.5.6-rc5
+* [#31424](https://github.com/rancher/rancher/issues/31424) Scale down option should be greyed out if there is only 1 etcd node
+* [#31421](https://github.com/rancher/rancher/issues/31421) [Monitoring V2] Missing Linux annotation in 9.4.203 rc versions
+* [#31415](https://github.com/rancher/rancher/issues/31415) Cannot edit node volume size in hosted EKS
+* [#31406](https://github.com/rancher/rancher/issues/31406) Global Role `Create RKE Templates` is broken 
+* [#31405](https://github.com/rancher/rancher/issues/31405) [Fleet] - Windows 1809 SAC agent gets properly in sync with the fleet controller but bundles fail to install with the example webapp
+* [#31394](https://github.com/rancher/rancher/issues/31394) Monitoring v1 - v0.2.1 failed to install on an airgap setup 
+* [#31393](https://github.com/rancher/rancher/issues/31393) [Fleet] - Windows 2004 issues
+* [#31372](https://github.com/rancher/rancher/issues/31372) [Logging v2] RKE2 additional logging enabled fails to install
+* [#31370](https://github.com/rancher/rancher/issues/31370) Extend agentEnvVars support to rancher agents across all cluster types, including the node run command for cluster and node driver clusters
+* [#31367](https://github.com/rancher/rancher/issues/31367) View/Edit Yaml does not work for a k8s 1.20 cluster
+* [#31365](https://github.com/rancher/rancher/issues/31365) Alerting v1 not triggering/sending notifications on 2.5-head
+* [#31364](https://github.com/rancher/rancher/issues/31364) Get "Cannot validate kube version for template" when trying to create a cluster with v0.2.0 monitoring
+* [#31361](https://github.com/rancher/rancher/issues/31361) [EKSv2] Disk size creates another disk instead of increasing root disk size
+* [#31343](https://github.com/rancher/rancher/issues/31343) UI: Needs to hide the benchmark version rke-cis-1.6 and onwards for CIS v1 
+* [#31342](https://github.com/rancher/rancher/issues/31342) saving agentEnvVars through v3 api only saves schema type Error: Invalid Value: spec.template.spec.containers[0].env
+* [#31341](https://github.com/rancher/rancher/issues/31341) EKS V2 - Rename Image Input
+* [#31340](https://github.com/rancher/rancher/issues/31340) Enhancement: remove unsupported 1.13 Docker version from Docker Install URL list
+* [#31337](https://github.com/rancher/rancher/issues/31337) monitoring v1 does not work on windows server 20h2 and 2004
+* [#31322](https://github.com/rancher/rancher/issues/31322) Issue with Spot instance type field in the UI
+* [#31321](https://github.com/rancher/rancher/issues/31321) imageID, userdata values from pre existing AWS Launch templates do not sync back to Rancher
+* [#31316](https://github.com/rancher/rancher/issues/31316) cattle-node-agent-windows on Windows cloud provider enabled setup fails to come up
+* [#31308](https://github.com/rancher/rancher/issues/31308) nodepool drain before delete checkbox ui
+* [#31305](https://github.com/rancher/rancher/issues/31305) [Monitoring V1] Support k8s 1.20 (exporter-kubelets-cluster-monitoring is down)
+* [#31304](https://github.com/rancher/rancher/issues/31304) [Monitoring V2] Support k8s 1.20 (rancher-monitoring-kubelet is down)
+* [#31292](https://github.com/rancher/rancher/issues/31292) User data field in EKS v2 cluster creation is not scrollable 
+* [#31288](https://github.com/rancher/rancher/issues/31288) Additional spot instance types disappear on cluster create
+* [#31287](https://github.com/rancher/rancher/issues/31287) SAML Ping Auth - Add a field to accept Entity ID
+* [#31285](https://github.com/rancher/rancher/issues/31285) During creating node template in vSphere  the tag/attributes are not available to select from. 
+* [#31284](https://github.com/rancher/rancher/issues/31284) Docker install scripts are not working for v17.06 and below
+* [#31279](https://github.com/rancher/rancher/issues/31279) Launch template selection locked after selecting preexisting template
+* [#31277](https://github.com/rancher/rancher/issues/31277) User data is not synced with preexisting launch template
+* [#31275](https://github.com/rancher/rancher/issues/31275) cattle-node-agent-windows for Windows 2004 fails to come up using k8s 1.20
+* [#31269](https://github.com/rancher/rancher/issues/31269) Cluster repo - failed to clone a private git repo with ssh key
+* [#31263](https://github.com/rancher/rancher/issues/31263) [EKSv2] Clean up launch template versions on error
+* [#31258](https://github.com/rancher/rancher/issues/31258) Rancher UI freezes when posting any edit to cluster through v3 api
+* [#31257](https://github.com/rancher/rancher/issues/31257) Fleet, rancher webhook and rancher operator helm pods fail to deploy
+* [#31252](https://github.com/rancher/rancher/issues/31252) Cluster import yaml has incorrect document break end of file
+* [#31244](https://github.com/rancher/rancher/issues/31244) cattle-cluster-agent fails to become ready without a worker role/node present due to coredns dependency
+* [#31242](https://github.com/rancher/rancher/issues/31242) Custom cluster with Scheduled CIS scan enabled creation fails at 2.5.6-rc4
+* [#31236](https://github.com/rancher/rancher/issues/31236) RKE network config is not correctly applied when creating custom cluster
+* [#31232](https://github.com/rancher/rancher/issues/31232) Cluster provisioning is failing error "Error while applying agent YAML, it will be retried automatically: exit status 1"
+* [#31230](https://github.com/rancher/rancher/issues/31230) [UI] Fix DNS options YAML/JSON conversion on cluster creation
+* [#31222](https://github.com/rancher/rancher/issues/31222) [v2.5] KDM release: k8s feb patches
+* [#31213](https://github.com/rancher/rancher/issues/31213) [EKSv2] Make spot instance types more obvious
+* [#31205](https://github.com/rancher/rancher/issues/31205) Incorrect Launch Template name shown on an EKS v2 cluster in an upgraded rancher setup
+* [#31204](https://github.com/rancher/rancher/issues/31204) OPA Gatekeeper - Update to v3.3.0
+* [#31203](https://github.com/rancher/rancher/issues/31203) OPA Gatekeeper - Remove experimental tag
+* [#31197](https://github.com/rancher/rancher/issues/31197) No scroll bar in EKS User Data field
+* [#31194](https://github.com/rancher/rancher/issues/31194) Unable to use spot instances in EKS clusters
+* [#31191](https://github.com/rancher/rancher/issues/31191) Unable to use EKS launch template with empty fields
+* [#31190](https://github.com/rancher/rancher/issues/31190) EKS Launch Template fields editable when using preexisting launch template
+* [#31187](https://github.com/rancher/rancher/issues/31187) Istio 1.8.3
+* [#31170](https://github.com/rancher/rancher/issues/31170) Import EKS v2 cluster is stuck in Waiting state with message "Cluster must have at least one managed nodegroup."
+* [#31168](https://github.com/rancher/rancher/issues/31168) Cluster goes into Updating state when no action is performed on the cluster
+* [#31167](https://github.com/rancher/rancher/issues/31167) Monitoring V1/V2 targets rancher-monitoring-kubelet/exporter-kubelets-cluster-monitoring are down on OL 8.3
+* [#31162](https://github.com/rancher/rancher/issues/31162) [UI] vSphere cluster provisioning
+* [#31152](https://github.com/rancher/rancher/issues/31152) monitoring v1 does not work on windows 2004 and 20h2
+* [#31151](https://github.com/rancher/rancher/issues/31151) Unable to deploy DO/Linode cluster with docker 20.10.x
+* [#31149](https://github.com/rancher/rancher/issues/31149) Logging V1 'edit as file' -> `dry run` option resets file entry to default
+* [#31147](https://github.com/rancher/rancher/issues/31147) GPU instances not set in hosted EKS
+* [#31146](https://github.com/rancher/rancher/issues/31146) EKS v2 launch template version shown on the UI is incorrect
+* [#31144](https://github.com/rancher/rancher/issues/31144) nonexistent tag used in image pull: rancher/fluentd:v0.1.24 -- Logging v1
+* [#31137](https://github.com/rancher/rancher/issues/31137) unable to install default chart option for rancher-backups and cis-benchmark RC00 
+* [#31129](https://github.com/rancher/rancher/issues/31129) rke-network-plugin-deploy-job fails to deploy after k8s upgrade to 1.20.2-rancher2-1
+* [#31126](https://github.com/rancher/rancher/issues/31126) Fail to deploy a downstream cluster
+* [#31107](https://github.com/rancher/rancher/issues/31107) Feature-Chart Branching Swap in 2.5.6
+* [#31103](https://github.com/rancher/rancher/issues/31103) Istio 1.8.3
+* [#31099](https://github.com/rancher/rancher/issues/31099) [rancher-logging] Missing ability to configure resource settings for fluentd statefulset
+* [#31098](https://github.com/rancher/rancher/issues/31098) Validate Windows 2004 SAC
+* [#31097](https://github.com/rancher/rancher/issues/31097) Validate Ubuntu 20.04 with docker 20.10.2
+* [#31096](https://github.com/rancher/rancher/issues/31096) Validate SLES 15SP2 with docker 20.10.x
+* [#31095](https://github.com/rancher/rancher/issues/31095) Validate RancherOS 1.5.7 with Docker 20.10.2
+* [#31094](https://github.com/rancher/rancher/issues/31094) Validate Oracle Linux 8.3 with Docker 20.10.x
+* [#31093](https://github.com/rancher/rancher/issues/31093) Validate CentOS 8.3 with Docker 20.10.x
+* [#31087](https://github.com/rancher/rancher/issues/31087) EKS - Error Field [subnets] cannot be nil for nodegroup [xxx-xx] in non-nil cluster [c-xxxxx]
+* [#31082](https://github.com/rancher/rancher/issues/31082) Run Conformance Testing for k8s 1.20
+* [#31081](https://github.com/rancher/rancher/issues/31081) Panic seen intermittently while logging in with SAML
+* [#31078](https://github.com/rancher/rancher/issues/31078) "nodegroupName cannot be an empty" Error seen while creating an EKS v2 cluster
+* [#31077](https://github.com/rancher/rancher/issues/31077) No warning when a use selects a launch template which specifies instance type and enables spot instance
+* [#31064](https://github.com/rancher/rancher/issues/31064) Launch template values persist when switched between different Launch templates in EKS v2
+* [#31063](https://github.com/rancher/rancher/issues/31063) Add nodegroup during an edit EKS v2 cluster, does not let user select a Launch template
+* [#31062](https://github.com/rancher/rancher/issues/31062) Ensure eks-operator doesn't auto-upgrade without rancher-upgrade
+* [#31061](https://github.com/rancher/rancher/issues/31061) Includes k3s upgrade images when uses image export script in dev, master, or non semver tag that is equal to kd.RancherVersionDev
+* [#31049](https://github.com/rancher/rancher/issues/31049) Instance type field should not be available when Spot instances are used in EKS v2
+* [#31048](https://github.com/rancher/rancher/issues/31048) Not able to create a hosted EKS cluster
+* [#31046](https://github.com/rancher/rancher/issues/31046) Istio dashboard - kiali and jaeger should not be active after disabling in v2 charts
+* [#31033](https://github.com/rancher/rancher/issues/31033) User is not able to edit userData on an EKS cluster edit
+* [#31032](https://github.com/rancher/rancher/issues/31032) [EKSv2] Add help text for custom AMI box
+* [#31029](https://github.com/rancher/rancher/issues/31029) EKS v2 cluster fails to come up when using a Rancher Managed Launch Template
+* [#31023](https://github.com/rancher/rancher/issues/31023) [UI] show agent env vars on cluster page 
+* [#31013](https://github.com/rancher/rancher/issues/31013) Edit cluster of a hosted EKS shows commands for importing a cluster
+* [#31012](https://github.com/rancher/rancher/issues/31012) On Rhel8.2 hitting lstio init fail error during deploying a bookservice in lstio,
+* [#31008](https://github.com/rancher/rancher/issues/31008) User is not able to add a nodegroup in EKS
+* [#31007](https://github.com/rancher/rancher/issues/31007) EKS provisioning errors with: [resourceTags] cannot be nil
+* [#31006](https://github.com/rancher/rancher/issues/31006) [Logging v2] - Chart version 3.9.000-rc01 fails to install with invalid metadata error
+* [#30997](https://github.com/rancher/rancher/issues/30997) Add helm notation to CRD generation in eks-operator
+* [#30995](https://github.com/rancher/rancher/issues/30995) Unable to provision custom cluster while provider cluster is provisioning
+* [#30988](https://github.com/rancher/rancher/issues/30988) Cannot set win_prefix_path in a windows cluster
+* [#30966](https://github.com/rancher/rancher/issues/30966) [Forwardport] Windows nodes fail to create the RKE log directory if the prefixPath is not set on a Windows cluster 
+* [#30964](https://github.com/rancher/rancher/issues/30964) [Forwardport] Istio sidecar injection - workload deployment failed with error in sidecar injector
+* [#31184](https://github.com/rancher/rancher/issues/31184) Error when switching from "Edit as File" and back to "Edit as Form" in v1 Logging
+* [#30938](https://github.com/rancher/rancher/issues/30938) Uninstall monitoring sometimes delete "rancher-monitoring-crd" before "rancher-monitoring" which cause an error.
+* [#30935](https://github.com/rancher/rancher/issues/30935) Downstream cluster using Oracle Linux 8.2 fails health check and is in Error state
+* [#30934](https://github.com/rancher/rancher/issues/30934) Add minFleetVersion to rancher
+* [#30932](https://github.com/rancher/rancher/issues/30932) Verify postgreSQL as a k3s backend
+* [#30930](https://github.com/rancher/rancher/issues/30930) [v2.5.5] CA certificate box not active in OpenLDAP StartTLS authentication page
+* [#30920](https://github.com/rancher/rancher/issues/30920) "Add Host" Action for an import cluster
+* [#30917](https://github.com/rancher/rancher/issues/30917) [Logging v2] Add logging upstream 3.9.0 chart
+* [#30904](https://github.com/rancher/rancher/issues/30904) Incorrect info message is seen while "Adding hosts" to an import cluster 
+* [#30903](https://github.com/rancher/rancher/issues/30903) Incorrect node roles selected on the UI for a windows node registration command
+* [#30901](https://github.com/rancher/rancher/issues/30901) Feature chart links to components fails to load using custom CIDR in the cluster.
+* [#30900](https://github.com/rancher/rancher/issues/30900) Validate v1 and v2 charts for RHEL 8.2
+* [#30899](https://github.com/rancher/rancher/issues/30899) Validate v1 and v2 charts for Oracle linux 8.2
+* [#30895](https://github.com/rancher/rancher/issues/30895) [UI] Add option in node template to skip Docker installation
+* [#30892](https://github.com/rancher/rancher/issues/30892) Validate v1 and v2 charts for SLES 15 SP2
+* [#30888](https://github.com/rancher/rancher/issues/30888) New charts in 2.5.6
+* [#30887](https://github.com/rancher/rancher/issues/30887) Validate v1 and v2 charts for  RHEL 7.9
+* [#30869](https://github.com/rancher/rancher/issues/30869) Can not login as a standard user (who is part of 1000 groups) with AD auth without trying many times. 
+* [#30846](https://github.com/rancher/rancher/issues/30846) cattle-cluster-agent behind proxy: can't add Chart Repository
+* [#30840](https://github.com/rancher/rancher/issues/30840) Cisco ACI (noiro) images exist in rancher-images.txt release artifact
+* [#30828](https://github.com/rancher/rancher/issues/30828) [2.5] k8s 1.20
+* [#30809](https://github.com/rancher/rancher/issues/30809) Logging v2 - Error installing rancher logging chart in v2.5-head for RKE clusters
+* [#30808](https://github.com/rancher/rancher/issues/30808) [Logging v1] Add Windows 2004 and 20H2 to logging
+* [#30792](https://github.com/rancher/rancher/issues/30792) [Continuous Delivery] Adding Git repository fails when path contains uppercase characters
+* [#30781](https://github.com/rancher/rancher/issues/30781) New Nodes Are Incomplete, Unable to Delete - Rancher 2.5.4 - RKE Custom - Baremetal
+* [#30771](https://github.com/rancher/rancher/issues/30771) rancher-logging installation fails when clusters uses PodSecurityPolicies
+* [#30752](https://github.com/rancher/rancher/issues/30752) Kiali unable to acquire traces
+* [#30750](https://github.com/rancher/rancher/issues/30750) [Logging v2] Add logging upstream 3.8.4 chart
+* [#30717](https://github.com/rancher/rancher/issues/30717) Provisioning fails with node template and SLES15 AMI
+* [#30712](https://github.com/rancher/rancher/issues/30712) [Monitoring v2] failed to install when Prometheus is disabled
+* [#30710](https://github.com/rancher/rancher/issues/30710) Panic serving api request during Okta authentication integration
+* [#30707](https://github.com/rancher/rancher/issues/30707) Fleet and webhook do not come back to older version after a backup restore from 2.5.4-rc to 2.5.3
+* [#30701](https://github.com/rancher/rancher/issues/30701) [v2.5] Windows 20H2 Builds
+* [#30700](https://github.com/rancher/rancher/issues/30700) [v2.5] Additional flag to encrypt all ebs volumes associated with ami
+* [#30696](https://github.com/rancher/rancher/issues/30696) [Continous Delivery] GitRepo and cluster stuck in Modified state indefinitely
+* [#30690](https://github.com/rancher/rancher/issues/30690) During edit of a vSphere node template some fields don't get populated with the previously set values
+* [#30684](https://github.com/rancher/rancher/issues/30684) [Monitoring V2] Warn if cluster does not have minimum CPU / memory limits to deploy chart
+* [#30680](https://github.com/rancher/rancher/issues/30680) [Monitoring v2] Show metrics from nodes where etcd runs on the Nodes dashboard in Grafana
+* [#30666](https://github.com/rancher/rancher/issues/30666) default-token secrets created and deleted when encryption is enabled/disabled on a cluster
+* [#30663](https://github.com/rancher/rancher/issues/30663) Make etcd snapshot job timeout tunable
+* [#30629](https://github.com/rancher/rancher/issues/30629) When rotate encryption is in progress or when a cluster is in "Updating" state, user is able to perform rotateEncryptionKey action from the API
+* [#30613](https://github.com/rancher/rancher/issues/30613) Launch template support in Rancher UI
+* [#30606](https://github.com/rancher/rancher/issues/30606) forwardport: Removing in-tree vSphere vCenter server entries does not propagate
+* [#30605](https://github.com/rancher/rancher/issues/30605) forwardport: Cluster Private Registry setting not adhered to when pulling rancher-agent image during Node Driver cluster provisioning
+* [#30604](https://github.com/rancher/rancher/issues/30604) forward port: Rancher Istio chart injection-template is behind Istio master
+* [#30602](https://github.com/rancher/rancher/issues/30602) forwardport: registry for workload cluster - let RancherUI freeze
+* [#30601](https://github.com/rancher/rancher/issues/30601) forward port: Node template values not changing while switching cloud credentials for vSphere 
+* [#30595](https://github.com/rancher/rancher/issues/30595) [Logging v2] Parser and tail-db paths are not always accessible on RKE fluent-bit
+* [#30594](https://github.com/rancher/rancher/issues/30594) [Catalog v2] can not change the url or branch of the builtin catalog `Rancher`
+* [#30582](https://github.com/rancher/rancher/issues/30582) Default to IfNotPresent for the rancher-audit-log container
+* [#30560](https://github.com/rancher/rancher/issues/30560) Secrets encryption are not set by the UI when attempting to enable after a cluster is created throught he API
+* [#30558](https://github.com/rancher/rancher/issues/30558) No default values set for secretsEncryptionConfig in a cluster created from API
+* [#30556](https://github.com/rancher/rancher/issues/30556) On the Cluster Explorer View State of Deployments is shown as unknown for k8s 1.20 clusters
+* [#30535](https://github.com/rancher/rancher/issues/30535) Allow Helm installation without ingress 
+* [#30526](https://github.com/rancher/rancher/issues/30526) Deleted nodes showing up in rancher UI with delete option disabled
+* [#30523](https://github.com/rancher/rancher/issues/30523) Differentiate the "docker run" cluster driver type in telemetry
+* [#30516](https://github.com/rancher/rancher/issues/30516) [Fleet] Ensure Windows clusters run agents
+* [#30506](https://github.com/rancher/rancher/issues/30506) Location column is incorrect in node template 
+* [#30502](https://github.com/rancher/rancher/issues/30502) helm3-library charts are not bundled with system charts
+* [#30492](https://github.com/rancher/rancher/issues/30492) [rancherd] Bump RKE2 version - 1.18.16
+* [#30499](https://github.com/rancher/rancher/issues/30499) favicon is missing on explorer
+* [#30470](https://github.com/rancher/rancher/issues/30470) Update Kiali to 1.29.0
+* [#30425](https://github.com/rancher/rancher/issues/30425) V1 Logging on recently upgraded/created AKS clusters fails with "Connection reset by peer"
+* [#30410](https://github.com/rancher/rancher/issues/30410) Istio 1.8.x
+* [#30406](https://github.com/rancher/rancher/issues/30406) Validate Docker 20.10.x
+* [#30402](https://github.com/rancher/rancher/issues/30402) Rancher 2.5 Shell size (columns) limited to 80 
+* [#30386](https://github.com/rancher/rancher/issues/30386) [UI] In k8s v1.20 "delete local data" for drain has been renamed to "delete empty dir data."
+* [#30329](https://github.com/rancher/rancher/issues/30329) [Logging v2] Docker Root Dir not exposed for Rancher 2.5.2 logging
+* [#30315](https://github.com/rancher/rancher/issues/30315) rancher-logging-fluentd-windows workload fails to come up in a windows cluster
+* [#30300](https://github.com/rancher/rancher/issues/30300) CIS 1.5 v1 permissive scan fails on a flatcar linux machine cluster
+* [#30299](https://github.com/rancher/rancher/issues/30299) Validate flatcar-linux-stable-2605.6.0
+* [#30277](https://github.com/rancher/rancher/issues/30277) Can not create secrets with dot in the name using Rancher UI.
+* [#30191](https://github.com/rancher/rancher/issues/30191) Prometheus fails with cluster_domain other then cluster.local: proxyconnect tcp: dial tcp: lookup pushprox-kube-controller-manager-proxy.cattle-monitoring-system.svc.cluster.local  no such host
+* [#30168](https://github.com/rancher/rancher/issues/30168) ETCD high traffic, RAM + timeouts after migration to 2.5.2 
+* [#30144](https://github.com/rancher/rancher/issues/30144) Istio chart should set minimum cpu/memory request
+* [#30136](https://github.com/rancher/rancher/issues/30136) Cluster monitoring in Error state after 2.5.2 upgrade
+* [#30134](https://github.com/rancher/rancher/issues/30134) Support k8s 1.20
+* [#30068](https://github.com/rancher/rancher/issues/30068) Installing Helm chart from Azure Blob Storage repository fails
+* [#30049](https://github.com/rancher/rancher/issues/30049) Cluster stuck "currently Upgrading, updating worker node" on Cordoned workers
+* [#30047](https://github.com/rancher/rancher/issues/30047) Set PriorityClass for kube-flannel, kube-dns, kube-dns-autoscaler, metrics-server to system-node-critical
+* [#30043](https://github.com/rancher/rancher/issues/30043) ClusterRoleBinding is deprecated warning when importing a k3s 1.19.3 cluster
+* [#30041](https://github.com/rancher/rancher/issues/30041) [EKSv2]: no nodegroup message is confusing
+* [#30021](https://github.com/rancher/rancher/issues/30021) Update EKSClusterConfig syncing to include launch template information
+* [#30020](https://github.com/rancher/rancher/issues/30020) Use launch template provided by user
+* [#30019](https://github.com/rancher/rancher/issues/30019) Create/Update launch templates for EKS managed node groups
+* [#29961](https://github.com/rancher/rancher/issues/29961) Public Helm Repo's (marketplace) not pulled in anymore due to proxy issues.
+* [#29926](https://github.com/rancher/rancher/issues/29926) Failed to find system chart fleet-crd will try again in 5 seconds: configmaps "rancher-charts-plx5s" not found
+* [#29812](https://github.com/rancher/rancher/issues/29812) Istio 1.7.6
+* [#29784](https://github.com/rancher/rancher/issues/29784) Support mounting certs on fluentd
+* [#29724](https://github.com/rancher/rancher/issues/29724) OKE Cluster driver: Add support for specifying a custom boot volume size on nodes
+* [#29700](https://github.com/rancher/rancher/issues/29700) Deployment fails when namespace has istio-injection=enabled
+* [#29676](https://github.com/rancher/rancher/issues/29676) [2.5] u.replaceWith is not a function
+* [#29633](https://github.com/rancher/rancher/issues/29633) deployments.apps "cattle-cluster-agent" not found ... dial tcp 127.0.0.1:6080: connect: connection refused seen after provisioning cluster
+* [#30291](https://github.com/rancher/rancher/issues/30291) Switch to using the upstream saml library directly instead of rancher's fork of it
+* [#29328](https://github.com/rancher/rancher/issues/29328) v1 monitoring chart does not deploy on local k3 cluster.
+* [#29648](https://github.com/rancher/rancher/issues/29648) Lock down feature chart's release branch
+* [#29286](https://github.com/rancher/rancher/issues/29286) Error detecting OS: Too many retries waiting for SSH to be available when creating a cluster on vSphere behind NAT
+* [#29176](https://github.com/rancher/rancher/issues/29176) Monitoring - uninstall the monitoring v2 app causes cattle-cluster-agent restarts 
+* [#29168](https://github.com/rancher/rancher/issues/29168) [Logging V2] Update user roles
+* [#29124](https://github.com/rancher/rancher/issues/29124) OKE Cluster driver: Add support for flexible compute shapes such as VM.Standard.E3
+* [#28836](https://github.com/rancher/rancher/issues/28836) "Cluster health check failed: cluster agent is not ready" error seen during cluster provisioning after which it proceeds to succeed.
+* [#28803](https://github.com/rancher/rancher/issues/28803) [feature] Launch template support
+* [#28788](https://github.com/rancher/rancher/issues/28788) Docs hyperlink opens page in the same window as rancher
+* [#28730](https://github.com/rancher/rancher/issues/28730) Rewrite charts build scripts
+* [#28673](https://github.com/rancher/rancher/issues/28673) k8s 1.19 removes basic auth but it's in use by kontainer-engine
+* [#28664](https://github.com/rancher/rancher/issues/28664) [Logging v2] - rancher-logging logging operator fails to deploy on Windows cluster
+* [#28360](https://github.com/rancher/rancher/issues/28360) Sporadic driver error during K8s upgrade: listen tcp 127.0.0.1:0: bind: address already in use
+* [#27946](https://github.com/rancher/rancher/issues/27946) Monitoring v2 - Service for Prometheus is broken 
+* [#27911](https://github.com/rancher/rancher/issues/27911) Monitoring does not work for Windows Server Core worker nodes
+* [#27873](https://github.com/rancher/rancher/issues/27873) Rancher v2.4.5 UI display name for nodes incorrect when nodes in a single cluster have FQDN hostnames under multiple different subdomains
+* [#27870](https://github.com/rancher/rancher/issues/27870) Enabling telemetry causing multiple issues due to socket leak
+* [#27646](https://github.com/rancher/rancher/issues/27646) Ability to prevent `yum -y update` execution during node driver provisioning of RHEL/CentOS hosts
+* [#27458](https://github.com/rancher/rancher/issues/27458) Add [aggressive] drain on delete option in node delete form and node pool configuration
+* [#27451](https://github.com/rancher/rancher/issues/27451) Add Windows 2004 agent build
+* [#27165](https://github.com/rancher/rancher/issues/27165) [UI Bug] CA Cert field text area is too wide.
+* [#26396](https://github.com/rancher/rancher/issues/26396) Bunch of CIS Failures for /etc/kubernetes on RancherOS
+* [#25412](https://github.com/rancher/rancher/issues/25412) Rancher re-applys cluster import yaml, causing loss of env vars set in original import yaml
+* [#25346](https://github.com/rancher/rancher/issues/25346) UI for RHEL 8 Support with Docker CE
+* [#24876](https://github.com/rancher/rancher/issues/24876) Rancher agent  does not use proxy environment in callback to  rancher
+* [#23357](https://github.com/rancher/rancher/issues/23357) Support for out-of-tree vSphere Cloud Provider Interface (CPI) and Cloud Storage Interface (CSI)
+* [#22871](https://github.com/rancher/rancher/issues/22871) Choose which node to delete when scaling down
+* [#20131](https://github.com/rancher/rancher/issues/20131) Better UX for External Cloud provider vSphere
+* [#15172](https://github.com/rancher/rancher/issues/15172) Rancher returns 404 from agent when cluster is not built by RKE
 -----
 **Rancher v2.5.5 is a mirror release of v2.5.4 to address a few minor issues:**
 - The dashboard could crash if helm charts were missing certain annotations. [link](https://github.com/rancher/dashboard/issues/2182)
@@ -2012,6 +2749,11 @@ Recent changes to cert-manager require an upgrade if you have an HA install of R
 
 Important: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
 
+
+## All issues in v2.5.5 milestone
+
+* [#30766](https://github.com/rancher/rancher/issues/30766) Fail to upgrade rancher to 2.5.5
+* [#30745](https://github.com/rancher/rancher/issues/30745) Update Rancher server helm chart to limit k8s versions based on support matrix
 -----
 **Please install [v2.5.5](https://github.com/rancher/rancher/releases/tag/v2.5.5) instead of v2.5.4**
 v2.5.5 contains some minor bug fixes to address issues in this release.
@@ -2162,6 +2904,175 @@ Recent changes to cert-manager require an upgrade if you have an HA install of R
 
 Important: When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected.
 
+
+## All issues in v2.5.4 milestone
+
+* [#30652](https://github.com/rancher/rancher/issues/30652) CPU, load, and memory increase after upgrading from v2.5.3 to v2.5.4-rc8
+* [#30598](https://github.com/rancher/rancher/issues/30598) v2 Istio - Combine 1.7.301 & 1.7.302 charts
+* [#30568](https://github.com/rancher/rancher/issues/30568) Update logging v1 to 0.2.3
+* [#30555](https://github.com/rancher/rancher/issues/30555) [ui] Edit as yaml not respecting case of keys
+* [#30553](https://github.com/rancher/rancher/issues/30553) Last backup is not shown on encryption key rotation
+* [#30552](https://github.com/rancher/rancher/issues/30552) Rotate encryption not shown in dropdown
+* [#30542](https://github.com/rancher/rancher/issues/30542) Add annotation to all old feature charts
+* [#30541](https://github.com/rancher/rancher/issues/30541) Throttling seen when secrets are encrypted
+* [#30537](https://github.com/rancher/rancher/issues/30537) [Monitoring v1] 0.2.0 cannot be installed into the local cluster in Rancher HA setup 
+* [#30531](https://github.com/rancher/rancher/issues/30531) Number of secrets rewritten during encryption process is seen incorrect
+* [#30518](https://github.com/rancher/rancher/issues/30518) Launching eks v2 using 1.14 gives error "unsupported Kubernetes version" 
+* [#30507](https://github.com/rancher/rancher/issues/30507) [Monitoring V1] [Istio V1] hide the old version in Rancher v2.5.4
+* [#30503](https://github.com/rancher/rancher/issues/30503) Fleet - fleet is not getting the latest chart version after upgrade Rancher to 2.5.4-rc5
+* [#30501](https://github.com/rancher/rancher/issues/30501) Rancherd initial password login failure
+* [#30496](https://github.com/rancher/rancher/issues/30496) Images missing from release artificat images.txt
+* [#30476](https://github.com/rancher/rancher/issues/30476) [Rancher] New Longhorn chart for 2.5.4
+* [#30455](https://github.com/rancher/rancher/issues/30455) [Monitoring V1] can not upgrade from 0.1.4 to v0.2.0
+* [#30453](https://github.com/rancher/rancher/issues/30453) [Monitoring V1] v0.2.0 should not show on 1.15 cluster and rancher v2.5.3
+* [#30452](https://github.com/rancher/rancher/issues/30452) "rejected by webhook" warnings messages seen in rancher logs
+* [#30450](https://github.com/rancher/rancher/issues/30450) Add catalog.cattle.io/os=linux
+* [#30447](https://github.com/rancher/rancher/issues/30447) Add Host option is seen for an EKS v2 cluster
+* [#30446](https://github.com/rancher/rancher/issues/30446) rancher-externalip-webhook new version in 2.5.4
+* [#30445](https://github.com/rancher/rancher/issues/30445) Exclude cattle.io/cluster-agent from the ignored node labels
+* [#30434](https://github.com/rancher/rancher/issues/30434) Panics in Rancher server and it crashes after an upgrade
+* [#30433](https://github.com/rancher/rancher/issues/30433) OPA GA
+* [#30430](https://github.com/rancher/rancher/issues/30430) Rancher server panics and crashes when deleting a node when in provisioning state
+* [#30424](https://github.com/rancher/rancher/issues/30424) rancher-externalip-webhook chart enhancements
+* [#30405](https://github.com/rancher/rancher/issues/30405) No ingress when using RKE v1.2.4-rc2 and Rancher v2.5-head on HA infrastructure
+* [#30403](https://github.com/rancher/rancher/issues/30403) Private EKS import command should not be needed when Rancher is in the same VPC
+* [#30399](https://github.com/rancher/rancher/issues/30399) Errors in console while deploying a workload
+* [#30373](https://github.com/rancher/rancher/issues/30373) invalid memory address or nil pointer dereference"
+* [#30359](https://github.com/rancher/rancher/issues/30359) Add the StartTLS setting in the configuration summary of OpenLDAP
+* [#30354](https://github.com/rancher/rancher/issues/30354) Missing save/cancel button on the screen for edit cluster when the cluster is imported (including local cluster)
+* [#30347](https://github.com/rancher/rancher/issues/30347) Nodes remain in Active state for sometime before going to Provisioning state when a cluster is deployed
+* [#30338](https://github.com/rancher/rancher/issues/30338) First Cluster in Error with "cattle-cluster-agent" not found and doesn't recover. Other clusters with same config come up Active
+* [#30337](https://github.com/rancher/rancher/issues/30337) Update import command display for EKS clusters
+* [#30332](https://github.com/rancher/rancher/issues/30332) EKS import command should only display if private network is selected and public is not
+* [#30326](https://github.com/rancher/rancher/issues/30326) Node driver cluster using flatcar fails to deploy successfully
+* [#30325](https://github.com/rancher/rancher/issues/30325) "Cluster health check failed: deployments.apps "cattle-cluster-agent" not found" error seen while deploying clusters
+* [#30324](https://github.com/rancher/rancher/issues/30324) Severe Regression in 3.16.1 Calico - Fixed in 3.16.5
+* [#30319](https://github.com/rancher/rancher/issues/30319) PVC seen Active when status shows "Resizing"
+* [#30316](https://github.com/rancher/rancher/issues/30316) UI issues in "Resize" of PVC
+* [#30301](https://github.com/rancher/rancher/issues/30301) Security group section is blank while creating an EKS v2 cluster
+* [#30297](https://github.com/rancher/rancher/issues/30297) Add built-in OTC CCE driver
+* [#30292](https://github.com/rancher/rancher/issues/30292) GKE - Errors after some time Cluster health check failed: Failed to communicate with API server: Unauthorized
+* [#30293](https://github.com/rancher/rancher/issues/30293) [Backup/Restore] Chart version 1.0.3
+* [#30283](https://github.com/rancher/rancher/issues/30283) Add flag to enable startTLS
+* [#30272](https://github.com/rancher/rancher/issues/30272) Add DefaultBackend bool to RKE provisioning
+* [#30262](https://github.com/rancher/rancher/issues/30262) Registering an EKS cluster defaults to manually entered name
+* [#30261](https://github.com/rancher/rancher/issues/30261) Validate CentOS 7.9
+* [#30238](https://github.com/rancher/rancher/issues/30238) [2.5] "fatal error: concurrent map read and map write issue" - causes a panic in Rancher server
+* [#30221](https://github.com/rancher/rancher/issues/30221) k8s version update - Dec Patches
+* [#30208](https://github.com/rancher/rancher/issues/30208) Forward port for ingress controller label issues
+* [#30198](https://github.com/rancher/rancher/issues/30198) [2.5] Joining node to cluster fails on windows with docker 19.03.13
+* [#30188](https://github.com/rancher/rancher/issues/30188) Enabling monitoring on new cluster gives intermittent 500 errors and object has been modified error
+* [#30184](https://github.com/rancher/rancher/issues/30184) Add options to Global DNS
+* [#30183](https://github.com/rancher/rancher/issues/30183) [2.5 - new chart] global dns / rancher-external-dns 0.1.2
+* [#30179](https://github.com/rancher/rancher/issues/30179) [OPA Gatekeeper] rancher-gatekeeper: v3.2.1
+* [#30159](https://github.com/rancher/rancher/issues/30159) [2.5] Joining node to cluster fails on windows with docker 19.03.13
+* [#30157](https://github.com/rancher/rancher/issues/30157) Fleet changes in 2.5.3
+* [#30152](https://github.com/rancher/rancher/issues/30152) [2.5] Nanoseconds in projectlogging
+* [#30151](https://github.com/rancher/rancher/issues/30151) [2.5] Support for UAE in AKS
+* [#30143](https://github.com/rancher/rancher/issues/30143) Panic in latest 2.5-head manager.go
+* [#30142](https://github.com/rancher/rancher/issues/30142) [EKSv2] eks-operator: 1.0.5
+* [#30139](https://github.com/rancher/rancher/issues/30139) [Logging v2] rancher-charts 3.8.001
+* [#30138](https://github.com/rancher/rancher/issues/30138) [Monitoring V1] rancher-monitoring: v0.2.0
+* [#30137](https://github.com/rancher/rancher/issues/30137) [Monitoring V2] rancher-monitoring: 9.4.202
+* [#30123](https://github.com/rancher/rancher/issues/30123) CIS v2/rancher-cis-benchmark: 1.0.300
+* [#30111](https://github.com/rancher/rancher/issues/30111) Windows worker registration command is not available
+* [#30092](https://github.com/rancher/rancher/issues/30092) [cli] Configure kubernetes token cache dir
+* [#30083](https://github.com/rancher/rancher/issues/30083) [EKS] Selecting security groups should be optional when selecting custom VPC
+* [#30077](https://github.com/rancher/rancher/issues/30077) [UI] Add "Rotate Encryption Key" to Cluster Actions Dropdown
+* [#30067](https://github.com/rancher/rancher/issues/30067) Drone build failed due to "manifest unknown"
+* [#30065](https://github.com/rancher/rancher/issues/30065) "Failed to load Clusters from Amazon:" error seenn while importing EKS clusters on changing cloud credentials
+* [#30063](https://github.com/rancher/rancher/issues/30063) [Monitoring V2] Remove deprecated references to kubernetes-charts.storage.googleapis.com
+* [#30048](https://github.com/rancher/rancher/issues/30048) Upgrade to Rancher 2.5.2 and 2.4.10: cattle-cluster-agent hammers apiserver, very high CPU usage
+* [#30046](https://github.com/rancher/rancher/issues/30046) [UI] rke.windows should show as Windows
+* [#30042](https://github.com/rancher/rancher/issues/30042) Add HTTP proxy support for Continuous Delivery (Fleet)
+* [#30018](https://github.com/rancher/rancher/issues/30018) OPA GA: Update OPA to the latest version
+* [#30013](https://github.com/rancher/rancher/issues/30013) Validate rancherd upgrades
+* [#30012](https://github.com/rancher/rancher/issues/30012) Validate Airgap configuration using Rancherd
+* [#30011](https://github.com/rancher/rancher/issues/30011) Validate RHEL8 with SELinux set to Enforcing with cis-1.5 enabled using Rancherd
+* [#30015](https://github.com/rancher/rancher/issues/30015) promote-stable drone job always says it fails
+* [#29981](https://github.com/rancher/rancher/issues/29981) KDM Release - k8s patches for Nov
+* [#29980](https://github.com/rancher/rancher/issues/29980) Monitoring v2 installation in a hardened cluster fails when no project is chosen
+* [#29907](https://github.com/rancher/rancher/issues/29907) [EKSv2]: Rancher should be able to fully communicate with private EKS clusters
+* [#29905](https://github.com/rancher/rancher/issues/29905) [Monitoring / Alerting] Create scripts for auditing what needs to be disabled to remove Monitoring / Alerting V1
+* [#29903](https://github.com/rancher/rancher/issues/29903) Istio v2: Jaeger
+* [#29898](https://github.com/rancher/rancher/issues/29898) Invalid kiali WEB_ROOT in 2.5 rancher-kiali-server charts
+* [#29892](https://github.com/rancher/rancher/issues/29892) [Logging] Support syslog
+* [#29872](https://github.com/rancher/rancher/issues/29872) Ability to support default nginx backend instead of our deployed pod
+* [#29841](https://github.com/rancher/rancher/issues/29841) Cluster does not come up in Rancher when flatcar-linux-stable-2605.6.0 nodes are used
+* [#29840](https://github.com/rancher/rancher/issues/29840) Add support for deploying Monitoring onto an RKE cluster with some or all etcd nodes using RancherOS
+* [#29826](https://github.com/rancher/rancher/issues/29826) [EKSv2]: Additional security groups should not be automatically generated.
+* [#29825](https://github.com/rancher/rancher/issues/29825) [rancherd] Bump RKE2 version
+* [#29813](https://github.com/rancher/rancher/issues/29813) [Dashboard] RFE Support specifying UI images path in Rancher Helm Chart
+* [#29774](https://github.com/rancher/rancher/issues/29774) [UI] pass cluster name on template request via query parameter
+* [#29773](https://github.com/rancher/rancher/issues/29773) Add filter option for template GET request
+* [#29714](https://github.com/rancher/rancher/issues/29714) [Master] Ingress Status Load Balancer IPs Not Being Updated
+* [#29696](https://github.com/rancher/rancher/issues/29696) chart 2.5.1:  Has no PodSecurityPolicy , causing failed pods in new namespaces
+* [#29668](https://github.com/rancher/rancher/issues/29668) Exec to Pod via kubectl shell fails with error: unable to upgrade connection: Forbidden
+* [#29667](https://github.com/rancher/rancher/issues/29667) Process started in UI container shell stays even after closing the UI
+* [#29665](https://github.com/rancher/rancher/issues/29665) UI warning when deleting a node in a 2 node cluster
+* [#29651](https://github.com/rancher/rancher/issues/29651) Rancher Webhook - installable on hardened cluster
+* [#29642](https://github.com/rancher/rancher/issues/29642) Upgrade Logging Operator to 3.7.3
+* [#29565](https://github.com/rancher/rancher/issues/29565) rancherd reset-password can panic on startup
+* [#29554](https://github.com/rancher/rancher/issues/29554) Switch to the upstream saml library from rancher's fork of it
+* [#29549](https://github.com/rancher/rancher/issues/29549) Error "secrets c-f64cl already exists" while creating a hosted EKS v2 cluster when the cluster already exists in EKS
+* [#29530](https://github.com/rancher/rancher/issues/29530) add user and password options to Rancherd
+* [#29550](https://github.com/rancher/rancher/issues/29550) Unable to install Prometheus Operator on Rancher 2.5.1 - Cluster Dashboard
+* [#29482](https://github.com/rancher/rancher/issues/29482) client-go needs updated due to deprecated resources
+* [#29446](https://github.com/rancher/rancher/issues/29446) [rancher/charts] PRs to dev branch should ensure that packageVersion is updated
+* [#29431](https://github.com/rancher/rancher/issues/29431) [UI][EKSv2]: cannot add SSH key to new nodegroups
+* [#29429](https://github.com/rancher/rancher/issues/29429) Rancher 2.4.8 Memory Leak
+* [#29797](https://github.com/rancher/rancher/issues/29797) Rancherd GA
+* [#29338](https://github.com/rancher/rancher/issues/29338) [rancher/charts] Changes to the requirements.lock pushes unnecessary changes to the generated branch
+* [#29318](https://github.com/rancher/rancher/issues/29318) Alerts - rule deployer errors when enabling alerts
+* [#29315](https://github.com/rancher/rancher/issues/29315) Admission webhook error when restricted admin attempts to create an Administrator user
+* [#29294](https://github.com/rancher/rancher/issues/29294) [KEv2]: add check to CI and update generated files
+* [#29275](https://github.com/rancher/rancher/issues/29275) Pod startup fails when  /var/lib/docker/containers is a separate file system
+* [#29239](https://github.com/rancher/rancher/issues/29239) Local cluster showing and stuck in provisioning when rancher manages rancher cluster
+* [#29235](https://github.com/rancher/rancher/issues/29235) Migrating alerts/dashboards from monitoring v1 to v2
+* [#29250](https://github.com/rancher/rancher/issues/29250) [Logging v2] - Can't access the Logging Overview as Cluster Member
+* [#29587](https://github.com/rancher/rancher/issues/29587) k8s 1.19 removes basic auth but it's in use by kontainer-engine
+* [#29188](https://github.com/rancher/rancher/issues/29188) OPA gatekeeper - Can't install rancher-gatekeeper-operator v2 due to v1's CRDs not deleted after uninstalling
+* [#29162](https://github.com/rancher/rancher/issues/29162) [rancherd] URL from reset-admin is always the private ip
+* [#29153](https://github.com/rancher/rancher/issues/29153) Auth configuration of OpenLDAP fails with error "Error creating ssl connection: LDAP Result Code 200 "": EOF"
+* [#29149](https://github.com/rancher/rancher/issues/29149) Request to add disableMountSubPath option in Prometheus operator (monitoring system chart)
+* [#29144](https://github.com/rancher/rancher/issues/29144) extensions/v1beta1 Ingress in Rancher chart is deprecated
+* [#29292](https://github.com/rancher/rancher/issues/29292) High system load alert fails to trigger on 1.19.2
+* [#29183](https://github.com/rancher/rancher/issues/29183) Change events don't work reliably in general
+* [#29104](https://github.com/rancher/rancher/issues/29104) Error displayed when credentials are changed in an EKS cluster can be made better
+* [#29103](https://github.com/rancher/rancher/issues/29103) Creating a hosted EKS cluster with a clustername that already exists in AWS console, results in the existing cluster in AWS console being updated
+* [#29077](https://github.com/rancher/rancher/issues/29077) Unit tests - EKS
+* [#29064](https://github.com/rancher/rancher/issues/29064) [rancher/charts] Running make charts on packages with overlay leaves resources behind
+* [#29037](https://github.com/rancher/rancher/issues/29037) Helm install of rancher for kubeAdm and miniKube clusters
+* [#29649](https://github.com/rancher/rancher/issues/29649) Support CIS 1.6
+* [#28954](https://github.com/rancher/rancher/issues/28954) When alerts only configured notifiers that are not webhook forwarded, rancher server returns secrets "Webhook -receiver" not found error
+* [#28947](https://github.com/rancher/rancher/issues/28947) Cluster Provider Detection- Windows vs. Linux RKE clusters
+* [#28943](https://github.com/rancher/rancher/issues/28943) rancher logs show a constant "v1 ComponentStatus is deprecated in v1.19+" logs
+* [#28753](https://github.com/rancher/rancher/issues/28753) Enhancement for rke etcd encryption rewrite process - batch
+* [#28752](https://github.com/rancher/rancher/issues/28752) Enhancement for rke etcd encryption rewrite process - client timeout
+* [#28746](https://github.com/rancher/rancher/issues/28746) Enhancement for rke etcd encryption rewrite process - logging 
+* [#28720](https://github.com/rancher/rancher/issues/28720) [Logging V2] Windows node taints and tolerations.
+* [#28711](https://github.com/rancher/rancher/issues/28711) Add validation in CI to check no multiple new versions of the same chart in a given release
+* [#28651](https://github.com/rancher/rancher/issues/28651) [UI] Recognize rancherd clusters as "rancherd"
+* [#28574](https://github.com/rancher/rancher/issues/28574) [Logging v2] Control Plane logs - GKE
+* [#28573](https://github.com/rancher/rancher/issues/28573) [Logging v2] Control Plane logs - AKS
+* [#28548](https://github.com/rancher/rancher/issues/28548) Add button to be show import cluster command when no cluster has been registered or add hosts to a custom cluster if no hosts have been added
+* [#28532](https://github.com/rancher/rancher/issues/28532) For clusters provisioned with rancher2 TF provider, nginx ingress comments are injected into cluster yaml when editing via the UI
+* [#28400](https://github.com/rancher/rancher/issues/28400) Rancher provisioned cluster becomes unavailable after enabling secret encryption, if secrets are deleted during the secret rewriting
+* [#28391](https://github.com/rancher/rancher/issues/28391) FR: GlobalDNS/externaldns Allow setting of '--aws-batch-change-size' via Rancher UI
+* [#28358](https://github.com/rancher/rancher/issues/28358) When adding node to cluster receive 'Use of Closed Connection' error
+* [#28356](https://github.com/rancher/rancher/issues/28356) [UI] EKSv2: display import command on create if cluster only has private access enabled
+* [#28077](https://github.com/rancher/rancher/issues/28077) Can't use LDAP auth when LDAP Server has objectClass attribute in lowercase
+* [#28040](https://github.com/rancher/rancher/issues/28040) Bug: Global user role null verb causes interface to become uneditable
+* [#27746](https://github.com/rancher/rancher/issues/27746) AWS EBS volume expansion via PVC not working in UI.
+* [#27735](https://github.com/rancher/rancher/issues/27735) Add rotateEncryption to Rancher API
+* [#27377](https://github.com/rancher/rancher/issues/27377) Istio V2: CNI plugin
+* [#27080](https://github.com/rancher/rancher/issues/27080) Add support for GovCloud regions for EKS
+* [#29588](https://github.com/rancher/rancher/issues/29588) Steve bug: "Update" is not working for dynamic RBAC
+* [#26080](https://github.com/rancher/rancher/issues/26080) Possible to create node pools without a role
+* [#25590](https://github.com/rancher/rancher/issues/25590) Scaling/design of default-http-backend Deployment
+* [#24636](https://github.com/rancher/rancher/issues/24636) `tolerations: [{operator: Exists}]` specification for cattle-cluster-agent prevents Pod re-scheduling in the event host node is Unavailable
+* [#22487](https://github.com/rancher/rancher/issues/22487) Ensure rancher-server chart works with k8s because of removed API in k8s 1.20
+* [#21648](https://github.com/rancher/rancher/issues/21648) Bug: ec2 cluster with Amazon Linux images fail to start
 -----
 # Release v2.5.3
 
@@ -2307,6 +3218,11 @@ Rancher supports both upgrade and rollback. Please note the version you would li
 
 **Important:** When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected. 
 
+
+## All issues in v2.5.3 milestone
+
+* [#30045](https://github.com/rancher/rancher/issues/30045) Ingress controller has labels in pods
+* [#30044](https://github.com/rancher/rancher/issues/30044) Ingress is stuck in Initializing state in an upgraded rancher setup
 -----
 # Release v2.5.2
 
@@ -2449,6 +3365,101 @@ Rancher supports both upgrade and rollback. Please note the version you would li
 
 **Important:** When rolling back, we are expecting you to rollback to the state at the time of your upgrade. Any changes post upgrade would not be reflected. 
 
+
+## All issues in v2.5.2 milestone
+
+* [#29990](https://github.com/rancher/rancher/issues/29990) Clicking on Download CLI does not download rancher cli
+* [#29949](https://github.com/rancher/rancher/issues/29949) [EKSv2]: enabling GPU in Rancher does not enable it on the cluster in AWS console and enabling GPU for an EKS cluster should result in the correct AMI being used
+* [#29934](https://github.com/rancher/rancher/issues/29934) Set display-name in charts for UI 
+* [#29923](https://github.com/rancher/rancher/issues/29923) EKS Cluster must specify public endpoint 
+* [#29921](https://github.com/rancher/rancher/issues/29921) Disable the ability to uncheck the "Public Access" checkbox
+* [#29883](https://github.com/rancher/rancher/issues/29883) airgap - no fleet agents in downstream clusters after upgrading from 2.4.8 to 2.5.2-rc5
+* [#29881](https://github.com/rancher/rancher/issues/29881) Clusters go into Error and Updating state on an upgrade from 2.4.8 to 2.5.2-rc5
+* [#29875](https://github.com/rancher/rancher/issues/29875) Panic in Rancher on upgrade from 2.5.1 to 2.5.2-rc4 
+* [#29874](https://github.com/rancher/rancher/issues/29874) Helm error on Rancher upgrade from 2.5.1 to 2.5.2-rc4 and also on fresh install of 2.5.2-rc4
+* [#29852](https://github.com/rancher/rancher/issues/29852) [Forwardport] Can't delete nodes from cluster in updating/error stat
+* [#29839](https://github.com/rancher/rancher/issues/29839) Monitoring v2 - failed to create pv for prometheus when using longhorn as the storage class 
+* [#29815](https://github.com/rancher/rancher/issues/29815) [v2.5] After enabling monitoring , Pod pushprox-kube-etcd-client is in Init:CrashLoopBackOff on RancherOS
+* [#29800](https://github.com/rancher/rancher/issues/29800) Validate SLES 15SP2
+* [#29799](https://github.com/rancher/rancher/issues/29799) Validate RHEL 7.9 and 8.2
+* [#29798](https://github.com/rancher/rancher/issues/29798) Validate Oracle Linux 7.9 and 8.2
+* [#29796](https://github.com/rancher/rancher/issues/29796) Validate CentOS 8.2
+* [#29791](https://github.com/rancher/rancher/issues/29791) [Forward port] With a Cloud Provider enabled, Windows worker nodes cannot join cluster due to DNS suffixes being passed to kubelet as commands
+* [#29754](https://github.com/rancher/rancher/issues/29754) Auto Replace does not work (v2.5.1 on rke)
+* [#29751](https://github.com/rancher/rancher/issues/29751) User is not able to login to Rancher after logging out
+* [#29706](https://github.com/rancher/rancher/issues/29706) [UI] Support for limiting k8s versions on charts
+* [#29702](https://github.com/rancher/rancher/issues/29702) User is not able to create clusters
+* [#29690](https://github.com/rancher/rancher/issues/29690) Hosted Rancher is not able to manage downstream cluster
+* [#29685](https://github.com/rancher/rancher/issues/29685) User cannot select cloud provider option while creating a cluster
+* [#29652](https://github.com/rancher/rancher/issues/29652) Error Provisioning Cluster - Cluster health check failed: cluster agent is not ready
+* [#29646](https://github.com/rancher/rancher/issues/29646) GKE - Create cluster throwing invalid projectID with json key
+* [#29639](https://github.com/rancher/rancher/issues/29639) Monitoring V2 Grafana storage causes "breaks non-root policy" error
+* [#29636](https://github.com/rancher/rancher/issues/29636) Error in console when a standard user navigates to MCAPP page
+* [#29624](https://github.com/rancher/rancher/issues/29624) Default k8s version for EKS clusters should be 1.18
+* [#29599](https://github.com/rancher/rancher/issues/29599) airgap - rancher/rancher-operator:v0.1.0 is used but rancher/rancher-operator:v0.1.0-alpha8 is in the images.txt file
+* [#29591](https://github.com/rancher/rancher/issues/29591) airgap - rancher/fleet:v0.3.0 is used but rancher/fleet:v0.3.0-rc3 is in the images.txt file
+* [#29583](https://github.com/rancher/rancher/issues/29583) Bump rke2 version in rancherd 
+* [#29561](https://github.com/rancher/rancher/issues/29561) rancher-webhook server No compatible with k8s v1.16.x
+* [#29557](https://github.com/rancher/rancher/issues/29557) Installing Loki chart from URL, "Error: gzip: invalid header"
+* [#29553](https://github.com/rancher/rancher/issues/29553) [UI] Add a field to accept Entity ID for Keycloak
+* [#29518](https://github.com/rancher/rancher/issues/29518) Panic seen in isAlertRuleMatching after upgrading to v2.5.2
+* [#29514](https://github.com/rancher/rancher/issues/29514) Hide embedded cluster update in the UI
+* [#29511](https://github.com/rancher/rancher/issues/29511) [v2.5.1] Launch `kubectl` Issues since update to Rancher 2.5.1
+* [#29495](https://github.com/rancher/rancher/issues/29495) Helm upgrade should work behind proxy
+* [#29484](https://github.com/rancher/rancher/issues/29484) UI - PVs of longhorn always show the default volume attributes in edit/display mode.
+* [#29461](https://github.com/rancher/rancher/issues/29461) Continuous updates in nginx-ingress-controller pods in a HA set up where local cluster is created on single-node rancher
+* [#29460](https://github.com/rancher/rancher/issues/29460) OnConfigMapChange panic seen in agent when not being able to process helm configmap/secrets properly
+* [#29457](https://github.com/rancher/rancher/issues/29457) [Monitoring V2] Using the same PV as Monitoring V1
+* [#29445](https://github.com/rancher/rancher/issues/29445) [Monitoring V2] Switch to using a single PushProx for k3s by default
+* [#29424](https://github.com/rancher/rancher/issues/29424) image rancher/rancher-agent:v2.5.0
+* [#29422](https://github.com/rancher/rancher/issues/29422) config.yaml not functional in rancherd
+* [#29420](https://github.com/rancher/rancher/issues/29420) rancher-webhook fails to deploy in a local cluster of HA setup with k8s v1.16
+* [#29419](https://github.com/rancher/rancher/issues/29419) RFE Support specifying UI images path in Rancher Helm Chart
+* [#29412](https://github.com/rancher/rancher/issues/29412) local k3s cluster should not be upgradable in Rancher single install mode 
+* [#29410](https://github.com/rancher/rancher/issues/29410) [Logging V2]  Logs should include data about their source
+* [#29418](https://github.com/rancher/rancher/issues/29418) Cannot upgrade v2 Istio after deleting v2 Monitoring/CRDs
+* [#29408](https://github.com/rancher/rancher/issues/29408) Update Kiali to 1.24.0
+* [#29403](https://github.com/rancher/rancher/issues/29403) Rancher not starting - "Observed a panic: "assignment to entry in nil map" [v2.5.0]
+* [#29397](https://github.com/rancher/rancher/issues/29397) Cattle Cluster and node agent of local cluster are present when upgraded to 2.5.0
+* [#29395](https://github.com/rancher/rancher/issues/29395) Monitoring v2 - failed to install in k8s 1.16 cluster 
+* [#29383](https://github.com/rancher/rancher/issues/29383) v2 Istio fails to completely install/upgrade when Ingress Gateway is not installed
+* [#29379](https://github.com/rancher/rancher/issues/29379) restrictedAdmin - cannot assign global role to users
+* [#29373](https://github.com/rancher/rancher/issues/29373) Update k8s versions-10/14
+* [#29364](https://github.com/rancher/rancher/issues/29364) Elevated CPU, load, network utilization after 2.4.8 to 2.5.0-rc7 upgrade
+* [#29362](https://github.com/rancher/rancher/issues/29362) ui-offline-preferred as "dynamic" does not work does not work in 2.5-head
+* [#29434](https://github.com/rancher/rancher/issues/29434) If I click on radio button on Welcome to Rancher screen, it unselects both
+* [#29357](https://github.com/rancher/rancher/issues/29357) "Unauthorized 401 must authenticate" error seen on login page sometimes
+* [#29353](https://github.com/rancher/rancher/issues/29353) "display-name" is not mapped to the cluster name when EKS v2 cluster name is corrected
+* [#29347](https://github.com/rancher/rancher/issues/29347) Need to update wrangler library to latest in rancher/webhook
+* [#29415](https://github.com/rancher/rancher/issues/29415) User Interface version is incorrect
+* [#29340](https://github.com/rancher/rancher/issues/29340) Testing restrictedAdmin
+* [#29327](https://github.com/rancher/rancher/issues/29327) Fleet agent doesn't deploy in downstream cluster when Rancher is behind proxy
+* [#29325](https://github.com/rancher/rancher/issues/29325) Disable local cluster dashboard access to restricted admin
+* [#29317](https://github.com/rancher/rancher/issues/29317) When Global default registry to `reg1` and cluster level to `reg2`,  helm-operation pod and fleet agent get deployed using images from reg1
+* [#29307](https://github.com/rancher/rancher/issues/29307) In rc builds , ui-index and ui-dashboard-index does not stick to a UI tag.
+* [#29249](https://github.com/rancher/rancher/issues/29249) [ Istio ] Update to version 1.7.3 
+* [#29238](https://github.com/rancher/rancher/issues/29238) What's New in 2.5 showing in v2.4.8 when rancher manages rancher cluster
+* [#29219](https://github.com/rancher/rancher/issues/29219) Hyperlink is broken in all charts' CRD Readme
+* [#29212](https://github.com/rancher/rancher/issues/29212) Unable to integrate Keycloak SAML SSO when Client ID field is reserved
+* [#29201](https://github.com/rancher/rancher/issues/29201) Not able to log in rancher server after a while - 404 errors seen on v3/settings , v3/preferences,v3/users 
+* [#29346](https://github.com/rancher/rancher/issues/29346) Add in support to limit k8s versions for system-charts
+* [#29127](https://github.com/rancher/rancher/issues/29127) [EKSv2] If eks-operator deploy fails, it is not retried
+* [#29070](https://github.com/rancher/rancher/issues/29070) EKS cluster fails to come up in an air gapped proxy setup
+* [#29059](https://github.com/rancher/rancher/issues/29059) [Monitoring V2] Support Hardened Cluster - Hardened Scan
+* [#29058](https://github.com/rancher/rancher/issues/29058) update upgrade_strategy.drain to fix bug in terraform-provider-rancher2
+* [#28953](https://github.com/rancher/rancher/issues/28953) Version shown for an EKS cluster is incorrect
+* [#28923](https://github.com/rancher/rancher/issues/28923) Airgap - helm-operation pod in downstream cluster does not use the private registry 
+* [#28688](https://github.com/rancher/rancher/issues/28688) Run Conformance Testing for 1.19
+* [#28657](https://github.com/rancher/rancher/issues/28657) [Logging V2] Mirror debug fluentbit and fluentd images
+* [#28605](https://github.com/rancher/rancher/issues/28605) Can't provision clusters in Rancher single node docker install with bring your own valid certs 
+* [#28536](https://github.com/rancher/rancher/issues/28536) Monitoring v2 - failed to install in harden clusters
+* [#28468](https://github.com/rancher/rancher/issues/28468) Istio v2: Grafana Addon
+* [#29139](https://github.com/rancher/rancher/issues/29139) Reserved/Used resources are not updated when k3s cluster is local
+* [#27450](https://github.com/rancher/rancher/issues/27450) monitoring - volume is used by existing pod after upgrading cluster monitoring
+* [#26488](https://github.com/rancher/rancher/issues/26488) CPU, RAM missing for k3s cluster in cluster view
+* [#23045](https://github.com/rancher/rancher/issues/23045) RHEL 8 Support with Docker CE
+* [#22790](https://github.com/rancher/rancher/issues/22790) Ability to restrict user to deploy only from catalog
+* [#18044](https://github.com/rancher/rancher/issues/18044) Rancher-monitoring prometheus can't scrape node-exporter, etcd, scheduler and controller-manager endpoints in hardened cluster
 -----
 # Release v2.5.1
 

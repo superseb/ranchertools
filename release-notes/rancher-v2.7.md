@@ -247,6 +247,283 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
   - Remove legacy feature multi-cluster app. See [#39525](https://github.com/rancher/rancher/issues/39525).
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
+
+## All issues in v2.7.2 milestone
+
+* [#41042](https://github.com/rancher/rancher/issues/41042) [BUG] Monitoring Chart - Upgrade fails from v100.2.0+up40.1.2 -> v101.0.0+up19.0.3
+* [#41034](https://github.com/rancher/rancher/issues/41034) [Known Issue] Custom RKE2/K3s cluster nodes may go `NotReady` when deleting controlplane nodes
+* [#41018](https://github.com/rancher/rancher/issues/41018) [BUG] Unable to install/upgrade v102 charts on hardened rke2 cluster
+* [#41016](https://github.com/rancher/rancher/issues/41016) [BUG] 2.7.2-rc7 airgapped cluster throws error when attempting to install monitoring 
+* [#41015](https://github.com/rancher/rancher/issues/41015) [BUG] 2.7.2-rc7 airgapped cluster throws error when attempting to install opa gatekeeper
+* [#41006](https://github.com/rancher/rancher/issues/41006) Update image for canalFlannel to `rancher/mirrored-flannelcni-flannel:v0.19.2` for rke1 k8s 1.24.x
+* [#40993](https://github.com/rancher/rancher/issues/40993) Update Etcd Version For k8s 1.25 in KDM
+* [#40990](https://github.com/rancher/rancher/issues/40990) [BUG]chart repo pointing to release-v2.7 on downstream clusters when upgraded from rancher 2.7.1 to 2.7.2-rc7
+* [#40988](https://github.com/rancher/rancher/issues/40988) [BUG] EKS hosted cluster removed through rancher is not cleaned up in AWS backend
+* [#40983](https://github.com/rancher/rancher/issues/40983) [BUG] GKE hosted cluster upgrade options involving `upgrade node version` produce inconsistent results
+* [#40982](https://github.com/rancher/rancher/issues/40982) [BUG] Windows rke2 custom cluster - nodes stop displaying metrics after upgrading to 1.25
+* [#40981](https://github.com/rancher/rancher/issues/40981) [BUG] PSPs not removed in rke2 (custom) cluster when upgrading to 1.25
+* [#40970](https://github.com/rancher/rancher/issues/40970) Cert manager not in resource set, version not reverted in backup/restore
+* [#40941](https://github.com/rancher/rancher/issues/40941) [BUG] [rancher-monitoring] Unable to upgrade Rancher Monitoring from v101.0.0+up19.0.3 to 102.0.0+up40.1.2
+* [#40936](https://github.com/rancher/rancher/issues/40936) [BUG] Incorrect node IP reported in certain setups
+* [#40929](https://github.com/rancher/rancher/issues/40929) [BUG] RKE2 v1.24 downstream cluster is unable to successfully provision with a custom PSACT and PSP set
+* [#40924](https://github.com/rancher/rancher/issues/40924) RKE2 Downstream Custom Cluster gets stuck in Updating State after rancher server upgrade
+* [#40922](https://github.com/rancher/rancher/issues/40922) [BUG] Istio test worker nodes refusing to connect to demo book service after k8s upgrade 1.24.10 -> 1.25.6 
+* [#40921](https://github.com/rancher/rancher/issues/40921) [BUG] Rocky87 2.7.2-RC6- error thrown blocking users from installing charts
+* [#40920](https://github.com/rancher/rancher/issues/40920) [BUG] Rocky87 2.7.2-RC6- error thrown blocking users from installing charts without choosing a namespace
+* [#40916](https://github.com/rancher/rancher/issues/40916) [BUG] Hosted AKS cluster created from rancher fails to get External/Public IP.
+* [#40913](https://github.com/rancher/rancher/issues/40913) [BUG] Unable to disable PSPs for Istio chart on k8s 1.24.10
+* [#40899](https://github.com/rancher/rancher/issues/40899) [BUG] The `Default Pod Security Policy` value is not restored after restoring the snapshot
+* [#40886](https://github.com/rancher/rancher/issues/40886) [BUG] Error `waiting for dynamic schema to be populated for machine pool` is seen initially when creating an RKE2 cluster, before the cluster proceeds provisioning
+* [#40885](https://github.com/rancher/rancher/issues/40885) [BUG] Fleet controller deployment won't come up active for a few minutes with prirority class not found error on rancher server migration 
+* [#40878](https://github.com/rancher/rancher/issues/40878) [BUG] Can't re-enable auth provider after setting "enabled" to false in auth config
+* [#40863](https://github.com/rancher/rancher/issues/40863) [BUG] Logging install on k8s 1.25 possible to have different versions when install fails due to psps
+* [#40859](https://github.com/rancher/rancher/issues/40859) [BUG] In-Place k8s Upgrade of Local Cluster results in RKE2 Cluster staying stuck in `Updating` state
+* [#40880](https://github.com/rancher/rancher/issues/40880) cert-manager `v1.7.1` not properly applying resources to standalone RKE1 clusters with PSACT, but `v1.11.0` does
+* [#40853](https://github.com/rancher/rancher/issues/40853) [BUG] Not all charts have validate-psp-install.yaml available
+* [#40843](https://github.com/rancher/rancher/issues/40843) [BUG] Restoring a v1.25 RKE2/K3s cluster back to its original v1.24 K8s version with 1 etcd/cp and 3 worker nodes causes cluster to be stuck in `Updating`
+* [#40842](https://github.com/rancher/rancher/issues/40842) [BUG] cis chart version v3.0.0 upgrade path is broken when user tries to upgrade to 4.00-rc3 with existing PSPs in the cluster
+* [#40838](https://github.com/rancher/rancher/issues/40838) [BUG] rancher-vsphere-cpi generates broken YAML configuration, fails to update
+* [#40828](https://github.com/rancher/rancher/issues/40828) [forwardport 2.7] RKE2/K3s v1.24 Kubernetes versions incorrectly appear as experimental verions
+* [#40820](https://github.com/rancher/rancher/issues/40820) [BUG] cis chart version v4.0.0-rc3 but getting an error in one of the pods container has runAsNonRoot and image will run as root
+* [#40819](https://github.com/rancher/rancher/issues/40819) [BUG] RKE2 clusters stay in updating state post rancher backup/restore and a roll back 
+* [#40818](https://github.com/rancher/rancher/issues/40818) [BUG] CIS scan 5.7.4 fails on RKE1 custom hardened cluster
+* [#40817](https://github.com/rancher/rancher/issues/40817) [BUG] CIS scan 5.1.5 fails on RKE1/RKE2 custom hardened cluster
+* [#40816](https://github.com/rancher/rancher/issues/40816) [BUG] Webhook is installed in the downstream cluster post rancher backup/restore roll back on a migrated cluster 
+* [#40814](https://github.com/rancher/rancher/issues/40814) [RFE] Bump Harvester node driver to v0.6.3
+* [#40807](https://github.com/rancher/rancher/issues/40807) [BUG] Un importing an rke1 cluster from rancher floods rancher logs with errors
+* [#40788](https://github.com/rancher/rancher/issues/40788) [BUG][monitoring] global.cattle.psp.enabled=true in crd yaml but value=false in chart yaml
+* [#40761](https://github.com/rancher/rancher/issues/40761) [RFE] Make the description of built-in PSACT templates more specific
+* [#40755](https://github.com/rancher/rancher/issues/40755) Downstream RKE2 Node driver `v1.24.10` w/ PSP set to `default` and PSA set to `rancher-restricted` or `rancher-privileged`, fails to upgrade to k8s `v1.25.5` on Rancher: v2.7-head
+* [#40741](https://github.com/rancher/rancher/issues/40741) [BUG] Updating internal server URL, internal server CA, and user token invalidates CAPI kubeconfig secret
+* [#40739](https://github.com/rancher/rancher/issues/40739) Validate and document Hardened Imported k3s Cluster upgrade from 1.24 to 1.25
+* [#40738](https://github.com/rancher/rancher/issues/40738) Validate and document Hardened Imported RKE2 Cluster upgrade from 1.24 to 1.25
+* [#40737](https://github.com/rancher/rancher/issues/40737) Validate and document Hardened Provisioned k3s Cluster upgrade from 1.24 to 1.25
+* [#40736](https://github.com/rancher/rancher/issues/40736) Validate and document Hardened Provisioned RKE2 Cluster upgrade from 1.24 to 1.25
+* [#40718](https://github.com/rancher/rancher/issues/40718) [BUG] CIS scan with a v1.24 RKE2 custom cluster PSP set to `restricted` fails due to `global-restricted-psp` not being created
+* [#40735](https://github.com/rancher/rancher/issues/40735) Alerting Drivers Installation fails without selecting driver type which is not shown on install screen by default
+* [#40710](https://github.com/rancher/rancher/issues/40710) [Forwardport v2.7] [BUG] Fleet-Agent bundle errors out depending on Cluster Name
+* [#40688](https://github.com/rancher/rancher/issues/40688) [v2.7.2] Add v1.24.10-rancher4-1 and v1.25.6-rancher4-1
+* [#40685](https://github.com/rancher/rancher/issues/40685) [BUG] `rancher-webhook` and `rancher/shell` are not using the system default registry images in downstream clusters, instead they are using Docker images
+* [#40676](https://github.com/rancher/rancher/issues/40676) Forward-port dev-v2.6 charts to dev-v2.7
+* [#40664](https://github.com/rancher/rancher/issues/40664) [BUG] Docker install of Rancher instance on Digital Ocean for 2.7-head on restart loop
+* [#40658](https://github.com/rancher/rancher/issues/40658) [Forwardport v2.7] Unable to Delete Custom Clusters from Rancher UI
+* [#40656](https://github.com/rancher/rancher/issues/40656) Cannot set proxy environment variables for fluentd in rancher-logging chart
+* [#40654](https://github.com/rancher/rancher/issues/40654) Logging v2 does not work in CSI profile enabled RKE2 cluster
+* [#40652](https://github.com/rancher/rancher/issues/40652) [BUG] status report is incorrect when upgrading an rke1 cluster to 1.25+ with existing PSPs
+* [#40651](https://github.com/rancher/rancher/issues/40651) [BUG] rke2 upgrade from 1.24 -> 1.25 `helm-install-calico-rke2` job is in `unavailable` state with `Upgrading rke2-calico Error: UPGRADE FAILED: unable to build kubernetes objects from current release manifest: resource mapping not found for name: "tigera-operator" namespace: "" from "": no matches for kind "PodSecurityPolicy" in version "policy/v1beta1"`
+* [#40648](https://github.com/rancher/rancher/issues/40648) [BUG] CIS scan 5.3.2 fails on rke1 custom hardened cluster
+* [#40628](https://github.com/rancher/rancher/issues/40628) [v2.7] Azure rke2/k3s node driver clusters have etcd nodes stuck in deleting state post rancher upgrade
+* [#40609](https://github.com/rancher/rancher/issues/40609) [v2.7] Azure node driver rke2/k3s nodes get recreated post rancher server upgrade
+* [#40575](https://github.com/rancher/rancher/issues/40575) [DOCS] Add documentation around PSP -> PSS upgrades and management
+* [#40565](https://github.com/rancher/rancher/issues/40565) [BUG] System-Upgrade-Controller bundle errors out depending on Cluster Name
+* [#40550](https://github.com/rancher/rancher/issues/40550) [Forwardport v2.7] [BUG] System Default Private Registry not being used to pull images
+* [#40502](https://github.com/rancher/rancher/issues/40502) RKE2 and K3S - KDM Update for K8s February patch release for Rancher 2.7
+* [#40494](https://github.com/rancher/rancher/issues/40494) [BUG] Rancher Terraform Provider: Unable to remove pod_security_policy from projects
+* [#40492](https://github.com/rancher/rancher/issues/40492) Check release images using skopeo instead of docker manifest inspect
+* [#40478](https://github.com/rancher/rancher/issues/40478) Rename Rancher's builtin PSACTs
+* [#40472](https://github.com/rancher/rancher/issues/40472) Remove rancher-runtime references
+* [#40464](https://github.com/rancher/rancher/issues/40464) Increment major version for rancher/charts to indicate k8s 1.25 support in Rancher v2.7.2
+* [#40441](https://github.com/rancher/rancher/issues/40441) apply-system-agent-upgrader is intermittently stuck in error/unavailable pod creation loop
+* [#40433](https://github.com/rancher/rancher/issues/40433) [BUG] When taking a snapshot of an RKE1 cluster with no PSACT value defined, editing the cluster's configuration to have a PSACT value and restoring the snapshot causes the PSACT value to persist when it shouldn't
+* [#40408](https://github.com/rancher/rancher/issues/40408) [Forwardport v2.7] [BUG][monitoring] rancher-monitoring-prometheus-node exporter is healthy in UI but unhealthyin prometheus targets
+* [#40405](https://github.com/rancher/rancher/issues/40405) [BUG] CIS Benchmark chart fails to upgrade
+* [#40385](https://github.com/rancher/rancher/issues/40385) Support for updated PSP handling for `rancher-k3s-upgrader` (`system-upgrade-controller` (SUC)) from `system-charts`
+* [#40384](https://github.com/rancher/rancher/issues/40384) Support for updated PSP handling for `system-upgrade-controller` (SUC) from `charts`
+* [#40435](https://github.com/rancher/rancher/issues/40435) Update CIS Profiles for RKE2
+* [#40354](https://github.com/rancher/rancher/issues/40354) [BUG] Logging in to rancher as an auth user throws 500 error after logging out of rancher
+* [#40351](https://github.com/rancher/rancher/issues/40351) Update rancher-charts/ui-plugin-operator chart to support updated approach for PSPs
+* [#40350](https://github.com/rancher/rancher/issues/40350) Update rancher-charts/rancher-monitoring chart to support updated approach for PSPs
+* [#40349](https://github.com/rancher/rancher/issues/40349) Update rancher-charts/rancher-logging chart to support updated approach for PSPs
+* [#40348](https://github.com/rancher/rancher/issues/40348) Update rancher-charts/rancher-backup chart to support updated approach for PSPs
+* [#40347](https://github.com/rancher/rancher/issues/40347) Update rancher-charts/rancher-alerting-drivers chart to support updated approach for PSPs
+* [#40346](https://github.com/rancher/rancher/issues/40346) Update rancher-charts/rancher-istio chart to support updated approach for PSPs
+* [#40345](https://github.com/rancher/rancher/issues/40345) Update rancher-charts/rancher-cis-benchmark chart to support updated approach for PSPs
+* [#40344](https://github.com/rancher/rancher/issues/40344) Update rancher-charts/rancher-gatekeeper chart to support updated approach for PSPs
+* [#40343](https://github.com/rancher/rancher/issues/40343) Update rancher-charts/neuvector chart to support updated approach for PSPs
+* [#40342](https://github.com/rancher/rancher/issues/40342) Update rancher-charts/longhorn chart to support updated approach for PSPs
+* [#40338](https://github.com/rancher/rancher/issues/40338) Update rancher-charts/epinio chart to support updated approach for PSPs
+* [#40335](https://github.com/rancher/rancher/issues/40335) [BUG] Can't warm restart docker installed Rancher due to webhook conflicts
+* [#40331](https://github.com/rancher/rancher/issues/40331) Update feature charts to support updated approach for PSPs
+* [#40328](https://github.com/rancher/rancher/issues/40328) Update Rancher to pass PSP setting to the webhook
+* [#40327](https://github.com/rancher/rancher/issues/40327) Update Rancher's chart to support updated approach for PSPs
+* [#40326](https://github.com/rancher/rancher/issues/40326) Update Webhook chart to support updated approach for PSPs
+* [#40325](https://github.com/rancher/rancher/issues/40325) [BUG] `default_pod_security_admission_configuration_template_name` is not persisting while provisioning an RKE1 cluster
+* [#40324](https://github.com/rancher/rancher/issues/40324) Update versions of Oracle OCI node driver and OKE cluster driver
+* [#40321](https://github.com/rancher/rancher/issues/40321) [BUG] Creating new clusters with v2.6.10 with private credentials fails to pull rke-tools
+* [#40318](https://github.com/rancher/rancher/issues/40318) [Forwardport v2.7] [BUG] `useInstanceMetadataHostname` not present in cluster.yml after initial provisioning of downstream RKE1 Custom cluster w/ cloud provider enabled
+* [#40307](https://github.com/rancher/rancher/issues/40307) Monitoring - Alertmanager is not working when TLS enabled
+* [#40306](https://github.com/rancher/rancher/issues/40306) Update Rancher's default restricted PSACT to support RKE2 profile cis-1.23
+* [#40305](https://github.com/rancher/rancher/issues/40305) [BUG] Provisioning log config map is empty
+* [#40301](https://github.com/rancher/rancher/issues/40301) [BUG] Cannot remove etcd nodes from K3s/RKE2 clusters if the cluster is architected with split controlplane/etcd roles
+* [#40299](https://github.com/rancher/rancher/issues/40299) [BUG] Monitoring v2 chart fails to upgrade on a hardened K3s or RKE2 cluster
+* [#40289](https://github.com/rancher/rancher/issues/40289) [RFE] `Manage PSACTs` global role should be implemented to ensure non-admin users can properly use PSACT during cluster provisioning
+* [#40267](https://github.com/rancher/rancher/issues/40267) Drain provisioning test is flaky due to not forcing naked pods eviction
+* [#40259](https://github.com/rancher/rancher/issues/40259) [BUG] Panic during etcd restore
+* [#40247](https://github.com/rancher/rancher/issues/40247) [BUG] spike in CPU and memory in local cluster after upgrade to 2.6.9 from 2.6.6
+* [#40332](https://github.com/rancher/rancher/issues/40332) Events table has empty columns
+* [#40237](https://github.com/rancher/rancher/issues/40237) Add CIS hardening guide for rancher provisioned RKE2/K3S clusters on k8s 1.25
+* [#40288](https://github.com/rancher/rancher/issues/40288) Standard users are unable to provision RKE1/RKE2 clusters with PSACT due to being unable to view global PSACTs
+* [#40232](https://github.com/rancher/rancher/issues/40232) [BUG][RKE2] `node auto-replace` does not work on RKE2/k3s etcd nodes
+* [#40230](https://github.com/rancher/rancher/issues/40230) [BUG] Hardened cluster should not have CIS "Fails"
+* [#40229](https://github.com/rancher/rancher/issues/40229) Rancher security-scan-runner-scan runs on an etcd node, would like to run on a worker node
+* [#40215](https://github.com/rancher/rancher/issues/40215) Release and update `system-agent` in Rancher
+* [#40196](https://github.com/rancher/rancher/issues/40196) [BUG] resource.start event in websockets does not include namespace parameter
+* [#40183](https://github.com/rancher/rancher/issues/40183) [BUG] VmwarevsphereMachine showing error state in vSphere provisioned RKE2 Cluster
+* [#40173](https://github.com/rancher/rancher/issues/40173) [RFE] Bump Harvester node driver to v0.6.1
+* [#40166](https://github.com/rancher/rancher/issues/40166) Rancher Webhook should allow omitted fields when validating PodSecurityAdmissionConfigurationTemplates
+* [#40164](https://github.com/rancher/rancher/issues/40164) [BUG] Re-importing a cluster fails due to webhook not being fully deleted
+* [#40149](https://github.com/rancher/rancher/issues/40149) [Docs] Document how to setup a PSA restricted-by-default local cluster
+* [#40147](https://github.com/rancher/rancher/issues/40147) [Forwardport v2.7] node upgrade failed with 'node not found' in v2.6.4
+* [#40143](https://github.com/rancher/rancher/issues/40143) Unable to provisioning RKE2/K3s Downstream Node Driver cluster with 63 characters in the name
+* [#40139](https://github.com/rancher/rancher/issues/40139) Unable to provision RKE1 downstream cluster with multiple node pools on Linode
+* [#40133](https://github.com/rancher/rancher/issues/40133) Errors in the local cluster when informer tries to list resources whose kind no longer exists
+* [#40131](https://github.com/rancher/rancher/issues/40131) [BUG] Regression: Format of `resource.error` socket message is incorrect
+* [#40127](https://github.com/rancher/rancher/issues/40127) [BUG] Fleet agents bundle in ErrApplied state post rancher upgrade from 2.5.16
+* [#40110](https://github.com/rancher/rancher/issues/40110) Downstream Node Driver Cluster gets stuck in Updating State after rancher server upgrade
+* [#40108](https://github.com/rancher/rancher/issues/40108) [BUG] Cannot install latest opa-gatekeeper verison 101.1.0+up3.10.0 - timeout
+* [#40094](https://github.com/rancher/rancher/issues/40094) [BUG] Add CIS hardening guide for RKE1 standalone clusters on k8s 1.25 
+* [#40087](https://github.com/rancher/rancher/issues/40087) [BUG] AKS Updating AgentPools with custom route table is not allowed
+* [#40080](https://github.com/rancher/rancher/issues/40080) [BUG] RKE2 Downstream Clusters Not Coming Up After Rancher Migration
+* [#40054](https://github.com/rancher/rancher/issues/40054) RKE2/k3s Provisioning Tests are stuck on k8s version 1.22.x; need to be running on the latest instead
+* [#40030](https://github.com/rancher/rancher/issues/40030) [System Upgrade Controller (SUC)] Check for PSP compatibility in target cluster
+* [#40021](https://github.com/rancher/rancher/issues/40021) [Forwardport] v2.7: Add user agent to handlers requests
+* [#40016](https://github.com/rancher/rancher/issues/40016) [BUG] Downstream k3s Node driver clusters fail to provision when etcd and controlplane roles are shared by a nodepool
+* [#40009](https://github.com/rancher/rancher/issues/40009) [BUG] Panic Error Caused by Rancher-Webhook
+* [#40005](https://github.com/rancher/rancher/issues/40005) [BUG] Etcd restore does not work on an RKE2 cluster after upgrade to 1.25.5
+* [#39997](https://github.com/rancher/rancher/issues/39997) Monitoring Charts are failing to install on any cluster
+* [#39996](https://github.com/rancher/rancher/issues/39996) Add feature Apps' Namespaces to the list of Exemptions.Namespaces of the Built-in "Restricted" PSACT
+* [#39995](https://github.com/rancher/rancher/issues/39995) Prevent Upgrading RKE1 Cluster to 1.25 if PSP resources are detected in the cluster
+* [#39994](https://github.com/rancher/rancher/issues/39994) Support the use of PSACT and explicit PSA configuration passing for RKE2/K3S 1.23 - 1.25 cluster
+* [#39992](https://github.com/rancher/rancher/issues/39992) Support the use of PSACT in RKE1 1.25 cluster 
+* [#39988](https://github.com/rancher/rancher/issues/39988) [BUG] Unable to provision downstream k8s v1.25.2-rancher1-1 cluster using Oracle Linux 8.6
+* [#39972](https://github.com/rancher/rancher/issues/39972) [BUG] failed to parse constraint version >= 2.7.0.0 < 2.8.0-0: improper constraint: >= 2.7.0.0 < 2.8.0-0
+* [#39968](https://github.com/rancher/rancher/issues/39968) vSphere CPI chart updates to upstream v1.24.3 / v1.23.3 / v1.22.7
+* [#39960](https://github.com/rancher/rancher/issues/39960) Add 1.25.5 Support + Make 1.25 default
+* [#39954](https://github.com/rancher/rancher/issues/39954) [Monitoring] Update monitoring charts to declare k8s 1.25 support
+* [#39951](https://github.com/rancher/rancher/issues/39951) Update SR-IOV chart to declare k8s 1.25 support
+* [#39940](https://github.com/rancher/rancher/issues/39940) [CSP]  Check for PSP compatibility in target cluster
+* [#39929](https://github.com/rancher/rancher/issues/39929) Update KEv2 Operators to declare k8s 1.25 support
+* [#39923](https://github.com/rancher/rancher/issues/39923) [BUG] `rancher-webhook` pod erring out in k8s v1.25.2-rancher1-1 cluster and gets stuck into ContainerCreating state
+* [#39916](https://github.com/rancher/rancher/issues/39916) [Forwardport 2.7] kubernetes 1.22 conflicts with system-library-rancher-monitoring, cluster is in error state
+* [#39913](https://github.com/rancher/rancher/issues/39913) [rancher-gatekeeper-crd] Check for PSP compatibility in target cluster
+* [#39912](https://github.com/rancher/rancher/issues/39912) [BUG] Error when upgrading logging in k8s 1.25 - upgrade failed
+* [#39908](https://github.com/rancher/rancher/issues/39908) [Azure AD] Rancher does not handle an error when getting groups - leading to panic
+* [#39907](https://github.com/rancher/rancher/issues/39907) [BUG] Monitoring install fails on k8s v 1.25
+* [#39895](https://github.com/rancher/rancher/issues/39895) [2.7] Unable to RollBack cattle-token to the previous one
+* [#39894](https://github.com/rancher/rancher/issues/39894) Add CIS hardening guide for rancher provisioned RKE1 clusters on k8s 1.25
+* [#39891](https://github.com/rancher/rancher/issues/39891) [RFE] Add validation for podSecurityAdmissionConfigrationTemplate 
+* [#39882](https://github.com/rancher/rancher/issues/39882) Validate CSP Adapter support for EKS 1.24
+* [#39859](https://github.com/rancher/rancher/issues/39859) [Harvester] Check for PSP compatibility in target cluster
+* [#39858](https://github.com/rancher/rancher/issues/39858) [Epinio] Check for PSP compatibility in target cluster
+* [#39857](https://github.com/rancher/rancher/issues/39857) [Fleet] Check for PSP compatibility in target cluster
+* [#39856](https://github.com/rancher/rancher/issues/39856) [Neuvector] Check for PSP compatibility in target cluster
+* [#39855](https://github.com/rancher/rancher/issues/39855) [Longhorn] Check for PSP compatibility in target cluster
+* [#39854](https://github.com/rancher/rancher/issues/39854) [Webhook] Check for PSP compatibility in target cluster
+* [#39853](https://github.com/rancher/rancher/issues/39853) [Extensions] Check for PSP compatibility in target cluster
+* [#39852](https://github.com/rancher/rancher/issues/39852) [Windows] Check for PSP compatibility in target cluster
+* [#39851](https://github.com/rancher/rancher/issues/39851) [CIS] Check for PSP compatibility in target cluster
+* [#39850](https://github.com/rancher/rancher/issues/39850) [Backup] Check for PSP compatibility in target cluster
+* [#39849](https://github.com/rancher/rancher/issues/39849) [prom2teams ] Check for PSP compatibility in target cluster
+* [#39848](https://github.com/rancher/rancher/issues/39848) [alerting-drivers] Check for PSP compatibility in target cluster 
+* [#39847](https://github.com/rancher/rancher/issues/39847)  [Istio] Check for PSP compatibility in target cluster
+* [#39846](https://github.com/rancher/rancher/issues/39846) [Monitoring] Check for PSP compatibility in target cluster 
+* [#39841](https://github.com/rancher/rancher/issues/39841) [Enhancement] add probe customization to the Rancher chart
+* [#39829](https://github.com/rancher/rancher/issues/39829) k3s exits during `make test` due to cgroups v2 issue
+* [#39805](https://github.com/rancher/rancher/issues/39805) [RFE] Add/update docs in KEv2 operator repos
+* [#39804](https://github.com/rancher/rancher/issues/39804) [BUG] [QA Automaton] Skip PSP-related test on cluster 1.25 and above 
+* [#39802](https://github.com/rancher/rancher/issues/39802) Upgrade Logging to 3.17.9
+* [#39801](https://github.com/rancher/rancher/issues/39801) Upgrade "Backup and Restore" chart version to 3.0.1
+* [#39795](https://github.com/rancher/rancher/issues/39795) 1.25 RKE2 and K3s version in Rancher KDM
+* [#39784](https://github.com/rancher/rancher/issues/39784) Upgrade "Alerting drivers " chart version to the newest version
+* [#39734](https://github.com/rancher/rancher/issues/39734) [Feature] Adjust Rancher helm chart to allow disabling of PSPs
+* [#39733](https://github.com/rancher/rancher/issues/39733) [Feature] Gracefully handle PSPs in 1.25
+* [#39725](https://github.com/rancher/rancher/issues/39725) [Forward Port 2.7, Monitoring V2] Rebase Monitoring V2 to upstream kube-prometheus-stack 35.x.x
+* [#39724](https://github.com/rancher/rancher/issues/39724) [Project Monitoring V2] Rebase Project Monitoring against 40.x.x Rancher Monitoring
+* [#39706](https://github.com/rancher/rancher/issues/39706) Logs not shipping to Splunk - failed to load secret for field hec_token failed to get kubernetes secret cattle-logging-system Secret not found
+* [#39680](https://github.com/rancher/rancher/issues/39680) [BUG] rancher-istio 100.3.0+up1.13.3: Remove istiod-remote chart to align with upstream, istiodRemote.enabled: true causes installation failure
+* [#39673](https://github.com/rancher/rancher/issues/39673) CIS Benchmark cannot be installed in airgapped env
+* [#39672](https://github.com/rancher/rancher/issues/39672) Enhance `/meta/aksVMSizes` API with SKU details 
+* [#39634](https://github.com/rancher/rancher/issues/39634) Able to add the same user members multiple times to a given project / cluster
+* [#39632](https://github.com/rancher/rancher/issues/39632) [BUG] Rancher charts fail to be downloaded on a fresh install of Rancher 2.6.9
+* [#39611](https://github.com/rancher/rancher/issues/39611) [RFE] Improve details available for Azure credentials issues troubleshooting
+* [#39564](https://github.com/rancher/rancher/issues/39564) Flaky test test_writing_config_to_disk
+* [#39559](https://github.com/rancher/rancher/issues/39559) Update embedded k3s version for Rancher to 1.24.8+
+* [#39557](https://github.com/rancher/rancher/issues/39557) [BUG] Some nodes are not deleted upon node-pool deletion
+* [#39527](https://github.com/rancher/rancher/issues/39527) Feature Charts: Add Longhorn 1.2.7 Chart in 2.7.x
+* [#39510](https://github.com/rancher/rancher/issues/39510) [Issue] Windows OCI images are part of rancher-images.txt / assets
+* [#39506](https://github.com/rancher/rancher/issues/39506) [RFE] Wrangler: allow attaching a debugger - make leader election last longer
+* [#39491](https://github.com/rancher/rancher/issues/39491) [RFE] Optionally build with debugger-friendly compile settings
+* [#39464](https://github.com/rancher/rancher/issues/39464) [BUG] Error `roletemplatebinding doesn't have any subject fields set` is seen while adding a cluster role to a user
+* [#39458](https://github.com/rancher/rancher/issues/39458) Support Azure Availability Zones
+* [#39469](https://github.com/rancher/rancher/issues/39469) Scale and Performance testing for 1.25 k8s clusters
+* [#39438](https://github.com/rancher/rancher/issues/39438) Upgrade OPA Gatekeeper 3.10.0
+* [#39413](https://github.com/rancher/rancher/issues/39413) [BUG] Steve does not pass through the warning HTTP response header for Pod creation requests
+* [#39399](https://github.com/rancher/rancher/issues/39399) [BUG] Norman V3 Cloud Credential Schema omits AWS config even though EKS driver is enabled
+* [#39377](https://github.com/rancher/rancher/issues/39377) [BUG] loglevel trace are not set inside rke2 rancher-machine job
+* [#39366](https://github.com/rancher/rancher/issues/39366) [Feature] k8s 1.25 Support - Apps
+* [#39365](https://github.com/rancher/rancher/issues/39365) [Feature]  k8s 1.25 Support - RBAC 
+* [#39362](https://github.com/rancher/rancher/issues/39362) [BUG] Users are unable to create RKE2 vSphere Node Driver clusters with more than 1 Windows worker node
+* [#39345](https://github.com/rancher/rancher/issues/39345) Add Docker 20.10.18, 20.10.19, 20.10.20 and 20.10.21
+* [#39333](https://github.com/rancher/rancher/issues/39333) Update Nutanix Node Driver to 3.3.0+
+* [#39300](https://github.com/rancher/rancher/issues/39300) [BUG] Non-user friendly/inaccurate message when attempting to delete Cloud Credentials being used
+* [#39298](https://github.com/rancher/rancher/issues/39298) [BUG] New project creation with restricted or unrestricted PSP fails on k3s cluster
+* [#39291](https://github.com/rancher/rancher/issues/39291) [BUG] backup-restore-operator yaml file causes install error when including value for imagePullSecrets
+* [#39284](https://github.com/rancher/rancher/issues/39284) [BUG] k3s proxied downstream cluster does not work on v1.24.4+k3s1 but does work on v1.24.6+k3s1
+* [#39259](https://github.com/rancher/rancher/issues/39259) [BUG] getting a panic: runtime.boundsError
+* [#39249](https://github.com/rancher/rancher/issues/39249) [Forwardport v2.7] [Monitoring V2] Rebase Monitoring V2 to upstream kube-prometheus-stack 40.x.x
+* [#39248](https://github.com/rancher/rancher/issues/39248) [BUG] - Provisioning allows clusters to include names with dot "." when all is lowercase this breaks fleet agent
+* [#39242](https://github.com/rancher/rancher/issues/39242) [BUG] Monitoring v2 - serviceMonitor/kube-system/rancher-monitoring-kubelet down after installing monitoring
+* [#39227](https://github.com/rancher/rancher/issues/39227) [BUG] rancher-monitoring-ingress-nginx showing down on prom targets page but pod is healthy in rancher ui
+* [#39148](https://github.com/rancher/rancher/issues/39148) [BUG] RKE2 hardened cluster fails to provision for k8s 1.25.5
+* [#39144](https://github.com/rancher/rancher/issues/39144) Upgrade Istio versions to 1.15.3
+* [#39139](https://github.com/rancher/rancher/issues/39139) [BUG] [RKE2] `node auto-replace` does not work on RKE2/k3s rancher provisioned clusters
+* [#39109](https://github.com/rancher/rancher/issues/39109) [BUG] Errors in k3s clusters during provisioning but cluster comes up Active
+* [#39108](https://github.com/rancher/rancher/issues/39108) [BUG] Erroneous "Operation cannot be fulfilled" Error in RKE2 Provisioning Logs
+* [#39107](https://github.com/rancher/rancher/issues/39107) [BUG] Invalid groupPrincipals in token objects after 2.6.2 to 2.6.6 upgrade
+* [#39094](https://github.com/rancher/rancher/issues/39094) [BUG] Rancher keeps closing web sockets
+* [#39084](https://github.com/rancher/rancher/issues/39084) [CSP Adapter] Update AWS Marketplace listing for version 2.0.0
+* [#39053](https://github.com/rancher/rancher/issues/39053) Remove auto-generated deepcopy functions for v1 cis-benchmark
+* [#38941](https://github.com/rancher/rancher/issues/38941) [BUG] Unable to provision K3s Custom Clusters on Ubuntu 18.04
+* [#38875](https://github.com/rancher/rancher/issues/38875) [RFE] Need a way to upgrade or warn users when upgrading hardened k3s/rke2 to v1.25
+* [#38849](https://github.com/rancher/rancher/issues/38849) [BUG] Istio with CNI install fails on k3s hardened cluster
+* [#39462](https://github.com/rancher/rancher/issues/39462) vSphere CPI/CSI options omitted when selecting `vsphere` cloud provider in Rancher 2.6.7 or newer
+* [#38804](https://github.com/rancher/rancher/issues/38804) [BUG] Constant refreshes of userAttributes with Active Directory provider
+* [#38701](https://github.com/rancher/rancher/issues/38701) [Feature] k8s 1.25 Support
+* [#38683](https://github.com/rancher/rancher/issues/38683) [BUG] Potential panic in keycloakoidc client caused by uncaught error
+* [#38530](https://github.com/rancher/rancher/issues/38530) [BUG]Cluster roles not working properly with LDAP
+* [#38516](https://github.com/rancher/rancher/issues/38516) Rancher Cleanup Scripts Not Removing a Large Number of Rancher Resources After Upgrade from 2.6.6 to 2.6.7-rc5
+* [#38467](https://github.com/rancher/rancher/issues/38467) [RFE] Steve should only send schema updates when schemas change
+* [#38463](https://github.com/rancher/rancher/issues/38463) Feature charts: Add Longhorn 1.3.1 chart in 2.7
+* [#38427](https://github.com/rancher/rancher/issues/38427) [RFE] Steve should support pagination with sorting and filtering - Step 1
+* [#38414](https://github.com/rancher/rancher/issues/38414) vSphere CSI chart not available on k8s v1.24 cluster due to kube-version annotation
+* [#38302](https://github.com/rancher/rancher/issues/38302) RKE2 cluster - Local etcd snapshots is taken on a cluster where S3 etcd snapshots are enabled
+* [#38293](https://github.com/rancher/rancher/issues/38293) Multinode vSphere Hardened custom cluster unable to register nodes
+* [#38283](https://github.com/rancher/rancher/issues/38283) [RKE2] Unable to rotate encryption keys for large number of secrets
+* [#38188](https://github.com/rancher/rancher/issues/38188) vSphere CSI chart updates to upstream v2.7.0 / v2.6.2 / v2.5.4 / v2.4.3
+* [#38187](https://github.com/rancher/rancher/issues/38187) vSphere CPI chart updates to upstream v1.25.0 / v1.24.2
+* [#38177](https://github.com/rancher/rancher/issues/38177) Rancher 2.6.5/2.6.6 liveness crashes the pod and restarts infinitely
+* [#38168](https://github.com/rancher/rancher/issues/38168) helm job(helm-install-cattle-project-$Projectid-monitoring pod)got stuck after enabling project monitoring in air gap env
+* [#38035](https://github.com/rancher/rancher/issues/38035) The Rancher package Summary's private field may cause dead loop when it is used as a part of Status
+* [#38010](https://github.com/rancher/rancher/issues/38010) Project resource quota deletion not propagating to namespaces
+* [#37998](https://github.com/rancher/rancher/issues/37998) Once setting is configured with an env var, it only be changed with env var and configuring setting env var to be "" string changes value in rancher api but not in kubernetes
+* [#37983](https://github.com/rancher/rancher/issues/37983) Update Recommendations around Scale
+* [#37847](https://github.com/rancher/rancher/issues/37847) [RFE] Enable Azure accelerated networking in node templates
+* [#37657](https://github.com/rancher/rancher/issues/37657) [Monitoring V2, Project Monitoring V2] Grafana logs error "Failed to look up user based on cookie"
+* [#37461](https://github.com/rancher/rancher/issues/37461) CoreDNS pod is not getting scheduled after the cluster upgrade
+* [#37402](https://github.com/rancher/rancher/issues/37402) Kube-apiserver consumes a lot of RAM
+* [#36682](https://github.com/rancher/rancher/issues/36682) Steve should throttle sending of count metadata
+* [#36681](https://github.com/rancher/rancher/issues/36681) Steve should only send back metadata for counts that have changed
+* [#36025](https://github.com/rancher/rancher/issues/36025) RKE(1) unnecessarily causes DOS when generate_serving_certificate is set to true for the kubelet
+* [#36107](https://github.com/rancher/rancher/issues/36107) Variable queries in the Rancher / Pod (Containers) query all container metrics, resulting in a very large response and slow loading/timeout of Metrics tab on Pod view in Rancher UI
+* [#34913](https://github.com/rancher/rancher/issues/34913) Remove initial RancherD code and build process
+* [#34658](https://github.com/rancher/rancher/issues/34658) K3S provisioning support for arm64
+* [#33690](https://github.com/rancher/rancher/issues/33690) Deletion of downstream RKE2 cluster with CIS1.6 profile - cattle-cleanup-c5s6d-g44cr stuck in CreateContainerConfigError
+* [#31090](https://github.com/rancher/rancher/issues/31090) Show Site Access form when re-configuring an Authentication Provider
+* [#30395](https://github.com/rancher/rancher/issues/30395) Incorrect verb "read" versus "get" in clusterscan resource RBAC prevents correctly granting clusterscan permissions
+* [#30082](https://github.com/rancher/rancher/issues/30082) Nodes can not be drained if Istio is enabled
+* [#29071](https://github.com/rancher/rancher/issues/29071) [EKS] Support custom instance roles for node groups
+* [#26955](https://github.com/rancher/rancher/issues/26955) Azure Node Template Tags
+* [#21637](https://github.com/rancher/rancher/issues/21637) feature request to add/tag clustername/id to rancher server logs
 -----
 # Release v2.7.1
 
@@ -421,6 +698,11 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
 
+
+## All issues in v2.7.1 milestone
+
+* [#39888](https://github.com/rancher/rancher/issues/39888) [Forwardport] v2.7: After -- upgrade, high CPU/load on nodes and database, nodes flapping between ready/unready, excessive "refresh processing" logs
+* [#38892](https://github.com/rancher/rancher/issues/38892) Kubectl SHELL is not working for user
 -----
 # Release v2.7.0
 
@@ -604,4 +886,149 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
 
+
+## All issues in v2.7.0 milestone
+
+* [#39561](https://github.com/rancher/rancher/issues/39561) [BUG] .ps1 rancher-save-images and rancher-load-images specifies windows version in manifest tag, leads to missing versions/manifests in users registry
+* [#39554](https://github.com/rancher/rancher/issues/39554) [BUG] allow source registry in rancher-save and rancher-load scripts
+* [#39507](https://github.com/rancher/rancher/issues/39507) Introduce RKE2/k3s October 2022 Releases to KDM
+* [#39484](https://github.com/rancher/rancher/issues/39484) [release/v2.7] Provisioning tests failing due to cgroups remediation miss and bad published RKE2 version
+* [#39475](https://github.com/rancher/rancher/issues/39475) Need to add NeuVector upstream chart version 2.2.4 to Rancher version 2.7.0  
+* [#39474](https://github.com/rancher/rancher/issues/39474) [BUG] non-community version of rancher does not have correct setting in `/rancherversion`
+* [#39468](https://github.com/rancher/rancher/issues/39468) [BUG] The cluster specific registry is not internally synced between v3 & v1 which blocks fleet from using it
+* [#39456](https://github.com/rancher/rancher/issues/39456) [BUG] Upgrade from non-community version -> community version of rancher does not reset branding / `ui-brand` persists after upgrade
+* [#39446](https://github.com/rancher/rancher/issues/39446) [BUG] When MCM is disabled, the webhook won't start
+* [#39409](https://github.com/rancher/rancher/issues/39409) [BUG] Istio - upgrade to lastest version paths all lead to a blank page - can't upgrade via UI
+* [#39408](https://github.com/rancher/rancher/issues/39408) [BUG]OPA Gatekeeper - error in logs 'unable to process a request with an unknown content type
+* [#39395](https://github.com/rancher/rancher/issues/39395) [BUG] Unable to upgrade k8s version from 1.22 to 1.24 on AKS clusters after upgrading Rancher
+* [#39364](https://github.com/rancher/rancher/issues/39364) [BUG] -  Airgap - Rancher Monitoring v2 install job rancher-monitoring-crd-create has image pull error of rancher/shell:v0.1.18
+* [#39350](https://github.com/rancher/rancher/issues/39350) [BUG] Rancher api schema missing causes workload deployment to fail
+* [#39323](https://github.com/rancher/rancher/issues/39323) [feature testing bug] UI extensions install failure on a hardened cluster. pod stuck in Createcontainer state
+* [#39316](https://github.com/rancher/rancher/issues/39316) CIS scan shows failure after kube-apiserver restart
+* [#39283](https://github.com/rancher/rancher/issues/39283) [Forwardport v2.7] [BUG] Rancher fails to install on 22.04 Ubuntu with error - `mkdir: cannot create directory '/sys/fs/cgroup/init': Read-only file system`
+* [#39266](https://github.com/rancher/rancher/issues/39266) RKE2 and K3S - KDM Update for K8s September patch release for Rancher 2.7
+* [#39239](https://github.com/rancher/rancher/issues/39239) Supporting K8s v1.23 -v1.24
+* [#39236](https://github.com/rancher/rancher/issues/39236) [RFE] Update EULA & T&C  in Rancher Helm Chart README
+* [#39213](https://github.com/rancher/rancher/issues/39213) [RFE] Rancher Helm Chart ingress hardcoded to port 80
+* [#39188](https://github.com/rancher/rancher/issues/39188) [BUG] metric-server pod remains in crashloop back off on k8s cluster v1.22.15
+* [#39170](https://github.com/rancher/rancher/issues/39170) [BUG] CIS scan failures on RKE2 hardened clusters
+* [#39162](https://github.com/rancher/rancher/issues/39162) [RFE]  Build and Push Image rancher/rancher to a different registry rather than Dockerhub
+* [#39160](https://github.com/rancher/rancher/issues/39160) [Forwardport] v2.7: Add options to lasso that improve performance
+* [#39159](https://github.com/rancher/rancher/issues/39159) Confirm that all images in rancher-images.txt come from the Rancher repo.
+* [#39150](https://github.com/rancher/rancher/issues/39150) [BUG] Unable to provision clusters on 2.7
+* [#39135](https://github.com/rancher/rancher/issues/39135) Remove Istio versions prior to 1.14.x
+* [#39112](https://github.com/rancher/rancher/issues/39112) [BUG] harvester storage class does not respect PVC volume value. All volumes are created with 10Gi size
+* [#39106](https://github.com/rancher/rancher/issues/39106) [BUG] v2prov is broken on `v2.7.0-rc1`
+* [#39073](https://github.com/rancher/rancher/issues/39073) [BUG] Rancher container unable to resolve due to chart version for rancher-webhook
+* [#39066](https://github.com/rancher/rancher/issues/39066) [BUG] rke2/k3s proxied custom cluster unable to finish rancher-system-agent with ` Main process exited, code=exited, status=2/INVALIDARGUMENT`
+* [#39048](https://github.com/rancher/rancher/issues/39048) [Forwardport v2.7] SUC doesn't appear to be installed in long-named v2prov clusters 
+* [#39046](https://github.com/rancher/rancher/issues/39046) [BUG][project monitoring v2]helm-install-cattle-project-p- pod error state due to missing key
+* [#39038](https://github.com/rancher/rancher/issues/39038) [BUG] Linode Node driver RKE2/K3s fails to register worker node + successfully provision
+* [#39031](https://github.com/rancher/rancher/issues/39031) [BUG][k3s] Unable to upgrade k8s version of imported cluster
+* [#39020](https://github.com/rancher/rancher/issues/39020) [BUG] K3s cluster goes into a full reconcile when upgrade strategy on the cluster is changed
+* [#39014](https://github.com/rancher/rancher/issues/39014) [BUG] Certs for some individual services are not being rotated correctly on RKE2 and K3s clusters
+* [#39000](https://github.com/rancher/rancher/issues/39000) [BUG] Editing the azure AD auth provider config before updating the endpoints result in failed to parse the 'roles' field in JWT 
+* [#38998](https://github.com/rancher/rancher/issues/38998) [BUG] vSphere node driver cluster fails to provision when the nodes are cloned from a VM
+* [#38989](https://github.com/rancher/rancher/issues/38989) [Forwardport v2.7] [BUG] Timeout received when waiting for rancher connection info
+* [#38983](https://github.com/rancher/rancher/issues/38983) Prepare rancher-backup chart for 2.7.0
+* [#38982](https://github.com/rancher/rancher/issues/38982) Prepare rancher-alerting-driver chart for 2.7.0
+* [#38981](https://github.com/rancher/rancher/issues/38981) Prepare rancher-monitoring chart for 2.7.0
+* [#38980](https://github.com/rancher/rancher/issues/38980) Prepare rancher-project-monitoring chart for 2.7.0 
+* [#38979](https://github.com/rancher/rancher/issues/38979) Prepare prometheus-federator chart for 2.7.0
+* [#38978](https://github.com/rancher/rancher/issues/38978) Prepare rancher-logging chart for 2.7.0
+* [#38977](https://github.com/rancher/rancher/issues/38977) Prepare rancher-sriov chart for 2.7.0
+* [#38976](https://github.com/rancher/rancher/issues/38976) Prepare harvester-csi-driver chart for 2.7.0
+* [#38975](https://github.com/rancher/rancher/issues/38975) Prepare harvester-cloud-provider chart for 2.7.0
+* [#38974](https://github.com/rancher/rancher/issues/38974) Implement management.cattle.io schema just Go Automation Framework 
+* [#38971](https://github.com/rancher/rancher/issues/38971) Prepare neuvector chart for 2.7.0 
+* [#38970](https://github.com/rancher/rancher/issues/38970) Prepare rancher-gatekeeper chart for 2.7.0
+* [#38969](https://github.com/rancher/rancher/issues/38969) Prepare rancher-cis-benchmark chart for 2.7.0
+* [#38968](https://github.com/rancher/rancher/issues/38968) Prepare rancher-istio chart for 2.7.0
+* [#38967](https://github.com/rancher/rancher/issues/38967) Prepare fleet-agent chart for 2.7.0
+* [#38966](https://github.com/rancher/rancher/issues/38966) Prepare fleet chart for 2.7.0
+* [#38965](https://github.com/rancher/rancher/issues/38965) Prepare rancher-wins-upgrader chart for 2.7.0
+* [#38964](https://github.com/rancher/rancher/issues/38964) Prepare rancher-windows-gmsa chart for 2.7.0
+* [#38963](https://github.com/rancher/rancher/issues/38963) Prepare rancher-vsphere-csi chart for 2.7.0
+* [#38962](https://github.com/rancher/rancher/issues/38962) Prepare rancher-vsphere-cpi chart for 2.7.0
+* [#38958](https://github.com/rancher/rancher/issues/38958) Prepare system-upgrade-controller chart for 2.7.0
+* [#38957](https://github.com/rancher/rancher/issues/38957)   Prepare rancher-gke-operator chart for 2.7.0
+* [#38956](https://github.com/rancher/rancher/issues/38956) Prepare rancher-eks-operator chart for 2.7.0
+* [#38955](https://github.com/rancher/rancher/issues/38955)  Prepare rancher-aks-operator chart for 2.7.0
+* [#38954](https://github.com/rancher/rancher/issues/38954) Prepare rancher-external-ip-webhook chart for 2.7.0
+* [#38953](https://github.com/rancher/rancher/issues/38953) Prepare rancher-csp-adapter chart for 2.7.0
+* [#38952](https://github.com/rancher/rancher/issues/38952) [Forwardport v2.7] [BUG] Local cluster v2prov non-functional when feature flag multi-cluster-management=false
+* [#38943](https://github.com/rancher/rancher/issues/38943) Prepare rancher-webhook chart for 2.7.0
+* [#38905](https://github.com/rancher/rancher/issues/38905) [2.7] Update hyperkube base to using iptables >1.8.5
+* [#38903](https://github.com/rancher/rancher/issues/38903) [Forwardport v2.7] [BUG] NodePool controller is racy
+* [#38898](https://github.com/rancher/rancher/issues/38898) [release/v2.7] Forwardport of Add 1.23 for EKS
+* [#38897](https://github.com/rancher/rancher/issues/38897) [BUG] Cluster Level Private Registry Isn't Respected When Creating `dashboard-Shell` container
+* [#38896](https://github.com/rancher/rancher/issues/38896) [BUG, RKE2] cluster with windows node fails to deploy System Upgrade Controller to windows node, `Write-EventLog : The source name "rancher-wins" does not exist on computer "localhost".` on pods using `rancher-wins` image
+* [#38890](https://github.com/rancher/rancher/issues/38890) [BUG] RKE2 System Images Are Not Pulled From Cluster Level Registry 
+* [#38880](https://github.com/rancher/rancher/issues/38880) [Azure AD] Always check access token from Microsoft
+* [#38854](https://github.com/rancher/rancher/issues/38854) [BUG] Panic encountered with managementapi/dynamicschema concurrent map read/write
+* [#38851](https://github.com/rancher/rancher/issues/38851) [Logging v2] Windows RKE2 	rancher-logging-root-win-agent-fluentbit pod is in Imagepullbackoff
+* [#38834](https://github.com/rancher/rancher/issues/38834) [BUG] proxy container of the helm-operation pod is not terminated and it becomes NotReady
+* [#38828](https://github.com/rancher/rancher/issues/38828) [2.7] KDM Update for K8s 2022 September patch release
+* [#38808](https://github.com/rancher/rancher/issues/38808) [RFE] Rancher can get all images from a non-Docker registry
+* [#38749](https://github.com/rancher/rancher/issues/38749) RKE deletes user addons on reconcile and redeploys before rke up 
+* [#38733](https://github.com/rancher/rancher/issues/38733) [BUG] Docker installed airgap env, fails to provision downstream rke2/k3s custom clusters
+* [#38703](https://github.com/rancher/rancher/issues/38703) [BUG] Upgrading Kubernetes Version does not retain RKE User Addons
+* [#38681](https://github.com/rancher/rancher/issues/38681) [BUG] k3s provisioned clusters from Rancher do not have taints on etcd/cp nodes
+* [#38679](https://github.com/rancher/rancher/issues/38679) [BUG] k3s node driver cluster stuck in updating state after k3s version upgrade
+* [#38668](https://github.com/rancher/rancher/issues/38668) Hide CIS 1.5 scan profiles from cis benchmark charts
+* [#38664](https://github.com/rancher/rancher/issues/38664) [BUG] CIS scan runs indefinitely and never completes. windows RKE2 clusters
+* [#38648](https://github.com/rancher/rancher/issues/38648) [BUG][Windows] pushprox-kube-etcd-client is failing due to copy-certs failure
+* [#38573](https://github.com/rancher/rancher/issues/38573) [BUG] Error seen when creating a project as cluster owner and assigning another stand user as project member to the project
+* [#38600](https://github.com/rancher/rancher/issues/38600) [BUG] seLinux Being Disabled by Default Causing Logging Upgrade to Fail
+* [#38562](https://github.com/rancher/rancher/issues/38562) [RFE] Ensure charts are update to use alternate registry
+* [#38554](https://github.com/rancher/rancher/issues/38554) [RFE] Dashboard UI request for detecting feature flag
+* [#38551](https://github.com/rancher/rancher/issues/38551) [RFE] Updating the Rancher server helm chart publishing to publish into the new repo for builds
+* [#38550](https://github.com/rancher/rancher/issues/38550) [RFE] Add Env var setting to swap registry
+* [#38549](https://github.com/rancher/rancher/issues/38549) [RFE] Update PrefixPrivateRegistry func to pull shell from right place
+* [#38544](https://github.com/rancher/rancher/issues/38544) [BUG] NeuVector: `cache.syncCheck: Detected sync error` errors seen in the controller pod of Neuvector on RKE2 clusters 
+* [#38536](https://github.com/rancher/rancher/issues/38536) [BUG]The`impersonatedUser` field in K8s audit logs is missing sometimes
+* [#38533](https://github.com/rancher/rancher/issues/38533) Write a Terraform release checklist into the readme.md
+* [#38528](https://github.com/rancher/rancher/issues/38528) [BUG] [2.7] Circular RoleTemplate reference causes high CPU usage or crash
+* [#38512](https://github.com/rancher/rancher/issues/38512) [BUG] When logged into the Rancher CLI as a standard user, you are unable to view an admin user's name when running `rancher clusters list-members`
+* [#38510](https://github.com/rancher/rancher/issues/38510) CIS	rke2-cis-1.5-profile-permissive scan results in 1 failure on downstream rke2 RHEL cluster
+* [#38511](https://github.com/rancher/rancher/issues/38511) Rancher 2.6.head - CIS permissive chart 1.6 runs result in 9 failures on downstream Rhel rke1 clusters
+* [#38460](https://github.com/rancher/rancher/issues/38460) [BUG] Taking multiple s3 etcd snapshots at once take more time to get activated
+* [#38451](https://github.com/rancher/rancher/issues/38451) Upgrade Istio versions to 1.14.3
+* [#38446](https://github.com/rancher/rancher/issues/38446) [BUG] Upgrading Kubernetes Version does not retain RKE User Addons
+* [#38442](https://github.com/rancher/rancher/issues/38442) [BUG] `user-node-remove` finalizer not being properly cleaned up.
+* [#38439](https://github.com/rancher/rancher/issues/38439) Update CIS benchmark scans to work on specific kubernetes versions that it supports
+* [#38405](https://github.com/rancher/rancher/issues/38405) [BUG] RKE2 EC2 Node Driver provisioning fails in EC2 environments with IMDSv2 enforced on instance creation
+* [#38380](https://github.com/rancher/rancher/issues/38380) [BUG][AKS] - Unable to reach Rancher Dashboard after deploying Rancher on AKS 1.24.0 cluster
+* [#38379](https://github.com/rancher/rancher/issues/38379) [BUG][RKE2] Workload endpoint times out when setting public port
+* [#38330](https://github.com/rancher/rancher/issues/38330) [BUG] Memory leak in cluster provisioning/deletion process
+* [#38313](https://github.com/rancher/rancher/issues/38313) When provisioning a downstream RKE2 node driver cluster, Rancher logs show `Secret name is empty` at the WARNING/INFO log level
+* [#38167](https://github.com/rancher/rancher/issues/38167) Files changed by go fmt do not cause build failure
+* [#38142](https://github.com/rancher/rancher/issues/38142) Observed a panic: "invalid memory address or nil pointer dereference"
+* [#38132](https://github.com/rancher/rancher/issues/38132) Research Pod Security Policy (PSP) deprecation
+* [#38048](https://github.com/rancher/rancher/issues/38048) [2.6] Provisioning-tests pipeline phase is failing due to KDM bug
+* [#38014](https://github.com/rancher/rancher/issues/38014) User defined EKS security groups are configured as the only node group security groups, versus being appended to the cluster default security group
+* [#37993](https://github.com/rancher/rancher/issues/37993) User-supplied bootstrap password not observed in air-gapped Rancher v2.6.5 installation
+* [#37927](https://github.com/rancher/rancher/issues/37927) Adds priority Class to Rancher helm chart
+* [#37818](https://github.com/rancher/rancher/issues/37818) KEv2 unit/integration tests
+* [#37816](https://github.com/rancher/rancher/issues/37816) Cert rotation integration tests for RKE2 
+* [#37707](https://github.com/rancher/rancher/issues/37707) Proxied kubectl commands hanging
+* [#37631](https://github.com/rancher/rancher/issues/37631) metrics server 0.5.0 failing due to docker CIS hardening
+* [#37493](https://github.com/rancher/rancher/issues/37493) Add CIS hardening guide for rancher provisioned k3s clusters
+* [#37327](https://github.com/rancher/rancher/issues/37327) Remove Istio v1
+* [#37324](https://github.com/rancher/rancher/issues/37324) Remove Pipelines
+* [#37322](https://github.com/rancher/rancher/issues/37322) Remove CIS 1.4 Scanner
+* [#37318](https://github.com/rancher/rancher/issues/37318) Remove Logging v1
+* [#37029](https://github.com/rancher/rancher/issues/37029) OPA gatekeeper 100.0.1+up3.6.0 stuck uninstalling CRDs in RKE1/RKE2 Windows clusters
+* [#36972](https://github.com/rancher/rancher/issues/36972) Add backend support for UI plugins
+* [#36846](https://github.com/rancher/rancher/issues/36846) Rancher-Gatekeeper app fails in a hardened cluster
+* [#36810](https://github.com/rancher/rancher/issues/36810) Shared Label Causes Pods to Show Under Another Deployment in the Cluster Explorer UI 
+* [#36273](https://github.com/rancher/rancher/issues/36273) Validate updated SG with existing automated test cases.
+* [#36238](https://github.com/rancher/rancher/issues/36238) Rancher container is restarting every 15 seconds on Ubuntu 22.04
+* [#39090](https://github.com/rancher/rancher/issues/39090) Error when disabling grafana rancher-monitoring
+* [#35587](https://github.com/rancher/rancher/issues/35587) Rancher rancher-images.txt includes docker.io/busybox which can not be downloaded due to "too many requests"
+* [#32935](https://github.com/rancher/rancher/issues/32935) rancher-cis-benchmark scan mis-matches as master any non-master node on which a running process has an argument containing the phrase kube-apiserver
+* [#31324](https://github.com/rancher/rancher/issues/31324) Cluster agent fails with error "socket: too many open files"
+* [#29939](https://github.com/rancher/rancher/issues/29939) Weird etcdHighNumberOfFailedGRPCRequests prometheus rule in v2.5 rancher-monitoring
+* [#29372](https://github.com/rancher/rancher/issues/29372) [Logging v2] Support for Hardened Cluster: Ensure CIS hardened profile scan passes
+* [#28620](https://github.com/rancher/rancher/issues/28620) [Logging v2] Support hardened cluster
 -----
