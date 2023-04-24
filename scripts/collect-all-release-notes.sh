@@ -38,6 +38,11 @@ for minor in v2.5 v2.6 v2.7; do
         publish_date=$(gh release view "${patch}" -R "rancher/${product}" --json publishedAt -q '.publishedAt' | awk -F'T' '{ print $1 }')
         echo "| [${patch}](${product}-${minor}.md#release-$(generate_markdown_link $patch)) | $(date +"%b %d %Y" -d "${publish_date}") | $(date +"%D" -d "${publish_date}") | $(date +"%F" -d "${publish_date}") |" >> $rancherversiontmp
         gh release view "${patch}" -R "rancher/${product}" --json body -q '.body' >> release-notes/${product}-${minor}.md
+        all_issues=$(gh issue list -R "rancher/${product}" -m $patch --limit 1000 --state closed --json number,url,title -q '.[] | "* [#\(.number)](\(.url)) \(.title)"')
+        if [ -n "${all_issues}" ]; then
+            echo -e "\n## All issues in ${patch} milestone\n" >> release-notes/${product}-${minor}.md
+            echo "${all_issues}" >> release-notes/${product}-${minor}.md
+        fi
         echo "-----" >> release-notes/${product}-${minor}.md
     done
     echo -e "\n\n" >> $rancherversiontmp
