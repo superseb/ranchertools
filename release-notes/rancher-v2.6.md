@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.6.12](rancher-v2.6.md#release-v2612) | Apr 27 2023 | 04/27/23 | 2023-04-27 |
 | [v2.6.11](rancher-v2.6.md#release-v2611) | Mar 08 2023 | 03/08/23 | 2023-03-08 |
 | [v2.6.10](rancher-v2.6.md#release-v2610) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
 | [v2.6.9](rancher-v2.6.md#release-v269) | Oct 18 2022 | 10/18/22 | 2022-10-18 |
@@ -17,6 +18,20 @@
 
 
 
+
+
+## All issues in v2.6.12 milestone
+
+* [#41004](https://github.com/rancher/rancher/issues/41004) [BUG] cis benchmark chart v2.1.2-rc1 fails to install on RKE1 hardened cluster v1.24.10.
+* [#40977](https://github.com/rancher/rancher/issues/40977) [Backport v2.6] [BUG] Incorrect node IP reported in certain setups
+* [#40896](https://github.com/rancher/rancher/issues/40896) [BUG] [2.6 backport] Can't re-enable auth provider after setting "enabled" to false in auth config
+* [#40860](https://github.com/rancher/rancher/issues/40860) [BUG] ProjectRoleTemplateBinding is not created for svc account when creating a new Project
+* [#40695](https://github.com/rancher/rancher/issues/40695) [Backport v2.6] [BUG] CIS scan 5.3.2 fails on rke1 custom hardened cluster
+* [#40681](https://github.com/rancher/rancher/issues/40681) [BUG] RKE1 Clusters taking hours to come back up after a migration via backup/restore operator
+* [#40554](https://github.com/rancher/rancher/issues/40554) [Backport v2.6] [BUG] Potential panic in keycloakoidc client caused by uncaught error
+* [#40358](https://github.com/rancher/rancher/issues/40358) [BUG] After monitoring upgrade from 100.1.3+up19.0.3 to 100.2.0+up40.1.2, user won't receive an alert.
+* [#39839](https://github.com/rancher/rancher/issues/39839) [BUG] CIS scan on k3s clusters running for too long before it gets completed.
+-----
 # Release v2.6.11
 
 # Features and Enhancements
