@@ -53,7 +53,7 @@ for minor in v2.5 v2.6 v2.7; do
 done
 
 echo "# RKE2" >> release-notes/README.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27; do
     product=rke2
     > release-notes/${product}-${minor}.md
     rke2table=$(mktemp)
@@ -103,7 +103,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
 done
 
 echo "# k3s" >> release-notes/README.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27; do
     product=k3s
     > release-notes/${product}-${minor}.md
     k3stable=$(mktemp)
