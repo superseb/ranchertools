@@ -331,6 +331,80 @@ As always, we welcome and appreciate feedback from our community of users. Pleas
 
 -----
 # Release v1.25.4+k3s1
+<!-- v1.25.4+k3s1 -->
+This release updates Kubernetes to v1.25.4, and fixes a number of issues.
+
+For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.25.md#changelog-since-v1253).
+
+## Changes since v1.25.3+k3s1:
+
+* Add the gateway parameter in netplan [(#6292)](https://github.com/k3s-io/k3s/pull/6292)
+* Bumped dynamiclistener library to v0.3.5 [(#6300)](https://github.com/k3s-io/k3s/pull/6300)
+* Update kube-router to v1.5.1 with extra logging [(#6345)](https://github.com/k3s-io/k3s/pull/6345)
+* Update maintainers [(#6298)](https://github.com/k3s-io/k3s/pull/6298)
+* Bump testing to opensuse Leap 15.4 [(#6337)](https://github.com/k3s-io/k3s/pull/6337)
+* Update E2E docs with more info on ubuntu 22.04 [(#6316)](https://github.com/k3s-io/k3s/pull/6316)
+* Netpol test for podSelector & ingress [(#6247)](https://github.com/k3s-io/k3s/pull/6247)
+* Bump all alpine images to 3.16 [(#6334)](https://github.com/k3s-io/k3s/pull/6334)
+* Bump kine to v0.9.6 / sqlite3 v3.39.2 ([CVE-2022-35737](https://nvd.nist.gov/vuln/detail/CVE-2022-35737)) [(#6317)](https://github.com/k3s-io/k3s/pull/6317)
+* Add hardened cluster and upgrade tests [(#6320)](https://github.com/k3s-io/k3s/pull/6320)
+* The bundled Traefik helm chart has been updated to v18.0.0 [(#6353)](https://github.com/k3s-io/k3s/pull/6353)
+* Mark v1.25.3+k3s1 as stable [(#6338)](https://github.com/k3s-io/k3s/pull/6338)
+* The embedded helm controller has been bumped to v0.13.0 [(#6294)](https://github.com/k3s-io/k3s/pull/6294)
+* Fixed an issue that would prevent the deploy controller from handling manifests that include resource types that are no longer supported by the apiserver. [(#6295)](https://github.com/k3s-io/k3s/pull/6295)
+* Replace fedora-coreos with fedora 36 for install tests [(#6315)](https://github.com/k3s-io/k3s/pull/6315)
+* Convert containerd config.toml.tmpl Linux template to v2 syntax [(#6267)](https://github.com/k3s-io/k3s/pull/6267)
+* Add test for node-external-ip config parameter [(#6359)](https://github.com/k3s-io/k3s/pull/6359)
+* Use debugger-friendly compile settings if DEBUG is set [(#6147)](https://github.com/k3s-io/k3s/pull/6147)
+* update e2e tests [(#6354)](https://github.com/k3s-io/k3s/pull/6354)
+* Remove unused vagrant development scripts [(#6395)](https://github.com/k3s-io/k3s/pull/6395)
+* The bundled Traefik has been updated to v2.9.4 /  helm chart v18.3.0 [(#6397)](https://github.com/k3s-io/k3s/pull/6397)
+* None [(#6371)](https://github.com/k3s-io/k3s/pull/6371)
+* Fix incorrect defer usage [(#6296)](https://github.com/k3s-io/k3s/pull/6296)
+* Add snapshot restore e2e test [(#6396)](https://github.com/k3s-io/k3s/pull/6396)
+* Fix sonobouy tests on v1.25 [(#6399)](https://github.com/k3s-io/k3s/pull/6399)
+* Bump packaged component versions
+ * The packaged traefik helm chart has been bumped to v19.0.0, enabling ingressClass support by default.
+ * The packaged local-path-provisioner has been bumped to v0.0.23
+ * The packaged coredns has been bumped to v1.9.4 [(#6408)](https://github.com/k3s-io/k3s/pull/6408)
+* log kube-router version when starting netpol controller [(#6405)](https://github.com/k3s-io/k3s/pull/6405)
+* Add Kairos to ADOPTERS [(#6417)](https://github.com/k3s-io/k3s/pull/6417)
+* Update Flannel to 0.20.1 [(#6388)](https://github.com/k3s-io/k3s/pull/6388)
+* Avoid wrong config for `flannel-external-ip` and add warning if unencrypted backend [(#6403)](https://github.com/k3s-io/k3s/pull/6403)
+* Fix test-mods to allow for pinning version from k8s.io [(#6413)](https://github.com/k3s-io/k3s/pull/6413)
+* Fix for metrics-server in the multi-cloud cluster env [(#6386)](https://github.com/k3s-io/k3s/pull/6386)
+* K3s now indicates specifically which cluster-level configuration flags are out of sync when critical configuration differs between server nodes. [(#6409)](https://github.com/k3s-io/k3s/pull/6409)
+* Convert test output  to JSON format [(#6410)](https://github.com/k3s-io/k3s/pull/6410)
+* Pull traefik helm chart directly from GH [(#6468)](https://github.com/k3s-io/k3s/pull/6468)
+* Nightly test fix [(#6475)](https://github.com/k3s-io/k3s/pull/6475)
+* Update to v1.25.4 [(#6477)](https://github.com/k3s-io/k3s/pull/6477)
+* Remove stuff which belongs in the windows executor implementation [(#6492)](https://github.com/k3s-io/k3s/pull/6492)
+* The packaged traefik helm chart has been bumped to 19.0.4 [(#6494)](https://github.com/k3s-io/k3s/pull/6494)
+* Move traefik chart repo again [(#6508)](https://github.com/k3s-io/k3s/pull/6508)
+
+## Embedded Component Versions
+| Component | Version |
+|---|---|
+| Kubernetes | [v1.25.4](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.25.md#v1254) |
+| Kine | [v0.9.6](https://github.com/k3s-io/kine/releases/tag/v0.9.6) |
+| SQLite | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) |
+| Etcd | [v3.5.3-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.3-k3s1) |
+| Containerd | [v1.6.8-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.8-k3s1) |
+| Runc | [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4) |
+| Flannel | [v0.20.1](https://github.com/flannel-io/flannel/releases/tag/v0.20.1) | 
+| Metrics-server | [v0.6.1](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.1) |
+| Traefik | [v2.9.4](https://github.com/traefik/traefik/releases/tag/v2.9.4) |
+| CoreDNS | [v1.9.4](https://github.com/coredns/coredns/releases/tag/v1.9.4) | 
+| Helm-controller | [v0.13.0](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.0) |
+| Local-path-provisioner | [v0.0.23](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.23) |
+
+## Helpful Links
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/k3s/issues/new/choose)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
+- [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
+
 -----
 # Release v1.25.3+k3s1
 <!-- v1.25.3+k3s1 -->
