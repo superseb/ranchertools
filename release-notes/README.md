@@ -32,27 +32,6 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
-| [v1.3.20](rke-v1.3.md#release-v1320) | Apr 26 2023 | 04/26/23 | 2023-04-26 |
-| [v1.3.19](rke-v1.3.md#release-v1319) | Mar 07 2023 | 03/07/23 | 2023-03-07 |
-| [v1.3.18](rke-v1.3.md#release-v1318) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
-| [v1.3.17](rke-v1.3.md#release-v1317) | Nov 28 2022 | 11/28/22 | 2022-11-28 |
-| [v1.3.16](rke-v1.3.md#release-v1316) | Nov 11 2022 | 11/11/22 | 2022-11-11 |
-| [v1.3.15](rke-v1.3.md#release-v1315) | Sep 21 2022 | 09/21/22 | 2022-09-21 |
-| [v1.3.14](rke-v1.3.md#release-v1314) | Aug 30 2022 | 08/30/22 | 2022-08-30 |
-| [v1.3.13](rke-v1.3.md#release-v1313) | Aug 17 2022 | 08/17/22 | 2022-08-17 |
-| [v1.3.12](rke-v1.3.md#release-v1312) | Jun 15 2022 | 06/15/22 | 2022-06-15 |
-| [v1.3.11](rke-v1.3.md#release-v1311) | May 11 2022 | 05/11/22 | 2022-05-11 |
-| [v1.3.10](rke-v1.3.md#release-v1310) | Apr 29 2022 | 04/29/22 | 2022-04-29 |
-| [v1.3.9](rke-v1.3.md#release-v139) | Apr 04 2022 | 04/04/22 | 2022-04-04 |
-| [v1.3.8](rke-v1.3.md#release-v138) | Mar 25 2022 | 03/25/22 | 2022-03-25 |
-| [v1.3.7](rke-v1.3.md#release-v137) | Feb 08 2022 | 02/08/22 | 2022-02-08 |
-| [v1.3.6](rke-v1.3.md#release-v136) | Jan 26 2022 | 01/26/22 | 2022-01-26 |
-| [v1.3.5](rke-v1.3.md#release-v135) | Jan 24 2022 | 01/24/22 | 2022-01-24 |
-| [v1.3.4](rke-v1.3.md#release-v134) | Jan 05 2022 | 01/05/22 | 2022-01-05 |
-| [v1.3.3](rke-v1.3.md#release-v133) | Dec 17 2021 | 12/17/21 | 2021-12-17 |
-| [v1.3.2](rke-v1.3.md#release-v132) | Nov 03 2021 | 11/03/21 | 2021-11-03 |
-| [v1.3.1](rke-v1.3.md#release-v131) | Sep 17 2021 | 09/17/21 | 2021-09-17 |
-| [v1.3.0](rke-v1.3.md#release-v130) | Aug 30 2021 | 08/30/21 | 2021-08-30 |
 
 
 
@@ -60,12 +39,6 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
-| [v1.4.5](rke-v1.4.md#release-v145) | Apr 26 2023 | 04/26/23 | 2023-04-26 |
-| [v1.4.4](rke-v1.4.md#release-v144) | Apr 07 2023 | 04/07/23 | 2023-04-07 |
-| [v1.4.3](rke-v1.4.md#release-v143) | Mar 07 2023 | 03/07/23 | 2023-03-07 |
-| [v1.4.2](rke-v1.4.md#release-v142) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
-| [v1.4.1](rke-v1.4.md#release-v141) | Nov 28 2022 | 11/28/22 | 2022-11-28 |
-| [v1.4.0](rke-v1.4.md#release-v140) | Nov 11 2022 | 11/11/22 | 2022-11-11 |
 
 
 
@@ -74,29 +47,6 @@
 # Rancher
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
-| [v2.5.17](rancher-v2.5.md#release-v2517) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
-| [v2.5.16](rancher-v2.5.md#release-v2516) | Aug 18 2022 | 08/18/22 | 2022-08-18 |
-| [v2.5.15](rancher-v2.5.md#release-v2515) | Jun 30 2022 | 06/30/22 | 2022-06-30 |
-| [v2.5.14](rancher-v2.5.md#release-v2514) | May 24 2022 | 05/24/22 | 2022-05-24 |
-| [v2.5.13](rancher-v2.5.md#release-v2513) | Apr 15 2022 | 04/15/22 | 2022-04-15 |
-| [v2.5.12-patch1](rancher-v2.5.md#release-v2512-patch1) | Mar 14 2022 | 03/14/22 | 2022-03-14 |
-| [v2.5.12-debug1](rancher-v2.5.md#release-v2512-debug1) | Feb 11 2022 | 02/11/22 | 2022-02-11 |
-| [v2.5.12](rancher-v2.5.md#release-v2512) | Jan 25 2022 | 01/25/22 | 2022-01-25 |
-| [v2.5.11-patch1](rancher-v2.5.md#release-v2511-patch1) | Nov 22 2021 | 11/22/21 | 2021-11-22 |
-| [v2.5.11](rancher-v2.5.md#release-v2511) | Nov 03 2021 | 11/03/21 | 2021-11-03 |
-| [v2.5.10](rancher-v2.5.md#release-v2510) | Oct 14 2021 | 10/14/21 | 2021-10-14 |
-| [v2.5.9](rancher-v2.5.md#release-v259) | Jul 15 2021 | 07/15/21 | 2021-07-15 |
-| [v2.5.8-patch1](rancher-v2.5.md#release-v258-patch1) | May 26 2021 | 05/26/21 | 2021-05-26 |
-| [v2.5.8](rancher-v2.5.md#release-v258) | May 06 2021 | 05/06/21 | 2021-05-06 |
-| [v2.5.7-patch1](rancher-v2.5.md#release-v257-patch1) | May 05 2021 | 05/05/21 | 2021-05-05 |
-| [v2.5.7](rancher-v2.5.md#release-v257) | Mar 13 2021 | 03/13/21 | 2021-03-13 |
-| [v2.5.6](rancher-v2.5.md#release-v256) | Mar 04 2021 | 03/04/21 | 2021-03-04 |
-| [v2.5.5](rancher-v2.5.md#release-v255) | Jan 09 2021 | 01/09/21 | 2021-01-09 |
-| [v2.5.4](rancher-v2.5.md#release-v254) | Jan 07 2021 | 01/07/21 | 2021-01-07 |
-| [v2.5.3](rancher-v2.5.md#release-v253) | Nov 30 2020 | 11/30/20 | 2020-11-30 |
-| [v2.5.2](rancher-v2.5.md#release-v252) | Nov 10 2020 | 11/10/20 | 2020-11-10 |
-| [v2.5.1](rancher-v2.5.md#release-v251) | Oct 08 2020 | 10/08/20 | 2020-10-08 |
-| [v2.5.0](rancher-v2.5.md#release-v250) | Oct 06 2020 | 10/06/20 | 2020-10-06 |
 
 
 
@@ -104,21 +54,6 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
-| [v2.6.12](rancher-v2.6.md#release-v2612) | Apr 27 2023 | 04/27/23 | 2023-04-27 |
-| [v2.6.11](rancher-v2.6.md#release-v2611) | Mar 08 2023 | 03/08/23 | 2023-03-08 |
-| [v2.6.10](rancher-v2.6.md#release-v2610) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
-| [v2.6.9](rancher-v2.6.md#release-v269) | Oct 18 2022 | 10/18/22 | 2022-10-18 |
-| [v2.6.8](rancher-v2.6.md#release-v268) | Aug 30 2022 | 08/30/22 | 2022-08-30 |
-| [v2.6.7](rancher-v2.6.md#release-v267) | Aug 19 2022 | 08/19/22 | 2022-08-19 |
-| [v2.6.6](rancher-v2.6.md#release-v266) | Jun 30 2022 | 06/30/22 | 2022-06-30 |
-| [v2.6.5](rancher-v2.6.md#release-v265) | May 12 2022 | 05/12/22 | 2022-05-12 |
-| [v2.6.4](rancher-v2.6.md#release-v264) | Mar 31 2022 | 03/31/22 | 2022-03-31 |
-| [v2.6.3-patch2](rancher-v2.6.md#release-v263-patch2) | Mar 16 2022 | 03/16/22 | 2022-03-16 |
-| [v2.6.3-patch1](rancher-v2.6.md#release-v263-patch1) | Jan 28 2022 | 01/28/22 | 2022-01-28 |
-| [v2.6.3](rancher-v2.6.md#release-v263) | Dec 21 2021 | 12/21/21 | 2021-12-21 |
-| [v2.6.2](rancher-v2.6.md#release-v262) | Oct 20 2021 | 10/20/21 | 2021-10-20 |
-| [v2.6.1](rancher-v2.6.md#release-v261) | Oct 11 2021 | 10/11/21 | 2021-10-11 |
-| [v2.6.0](rancher-v2.6.md#release-v260) | Aug 31 2021 | 08/31/21 | 2021-08-31 |
 
 
 
