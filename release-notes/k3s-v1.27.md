@@ -68,7 +68,6 @@ For more details on what's new, see the [Kubernetes release notes](https://githu
   * The bundled containerd and runc versions have been bumped to v1.7.1-k3s1/v1.1.7
 * Wrap error stating that it is coming from netpol [(#7539)](https://github.com/k3s-io/k3s/pull/7539)
 * Add Rotation certification Check, remove func to restart agents [(#7097)](https://github.com/k3s-io/k3s/pull/7097)
-  * None
 * Bump alpine from 3.17 to 3.18 in /package [(#7550)](https://github.com/k3s-io/k3s/pull/7550)
 * Bump alpine from 3.17 to 3.18 in /conformance [(#7551)](https://github.com/k3s-io/k3s/pull/7551)
 * Add '-all' flag to apply to inactive systemd units [(#7567)](https://github.com/k3s-io/k3s/pull/7567)
