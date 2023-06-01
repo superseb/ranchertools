@@ -104,6 +104,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.6.13](rancher-v2.6.md#release-v2613) | May 31 2023 | 05/31/23 | 2023-05-31 |
 | [v2.6.12](rancher-v2.6.md#release-v2612) | Apr 27 2023 | 04/27/23 | 2023-04-27 |
 | [v2.6.11](rancher-v2.6.md#release-v2611) | Mar 08 2023 | 03/08/23 | 2023-03-08 |
 | [v2.6.10](rancher-v2.6.md#release-v2610) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
@@ -126,6 +127,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.4](rancher-v2.7.md#release-v274) | May 31 2023 | 05/31/23 | 2023-05-31 |
 | [v2.7.3](rancher-v2.7.md#release-v273) | Apr 24 2023 | 04/24/23 | 2023-04-24 |
 | [v2.7.2](rancher-v2.7.md#release-v272) | Apr 12 2023 | 04/12/23 | 2023-04-12 |
 | [v2.7.1](rancher-v2.7.md#release-v271) | Jan 24 2023 | 01/24/23 | 2023-01-24 |
