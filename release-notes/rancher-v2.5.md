@@ -4,7 +4,7 @@
 | [v2.5.16](rancher-v2.5.md#release-v2516) | Aug 18 2022 | 08/18/22 | 2022-08-18 |
 | [v2.5.15](rancher-v2.5.md#release-v2515) | Jun 30 2022 | 06/30/22 | 2022-06-30 |
 | [v2.5.14](rancher-v2.5.md#release-v2514) | May 24 2022 | 05/24/22 | 2022-05-24 |
-| [v2.5.13](rancher-v2.5.md#release-v2513) | Jun 02 2023 | 06/02/23 | 2023-06-02 |
+| [v2.5.13](rancher-v2.5.md#release-v2513) | Apr 15 2022 | 04/15/22 | 2022-04-15 |
 | [v2.5.12-patch1](rancher-v2.5.md#release-v2512-patch1) | Mar 14 2022 | 03/14/22 | 2022-03-14 |
 | [v2.5.12-debug1](rancher-v2.5.md#release-v2512-debug1) | Feb 11 2022 | 02/11/22 | 2022-02-11 |
 | [v2.5.12](rancher-v2.5.md#release-v2512) | Jan 25 2022 | 01/25/22 | 2022-01-25 |
