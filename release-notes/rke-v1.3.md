@@ -696,6 +696,35 @@ Each version of RKE has a specific list of supported Kubernetes versions. If you
 - rancher/hyperkube:v1.21.7-rancher1
 - rancher/hyperkube:v1.20.13-rancher1
 -----
+# Release v1.3.2
+
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
+
+## Enhancements
+
+* Introduced new Kubernetes images `v1.21.6-rancher1`, `v1.20.12-rancher1` and `v1.19.16-rancher1`.
+* Introduced new nginx-ingress image `nginx-0.49.3-rancher1` to address [CVE-2021-25742](https://github.com/kubernetes/ingress-nginx/issues/7837) for `v1.21.6-rancher1`, `v1.20.12-rancher1` and `v1.19.16-rancher1`. 
+
+## Known Major Issues
+- In clusters where `cloud_provider` is configured, and either `address` or `internal_address` does not contain a valid IP address (e.g. hostname or FQDN), kube-proxy will fail to start. [[#1725](https://github.com/rancher/rke/issues/1725)]
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.21.6-rancher1-1` | 
+| `v1.20.12-rancher1-1`  |
+| `v1.19.16-rancher1-1` |
+| `v1.18.20-rancher1-2` |
+
+### New Images in v1.21.6-rancher1, v1.20.12-rancher1, v1.19.16-rancher1
+
+**Updated Hyperkube Image based on k8s versions**
+- rancher/hyperkube:v1.21.6-rancher1
+- rancher/hyperkube:v1.20.12-rancher1
+- rancher/hyperkube:v1.19.16-rancher1
 -----
 # Release v1.3.1
 
