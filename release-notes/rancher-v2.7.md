@@ -148,6 +148,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
   - If you're using Rancher v2.7.2 with Harvester v1.1.1 clusters, you won't be able to select the Harvester cloud provider when deploying or updating guest clusters. The [Harvester release notes](https://github.com/harvester/release-notes/blob/main/v1.1.2.md#important-information-about-rancher-support) contain instructions on how to resolve this. See [#3750](https://github.com/harvester/harvester/issues/3750).
   - Upgrades from Harvester v0.3.0 are not supported.
   - Deploying Fleet to Harvester clusters is not yet supported. Clusters, whether Harvester or non-Harvester, imported using the Virtualization Management page will result in the cluster not being listed on the Continuous Delivery page. See [#35049](https://github.com/rancher/rancher/issues/35049).
+  - When upgrading RKE2 in a Harvester cluster, the result may be that the first node will be upgraded while the remaining server nodes' scheduling is disabled. See [#39167](https://github.com/rancher/rancher/issues/39167).
 - **Cluster Tools:**
   - **Authentication:**
     - Rancher might retain resources from a disabled auth provider configuration in the local cluster, even after configuring another auth provider. To manually trigger cleanup for a disabled auth provider, add the management.cattle.io/auth-provider-cleanup annotation with the unlocked value to its auth config. See [#40378](https://github.com/rancher/rancher/pull/40378).
