@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.6](rke-v1.4.md#release-v146) | Jun 23 2023 | 06/23/23 | 2023-06-23 |
 | [v1.4.5](rke-v1.4.md#release-v145) | Apr 26 2023 | 04/26/23 | 2023-04-26 |
 | [v1.4.4](rke-v1.4.md#release-v144) | Apr 07 2023 | 04/07/23 | 2023-04-07 |
 | [v1.4.3](rke-v1.4.md#release-v143) | Mar 07 2023 | 03/07/23 | 2023-03-07 |
@@ -9,6 +10,54 @@
 
 
 
+# Release v1.4.6
+
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
+
+## Enhancements
+
+- Introduced `v1.26.4-rancher2-1`, `v1.25.9-rancher2-2`, `v1.24.13-rancher2-2`, and `v1.23.16-rancher2-3`
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.26.4-rancher2-1` (Default) |
+| `v1.25.9-rancher2-2`  |
+| `v1.24.13-rancher2-2`  |
+| `v1.23.16-rancher2-3`  |
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+### New Images in v1.26.4-rancher2-1, v1.25.9-rancher2-2 and v1.24.13-rancher2-2
+
+**Updated Hyperkube Image based on k8s versions**
+
+- rancher/hyperkube:v1.26.4-rancher2
+- rancher/hyperkube:v1.25.9-rancher2
+- rancher/hyperkube:v1.24.13-rancher2
+
+## What's Changed
+* [release/v1.4] update README with latest by @github-actions in https://github.com/rancher/rke/pull/3216
+* [release/v1.4] Vendor docker 23.0 support data from KDM. by @doflamingo721 in https://github.com/rancher/rke/pull/3229
+* [v1.4] Update KDM for k8s v1.26 by @vardhaman22 in https://github.com/rancher/rke/pull/3237
+* [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3240
+* [v1.4] update kdm for default v1.26 by @kinarashah in https://github.com/rancher/rke/pull/3241
+* [v1.4] Sync aci cni changes from v1.4.5 to v1.4 by @kinarashah in https://github.com/rancher/rke/pull/3257
+* Bump github.com/docker/docker from 20.10.14+incompatible to 20.10.24+incompatible by @dependabot in https://github.com/rancher/rke/pull/3212
+* [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3251
+* Bump github.com/docker/distribution from 2.8.1+incompatible to 2.8.2+incompatible by @dependabot in https://github.com/rancher/rke/pull/3244
+* Added ACI-CNI 5.2.7.1 variables by @LavanyaVaddavalli in https://github.com/rancher/rke/pull/3258
+* [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3262
+* set the default PodSecurityConfiguration value only if the cluster's k8s version is at least 1.23 by @jiaqiluo in https://github.com/rancher/rke/pull/3261
+* [v1.4] Updates for v1.4.6  by @kinarashah in https://github.com/rancher/rke/pull/3265
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.5...v1.4.6
+-----
 # Release v1.4.5
 
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
