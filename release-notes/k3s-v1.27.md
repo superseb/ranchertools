@@ -1,5 +1,6 @@
 | k3s version| Kubernetes | Kine | SQLite | Etcd | Containerd | Runc | Flannel | Metrics-server | Traefik | CoreDNS | Helm-controller | Local-path-provisioner  |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | -----  |
+| v1.27.3+k3s1 | [v1.27.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1273) | [v0.10.1](https://github.com/k3s-io/kine/releases/tag/v0.10.1) | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) | [v3.5.7-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.7-k3s1) | [v1.7.1-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.1-k3s1) | [v1.1.7](https://github.com/opencontainers/runc/releases/tag/v1.1.7) | [v0.22.0](https://github.com/flannel-io/flannel/releases/tag/v0.22.0) | [v0.6.3](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.3) | [v2.9.10](https://github.com/traefik/traefik/releases/tag/v2.9.10) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.15.0](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.0) | [v0.0.24](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.24)  |
 | v1.27.2+k3s1 | [v1.27.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1272) | [v0.10.1](https://github.com/k3s-io/kine/releases/tag/v0.10.1) | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) | [v3.5.7-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.7-k3s1) | [v1.7.1-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.1-k3s1) | [v1.1.7](https://github.com/opencontainers/runc/releases/tag/v1.1.7) | [v0.21.4](https://github.com/flannel-io/flannel/releases/tag/v0.21.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v2.9.10](https://github.com/traefik/traefik/releases/tag/v2.9.10) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.14.0](https://github.com/k3s-io/helm-controller/releases/tag/v0.14.0) | [v0.0.24](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.24)  |
 | v1.27.1+k3s1 | [v1.27.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1271) | [v0.9.9](https://github.com/k3s-io/kine/releases/tag/v0.9.9) | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) | [v3.5.7-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.7-k3s1) | [v1.6.19-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.6.19-k3s1) | [v1.1.5](https://github.com/opencontainers/runc/releases/tag/v1.1.5) | [v0.21.4](https://github.com/flannel-io/flannel/releases/tag/v0.21.4) | [v0.6.2](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.2) | [v2.9.4](https://github.com/traefik/traefik/releases/tag/v2.9.4) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.13.3](https://github.com/k3s-io/helm-controller/releases/tag/v0.13.3) | [v0.0.24](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.24)  |
 
@@ -7,11 +8,84 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.27.3+k3s1](k3s-v1.27.md#release-v1273k3s1) | Jun 26 2023 | 06/26/23 | 2023-06-26 | Jun 14 2023 | 06/14/23 | 2023-06-14 | 12 days |
 | [v1.27.2+k3s1](k3s-v1.27.md#release-v1272k3s1) | May 26 2023 | 05/26/23 | 2023-05-26 | May 17 2023 | 05/17/23 | 2023-05-17 | 9 days |
 | [v1.27.1+k3s1](k3s-v1.27.md#release-v1271k3s1) | Apr 27 2023 | 04/27/23 | 2023-04-27 | Apr 14 2023 | 04/14/23 | 2023-04-14 | 13 days |
 
 
 
+# Release v1.27.3+k3s1
+<!-- v1.27.3+k3s1 -->
+This release updates Kubernetes to v1.27.3, and fixes a number of issues.
+
+For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#changelog-since-v1272).
+
+## Changes since v1.27.2+k3s1:
+
+* Update flannel version [(#7628)](https://github.com/k3s-io/k3s/pull/7628)
+  * Update flannel to v0.22.0
+* Add el9 selinux rpm [(#7635)](https://github.com/k3s-io/k3s/pull/7635)
+* Update channels [(#7634)](https://github.com/k3s-io/k3s/pull/7634)
+* Allow coredns override extensions [(#7583)](https://github.com/k3s-io/k3s/pull/7583)
+  * The `coredns-custom` ConfigMap now allows for `*.override` sections to be included in the `.:53` default server block.
+* Bump klipper-lb to v0.4.4 [(#7617)](https://github.com/k3s-io/k3s/pull/7617)
+  * Bumped klipper-lb image to v0.4.4 to resolve an issue that prevented access to ServiceLB ports from localhost when the Service ExternalTrafficPolicy was set to Local.
+* Bump metrics-server to v0.6.3 and update tls-cipher-suites [(#7564)](https://github.com/k3s-io/k3s/pull/7564)
+  * The bundled metrics-server has been bumped to v0.6.3, and now uses only secure TLS ciphers by default.
+* Do not use the admin kubeconfig for the supervisor and core controllers [(#7616)](https://github.com/k3s-io/k3s/pull/7616)
+  * The K3s core controllers (supervisor, deploy, and helm) no longer use the admin kubeconfig. This makes it easier to determine from access and audit logs which actions are performed by the system, and which are performed by an administrative user.
+* Bump golang:alpine image version [(#7619)](https://github.com/k3s-io/k3s/pull/7619)
+* Make LB image configurable when compiling k3s [(#7626)](https://github.com/k3s-io/k3s/pull/7626)
+* Bump vagrant libvirt with fix for plugin installs [(#7605)](https://github.com/k3s-io/k3s/pull/7605)
+* Add format command on Makefile [(#7437)](https://github.com/k3s-io/k3s/pull/7437)
+* Use el8 rpm for fedora 38 and 39 [(#7664)](https://github.com/k3s-io/k3s/pull/7664)
+* Check variant before version to decide rpm target and packager closes #7666 [(#7667)](https://github.com/k3s-io/k3s/pull/7667)
+* Test Coverage Reports for E2E tests [(#7526)](https://github.com/k3s-io/k3s/pull/7526)
+* Soft-fail on node password verification if the secret cannot be created [(#7655)](https://github.com/k3s-io/k3s/pull/7655)
+  * K3s now allows nodes to join the cluster even if the node password secret cannot be created at the time the node joins. The secret create will be retried in the background. This resolves a potential deadlock created by fail-closed validating webhooks that block secret creation, where the webhook is unavailable until new nodes join the cluster to run the webhook pod.
+* Enable containerd aufs/devmapper/zfs snapshotter plugins [(#7661)](https://github.com/k3s-io/k3s/pull/7661)
+  * The bundled containerd's aufs/devmapper/zfs snapshotter plugins have been restored. These were unintentionally omitted when moving containerd back into the k3s multicall binary in the previous release.
+* Bump docker go.mod [(#7681)](https://github.com/k3s-io/k3s/pull/7681)
+* Shortcircuit commands with version or help flags [(#7683)](https://github.com/k3s-io/k3s/pull/7683)
+  * Non root users can now call `k3s --help` and `k3s --version` commands without running into permission errors over the default config file.
+* Bump Trivy version [(#7672)](https://github.com/k3s-io/k3s/pull/7672)
+* E2E: Capture coverage of K3s subcommands [(#7686)](https://github.com/k3s-io/k3s/pull/7686)
+* Integrate tailscale into k3s [(#7352)](https://github.com/k3s-io/k3s/pull/7352)
+  * Integration of tailscale VPN into k3s
+* Add private registry e2e test [(#7653)](https://github.com/k3s-io/k3s/pull/7653)
+* E2E: Remove unnecessary daemonset addition/deletion [(#7696)](https://github.com/k3s-io/k3s/pull/7696)
+* Add issue template for OS validation [(#7695)](https://github.com/k3s-io/k3s/pull/7695)
+* Fix spelling check [(#7740)](https://github.com/k3s-io/k3s/pull/7740)
+* Remove useless libvirt config [(#7745)](https://github.com/k3s-io/k3s/pull/7745)
+* Bump helm-controller to v0.15.0 for create-namespace support [(#7716)](https://github.com/k3s-io/k3s/pull/7716)
+  * The embedded helm controller has been bumped to v0.15.0, and now supports creating the chart's target namespace if it does not exist.
+* Fix error logging in tailscale [(#7776)](https://github.com/k3s-io/k3s/pull/7776)
+* Add commands to remove advertised routes of tailscale in k3s-killall.sh [(#7777)](https://github.com/k3s-io/k3s/pull/7777)
+* Update Kubernetes to v1.27.3 [(#7790)](https://github.com/k3s-io/k3s/pull/7790)
+
+## Embedded Component Versions
+| Component | Version |
+|---|---|
+| Kubernetes | [v1.27.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1273) |
+| Kine | [v0.10.1](https://github.com/k3s-io/kine/releases/tag/v0.10.1) |
+| SQLite | [3.39.2](https://sqlite.org/releaselog/3_39_2.html) |
+| Etcd | [v3.5.7-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.7-k3s1) |
+| Containerd | [v1.7.1-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.1-k3s1) |
+| Runc | [v1.1.7](https://github.com/opencontainers/runc/releases/tag/v1.1.7) |
+| Flannel | [v0.22.0](https://github.com/flannel-io/flannel/releases/tag/v0.22.0) | 
+| Metrics-server | [v0.6.3](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.6.3) |
+| Traefik | [v2.9.10](https://github.com/traefik/traefik/releases/tag/v2.9.10) |
+| CoreDNS | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | 
+| Helm-controller | [v0.15.0](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.0) |
+| Local-path-provisioner | [v0.0.24](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.24) |
+
+## Helpful Links
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/k3s/issues/new/choose)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
+- [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
+-----
 # Release v1.27.2+k3s1
 <!-- v1.27.2+k3s1 -->
 This release updates Kubernetes to v1.27.2, and fixes a number of issues.
