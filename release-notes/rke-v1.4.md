@@ -53,7 +53,7 @@ Each version of RKE has a specific list of supported Kubernetes versions. If you
 * Bump github.com/docker/distribution from 2.8.1+incompatible to 2.8.2+incompatible by @dependabot in https://github.com/rancher/rke/pull/3244
 * Added ACI-CNI 5.2.7.1 variables by @LavanyaVaddavalli in https://github.com/rancher/rke/pull/3258
 * [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3262
-* set the default PodSecurityConfiguration value only if the cluster's k8s version is at least 1.23 by @jiaqiluo in https://github.com/rancher/rke/pull/3261
+* ~set the default PodSecurityConfiguration value only if the cluster's k8s version is at least 1.23 by @jiaqiluo in https://github.com/rancher/rke/pull/3261~ was reverted by  https://github.com/rancher/rke/pull/3265 
 * [v1.4] Updates for v1.4.6  by @kinarashah in https://github.com/rancher/rke/pull/3265
 
 **Full Changelog**: https://github.com/rancher/rke/compare/v1.4.5...v1.4.6
