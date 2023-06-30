@@ -258,6 +258,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#41652](https://github.com/rancher/rancher/issues/41652) [BUG] okta user enters a bad state where can no longer login to rancher 
 * [#41642](https://github.com/rancher/rancher/issues/41642) [BUG] Test 1.2.14 in CIS scan fails on k3s harden cluster. 
 * [#41635](https://github.com/rancher/rancher/issues/41635) [BUG] Cluster deletion is stuck `Resource scheduled for deletion` on an rke2 node driver cluster
+* [#41626](https://github.com/rancher/rancher/issues/41626) [RFE] vSphere CPI chart updates to upstream v1.25.2 / v1.24.5
 * [#41625](https://github.com/rancher/rancher/issues/41625) Gatekepper 3.12 OOB release into 2.7
 * [#41615](https://github.com/rancher/rancher/issues/41615) RKE2 and K3S - KDM Update for K8s May patch release for Rancher 2.7
 * [#41614](https://github.com/rancher/rancher/issues/41614) RKE2 and K3S - KDM Update for K8s May patch release for Rancher 2.6
