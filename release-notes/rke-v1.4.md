@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.7](rke-v1.4.md#release-v147) | Jul 06 2023 | 07/06/23 | 2023-07-06 |
 | [v1.4.6](rke-v1.4.md#release-v146) | Jun 23 2023 | 06/23/23 | 2023-06-23 |
 | [v1.4.5](rke-v1.4.md#release-v145) | Apr 26 2023 | 04/26/23 | 2023-04-26 |
 | [v1.4.4](rke-v1.4.md#release-v144) | Apr 07 2023 | 04/07/23 | 2023-04-07 |
@@ -10,6 +11,48 @@
 
 
 
+# Release v1.4.7
+
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
+
+## Enhancements
+
+- Introduced `v1.24.15-rancher1-1`, `v1.25.11-rancher1-1`, `v1.26.6-rancher1-1`
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.26.6-rancher1-1` (Default) |
+| `v1.25.11-rancher1-1`  |
+| `v1.24.15-rancher1-1`  |
+| `v1.23.16-rancher2-3`  |
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+### New Images in v1.26.6-rancher1-1, v1.25.11-rancher1-1 and v1.24.15-rancher1-1
+
+**Updated Hyperkube Image based on k8s versions**
+
+- rancher/hyperkube:v1.26.6-rancher1
+- rancher/hyperkube:v1.25.11-rancher1
+- rancher/hyperkube:v1.24.15-rancher1
+
+## What's Changed
+* [release/v1.4] Vendor June patches KDM data  by @doflamingo721 in https://github.com/rancher/rke/pull/3269
+* [release/v1.4] Vendor June patches KDM data by @doflamingo721 in https://github.com/rancher/rke/pull/3276
+* [release/v1.4] update README with latest by @github-actions in https://github.com/rancher/rke/pull/3279
+* [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3282
+* [release/v1.4] go generate by @github-actions in https://github.com/rancher/rke/pull/3283
+* KDM Out Of Band Update For June 2023 - Rancher v2.7 by @HarrisonWAffel in https://github.com/rancher/rke/pull/3286
+
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.6...v1.4.7
+-----
 # Release v1.4.6
 
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
