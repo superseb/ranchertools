@@ -1821,6 +1821,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#37707](https://github.com/rancher/rancher/issues/37707) Proxied kubectl commands hanging
 * [#37631](https://github.com/rancher/rancher/issues/37631) metrics server 0.5.0 failing due to docker CIS hardening
 * [#37493](https://github.com/rancher/rancher/issues/37493) Add CIS hardening guide for rancher provisioned k3s clusters
+* [#37412](https://github.com/rancher/rancher/issues/37412) wrong hostname for vsphere rke2 clusternodes in 2.6.4
 * [#37327](https://github.com/rancher/rancher/issues/37327) Remove Istio v1
 * [#37324](https://github.com/rancher/rancher/issues/37324) Remove Pipelines
 * [#37322](https://github.com/rancher/rancher/issues/37322) Remove CIS 1.4 Scanner
