@@ -45,6 +45,7 @@ curl https://gist.githubusercontent.com/superseb/b2c1d6c9baa32609a49ee117a27bc70
 - [Minio + NGINX in Docker using self signed certificates](https://gist.github.com/superseb/32c439aac5097723f395acc77c47e829)
 - [Rancher check stored cluster secret for fullState and state](https://gist.github.com/superseb/84025e1eeb7158ed97015aa9331fe3db)
 - [Retrieve cluster.rkestate for Rancher c-c-XXXXX cluster secret reconstruction](https://gist.github.com/superseb/4a78a0ac34a36eacaa9e6440729619c3)
+- [Get RKE config for worker node in Rancher 2.x](https://gist.github.com/superseb/117efe9faaa6655c7483e92209033c6d)
 
 ## Tools
 
