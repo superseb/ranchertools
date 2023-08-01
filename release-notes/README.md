@@ -414,6 +414,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.24.16+k3s1](k3s-v1.24.md#release-v12416k3s1) | Jul 27 2023 | 07/27/23 | 2023-07-27 | Jul 19 2023 | 07/19/23 | 2023-07-19 | 8 days |
 | [v1.24.15+k3s1](k3s-v1.24.md#release-v12415k3s1) | Jun 26 2023 | 06/26/23 | 2023-06-26 | Jun 14 2023 | 06/14/23 | 2023-06-14 | 12 days |
 | [v1.24.14+k3s1](k3s-v1.24.md#release-v12414k3s1) | May 26 2023 | 05/26/23 | 2023-05-26 | May 17 2023 | 05/17/23 | 2023-05-17 | 9 days |
 | [v1.24.13+k3s1](k3s-v1.24.md#release-v12413k3s1) | Apr 20 2023 | 04/20/23 | 2023-04-20 | Apr 12 2023 | 04/12/23 | 2023-04-12 | 8 days |
@@ -437,6 +438,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.25.12+k3s1](k3s-v1.25.md#release-v12512k3s1) | Jul 27 2023 | 07/27/23 | 2023-07-27 | Jul 19 2023 | 07/19/23 | 2023-07-19 | 8 days |
 | [v1.25.11+k3s1](k3s-v1.25.md#release-v12511k3s1) | Jun 26 2023 | 06/26/23 | 2023-06-26 | Jun 14 2023 | 06/14/23 | 2023-06-14 | 12 days |
 | [v1.25.10+k3s1](k3s-v1.25.md#release-v12510k3s1) | May 26 2023 | 05/26/23 | 2023-05-26 | May 18 2023 | 05/18/23 | 2023-05-18 | 8 days |
 | [v1.25.9+k3s1](k3s-v1.25.md#release-v1259k3s1) | Apr 20 2023 | 04/20/23 | 2023-04-20 | Apr 12 2023 | 04/12/23 | 2023-04-12 | 8 days |
@@ -456,6 +458,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.26.7+k3s1](k3s-v1.26.md#release-v1267k3s1) | Jul 27 2023 | 07/27/23 | 2023-07-27 | Jul 19 2023 | 07/19/23 | 2023-07-19 | 8 days |
 | [v1.26.6+k3s1](k3s-v1.26.md#release-v1266k3s1) | Jun 26 2023 | 06/26/23 | 2023-06-26 | Jun 14 2023 | 06/14/23 | 2023-06-14 | 12 days |
 | [v1.26.5+k3s1](k3s-v1.26.md#release-v1265k3s1) | May 26 2023 | 05/26/23 | 2023-05-26 | May 17 2023 | 05/17/23 | 2023-05-17 | 9 days |
 | [v1.26.4+k3s1](k3s-v1.26.md#release-v1264k3s1) | Apr 20 2023 | 04/20/23 | 2023-04-20 | Apr 12 2023 | 04/12/23 | 2023-04-12 | 8 days |
@@ -471,6 +474,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.27.4+k3s1](k3s-v1.27.md#release-v1274k3s1) | Jul 27 2023 | 07/27/23 | 2023-07-27 | Jul 19 2023 | 07/19/23 | 2023-07-19 | 8 days |
 | [v1.27.3+k3s1](k3s-v1.27.md#release-v1273k3s1) | Jun 26 2023 | 06/26/23 | 2023-06-26 | Jun 14 2023 | 06/14/23 | 2023-06-14 | 12 days |
 | [v1.27.2+k3s1](k3s-v1.27.md#release-v1272k3s1) | May 26 2023 | 05/26/23 | 2023-05-26 | May 17 2023 | 05/17/23 | 2023-05-17 | 9 days |
 | [v1.27.1+k3s1](k3s-v1.27.md#release-v1271k3s1) | Apr 27 2023 | 04/27/23 | 2023-04-27 | Apr 14 2023 | 04/14/23 | 2023-04-14 | 13 days |
