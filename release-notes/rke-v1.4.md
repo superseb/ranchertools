@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.8](rke-v1.4.md#release-v148) | Aug 03 2023 | 08/03/23 | 2023-08-03 |
 | [v1.4.7](rke-v1.4.md#release-v147) | Jul 06 2023 | 07/06/23 | 2023-07-06 |
 | [v1.4.6](rke-v1.4.md#release-v146) | Jun 23 2023 | 06/23/23 | 2023-06-23 |
 | [v1.4.5](rke-v1.4.md#release-v145) | Apr 26 2023 | 04/26/23 | 2023-04-26 |
@@ -11,6 +12,42 @@
 
 
 
+# Release v1.4.8
+
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
+
+## Enhancements
+
+- Introduced `v1.24.16-rancher1-1`, `v1.25.12-rancher1-1`, `v1.26.7-rancher1-1`
+
+## Bug Fixes 
+- Fixed an issue around PodSecurityConfiguration which prevented v1.22 clusters to upgrade https://github.com/rancher/rke/pull/3306
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.26.7-rancher1-1` (Default) |
+| `v1.25.12-rancher1-1`  |
+| `v1.24.16-rancher1-1`  |
+| `v1.23.16-rancher2-3`  |
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+### New Images in v1.26.7-rancher1-1, v1.25.12-rancher1-1 and v1.24.16-rancher1-1
+
+**Updated Hyperkube Image based on k8s versions**
+
+- rancher/hyperkube:v1.26.7-rancher1
+- rancher/hyperkube:v1.25.12-rancher1
+- rancher/hyperkube:v1.24.16-rancher1
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.7...v1.4.8
+-----
 # Release v1.4.7
 
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
