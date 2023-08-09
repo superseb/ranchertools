@@ -1076,7 +1076,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#40990](https://github.com/rancher/rancher/issues/40990) [BUG]chart repo pointing to release-v2.7 on downstream clusters when upgraded from rancher 2.7.1 to 2.7.2-rc7
 * [#40988](https://github.com/rancher/rancher/issues/40988) [BUG] EKS hosted cluster removed through rancher is not cleaned up in AWS backend
 * [#40983](https://github.com/rancher/rancher/issues/40983) [BUG] GKE hosted cluster upgrade options involving `upgrade node version` produce inconsistent results
-* [#40982](https://github.com/rancher/rancher/issues/40982) [BUG] Windows rke2 custom cluster - nodes stop displaying metrics after upgrading to 1.25
 * [#40981](https://github.com/rancher/rancher/issues/40981) [BUG] PSPs not removed in rke2 (custom) cluster when upgrading to 1.25
 * [#40970](https://github.com/rancher/rancher/issues/40970) Cert manager not in resource set, version not reverted in backup/restore
 * [#40941](https://github.com/rancher/rancher/issues/40941) [BUG] [rancher-monitoring] Unable to upgrade Rancher Monitoring from v101.0.0+up19.0.3 to 102.0.0+up40.1.2
