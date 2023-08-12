@@ -391,7 +391,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#38509](https://github.com/rancher/rancher/issues/38509) Create new packaged helm repos to support terraform installations for multiple release versions
 * [#38468](https://github.com/rancher/rancher/issues/38468) [RFE] Steve: Improve the performance of resource fetch requests
 * [#38029](https://github.com/rancher/rancher/issues/38029) [Feature] Select groups with Okta integration
-* [#37994](https://github.com/rancher/rancher/issues/37994) Moved AD Users result in new Rancher Users
 * [#37128](https://github.com/rancher/rancher/issues/37128) After upgrade to Monitoring v2 cluster name is no longer included in alerts
 * [#37000](https://github.com/rancher/rancher/issues/37000) bump govmomi in rancher/machine to match upstream vsphere cloud provider
 * [#35971](https://github.com/rancher/rancher/issues/35971) Dirty data of helm release causes cluster-agent to crash
