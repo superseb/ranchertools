@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.6](rancher-v2.7.md#release-v276) | Aug 30 2023 | 08/30/23 | 2023-08-30 |
 | [v2.7.5](rancher-v2.7.md#release-v275) | Jun 29 2023 | 06/29/23 | 2023-06-29 |
 | [v2.7.4](rancher-v2.7.md#release-v274) | May 31 2023 | 05/31/23 | 2023-05-31 |
 | [v2.7.3](rancher-v2.7.md#release-v273) | Apr 24 2023 | 04/24/23 | 2023-04-24 |
@@ -9,6 +10,27 @@
 
 
 
+
+
+## All issues in v2.7.6 milestone
+
+* [#42478](https://github.com/rancher/rancher/issues/42478) [BUG] AD Migration | Connection to LDAP lost during un-migration and users skipped and given empty DNs | cannot login
+* [#42467](https://github.com/rancher/rancher/issues/42467) [BUG] AD migration script doesn't have proper start and end log messages in Rancher
+* [#42466](https://github.com/rancher/rancher/issues/42466) [BUG] Post upgrade, AD user cluster owner cannot list anything on the cluster 
+* [#42465](https://github.com/rancher/rancher/issues/42465) [BUG] AD admin users were allowed to log in while the migration runs
+* [#42253](https://github.com/rancher/rancher/issues/42253) [2.7.6][BUG] Fleet v0.7.1-rc.1 is not in 2.7.6-head causing errors during docker install
+* [#42210](https://github.com/rancher/rancher/issues/42210) [Backport v2.7.6] Node gets kicked out of Cluster after snapshots are restored.
+* [#42174](https://github.com/rancher/rancher/issues/42174) [v2.7.6] Revert feature - GUID for the PrincipalID for Active Directory 
+* [#42163](https://github.com/rancher/rancher/issues/42163) Create a migration code in rancher to revert any users back to DN if they were migrated to GUID
+* [#42162](https://github.com/rancher/rancher/issues/42162) Create pre-upgrade script to revert the GUID back to DN 
+* [#42161](https://github.com/rancher/rancher/issues/42161) Revert all GUID PRs - Revert the fixes attempted post v2.7.5
+* [#42128](https://github.com/rancher/rancher/issues/42128) [Backport v2.7.6] [BUG] RKE2 provisioning with custom NodeDriver fails when rancher has more than one replica
+* [#42127](https://github.com/rancher/rancher/issues/42127) [Backport v2.7.6] [BUG] Can not upgrade RKE1 1.22 cluster via rancher 2.7.2+
+* [#42122](https://github.com/rancher/rancher/issues/42122) [Backport v2.7.6] [BUG] Rancher 2.7.5 Active Directory authentication fails completely in Rancher 2.7.5 due to wrong objectGUID escaping
+* [#42121](https://github.com/rancher/rancher/issues/42121) [Backport v2.7.6] [BUG] Deleting a master node breaks RKE2 cluster
+* [#42120](https://github.com/rancher/rancher/issues/42120) [BUG] Users are duplicated and cannot log in
+* [#41985](https://github.com/rancher/rancher/issues/41985) [BUG] Rancher 2.7.5 Active Directory authentication fails completely in Rancher 2.7.5 due to wrong objectGUID escaping
+-----
 # Release v2.7.5
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
