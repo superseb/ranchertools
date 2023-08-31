@@ -269,6 +269,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 -----
 # Release v2.7.5
 
+### There are known major issues in this release, please skip this release and upgrade directly to v2.7.6 or above.
+
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
 This release is primarily focused on stability enhancements and bug fixes.
