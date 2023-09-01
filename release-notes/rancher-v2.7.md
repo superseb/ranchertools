@@ -46,10 +46,7 @@ For any Rancher users running v2.7.4 or earlier, none of these fixes will apply 
 
 For any Rancher user running v2.7.5 with Active Directory authentication, the data migration introduced in v2.7.5 to move from Distinguished Names (DN) to GUIDs is being reverted and users will be corrected from the original data migration. Fixed bugs related to inability to login for various reasons. See [#41985](https://github.com/rancher/rancher/issues/41985), [#42120](https://github.com/rancher/rancher/issues/42120).
 
-
-- Fixed bugs related to the Rancher v2.7.5 Active Directory migration, which updated personalIDs to use GUIDs instead of Distinguished Names (DNs). Bugs included LDAP-based login using Active Directory integration failing, and downstream Windows clusters getting stuck in an unavailable state. See [#42122](https://github.com/rancher/rancher/issues/42122) and [#42426](https://github.com/rancher/rancher/issues/42426).
-
-
+> Important Upgrade Note: Depending on the number of users and permissions granted to clusters and projects as well as the connection to your AD server, the script could take a couple of hours. Users will not be able to login during the migration, so please time your upgrades accordingly.
 
 ### Reverting the Active Directory Migration delivered in 2.7.5
 
