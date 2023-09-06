@@ -62,6 +62,19 @@ The reverse migration startup utility saves all relevant changes to Rancher if i
 
 If, following an upgrade to Rancher v2.7.6, you need to clean up any missing users, contact support.
 
+The reverse migration utility fetches following resources and updates them back to using DN: 
+- Tokens
+- CRTBs
+- PRTBs
+- GRBs (global role bindings)
+- User object
+
+Thus admins should ideally check how much of the above objects are present in the setup and time the upgrade accordingly. 
+Following is the overall estimate of how long the migration can take depending on the number of users and bindings/tokens present in the setup:
+- About 10000 users took roughly 30 mins while testing on a single laptop, one pod rancher setup.
+- QA has tested with 21093 cluster role bindings with 7000 CRTBs. It took 4minutes.
+- So if a setup has large number of users and bindings, it can take longer upto ~1 hour depending on cpu/memory and actual scale of the data. 
+
 <!--# Rancher Behavior Changes-->
 # Known Issues
 - Scaling down etcd nodes on K3s/RKE2 machine-provisioned clusters may inadvertently delete all etcd nodes in the pool. This is linked to an [upstream cluster-api bug](https://github.com/kubernetes-sigs/cluster-api/issues/9334) that causes the controllers to delete more than the desired quantity of etcd nodes when reconciling an RKE Machine Pool. This issue affects etcd node scale-down operations on K3s/RKE2 machine-provisioned clusters. To help mitigate the issue, have a robust backup strategy and store your etcd snapshots in a safe location. See [42582](https://github.com/rancher/rancher/issues/42582).
