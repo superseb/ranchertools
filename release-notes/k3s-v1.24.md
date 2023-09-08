@@ -48,6 +48,8 @@
 <!-- v1.24.17+k3s1 -->
 This release updates Kubernetes to v1.24.17, and fixes a number of issues.
 
+⚠️ IMPORTANT: This release includes support for remediating CVE-2023-32187, a potential Denial of Service attack vector on K3s servers. See https://github.com/k3s-io/k3s/security/advisories/GHSA-m4hf-6vgr-75r2 for more information, including mandatory steps necessary to harden clusters against this vulnerability.
+
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md#changelog-since-v12416).
 
 ## Changes since v1.24.16+k3s1:

@@ -33,14 +33,16 @@
 
 This release updates Kubernetes to v1.26.8, and fixes a number of issues.
 
-**Important Note**
+**Important Notes**
 
-If your server (control-plane) nodes were not started with the `--token` CLI flag or config file key, a randomized token was generated during initial cluster startup. This key is used both for joining new nodes to the cluster, and for encrypting cluster bootstrap data within the datastore. Ensure that you retain a copy of this token, as is required when restoring from backup.
+* ⚠️ This release includes support for remediating CVE-2023-32186, a potential Denial of Service attack vector on RKE2 servers. See https://github.com/rancher/rke2/security/advisories/GHSA-p45j-vfv5-wprq for more information, including mandatory steps necessary to harden clusters against this vulnerability.
 
-You may retrieve the token value from any server already joined to the cluster:
-```bash
-cat /var/lib/rancher/rke2/server/token
-```
+* If your server (control-plane) nodes were not started with the `--token` CLI flag or config file key, a randomized token was generated during initial cluster startup. This key is used both for joining new nodes to the cluster, and for encrypting cluster bootstrap data within the datastore. Ensure that you retain a copy of this token, as is required when restoring from backup.
+
+  You may retrieve the token value from any server already joined to the cluster:
+  ```bash
+  cat /var/lib/rancher/rke2/server/token
+  ```
 
 ## Changes since v1.26.7+rke2r1:
 
