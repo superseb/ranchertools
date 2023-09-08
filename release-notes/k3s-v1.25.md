@@ -66,11 +66,11 @@ For more details on what's new, see the [Kubernetes release notes](https://githu
   * Bumped dynamiclistener to address an issue that could cause the apiserver/supervisor listener on 6443 to stop serving requests on etcd-only nodes.
   * The K3s external apiserver/supervisor listener on 6443 now sends a complete certificate chain in the TLS handshake.
 * Move flannel to 0.22.2 [(#8223)](https://github.com/k3s-io/k3s/pull/8223)
+* Update to v1.25.13 [(#8241)](https://github.com/k3s-io/k3s/pull/8241)
 * Fix runc version bump [(#8246)](https://github.com/k3s-io/k3s/pull/8246)
 * Add new CLI flag to enable TLS SAN CN filtering [(#8259)](https://github.com/k3s-io/k3s/pull/8259)
   * Added a new `--tls-san-security` option. This flag defaults to false, but can be set to true to disable automatically adding SANs to the server's TLS certificate to satisfy any hostname requested by a client.
 * Add RWMutex to address controller [(#8275)](https://github.com/k3s-io/k3s/pull/8275)
-* Update to v1.25.13 [(#8241)](https://github.com/k3s-io/k3s/pull/8241)
 
 ## Embedded Component Versions
 | Component | Version |

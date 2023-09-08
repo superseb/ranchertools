@@ -75,10 +75,10 @@ For more details on what's new, see the [Kubernetes release notes](https://githu
 * E2E: Add test for `k3s token` [(#8184)](https://github.com/k3s-io/k3s/pull/8184)
 * Move flannel to 0.22.2 [(#8219)](https://github.com/k3s-io/k3s/pull/8219)
   * Move flannel to v0.22.2
+* Update to v1.27.5 [(#8236)](https://github.com/k3s-io/k3s/pull/8236)
 * Add new CLI flag to enable TLS SAN CN filtering [(#8257)](https://github.com/k3s-io/k3s/pull/8257)
   * Added a new `--tls-san-security` option. This flag defaults to false, but can be set to true to disable automatically adding SANs to the server's TLS certificate to satisfy any hostname requested by a client.
 * Add RWMutex to address controller [(#8273)](https://github.com/k3s-io/k3s/pull/8273)
-* Update to v1.27.5 [(#8236)](https://github.com/k3s-io/k3s/pull/8236)
 
 ## Embedded Component Versions
 | Component | Version |
