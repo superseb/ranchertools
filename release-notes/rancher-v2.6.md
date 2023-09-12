@@ -41,6 +41,10 @@ For more details, see the Security Advisories and CVEs page in Rancher's [docume
 > - If you are installing Rancher for the first time, your environment must fulfill the [installation requirements.](https://rancher.com/docs/rancher/v2.6/en/installation/requirements/)
 > - The namespace where the local Fleet agent runs has been changed to `cattle-fleet-local-system`. This change does not impact GitOps workflows.
 
+### Rancher Webhook Now Deployed Downstream
+
+Starting with Rancher v2.6.13, a webhook is now installed in all downstream clusters, to validate and enforce certain boundaries. There is a known issue with behavior during rollbacks, as well as with downstream GKE private clusters; see the [Known Major Issues](#known-major-issues) section of these release notes for advice and instructions. See [#40816](https://github.com/rancher/rancher/issues/40816) and [#41142](https://github.com/rancher/rancher/issues/41142).
+
 ### Upgrade Requirements
 
 - **Creating backups:** We strongly recommend creating a backup before upgrading Rancher. To roll back Rancher after an upgrade, you must back up and restore Rancher to the previous Rancher version. Because Rancher will be restored to its state when a backup was created, any changes post upgrade will not be included after the restore. For more information, see the [documentation on backing up Rancher.](https://rancher.com/docs/rancher/v2.5/en/backups/back-up-rancher/)
@@ -191,6 +195,10 @@ The following legacy feature is no longer supported past Kubernetes v1.21+ clust
 * Monitoring v1
 
 ### Known Major Issues
+
+- Starting with Rancher v2.6.13, a webhook will now be installed in all downstream clusters. There are several issues that users may encounter with this functionality:
+  - If you rollback from a version of Rancher >= v2.6.13 to a version < v2.6.13, you'll experience an issue where the webhooks will remain in downstream clusters. Since the webhook is designed to be 1:1 compatible with specific versions of Rancher, this can cause unexpected behaviors to occur downstream. The Rancher team has developed a [script](https://github.com/rancher/webhook/wiki/Remove-Webhook-from-downstream-clusters) which should be used after rollback is complete (meaning after Rancher version < v2.6.13 is running) to remove the webhook from affected downstream clusters. See [#40816](https://github.com/rancher/rancher/issues/40816).
+  - If you have downstream private GKE clusters, you might experience issues when interacting with the resources that the webhook validates, such as namespaces. This can cause problems with activities where Rancher needs to interact with those resources, such as when you install charts. As a [workaround](https://github.com/rancher/rancher/issues/41142#issuecomment-1505624756), add a firewall setting to allow traffic to the webhook. See [#41142](https://github.com/rancher/rancher/issues/41142). 
 
 - **Kubernetes Cluster Distributions:**
   - **RKE:**
