@@ -13,6 +13,13 @@
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
+> ### There is a known issue in this version that affects node-provisioned clusters for certain cloud infrastructure providers (including EC2 and vSphere).
+> If you're affected by this issue it's recommended to use Rancher v2.7.6 instead until the fix is available.
+>
+> See [#43019](https://github.com/rancher/rancher/issues/43019) for more information.
+> 
+> For RKE2/K3s provisioning, there is a [workaround](https://github.com/rancher/rancher/issues/43019#issuecomment-1741564674) available.
+
 Rancher v2.7.5 contained several major bugs. All users should skip upgrading to v2.7.5 and immediately upgrade to the latest Rancher version.
 
 # Major Bug Fixes
