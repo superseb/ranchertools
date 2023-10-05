@@ -326,6 +326,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#36319](https://github.com/rancher/rancher/issues/36319) Incorrect upgradable version shown on the helm v3 apps deployed from legacy partner apps
 * [#36173](https://github.com/rancher/rancher/issues/36173) Fleet: Add Age and last modified metadata for resources
 * [#36006](https://github.com/rancher/rancher/issues/36006) Job cattle-node-cleanup fails due to restrictive standard PSP
+* [#35259](https://github.com/rancher/rancher/issues/35259) OpenLDAP: Result Code 32 "No Such Object"
 * [#34518](https://github.com/rancher/rancher/issues/34518) Restoring rancher from a backup on a migrated rancher server fails with the error unable to create new content in namespace cluster-fleet-default-anupamapostbkp because it is being terminated error restoring
 * [#33795](https://github.com/rancher/rancher/issues/33795) auto-generated Rolebinding label too long
 -----
