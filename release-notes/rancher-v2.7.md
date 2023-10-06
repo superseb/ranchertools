@@ -548,6 +548,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#35259](https://github.com/rancher/rancher/issues/35259) OpenLDAP: Result Code 32 "No Such Object"
 * [#34518](https://github.com/rancher/rancher/issues/34518) Restoring rancher from a backup on a migrated rancher server fails with the error unable to create new content in namespace cluster-fleet-default-anupamapostbkp because it is being terminated error restoring
 * [#33795](https://github.com/rancher/rancher/issues/33795) auto-generated Rolebinding label too long
+* [#31163](https://github.com/rancher/rancher/issues/31163) SAML - Authentication pop up always show 404 on HA Rancher installs
 -----
 # Release v2.7.6
 
