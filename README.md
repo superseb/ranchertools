@@ -10,6 +10,8 @@ Find all Rancher/RKE/k3s/RKE2 release notes and component info in [./release-not
 
 ## Versions
 
+Find all k3s/RKE2 release channels in [./CHANNELS.md](./CHANNELS.md).
+
 [![Latest stable](https://img.shields.io/badge/dynamic/yaml?label=Rancher%20stable&query=%24.entries.rancher%5B0%5D.appVersion&url=https%3A%2F%2Freleases.rancher.com%2Fserver-charts%2Fstable%2Findex.yaml)](https://github.com/rancher/rancher/releases)
 
 [![Latest](https://img.shields.io/badge/dynamic/yaml?label=Rancher%20latest&query=%24.entries.rancher%5B0%5D.appVersion&url=https%3A%2F%2Freleases.rancher.com%2Fserver-charts%2Flatest%2Findex.yaml)](https://github.com/rancher/rancher/releases)
