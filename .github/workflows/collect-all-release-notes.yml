@@ -12,12 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
       - name: Run scripts
         id: run
         run: |
           bash scripts/collect-all-release-notes.sh
           bash scripts/collect-kdm.sh
+          bash scripts/generate-version-table-readme.sh
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       - name: Check for repository changes
