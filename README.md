@@ -13,9 +13,15 @@ Find all Rancher/RKE/k3s/RKE2 release notes and component info in [./release-not
 Find all k3s/RKE2 release channels in [./CHANNELS.md](./CHANNELS.md).
 
 [![Latest stable](https://img.shields.io/badge/dynamic/yaml?label=Rancher%20stable&query=%24.entries.rancher%5B0%5D.appVersion&url=https%3A%2F%2Freleases.rancher.com%2Fserver-charts%2Fstable%2Findex.yaml)](https://github.com/rancher/rancher/releases)
-
 [![Latest](https://img.shields.io/badge/dynamic/yaml?label=Rancher%20latest&query=%24.entries.rancher%5B0%5D.appVersion&url=https%3A%2F%2Freleases.rancher.com%2Fserver-charts%2Flatest%2Findex.yaml)](https://github.com/rancher/rancher/releases)
 
+![RKE2 stable](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.rke2.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22stable%22)%5D.latest&label=RKE2%20stable)
+![RKE2 latest](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.rke2.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22latest%22)%5D.latest&label=RKE2%20latest)
+![RKE2 testing](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.rke2.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22testing%22)%5D.latest&label=RKE2%20testing)
+
+![k3s stable](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.k3s.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22stable%22)%5D.latest&label=k3s%20stable)
+![k3s latest](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.k3s.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22latest%22)%5D.latest&label=k3s%20latest)
+![k3s testing](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fupdate.k3s.io%2Fv1-release%2Fchannels&query=%24.data%5B%3F(%40.name%20%3D%3D%20%22testing%22)%5D.latest&label=k3s%20testing)
 
 ## Gists
 
