@@ -136,6 +136,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.9](rancher-v2.7.md#release-v279) | Oct 26 2023 | 10/26/23 | 2023-10-26 |
 | [v2.7.8](rancher-v2.7.md#release-v278) | Oct 05 2023 | 10/05/23 | 2023-10-05 |
 | [v2.7.7](rancher-v2.7.md#release-v277) | Sep 28 2023 | 09/28/23 | 2023-09-28 |
 | [v2.7.6](rancher-v2.7.md#release-v276) | Aug 30 2023 | 08/30/23 | 2023-08-30 |
