@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.9](rancher-v2.7.md#release-v279) | Oct 26 2023 | 10/26/23 | 2023-10-26 |
 | [v2.7.8](rancher-v2.7.md#release-v278) | Oct 05 2023 | 10/05/23 | 2023-10-05 |
 | [v2.7.7](rancher-v2.7.md#release-v277) | Sep 28 2023 | 09/28/23 | 2023-09-28 |
 | [v2.7.6](rancher-v2.7.md#release-v276) | Aug 30 2023 | 08/30/23 | 2023-08-30 |
@@ -12,6 +13,13 @@
 
 
 
+
+
+## All issues in v2.7.9 milestone
+
+* [#43166](https://github.com/rancher/rancher/issues/43166) [Backport v2.7.9] [BUG] Rancher pods are in crash loop back off on a fresh install and upgrade and never recovers
+* [#43142](https://github.com/rancher/rancher/issues/43142) [Backport release/v2.7] Init Node cannot be removed
+-----
 # Release v2.7.8
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
