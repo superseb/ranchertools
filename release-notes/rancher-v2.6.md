@@ -3216,6 +3216,7 @@ The following legacy feature is no longer supported past Kubernetes v1.21+ clust
 * [#36864](https://github.com/rancher/rancher/issues/36864) Cluster is stuck in `Updating` state after k8s version upgrade
 * [#36862](https://github.com/rancher/rancher/issues/36862) downstream cluster continuously switching between `active` and `updating` states following k8s cluster upgrade
 * [#36860](https://github.com/rancher/rancher/issues/36860) Nodes showing incorrect roles in an RKE1 node driver cluster
+* [#36859](https://github.com/rancher/rancher/issues/36859) RKE2 Cluster is stuck in provisioning state after an upgrade to 2.6-head and rollback to 2.6.3
 * [#36849](https://github.com/rancher/rancher/issues/36849) Windows worker nodes do not upgrade to k8s 1.23
 * [#36842](https://github.com/rancher/rancher/issues/36842) v2prov etcd snapshot restore is incorrectly prepending cluster name to snapshot
 * [#36826](https://github.com/rancher/rancher/issues/36826) Cannot provision rancher HA with 2.6.4-rc6 and rke 1.3.8-rc4
@@ -3412,6 +3413,7 @@ The following legacy feature is no longer supported past Kubernetes v1.21+ clust
 * [#35101](https://github.com/rancher/rancher/issues/35101) Replace downloaded K3s binary with its Docker image in the Dockerfile
 * [#35073](https://github.com/rancher/rancher/issues/35073) RKE2 version does not get refreshed upon a refresh of rke-metadata-config 
 * [#35031](https://github.com/rancher/rancher/issues/35031) Add Docker 20.10.8 & 20.10.9
+* [#34892](https://github.com/rancher/rancher/issues/34892) [Backup] Investigate "context aware" backup check intervals and retries
 * [#34890](https://github.com/rancher/rancher/issues/34890) s3 etcd backups taking longer than 5 minutes cause backup loop
 * [#34909](https://github.com/rancher/rancher/issues/34909) Amazon ec2 scaling up the machine pools for rke2 cluster as a cluster Owner with no access to cloud credentials displays the error The request must contain the parameter AWSAccessKeyId
 * [#34910](https://github.com/rancher/rancher/issues/34910) vsphere scaling up the machine pools for rke2 cluster as a cluster Owner with no access to cloud credentials displays `NotFound: cloud credential not found` but scales up the nodes when tried by editing the config 
