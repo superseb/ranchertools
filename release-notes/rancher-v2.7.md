@@ -17,7 +17,9 @@
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
-Rancher v2.7.9 is a mirror release of Rancher v2.7.8. It includes a bug fix for a provisioning issue in RKE2 clusters.
+Rancher v2.7.9 is a mirror release of Rancher v2.7.8/v2.7.7. It includes a bug fix for a provisioning issue in RKE2 clusters.
+
+FYI, Rancher v2.7.7/v2.7.8 are only available in the `latest` Helm repo. As as reminder, please only deploy from the `stable` Helm repo. [Read more details on our different versions of repos. ](https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/resources/choose-a-rancher-version)
 
 # Major Bug Fixes
 
