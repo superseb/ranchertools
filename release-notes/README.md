@@ -279,6 +279,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.25.15+rke2r2](rke2-v1.25.md#release-v12515rke2r2) | Nov 08 2023 | 11/08/23 | 2023-11-08 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 21 days |
 | [v1.25.15+rke2r1](rke2-v1.25.md#release-v12515rke2r1) | Oct 31 2023 | 10/31/23 | 2023-10-31 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 13 days |
 | [v1.25.14+rke2r1](rke2-v1.25.md#release-v12514rke2r1) | Sep 18 2023 | 09/18/23 | 2023-09-18 | Sep 13 2023 | 09/13/23 | 2023-09-13 | 5 days |
 | [v1.25.13+rke2r1](rke2-v1.25.md#release-v12513rke2r1) | Sep 06 2023 | 09/06/23 | 2023-09-06 | Aug 24 2023 | 08/24/23 | 2023-08-24 | 13 days |
@@ -302,6 +303,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.26.10+rke2r2](rke2-v1.26.md#release-v12610rke2r2) | Nov 08 2023 | 11/08/23 | 2023-11-08 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 21 days |
 | [v1.26.10+rke2r1](rke2-v1.26.md#release-v12610rke2r1) | Oct 31 2023 | 10/31/23 | 2023-10-31 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 13 days |
 | [v1.26.9+rke2r1](rke2-v1.26.md#release-v1269rke2r1) | Sep 18 2023 | 09/18/23 | 2023-09-18 | Sep 13 2023 | 09/13/23 | 2023-09-13 | 5 days |
 | [v1.26.8+rke2r1](rke2-v1.26.md#release-v1268rke2r1) | Sep 06 2023 | 09/06/23 | 2023-09-06 | Aug 24 2023 | 08/24/23 | 2023-08-24 | 13 days |
@@ -321,6 +323,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.27.7+rke2r2](rke2-v1.27.md#release-v1277rke2r2) | Nov 08 2023 | 11/08/23 | 2023-11-08 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 21 days |
 | [v1.27.7+rke2r1](rke2-v1.27.md#release-v1277rke2r1) | Oct 31 2023 | 10/31/23 | 2023-10-31 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 13 days |
 | [v1.27.6+rke2r1](rke2-v1.27.md#release-v1276rke2r1) | Sep 18 2023 | 09/18/23 | 2023-09-18 | Sep 13 2023 | 09/13/23 | 2023-09-13 | 5 days |
 | [v1.27.5+rke2r1](rke2-v1.27.md#release-v1275rke2r1) | Sep 06 2023 | 09/06/23 | 2023-09-06 | Aug 24 2023 | 08/24/23 | 2023-08-24 | 13 days |
@@ -335,6 +338,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.28.3+rke2r2](rke2-v1.28.md#release-v1283rke2r2) | Nov 08 2023 | 11/08/23 | 2023-11-08 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 21 days |
 | [v1.28.3+rke2r1](rke2-v1.28.md#release-v1283rke2r1) | Oct 31 2023 | 10/31/23 | 2023-10-31 | Oct 18 2023 | 10/18/23 | 2023-10-18 | 13 days |
 | [v1.28.2+rke2r1](rke2-v1.28.md#release-v1282rke2r1) | Sep 18 2023 | 09/18/23 | 2023-09-18 | Sep 13 2023 | 09/13/23 | 2023-09-13 | 5 days |
 
