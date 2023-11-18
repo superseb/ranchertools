@@ -586,7 +586,7 @@ cat /var/lib/rancher/rke2/server/token
 * Add bootstrap token auth handler [(#3920)](https://github.com/rancher/rke2/pull/3920)
 * Add support for legacy kubelet logging flags [(#3932)](https://github.com/rancher/rke2/pull/3932)
 * Bump helm-controller/klipper-helm [(#3936)](https://github.com/rancher/rke2/pull/3936)
-  * The embedded helm-controller job image now correctly handles upgrading charts that contain resource types that no longer exist on the target Kubernetes version. This includes properly handling removal of PodSecurityPolicy resources when upgrading from <= v1.24.
+  * The embedded helm-controller job image now correctly handles upgrading charts that contain resource types that no longer exist on the target Kubernetes version. This includes properly handling removal of PodSecurityPolicy resources when upgrading from &lt;= v1.24.
 * Add sig-storage snapshot controller and validation webhook [(#3944)](https://github.com/rancher/rke2/pull/3944)
 * Add a quick host-path CSI snapshot to the basic CI test [(#3946)](https://github.com/rancher/rke2/pull/3946)
 * Update kubernetes to v1.26.2 [(#3953)](https://github.com/rancher/rke2/pull/3953)
