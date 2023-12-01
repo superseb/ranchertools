@@ -7,7 +7,7 @@ function transform_image_to_link()
     echo "[${tag}](## \"${repository}\")"
 }
 
-for release in v2.7 v2.6; do
+for release in v2.8 v2.7 v2.6; do
     KDM_DATA_FILE=$(mktemp)
     wget "https://releases.rancher.com/kontainer-driver-metadata/release-${release}/data.json" -O $KDM_DATA_FILE
     for k8s_minor in v1.27 v1.26 v1.25 v1.24 v1.23 v1.22 v1.21 v1.20; do
