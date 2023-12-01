@@ -16,7 +16,7 @@ function ghretry()
 
 > release-notes/README.md
 echo "# RKE" >> release-notes/README.md
-for minor in v1.2 v1.3 v1.4; do
+for minor in v1.2 v1.3 v1.4 v1.5; do
     product=rke
     > release-notes/${product}-${minor}.md
     rkeversiontmp=$(mktemp)
