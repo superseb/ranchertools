@@ -81,6 +81,14 @@
 
 
 
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| [v1.5.0](rke-v1.5.md#release-v150) | Dec 01 2023 | 12/01/23 | 2023-12-01 |
+
+
+
+
+
 # Rancher
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
