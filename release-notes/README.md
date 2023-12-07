@@ -160,6 +160,14 @@
 
 
 
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+| [v2.8.0](rancher-v2.8.md#release-v280) | Dec 06 2023 | 12/06/23 | 2023-12-06 |
+
+
+
+
+
 # RKE2
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
