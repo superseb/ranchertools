@@ -36,7 +36,7 @@ for minor in v1.2 v1.3 v1.4 v1.5; do
 done
 
 echo "# Rancher" >> release-notes/README.md
-for minor in v2.5 v2.6 v2.7; do
+for minor in v2.5 v2.6 v2.7 v2.8; do
     product=rancher
     > release-notes/${product}-${minor}.md
     rancherversiontmp=$(mktemp)
