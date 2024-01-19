@@ -6,7 +6,7 @@
 | ------- | ----------- | ------------ |
 stable|v1.28.5+k3s1|v1.26.12+rke2r1
 latest|v1.29.0+k3s1|v1.29.0+rke2r1
-testing|v1.29.1-rc1+k3s1|v1.29.1-rc1+rke2r1
+testing|v1.29.1-rc2+k3s1|v1.29.1-rc1+rke2r1
 
 ## k3s
 
@@ -14,7 +14,7 @@ testing|v1.29.1-rc1+k3s1|v1.29.1-rc1+rke2r1
 | ----------- | ----------- |
 | latest | v1.29.0+k3s1 |
 | stable | v1.28.5+k3s1 |
-| testing | v1.29.1-rc1+k3s1 |
+| testing | v1.29.1-rc2+k3s1 |
 | v1.16 | v1.16.15+k3s1 |
 | v1.16-testing | v1.16.14-rc1+k3s1 |
 | v1.17 | v1.17.17+k3s1 |
