@@ -261,7 +261,7 @@ cat /var/lib/rancher/rke2/server/token
 * Mirrored pause backport [(#4827)](https://github.com/rancher/rke2/pull/4827)
 * Write pod-manifests as 0600 in cis mode [(#4839)](https://github.com/rancher/rke2/pull/4839)
 * Bumping k3s [(#4863)](https://github.com/rancher/rke2/pull/4863)
-* Filter release branchs [(#4858)](https://github.com/rancher/rke2/pull/4858)
+* Filter release branches [(#4858)](https://github.com/rancher/rke2/pull/4858)
 * Update charts to have ipFamilyPolicy: PreferDualStack as default [(#4846)](https://github.com/rancher/rke2/pull/4846)
 * Bump K3s, Cilium, Token Rotation support [(#4870)](https://github.com/rancher/rke2/pull/4870)
 * Bump containerd to v1.7.7+k3s1 [(#4881)](https://github.com/rancher/rke2/pull/4881)
