@@ -254,7 +254,7 @@ cat /var/lib/rancher/rke2/server/token
 * Fix function name on comment [(#4668)](https://github.com/rancher/rke2/pull/4668)
 * Fix slemicro check for selinux [(#4830)](https://github.com/rancher/rke2/pull/4830)
 * Write pod-manifests as 0600 in cis mode [(#4831)](https://github.com/rancher/rke2/pull/4831)
-* Filter to not accept dependabot and updatecli branchs [(#4841)](https://github.com/rancher/rke2/pull/4841)
+* Filter to not accept dependabot and updatecli branches [(#4841)](https://github.com/rancher/rke2/pull/4841)
 * Bump k3s version in go.mod [(#4850)](https://github.com/rancher/rke2/pull/4850)
 * Bump cilium to 1.14.2 [(#4837)](https://github.com/rancher/rke2/pull/4837)
 * Bump K3s, Token Rotation support [(#4866)](https://github.com/rancher/rke2/pull/4866)

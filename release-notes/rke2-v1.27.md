@@ -248,7 +248,7 @@ cat /var/lib/rancher/rke2/server/token
 * Remove unnecessary docker pull [(#4823)](https://github.com/rancher/rke2/pull/4823)
 * Mirrored pause backport [(#4828)](https://github.com/rancher/rke2/pull/4828)
 * Write pod-manifests as 0600 in cis mode [(#4838)](https://github.com/rancher/rke2/pull/4838)
-* Filter release branchs [(#4857)](https://github.com/rancher/rke2/pull/4857)
+* Filter release branches [(#4857)](https://github.com/rancher/rke2/pull/4857)
 * Bump k3s version [(#4851)](https://github.com/rancher/rke2/pull/4851)
 * Update charts to have ipFamilyPolicy: PreferDualStack as default [(#4845)](https://github.com/rancher/rke2/pull/4845)
 * Bump K3s, Token Rotation support [(#4869)](https://github.com/rancher/rke2/pull/4869)
