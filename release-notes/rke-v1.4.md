@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.13](rke-v1.4.md#release-v1413) | Jan 22 2024 | 01/22/24 | 2024-01-22 |
 | [v1.4.12](rke-v1.4.md#release-v1412) | Dec 19 2023 | 12/19/23 | 2023-12-19 |
 | [v1.4.11](rke-v1.4.md#release-v1411) | Nov 15 2023 | 11/15/23 | 2023-11-15 |
 | [v1.4.10](rke-v1.4.md#release-v1410) | Sep 19 2023 | 09/19/23 | 2023-09-19 |
@@ -16,6 +17,31 @@
 
 
 
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running. 
+
+## What's Changed
+* [release/v1.4] Move to BCI by @superseb in https://github.com/rancher/rke/pull/3174
+* Revert "Move to BCI" by @manuelbuil in https://github.com/rancher/rke/pull/3473
+* Added ACI-CNI 6.0.3.2 variables  by @akhilesh-oc in https://github.com/rancher/rke/pull/3466
+* [v1.4] update kdm branch by @kinarashah in https://github.com/rancher/rke/pull/3478
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.26.11-rancher2-2` (Default) |
+| `v1.25.16-rancher2-2`  |
+| `v1.24.17-rancher1-1`  |
+| `v1.23.16-rancher2-3`  |
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.12...v1.4.13
+-----
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
 
 ## Enhancements
