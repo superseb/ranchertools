@@ -7,6 +7,8 @@
 
 # Release v2.8.1
 
+> After testing and observation in the community, Rancher v2.8.1 is now considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
+
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.
 
 Rancher v2.8.1 is a mirror release of [v2.8.0](https://github.com/rancher/rancher/releases/tag/v2.8.0). It addresses issues for air-gapped Rancher installations.
@@ -111,6 +113,17 @@ The built-in `restricted-admin` role is being deprecated in favor of a more flex
 
 - Reverse DNS server functionality has been removed. The associated [`rancher/rdns-server`](https://github.com/rancher/rdns-server) repository is now archived. Reverse DNS is already disabled by default. <!--Rancher security 1201 -->
 - The Rancher CLI configuration file `~/.rancher/cli2.json` previously had permissions set to `0644`. Although `0644` would usually indicate that all users have read access to the file, the parent directory would block users' access. New Rancher CLI configuration files will only be readable by the owner (`0600`). Invoking the CLI will trigger a warning, in case old configuration files are world-readable or group-readable. See [#42838](https://github.com/rancher/rancher/issues/42838).
+
+### Known Issues
+
+Legacy Custom Banner settings can cause the top left Menu to disappear. See [#10140](https://github.com/rancher/dashboard/issues/10140).
+
+As a workaround:
+
+1. Go to `<rancher url>/v3/settings/ui-banners`.
+1. Press `Edit`, change the value to `{}`, press `Show Request` and then `Send Request` (Note - this will remove custom banners).
+1. Go back to the UI and refresh the browser.
+1. The nav should be back, and re-applying custom banners should not result in the bug again.
 
 ## Role-Based Access Control (RBAC) Framework
 
@@ -707,6 +720,17 @@ Global Role configuration is now more flexible. Additional fields are being adde
 The built-in `restricted-admin` role is being deprecated in favor of a more flexible global role configuration, which is now available for different use cases other than only the `restricted-admin`. If you want to replicate the permissions given through this role, use the new `inheritedClusterRoles` feature to create a custom global role. A custom global role, like the `restricted-admin` role, grants permissions on all downstream clusters. See [#42462](https://github.com/rancher/rancher/issues/42462). Given its deprecation, the `restricted-admin` role will continue to be included in future builds of Rancher through the v2.8.x and v2.9.x release lines. However, in accordance with the CVSS standard, only security issues scored as critical will be backported and fixed in the `restricted-admin` role until it is completely removed from Rancher. <!-- Security 1249 -->
 - Reverse DNS server functionality has been removed. The associated [`rancher/rdns-server`](https://github.com/rancher/rdns-server) repository is now archived. Reverse DNS is already disabled by default. <!--Rancher security 1201 -->
 - The Rancher CLI configuration file `~/.rancher/cli2.json` previously had permissions set to `0644`. Although `0644` would usually indicate that all users have read access to the file, the parent directory would block users' access. New Rancher CLI configuration files will only be readable by the owner (`0600`). Invoking the CLI will trigger a warning, in case old configuration files are world-readable or group-readable. See [#42838](https://github.com/rancher/rancher/issues/42838).
+
+### Known Issues
+
+Legacy Custom Banner settings can cause the top left Menu to disappear. See [#10140](https://github.com/rancher/dashboard/issues/10140).
+
+As a workaround:
+
+1. Go to `<rancher url>/v3/settings/ui-banners`.
+1. Press `Edit`, change the value to `{}`, press `Show Request` and then `Send Request` (Note - this will remove custom banners).
+1. Go back to the UI and refresh the browser.
+1. The nav should be back, and re-applying custom banners should not result in the bug again.
 
 ## Role-Based Access Control (RBAC) Framework
 
