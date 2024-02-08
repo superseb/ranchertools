@@ -169,6 +169,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.8.2](rancher-v2.8.md#release-v282) | Feb 08 2024 | 02/08/24 | 2024-02-08 |
 | [v2.8.1](rancher-v2.8.md#release-v281) | Jan 22 2024 | 01/22/24 | 2024-01-22 |
 | [v2.8.0](rancher-v2.8.md#release-v280) | Dec 06 2023 | 12/06/23 | 2023-12-06 |
 
