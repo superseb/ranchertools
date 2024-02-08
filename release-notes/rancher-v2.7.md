@@ -25,7 +25,7 @@
 This release addresses the following Rancher security issues:
 
 - Fixed an issue where the [Rancher Audit Log](https://ranchermanager.docs.rancher.com/how-to-guides/advanced-user-guides/enable-api-audit-log) was leaking sensitive data. For more information, see [CVE-2023-22649](https://github.com/rancher/rancher/security/advisories/GHSA-xfj7-qf8w-2gcr).
-- Updated the versions of Norman and API Server to address CVEs [CVE-2023-32193](https://github.com/rancher/norman/security/advisories/GHSA-r8f4-hv23-6qp6) and [CVE-2023-32192](https://github.com/rancher/apiserver/security/advisories/GHSA-833m-37f7-jq55), respectively, that could lead to an unauthenticated cross-site scripting (XSS) in Rancher's public API.
+- Updated the versions of Norman and API Server to address CVEs [CVE-2023-32193](https://github.com/rancher/norman/security/advisories/GHSA-r8f4-hv23-6qp6) and [CVE-2023-32192](https://github.com/rancher/apiserver/security/advisories/GHSA-833m-37f7-jq55), respectively, that could lead to an unauthenticated cross-site scripting (XSS) in Rancher's APIs.
 - Fixed an issue where users with permissions in custom API groups could manage namespaces in the core API group. For more information, see [CVE-2023-32194](https://github.com/rancher/rancher/security/advisories/GHSA-c85r-fwc7-45vc).
 - Bumped `runc` to [v1.1.12](https://github.com/opencontainers/runc/releases/tag/v1.1.12) to fix [CVE-2024-21626](https://nvd.nist.gov/vuln/detail/CVE-2024-21626), see related [`runc` security advisory](https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv).
 
@@ -104,11 +104,11 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 
 ### Tools
 - CLI - [v2.7.7](https://github.com/rancher/cli/releases/tag/v2.7.7)
-- RKE - [v1.4.10](https://github.com/rancher/rke/releases/tag/v1.4.10)
+- RKE - [v1.4.13](https://github.com/rancher/rke/releases/tag/v1.4.13)
 
 ### Kubernetes Versions for RKE
-- v1.26.8 (Default)
-- v1.25.13
+- v1.26.11 (Default)
+- v1.25.16
 - v1.24.17
 - v1.23.16
 
