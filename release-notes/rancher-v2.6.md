@@ -31,7 +31,7 @@ Rancher v2.6.14 is a security release based on v2.6.13 that addresses the securi
 This release addresses the following Rancher security issues:
 
 - Fixed an issue where the [Rancher Audit Log](https://ranchermanager.docs.rancher.com/how-to-guides/advanced-user-guides/enable-api-audit-log) was leaking sensitive data. For more information, see [CVE-2023-22649](https://github.com/rancher/rancher/security/advisories/GHSA-xfj7-qf8w-2gcr).
-- Updated the versions of Norman and API Server to address CVEs [CVE-2023-32193](https://github.com/rancher/norman/security/advisories/GHSA-r8f4-hv23-6qp6) and [CVE-2023-32192](https://github.com/rancher/apiserver/security/advisories/GHSA-833m-37f7-jq55), respectively, that could lead to an unauthenticated cross-site scripting (XSS) in Rancher's public API.
+- Updated the versions of Norman and API Server to address CVEs [CVE-2023-32193](https://github.com/rancher/norman/security/advisories/GHSA-r8f4-hv23-6qp6) and [CVE-2023-32192](https://github.com/rancher/apiserver/security/advisories/GHSA-833m-37f7-jq55), respectively, that could lead to an unauthenticated cross-site scripting (XSS) in Rancher's APIs.
 - Fixed an issue where users with permissions in custom API groups could manage namespaces in the core API group. For more information, see [CVE-2023-32194](https://github.com/rancher/rancher/security/advisories/GHSA-c85r-fwc7-45vc).
 - Bumped `runc` to [v1.1.12](https://github.com/opencontainers/runc/releases/tag/v1.1.12) to fix [CVE-2024-21626](https://nvd.nist.gov/vuln/detail/CVE-2024-21626), see related [`runc` security advisory](https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv).
 
@@ -136,10 +136,10 @@ Please review our [version documentation](https://rancher.com/docs/rancher/v2.6/
 
 ### Tools
 - CLI - [v2.6.11](https://github.com/rancher/cli/releases/tag/v2.6.11)
-- RKE - [v1.3.20](https://github.com/rancher/rke/releases/tag/v1.3.20)
+- RKE - [v1.3.24](https://github.com/rancher/rke/releases/tag/v1.3.24)
 
 ### Kubernetes Versions
-- v1.24.13 (Default)
+- v1.24.17 (Default)
 - v1.23.16
 - v1.22.17
 - v1.21.14
