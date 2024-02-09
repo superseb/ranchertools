@@ -113,8 +113,8 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 - v1.23.16
 
 ### Kubernetes Versions for RKE2/K3s
-- v1.26.9 (Default)
-- v1.25.14
+- v1.26.11 (Default)
+- v1.25.16
 - v1.24.17
 - v1.23.17
 
