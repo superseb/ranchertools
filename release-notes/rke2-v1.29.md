@@ -17,7 +17,9 @@
 
 This release updates Kubernetes to v1.29.1.
 
-**Important Note**
+**Important Notes**
+
+Addresses the runc CVE: [CVE-2024-21626](https://nvd.nist.gov/vuln/detail/CVE-2024-21626) by updating runc to v1.1.12.
 
 If your server (control-plane) nodes were not started with the `--token` CLI flag or config file key, a randomized token was generated during initial cluster startup. This key is used both for joining new nodes to the cluster, and for encrypting cluster bootstrap data within the datastore. Ensure that you retain a copy of this token, as is required when restoring from backup.
 

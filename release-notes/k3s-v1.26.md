@@ -47,6 +47,10 @@ This release updates Kubernetes to v1.26.13, and fixes a number of issues.
 
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#changelog-since-v12612).
 
+**Important Notes**
+
+Addresses the runc CVE: [CVE-2024-21626](https://nvd.nist.gov/vuln/detail/CVE-2024-21626) by updating runc to v1.1.12.
+
 ## Changes since v1.26.12+k3s1:
 
 * Add a retry around updating a secrets-encrypt node annotations [(#9123)](https://github.com/k3s-io/k3s/pull/9123)
