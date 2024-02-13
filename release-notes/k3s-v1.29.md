@@ -19,6 +19,10 @@ This release updates Kubernetes to v1.29.1, and fixes a number of issues.
 
 For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#changelog-since-v1290).
 
+**Important Notes**
+
+Addresses the runc CVE: [CVE-2024-21626](https://nvd.nist.gov/vuln/detail/CVE-2024-21626) by updating runc to v1.1.12.
+
 ## Changes since v1.29.0+k3s1:
 
 * Bump Sonobuoy version [(#8910)](https://github.com/k3s-io/k3s/pull/8910)
