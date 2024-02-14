@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.14](rke-v1.4.md#release-v1414) | Feb 13 2024 | 02/13/24 | 2024-02-13 |
 | [v1.4.13](rke-v1.4.md#release-v1413) | Jan 22 2024 | 01/22/24 | 2024-01-22 |
 | [v1.4.12](rke-v1.4.md#release-v1412) | Dec 19 2023 | 12/19/23 | 2023-12-19 |
 | [v1.4.11](rke-v1.4.md#release-v1411) | Nov 15 2023 | 11/15/23 | 2023-11-15 |
@@ -17,6 +18,30 @@
 
 
 
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running. 
+
+## What's Changed
+* Introduced `v1.26.13-rancher1-1` 
+* Fixed an issue for etcd v3.5.9 where etcd snapshot-restore fails due to missing /bin/sh in etcd container image [#3485](https://github.com/rancher/rke/issues/3485)
+* Updated containerd to v1.6.27 and runc to v1.1.12 https://github.com/rancher/rke/pull/3494 
+
+## Kubernetes Versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.26.13-rancher1-1` (Default) |
+| `v1.25.16-rancher2-2`  |
+| `v1.24.17-rancher1-1`  |
+| `v1.23.16-rancher2-3`  |
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.13...v1.4.14
+-----
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running. 
 
 ## What's Changed
