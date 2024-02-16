@@ -1970,6 +1970,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#40608](https://github.com/rancher/rancher/issues/40608) Changing vSphere Credentials causes old nodes to fail on deletion
 * [#40253](https://github.com/rancher/rancher/issues/40253) Error related to services/proxy when viewing metrics in Rancher UI
 * [#40602](https://github.com/rancher/rancher/issues/40602) Disk Sync Duration graph set to milliseconds (not the expected seconds) in the y-axis
+* [#40165](https://github.com/rancher/rancher/issues/40165) Not all alerts are showing up on Slack channel using AlertManagerConfigs
 * [#39532](https://github.com/rancher/rancher/issues/39532) Installed Apps don't update after upgrade from v2.6.3 to v2.6.8 when Rancher chart uses --set useBundledSystemChart=true
 * [#38820](https://github.com/rancher/rancher/issues/38820) [BUG][Monitoring v2]Prometheus target serviceMonitor/kube-system/rancher-monitoring-coredns is down in k3s hardened cluster - connect refused
 * [#38711](https://github.com/rancher/rancher/issues/38711) ETCDSnapshot CRs not cleaned up/not following `etcd-snapshot-retention` value
