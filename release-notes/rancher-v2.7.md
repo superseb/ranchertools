@@ -16,6 +16,8 @@
 
 # Release v2.7.10
 
+> Rancher v2.7.10 is considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
+
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
 **Rancher v2.7.10 is a security release to address the following issues:**

@@ -8,7 +8,7 @@
 
 # Release v2.8.2
 
->After testing and observation in the community, Rancher v2.8.1 is now considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
+> Rancher v2.8.2 is considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
 
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.
 
