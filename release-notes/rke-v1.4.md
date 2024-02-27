@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.15](rke-v1.4.md#release-v1415) | Feb 27 2024 | 02/27/24 | 2024-02-27 |
 | [v1.4.14](rke-v1.4.md#release-v1414) | Feb 13 2024 | 02/13/24 | 2024-02-13 |
 | [v1.4.13](rke-v1.4.md#release-v1413) | Jan 22 2024 | 01/22/24 | 2024-01-22 |
 | [v1.4.12](rke-v1.4.md#release-v1412) | Dec 19 2023 | 12/19/23 | 2023-12-19 |
@@ -18,6 +19,36 @@
 
 
 
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
+
+## What's Changed
+* K8s 1.27 support https://github.com/rancher/rke/pull/3482
+* External AWS cloud provider support https://github.com/rancher/rke/pull/3482
+* Added Weave deprecation warning https://github.com/rancher/rke/pull/3482
+* Changed etcd restoreImage to rke-tools for etcd >=3.5.7 https://github.com/rancher/rke/pull/3486
+
+# RKE Kubernetes versions
+
+Each version of RKE has a specific list of supported Kubernetes versions. If you want to use a different version than listed below, you will need to update Kubernetes using the [system images](https://rancher.com/docs/rke/latest/en/config-options/system-images/) option in your `cluster.yml`.
+
+| Kubernetes version    |
+| --------------------- |
+| `v1.27.10-rancher1-1` (default) |
+| `v1.26.13-rancher1-1` |
+| `v1.25.16-rancher2-2` |
+| `v1.24.17-rancher1-1` |
+| `v1.23.16-rancher2-3` |
+
+
+
+
+
+| Experimental Kubernetes version |
+| --------------------- |
+| N/A | 
+
+**Full Changelog**: https://github.com/rancher/rke/compare/v1.4.14...v1.4.15
+-----
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running. 
 
 ## What's Changed
