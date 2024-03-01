@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.11](rancher-v2.7.md#release-v2711) | Mar 01 2024 | 03/01/24 | 2024-03-01 |
 | [v2.7.10](rancher-v2.7.md#release-v2710) | Feb 08 2024 | 02/08/24 | 2024-02-08 |
 | [v2.7.9](rancher-v2.7.md#release-v279) | Oct 26 2023 | 10/26/23 | 2023-10-26 |
 | [v2.7.8](rancher-v2.7.md#release-v278) | Oct 05 2023 | 10/05/23 | 2023-10-05 |
@@ -14,6 +15,8 @@
 
 
 
+
+-----
 # Release v2.7.10
 
 > Rancher v2.7.10 is considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
