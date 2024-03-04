@@ -17,8 +17,6 @@
 
 # Release v2.7.11
 
-> Rancher v2.7.10 is considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
-
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
 Rancher v2.7.11 adds support for Kubernetes v1.27 and addresses several bugs and issues. The v2.7.11 build is only available for Rancher Prime customers, through the Rancher Prime registry. To learn more about Rancher Prime, see our page on the [Rancher Prime Platform](https://www.rancher.com/products/rancher-platform).
