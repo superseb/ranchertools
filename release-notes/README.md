@@ -550,6 +550,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.26.14+k3s1](k3s-v1.26.md#release-v12614k3s1) | Feb 29 2024 | 02/29/24 | 2024-02-29 | Feb 14 2024 | 02/14/24 | 2024-02-14 | 15 days |
 | [v1.26.13+k3s2](k3s-v1.26.md#release-v12613k3s2) | Feb 06 2024 | 02/06/24 | 2024-02-06 | Jan 17 2024 | 01/17/24 | 2024-01-17 | 20 days |
 | [v1.26.12+k3s1](k3s-v1.26.md#release-v12612k3s1) | Dec 27 2023 | 12/27/23 | 2023-12-27 | Dec 20 2023 | 12/20/23 | 2023-12-20 | 7 days |
 | [v1.26.11+k3s2](k3s-v1.26.md#release-v12611k3s2) | Dec 07 2023 | 12/07/23 | 2023-12-07 | Nov 15 2023 | 11/15/23 | 2023-11-15 | 22 days |
@@ -573,6 +574,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.27.11+k3s1](k3s-v1.27.md#release-v12711k3s1) | Feb 29 2024 | 02/29/24 | 2024-02-29 | Feb 14 2024 | 02/14/24 | 2024-02-14 | 15 days |
 | [v1.27.10+k3s2](k3s-v1.27.md#release-v12710k3s2) | Feb 06 2024 | 02/06/24 | 2024-02-06 | Jan 17 2024 | 01/17/24 | 2024-01-17 | 20 days |
 | [v1.27.9+k3s1](k3s-v1.27.md#release-v1279k3s1) | Dec 27 2023 | 12/27/23 | 2023-12-27 | Dec 20 2023 | 12/20/23 | 2023-12-20 | 7 days |
 | [v1.27.8+k3s2](k3s-v1.27.md#release-v1278k3s2) | Dec 07 2023 | 12/07/23 | 2023-12-07 | Nov 15 2023 | 11/15/23 | 2023-11-15 | 22 days |
@@ -591,6 +593,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.28.7+k3s1](k3s-v1.28.md#release-v1287k3s1) | Feb 29 2024 | 02/29/24 | 2024-02-29 | Feb 14 2024 | 02/14/24 | 2024-02-14 | 15 days |
 | [v1.28.6+k3s2](k3s-v1.28.md#release-v1286k3s2) | Feb 06 2024 | 02/06/24 | 2024-02-06 | Jan 17 2024 | 01/17/24 | 2024-01-17 | 20 days |
 | [v1.28.5+k3s1](k3s-v1.28.md#release-v1285k3s1) | Dec 27 2023 | 12/27/23 | 2023-12-27 | Dec 20 2023 | 12/20/23 | 2023-12-20 | 7 days |
 | [v1.28.4+k3s2](k3s-v1.28.md#release-v1284k3s2) | Dec 06 2023 | 12/06/23 | 2023-12-06 | Nov 15 2023 | 11/15/23 | 2023-11-15 | 21 days |
@@ -605,6 +608,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.29.2+k3s1](k3s-v1.29.md#release-v1292k3s1) | Feb 29 2024 | 02/29/24 | 2024-02-29 | Feb 14 2024 | 02/14/24 | 2024-02-14 | 15 days |
 | [v1.29.1+k3s2](k3s-v1.29.md#release-v1291k3s2) | Feb 06 2024 | 02/06/24 | 2024-02-06 | Jan 17 2024 | 01/17/24 | 2024-01-17 | 20 days |
 | [v1.29.0+k3s1](k3s-v1.29.md#release-v1290k3s1) | Dec 22 2023 | 12/22/23 | 2023-12-22 | Dec 13 2023 | 12/13/23 | 2023-12-13 | 9 days |
 
