@@ -19,6 +19,8 @@
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
 
+>Warning: You should avoid upgrading from Rancher v2.7.11 to Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher v2.7.11 contains critical fixes not present in Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher offers several actively-developed minor release lines, and Rancher v2.7.11 was released chronologically after Rancher v2.8.2. The critical fixes present in Rancher v2.7.11 will be included in the next v2.8.x release.
+
 Rancher v2.7.11 adds support for Kubernetes v1.27 and addresses several bugs and issues. The v2.7.11 build is only available for Rancher Prime customers, through the Rancher Prime registry. To learn more about Rancher Prime, see our page on the [Rancher Prime Platform](https://www.rancher.com/products/rancher-platform).
 
 ### Features and Enhancements

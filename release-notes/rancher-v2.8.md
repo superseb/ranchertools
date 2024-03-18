@@ -12,6 +12,8 @@
 
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.
 
+>Warning: You should avoid upgrading from Rancher v2.7.11 to Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher v2.7.11 contains critical fixes not present in Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher offers several actively-developed minor release lines, and Rancher v2.7.11 was released chronologically after Rancher v2.8.2. The critical fixes present in Rancher v2.7.11 will be included in the next v2.8.x release.
+
 Rancher v2.8.2 is a security release to address the following issues:
 
 # Security Fixes for Rancher Vulnerabilities
@@ -619,6 +621,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 > After testing and observation in the community, Rancher v2.8.1 is now considered a stable release and also designated as a Rancher Prime release. To learn more about Rancher Prime, visit https://www.rancher.com/products/rancher-platform.
 
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.
+
+> Warning: You should avoid upgrading from Rancher v2.7.11 to Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher v2.7.11 contains critical fixes not present in Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher offers several actively-developed minor release lines, and Rancher v2.7.11 was released chronologically after Rancher v2.8.2. The critical fixes present in Rancher v2.7.11 will be included in the next v2.8.x release.
 
 Rancher v2.8.1 is a mirror release of [v2.8.0](https://github.com/rancher/rancher/releases/tag/v2.8.0). It addresses issues for air-gapped Rancher installations.
 
@@ -1234,6 +1238,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 # Release v2.8.0
 
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.
+
+> Warning: You should avoid upgrading from Rancher v2.7.11 to Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher v2.7.11 contains critical fixes not present in Rancher v2.8.0, v2.8.1, or v2.8.2. Rancher offers several actively-developed minor release lines, and Rancher v2.7.11 was released chronologically after Rancher v2.8.2. The critical fixes present in Rancher v2.7.11 will be included in the next v2.8.x release.
 
 Rancher v2.8.0 is the latest minor release of Rancher. This version introduces two major new features and enhancements, and numerous other improvements.
 
