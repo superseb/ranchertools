@@ -499,7 +499,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#44014](https://github.com/rancher/rancher/issues/44014) [Forwardport 2.8] Add unit tests for AD GUID unmigration
 * [#44011](https://github.com/rancher/rancher/issues/44011) [RFE] [BRO] Upgrade Golang and the net package to fix CVE-2023-44487
 * [#44002](https://github.com/rancher/rancher/issues/44002) [Backport 2.8] Update Wrangler to v2 tag
-* [#43992](https://github.com/rancher/rancher/issues/43992) [Backport] Label deprecated setting kubeconfig-token-ttl-minutes from v3 and v1 API for future removal
 * [#43982](https://github.com/rancher/rancher/issues/43982) [Backport v2.8] Cannot set custom Node Name for Windows worker nodes
 * [#43980](https://github.com/rancher/rancher/issues/43980) [Backport v2.8] vSphere CSI chart updates to upstream v3.0.3 / v1.27.3
 * [#43979](https://github.com/rancher/rancher/issues/43979) [Backport v2.8] vSphere CPI chart updates to upstream v1.28.0 / v1.23.5 / v1.22.9 (incl. K8s 1.28 support)
