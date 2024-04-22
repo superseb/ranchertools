@@ -487,7 +487,7 @@ This release updates Kubernetes to v1.28.3.
 
 **Important Notes**
 
-This release includes a version of ingress-nginx affected by [CVE-2023-5043](https://github.com/kubernetes/ingress-nginx/issues/10571) and [CVE-2023-5044](https://github.com/kubernetes/ingress-nginx/issues/10572). Ingress administrators should set the --enable-annotation-validation flag to enforce restrictions on the contents of ingress-nginx annotation fields.
+This release includes a version of ingress-nginx affected by [CVE-2023-5043](https://github.com/kubernetes/ingress-nginx/issues/10571) and [CVE-2023-5044](https://github.com/kubernetes/ingress-nginx/issues/10572). Ingress administrators should set the `--enable-annotation-validation` flag to enforce restrictions on the contents of ingress-nginx annotation fields.
 
 If your server (control-plane) nodes were not started with the `--token` CLI flag or config file key, a randomized token was generated during initial cluster startup. This key is used both for joining new nodes to the cluster, and for encrypting cluster bootstrap data within the datastore. Ensure that you retain a copy of this token, as is required when restoring from backup.
 
