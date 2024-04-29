@@ -469,6 +469,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## All issues in v2.8.3 milestone
 
+* [#45093](https://github.com/rancher/rancher/issues/45093) [BUG] Upgrading rancher-vsphere-csi chart causes VSphere CSI Controller pod to go into CrashLoop
 * [#44891](https://github.com/rancher/rancher/issues/44891) [BUG] bump `rancher/machine` image to `v0.15.0-rancher110` for `v2.8.3`
 * [#44811](https://github.com/rancher/rancher/issues/44811) 2.8 [BUG] Rancher CLI panics when trying to kubectl after a login 
 * [#44790](https://github.com/rancher/rancher/issues/44790) [2.8] Need Updated CSI-Proxy to Address Windows Volume Mount Issue
