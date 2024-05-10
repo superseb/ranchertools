@@ -674,6 +674,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.30.0+k3s1](k3s-v1.30.md#release-v1300k3s1) | May 10 2024 | 05/10/24 | 2024-05-10 | Apr 17 2024 | 04/17/24 | 2024-04-17 | 23 days |
 
 
 
