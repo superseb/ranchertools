@@ -102,6 +102,20 @@
 
 
 
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+
+
+
+
+
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+
+
+
+
+
 # Rancher
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
@@ -183,6 +197,20 @@
 | [v2.8.2](rancher-v2.8.md#release-v282) | Feb 08 2024 | 02/08/24 | 2024-02-08 |
 | [v2.8.1](rancher-v2.8.md#release-v281) | Jan 22 2024 | 01/22/24 | 2024-01-22 |
 | [v2.8.0](rancher-v2.8.md#release-v280) | Dec 06 2023 | 12/06/23 | 2023-12-06 |
+
+
+
+
+
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
+
+
+
+
+
+| Version | Date | US date | EU date |
+| ------- | ---- | ------- | ------- |
 
 
 
@@ -414,6 +442,13 @@
 
 
 
+| Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+
+
+
+
+
 # k3s
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -632,6 +667,13 @@
 | [v1.29.2+k3s1](k3s-v1.29.md#release-v1292k3s1) | Feb 29 2024 | 02/29/24 | 2024-02-29 | Feb 14 2024 | 02/14/24 | 2024-02-14 | 15 days |
 | [v1.29.1+k3s2](k3s-v1.29.md#release-v1291k3s2) | Feb 06 2024 | 02/06/24 | 2024-02-06 | Jan 17 2024 | 01/17/24 | 2024-01-17 | 20 days |
 | [v1.29.0+k3s1](k3s-v1.29.md#release-v1290k3s1) | Dec 22 2023 | 12/22/23 | 2023-12-22 | Dec 13 2023 | 12/13/23 | 2023-12-13 | 9 days |
+
+
+
+
+
+| Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 
 
 
