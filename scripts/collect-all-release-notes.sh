@@ -16,7 +16,7 @@ function ghretry()
 
 > release-notes/README.md
 echo "# RKE" >> release-notes/README.md
-for minor in v1.2 v1.3 v1.4 v1.5; do
+for minor in v1.2 v1.3 v1.4 v1.5 v1.6 v1.7; do
     product=rke
     > release-notes/${product}-${minor}.md
     rkeversiontmp=$(mktemp)
@@ -36,7 +36,7 @@ for minor in v1.2 v1.3 v1.4 v1.5; do
 done
 
 echo "# Rancher" >> release-notes/README.md
-for minor in v2.5 v2.6 v2.7 v2.8; do
+for minor in v2.5 v2.6 v2.7 v2.8 v2.9 v2.10; do
     product=rancher
     > release-notes/${product}-${minor}.md
     rancherversiontmp=$(mktemp)
@@ -61,7 +61,7 @@ for minor in v2.5 v2.6 v2.7 v2.8; do
 done
 
 echo "# RKE2" >> release-notes/README.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30; do
     product=rke2
     > release-notes/${product}-${minor}.md
     rke2table=$(mktemp)
@@ -111,7 +111,7 @@ for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29; do
 done
 
 echo "# k3s" >> release-notes/README.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30; do
     product=k3s
     > release-notes/${product}-${minor}.md
     k3stable=$(mktemp)
