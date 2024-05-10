@@ -7,13 +7,13 @@ function transform_image_to_link()
     echo "[${tag}](## \"${repository}\")"
 }
 
-for release in v2.8 v2.7 v2.6; do
+for release in v2.9 v2.8 v2.7 v2.6; do
     if [ ! -d "kdm/${release}" ]; then
         mkdir "kdm/${release}"
     fi
     KDM_DATA_FILE=$(mktemp)
     wget "https://releases.rancher.com/kontainer-driver-metadata/release-${release}/data.json" -O $KDM_DATA_FILE
-    for k8s_minor in v1.27 v1.26 v1.25 v1.24 v1.23 v1.22 v1.21 v1.20; do
+    for k8s_minor in v1.28 v1.27 v1.26 v1.25 v1.24 v1.23 v1.22 v1.21 v1.20; do
         previous=""
         kdmtable=$(mktemp)
         for found_version in $(jq -r --arg K8SMINOR "$k8s_minor" '.K8sVersionRKESystemImages | with_entries(select(.key | startswith($K8SMINOR))) | keys[]' $KDM_DATA_FILE | sort -Vr); do
