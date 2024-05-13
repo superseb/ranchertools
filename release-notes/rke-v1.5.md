@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.5.9](rke-v1.5.md#release-v159) | May 13 2024 | 05/13/24 | 2024-05-13 |
 | [v1.5.8](rke-v1.5.md#release-v158) | Apr 10 2024 | 04/10/24 | 2024-04-10 |
 | [v1.5.7](rke-v1.5.md#release-v157) | Mar 27 2024 | 03/27/24 | 2024-03-27 |
 | [v1.5.6](rke-v1.5.md#release-v156) | Mar 07 2024 | 03/07/24 | 2024-03-07 |
@@ -11,6 +12,20 @@
 
 
 
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
+
+## What's Changed
+
+- Bump containerd to v1.6.27. See https://github.com/rancher/rke/pull/3566
+- Fix the issue where not all kube-apiserver containers restart after changing the Pod Security Admission Configuration. See https://github.com/rancher/rke/pull/3547
+
+| Kubernetes version |
+| ----- |
+| `v1.25.16-rancher2-3` |
+| `v1.26.15-rancher1-1` |
+| `v1.27.13-rancher1-1` |
+| `v1.28.9-rancher1-1` (default) |
+-----
 Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes are both simplified and easily automated, and they are entirely independent of the operating system and platform you're running.
 
 ## What's Changed
