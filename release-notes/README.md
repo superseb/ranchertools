@@ -64,6 +64,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.4.18](rke-v1.4.md#release-v1418) | May 13 2024 | 05/13/24 | 2024-05-13 |
 | [v1.4.17](rke-v1.4.md#release-v1417) | Apr 10 2024 | 04/10/24 | 2024-04-10 |
 | [v1.4.16](rke-v1.4.md#release-v1416) | Mar 07 2024 | 03/07/24 | 2024-03-07 |
 | [v1.4.15](rke-v1.4.md#release-v1415) | Feb 27 2024 | 02/27/24 | 2024-02-27 |
@@ -89,6 +90,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.5.9](rke-v1.5.md#release-v159) | May 13 2024 | 05/13/24 | 2024-05-13 |
 | [v1.5.8](rke-v1.5.md#release-v158) | Apr 10 2024 | 04/10/24 | 2024-04-10 |
 | [v1.5.7](rke-v1.5.md#release-v157) | Mar 27 2024 | 03/27/24 | 2024-03-27 |
 | [v1.5.6](rke-v1.5.md#release-v156) | Mar 07 2024 | 03/07/24 | 2024-03-07 |
@@ -444,6 +446,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.30.0+rke2r1](rke2-v1.30.md#release-v1300rke2r1) | May 09 2024 | 05/09/24 | 2024-05-09 | Apr 17 2024 | 04/17/24 | 2024-04-17 | 22 days |
 
 
 
