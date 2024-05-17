@@ -250,6 +250,19 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
 
+
+## All issues in v2.7.13 milestone
+
+* [#45421](https://github.com/rancher/rancher/issues/45421) [Backport v2.7] [BUG] ACI-CNI variables not configurable using Rancher server UI
+* [#45218](https://github.com/rancher/rancher/issues/45218) [Backport] - [v2.7] Bump Windows Containers throughout Rancher
+* [#45064](https://github.com/rancher/rancher/issues/45064) RKE2 and K3S - KDM Update for K8s April 2024 patch release for Rancher 2.7
+* [#45045](https://github.com/rancher/rancher/issues/45045) [v2.7] Backport - Environment variables https_proxy and no_proxy are not correctly set in windows worker nodes of custom type
+* [#45042](https://github.com/rancher/rancher/issues/45042) [v2.7] KDM Update for K8s April 2024 patch release
+* [#44983](https://github.com/rancher/rancher/issues/44983) [v2.7] Update Nutanix node driver to version 3.6.0 / rancher 2.7
+* [#44804](https://github.com/rancher/rancher/issues/44804) [v2.7 backport] rancher/apiserver does not run go test in CI
+* [#44729](https://github.com/rancher/rancher/issues/44729) [Backport 2.7] Add the ability to use authentication on clients to the kubernetes component
+* [#44678](https://github.com/rancher/rancher/issues/44678) [Backport] [2.7] COREDNS deployment manifest replicas: 1 in kontainer-driver-metadata will make cluster unstable during upgrade 
+* [#39597](https://github.com/rancher/rancher/issues/39597) [BUG] cluster deploy running excessively and taking a long time to execute
 -----
 # Release v2.7.12
 

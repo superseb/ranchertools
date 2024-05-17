@@ -491,6 +491,38 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Rancher v2.5.8:**
   - If you deploy Monitoring V2 on a Windows cluster with `win_prefix_path` set, you must deploy Rancher Wins Upgrader to restart wins on the hosts. This will allow Rancher to start collecting metrics in Prometheus. See [#32535](https://github.com/rancher/rancher/issues/32535).
 
+
+## All issues in v2.8.4 milestone
+
+* [#45424](https://github.com/rancher/rancher/issues/45424) [BUG] rancher/shell:v0.1.24 reporting `manifest invalid` 
+* [#45308](https://github.com/rancher/rancher/issues/45308) [v2.8] Rancher logging does not work on windows nodes when using `logging-operator:4.4.0`
+* [#45174](https://github.com/rancher/rancher/issues/45174) [v2.8] [BUG] Inadvertent removal of SSH from `rancher/machine`
+* [#45152](https://github.com/rancher/rancher/issues/45152) Add endpointslice dependency
+* [#45148](https://github.com/rancher/rancher/issues/45148) [RFE] [Monitoring V2] windows-exporter should no longer depend on rancher/wins
+* [#45119](https://github.com/rancher/rancher/issues/45119) [BUG] [v2.8] rancher-monitoring fails to install: var in _helpers.tpl is set with one name, referenced with another
+* [#45106](https://github.com/rancher/rancher/issues/45106) [Backport v2.8] [BUG] Upgrading rancher-vsphere-csi chart causes VSphere CSI Controller pod to go into CrashLoop
+* [#45068](https://github.com/rancher/rancher/issues/45068) [Backport 2.8] Environment variables https_proxy and no_proxy are not correctly set in windows worker nodes of custom type downstream RKE2 cluster with `Agent Environment Vars`
+* [#45065](https://github.com/rancher/rancher/issues/45065) RKE2 and K3S - KDM Update for K8s April 2024 patch release for Rancher 2.8
+* [#45041](https://github.com/rancher/rancher/issues/45041) [v2.8] KDM Update for K8s April 2024 patch release
+* [#44985](https://github.com/rancher/rancher/issues/44985) [2.8] Remove the clusteruserattribute in the controller's handler when the corresponding userattribute no longer exists
+* [#44980](https://github.com/rancher/rancher/issues/44980) [BUG] [Instability] ACI-CNI variables not configurable using Rancher server UI
+* [#44964](https://github.com/rancher/rancher/issues/44964) [v2.8] Update Nutanix node driver to version 3.6.0 / rancher 2.8
+* [#44942](https://github.com/rancher/rancher/issues/44942) [2.8] removing permission from role template doesn't propagate to 'promoted' clusterRole in downstream cluster
+* [#44918](https://github.com/rancher/rancher/issues/44918) [2.8] statefulset/scale is not default granted permission
+* [#44844](https://github.com/rancher/rancher/issues/44844) [Backport 2.8] login command doesn't create cli2.json file
+* [#44803](https://github.com/rancher/rancher/issues/44803) [v2.8 backport] rancher/apiserver does not run go test in CI
+* [#44744](https://github.com/rancher/rancher/issues/44744) [Backport v2.8] Missing the vSphere CSI Snapshotter sidecar - blockSnapshots will never work
+* [#44728](https://github.com/rancher/rancher/issues/44728) [Backport 2.8]  Add the ability to use authentication on clients to the kubernetes component
+* [#44727](https://github.com/rancher/rancher/issues/44727) [Backport 2.8] Update logging-operator to version 4.2+
+* [#44606](https://github.com/rancher/rancher/issues/44606) [Backport] Update monitoring to use prometheus 2.45
+* [#44459](https://github.com/rancher/rancher/issues/44459) [Backport v2.8] Add docker version v25.0.x
+* [#44447](https://github.com/rancher/rancher/issues/44447) [BUG] [2.8] CLI panics when trying to kubectl after a login
+* [#44356](https://github.com/rancher/rancher/issues/44356) [2.8]Rancher RoleTemplate CRD does not validate roles properly
+* [#44017](https://github.com/rancher/rancher/issues/44017) [Backport 2.8] Steve Pagination API Issues
+* [#43992](https://github.com/rancher/rancher/issues/43992) [Backport] Label deprecated setting kubeconfig-token-ttl-minutes from v3 and v1 API for future removal
+* [#43570](https://github.com/rancher/rancher/issues/43570) [Port v2.8] cluster deploy running excessively and taking a long time to execute
+* [#43563](https://github.com/rancher/rancher/issues/43563) Unicode characters are not deleted completely in terminal
+* [#42787](https://github.com/rancher/rancher/issues/42787) [BUG] COREDNS deployment manifest `replicas: 1` in kontainer-driver-metadata will make cluster unstable during upgrade
 -----
 # Release v2.8.3
 
