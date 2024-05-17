@@ -175,6 +175,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.13](rancher-v2.7.md#release-v2713) | May 15 2024 | 05/15/24 | 2024-05-15 |
 | [v2.7.12](rancher-v2.7.md#release-v2712) | Mar 28 2024 | 03/28/24 | 2024-03-28 |
 | [v2.7.11](rancher-v2.7.md#release-v2711) | Mar 01 2024 | 03/01/24 | 2024-03-01 |
 | [v2.7.10](rancher-v2.7.md#release-v2710) | Feb 08 2024 | 02/08/24 | 2024-02-08 |
