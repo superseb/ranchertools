@@ -337,7 +337,7 @@ cat /var/lib/rancher/rke2/server/token
 * Update multus chart to add optional dhcp daemonset [(#5146)](https://github.com/rancher/rke2/pull/5146)
 * Add e2e test for dnscache [(#5190)](https://github.com/rancher/rke2/pull/5190)
 * Update rke2-whereabouts to v0.6.3 and bump rke2-multus parent chart [(#5232)](https://github.com/rancher/rke2/pull/5232)
-* Bump sriov image build verions [(#5237)](https://github.com/rancher/rke2/pull/5237)
+* Bump sriov image build versions [(#5237)](https://github.com/rancher/rke2/pull/5237)
 * Enable arm64 based images for calico, multus and harvester [(#5154)](https://github.com/rancher/rke2/pull/5154)
 * Improve kube-proxy logging and move calico logs to a better path [(#5248)](https://github.com/rancher/rke2/pull/5248)
 * Bump k3s for v1.29 [(#5268)](https://github.com/rancher/rke2/pull/5268)
