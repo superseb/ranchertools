@@ -315,7 +315,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Rancher v2.7.2:**
   - When running CIS scans on RKE and RKE2 clusters on Kubernetes v1.25, some tests will fail if the `rke-profile-hardened-1.23` or the `rke2-profile-hardened-1.23` profile is used. These [RKE](https://github.com/rancher/rancher/issues/39851#issuecomment-1368903719) and [RKE2](https://github.com/rancher/rancher/issues/39851#issuecomment-1430941043) test cases failing is expected as they rely on PSPs, which have been removed in Kubernetes v1.25. See [#39851](https://github.com/rancher/rancher/issues/39851).
   - When viewing or editing the YAML configuration of downstream RKE2 clusters through the UI, `spec.rkeConfig.machineGlobalConfig.profile` is set to `null`, which is an invalid configuration. See [#8480](https://github.com/rancher/dashboard/issues/8480).
-  - Deleting nodes from custom RKE2/K3s clusters in Rancher v2.7.2 can cause unexpected behavior, if the underlying infrastructure isn't thoroughly cleaned. When deleting a custom node from your cluster, ensure that you delete the underlying infrastructure for it, or run the corresponding uninstall script for the Kubernetes distribution installed on the node. See [1034](https://github.com/rancher/rancher/issues/41034):
+  - Deleting nodes from custom RKE2/K3s clusters in Rancher v2.7.2 can cause unexpected behavior, if the underlying infrastructure isn't thoroughly cleaned. When deleting a custom node from your cluster, ensure that you delete the underlying infrastructure for it, or run the corresponding uninstall script for the Kubernetes distribution installed on the node. See [#41034](https://github.com/rancher/rancher/issues/41034):
     - [RKE2 uninstall script](https://docs.rke2.io/install/uninstall?_highlight=uninstall#tarball-method).
 - **Rancher v2.6.9:**
   - Deleting a control plane node results in worker nodes also reconciling. See [#39021](https://github.com/rancher/rancher/issues/39021).<!-- first added in https://github.com/rancher/rancher/releases/tag/v2.7.3, but issue mentions 2.6.9, and isn't listed at all in v2.6.x notes yet -->
@@ -773,6 +773,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 - Not all cluster tools can be installed on a hardened cluster.<!--no issue number available -->
 
+- **Rancher v2.8.1:**
+  - When you  attempt to register a new etcd/controlplane node in a CAPR-managed cluster after a failed etcd snapshot restoration, the node can become stuck in a perpetual paused state, displaying the error message `[ERROR]  000 received while downloading Rancher connection information. Sleeping for 5 seconds and trying again`. As a workaround, you can unpause the cluster by running `kubectl edit clusters.cluster clustername -n fleet-default` and set `spec.unpaused` to `false`.  See [#43735](https://github.com/rancher/rancher/issues/43735).
 - **Rancher v2.7.2:**
   - You need to force-refresh the Rancher UI after initial Rancher setup, to trigger the prompt to accept the self-signed certificate. As a workaround, visit the Rancher portal, accept the self-signed certificate, and go through the setup process. Once done, go to the address bar of your browser and click the lock icon. Select the option to allow you to receive certificate errors for the Rancher website. You'll then be prompted again to accept the new certificate. See [#7867](https://github.com/rancher/dashboard/issues/7867).
   - When you upgrade your Kubernetes cluster, you might see the following error: `Cluster health check failed`. This is a benign error that occurs as part of the upgrade process, and will self-resolve. It's caused by the Kubernetes API server becoming temporarily unavailable as it is being upgraded within your cluster. See [#41012](https://github.com/rancher/rancher/issues/41012).
@@ -1445,6 +1447,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 - Not all cluster tools can be installed on a hardened cluster.<!--no issue number available -->
 
+- **Rancher v2.8.1:**
+  - When you  attempt to register a new etcd/controlplane node in a CAPR-managed cluster after a failed etcd snapshot restoration, the node can become stuck in a perpetual paused state, displaying the error message `[ERROR]  000 received while downloading Rancher connection information. Sleeping for 5 seconds and trying again`. As a workaround, you can unpause the cluster by running `kubectl edit clusters.cluster clustername -n fleet-default` and set `spec.unpaused` to `false`.  See [#43735](https://github.com/rancher/rancher/issues/43735).
 - **Rancher v2.7.2:**
   - You need to force-refresh the Rancher UI after initial Rancher setup, to trigger the prompt to accept the self-signed certificate. As a workaround, visit the Rancher portal, accept the self-signed certificate, and go through the setup process. Once done, go to the address bar of your browser and click the lock icon. Select the option to allow you to receive certificate errors for the Rancher website. You'll then be prompted again to accept the new certificate. See [#7867](https://github.com/rancher/dashboard/issues/7867).
   - When you upgrade your Kubernetes cluster, you might see the following error: `Cluster health check failed`. This is a benign error that occurs as part of the upgrade process, and will self-resolve. It's caused by the Kubernetes API server becoming temporarily unavailable as it is being upgraded within your cluster. See [#41012](https://github.com/rancher/rancher/issues/41012).
@@ -1749,6 +1753,10 @@ Global Role configuration is now more flexible. Additional fields are being adde
 ### Behavior Changes
 
 - Kontainer Engine v1 (KEv1) provisioning and the respective cluster drivers are now deprecated. KEv1 provided plug-ins for different targets using cluster drivers. The Rancher-maintained cluster drivers for EKS, GKE and AKS have been replaced by the hosted provider drivers, EKS-Operator, GKE-Operator and AKS-Operator. Node drivers are now available for self-managed Kubernetes.
+
+### Known Issues
+
+- When you  attempt to register a new etcd/controlplane node in a CAPR-managed cluster after a failed etcd snapshot restoration, the node can become stuck in a perpetual paused state, displaying the error message `[ERROR]  000 received while downloading Rancher connection information. Sleeping for 5 seconds and trying again`. As a workaround, you can unpause the cluster by running `kubectl edit clusters.cluster clustername -n fleet-default` and set `spec.unpaused` to `false`.  See [#43735](https://github.com/rancher/rancher/issues/43735).
 
 ## RKE Provisioning
 
