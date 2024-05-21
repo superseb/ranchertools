@@ -496,6 +496,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 * [#45424](https://github.com/rancher/rancher/issues/45424) [BUG] rancher/shell:v0.1.24 reporting `manifest invalid` 
 * [#45308](https://github.com/rancher/rancher/issues/45308) [v2.8] Rancher logging does not work on windows nodes when using `logging-operator:4.4.0`
+* [#45204](https://github.com/rancher/rancher/issues/45204) Validate SLE Micro 6 on Rancher
 * [#45174](https://github.com/rancher/rancher/issues/45174) [v2.8] [BUG] Inadvertent removal of SSH from `rancher/machine`
 * [#45152](https://github.com/rancher/rancher/issues/45152) Add endpointslice dependency
 * [#45148](https://github.com/rancher/rancher/issues/45148) [RFE] [Monitoring V2] windows-exporter should no longer depend on rancher/wins
