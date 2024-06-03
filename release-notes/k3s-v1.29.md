@@ -388,7 +388,7 @@ This release is K3S's first in the v1.29 line. This release updates Kubernetes t
 
 Before upgrading from earlier releases, be sure to read the Kubernetes [Urgent Upgrade Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#urgent-upgrade-notes).
 
-⚠️ IMPORTANT: This release removes the expiremental `rotate-keys` subcommand due to changes in Kubernetes upstream for [KMSv2](https://github.com/kubernetes/kubernetes/issues/117728), the subcommand should be added back in future releases.
+⚠️ IMPORTANT: This release removes the experimental `rotate-keys` subcommand due to changes in Kubernetes upstream for [KMSv2](https://github.com/kubernetes/kubernetes/issues/117728), the subcommand should be added back in future releases.
 
 ⚠️ IMPORTANT: This release also removes the `multi-cluster-cidr` flag, since the support for this alpha feature has been removed completely from [Kubernetes upstream](https://groups.google.com/g/kubernetes-sig-network/c/nts1xEZ--gQ/m/2aTOUNFFAAAJ), this flag should be removed from the configuration before upgrade.
 
