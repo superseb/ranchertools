@@ -9,7 +9,7 @@ function generate_markdown_link()
 function ghretry()
 {
     until gh "$@"; do
-	>&2 echo "Failure during gh command, sleeping 10"
+	>&2 echo "Failure during gh command ($@), sleeping 10"
         sleep 10
     done
 }
