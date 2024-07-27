@@ -248,6 +248,13 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
   - Removed legacy feature multi-cluster app. See [#39525](https://github.com/rancher/rancher/issues/39525).
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
+
+## All issues in v2.7.14 milestone
+
+* [#45800](https://github.com/rancher/rancher/issues/45800) v2.7 [BUG] RKE1 Cluster keeps constantly reconciling when secrets encryption is enabled
+* [#45775](https://github.com/rancher/rancher/issues/45775) [v2.7.14] s4: Fix 524
+* [#45566](https://github.com/rancher/rancher/issues/45566) [v2.7] KDM Update for K8s May 2024 patch release
+* [#45549](https://github.com/rancher/rancher/issues/45549) RKE2 and K3S - KDM Update for K8s May 2024 patch release for Rancher 2.7
 -----
 # Release v2.7.13
 
