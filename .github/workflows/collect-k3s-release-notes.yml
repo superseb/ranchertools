@@ -1,14 +1,14 @@
-name: Collect all
+name: Collect k3s release notes
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 0,4,8,12,16,20 * * *'
+    - cron: '40 6,18 * * *'
 
 permissions:
   contents: write
   pull-requests: write
 jobs:
-  collect-all:
+  collect-k3s:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -16,9 +16,7 @@ jobs:
       - name: Run scripts
         id: run
         run: |
-          bash scripts/collect-all-release-notes.sh
-          bash scripts/collect-kdm.sh
-          bash scripts/generate-version-table-readme.sh
+          bash scripts/collect-k3s-release-notes.sh
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
       - name: Check for repository changes
@@ -35,7 +33,7 @@ jobs:
         if: ${{ env.changes_exist == 'true' }}
         id: branch
         run: |
-          BRANCH="githubaction-collect-all-$(date +%Y-%m-%d-%H-%M-%S)"
+          BRANCH="githubaction-collect-k3s-$(date +%Y-%m-%d-%H-%M-%S)"
           echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
