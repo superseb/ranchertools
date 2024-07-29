@@ -14,6 +14,8 @@ function ghretry()
     done
 }
 
+touch release-notes/README-rancher.md
+> release-notes/README-rancher.md
 echo "# Rancher" >> release-notes/README-rancher.md
 for minor in v2.5 v2.6 v2.7 v2.8 v2.9 v2.10; do
     product=rancher
