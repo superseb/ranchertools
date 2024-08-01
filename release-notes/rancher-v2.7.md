@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.15](rancher-v2.7.md#release-v2715) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 | [v2.7.14](rancher-v2.7.md#release-v2714) | Jun 17 2024 | 06/17/24 | 2024-06-17 |
 | [v2.7.13](rancher-v2.7.md#release-v2713) | May 15 2024 | 05/15/24 | 2024-05-15 |
 | [v2.7.12](rancher-v2.7.md#release-v2712) | Mar 28 2024 | 03/28/24 | 2024-03-28 |
@@ -18,6 +19,15 @@
 
 
 
+
+
+## All issues in v2.7.15 milestone
+
+* [#46126](https://github.com/rancher/rancher/issues/46126) [2.7] LastLogin is not set for SAML providers
+* [#45994](https://github.com/rancher/rancher/issues/45994) [2.7] SAML login does not update groups
+* [#45949](https://github.com/rancher/rancher/issues/45949) [v2.7] Update ACI-CNI to 6.0.4.2
+* [#45783](https://github.com/rancher/rancher/issues/45783) [v2.7] KDM Update for K8s June 2024 patch release
+-----
 # Release v2.7.14
 
 > It is important to review the Install/Upgrade Notes below before upgrading to any Rancher version.
