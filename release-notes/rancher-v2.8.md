@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.8.6](rancher-v2.8.md#release-v286) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 | [v2.8.5](rancher-v2.8.md#release-v285) | Jun 17 2024 | 06/17/24 | 2024-06-17 |
 | [v2.8.4](rancher-v2.8.md#release-v284) | May 16 2024 | 05/16/24 | 2024-05-16 |
 | [v2.8.3](rancher-v2.8.md#release-v283) | Mar 28 2024 | 03/28/24 | 2024-03-28 |
@@ -9,6 +10,43 @@
 
 
 
+  
+
+## All issues in v2.8.6 milestone
+
+* [#46263](https://github.com/rancher/rancher/issues/46263) [Backport] Agent fails to connect when using agent-tls-mode set to system-store
+* [#46125](https://github.com/rancher/rancher/issues/46125) [2.8] LastLogin is not set for SAML providers 
+* [#46117](https://github.com/rancher/rancher/issues/46117) [v2.8] [RKE] Bump Components in rke-tools and confd 
+* [#46057](https://github.com/rancher/rancher/issues/46057) [Backport] Add a webhook check for the agent-tls-mode setting
+* [#45993](https://github.com/rancher/rancher/issues/45993) [2.8] SAML login does not update groups
+* [#45974](https://github.com/rancher/rancher/issues/45974) [Backport v2.8] CA check improvements for rancher-agent 
+* [#45973](https://github.com/rancher/rancher/issues/45973) Backport : CA check improvements for system-agent
+* [#45938](https://github.com/rancher/rancher/issues/45938) [backport v2.8] add helm chart variable to set agent-tls-mode setting
+* [#45878](https://github.com/rancher/rancher/issues/45878) [v2.8] [Maintenance] Bump Go in wins to 1.20+
+* [#45845](https://github.com/rancher/rancher/issues/45845) [Backport v2.8] [RFE] Improve handling of `dynamicSchemaSpec`
+* [#45820](https://github.com/rancher/rancher/issues/45820) [Backport] [2.8] [BUG] cannot drop the username and password of a private registry in the secret cattle-system/cattle-private-registry in the downstream cluster once it is set on RKE1 downstream cluster
+* [#45801](https://github.com/rancher/rancher/issues/45801) v2.8 [BUG] RKE1 Cluster keeps constantly reconciling when secrets encryption is enabled
+* [#45784](https://github.com/rancher/rancher/issues/45784) [v2.8] KDM Update for K8s June 2024 patch release 
+* [#45677](https://github.com/rancher/rancher/issues/45677) [Backport v2.8] Reduce reliance on Rancher Git mirror for running CI tests
+* [#45656](https://github.com/rancher/rancher/issues/45656) [Backport] [BUG] Provisioning RKE1 node-driver cluster fails when extra_env is used for the kube-api service 
+* [#45647](https://github.com/rancher/rancher/issues/45647) [Backport v2.8] rancher machines are not removed from the cluster after actual worker nodes removed
+* [#45595](https://github.com/rancher/rancher/issues/45595) [BUG] [2.8] Some members with Github as Auth Provider could not be shown in cluster member list 
+* [#45576](https://github.com/rancher/rancher/issues/45576) [BUG] RKE2 custom cluster does not successfully provision when setting the CIS profile
+* [#45565](https://github.com/rancher/rancher/issues/45565) [v2.8] KDM Update for K8s May 2024 patch release
+* [#45550](https://github.com/rancher/rancher/issues/45550) RKE2 and K3S - KDM Update for K8s May 2024 patch release for Rancher 2.8
+* [#45539](https://github.com/rancher/rancher/issues/45539) [Backport v2.8] Unable scale an RKE1 cluster from 1 to 3 etcd nodes or nodes with etcd role
+* [#45418](https://github.com/rancher/rancher/issues/45418) [BUG] Rancher Webhook Version is not pinned
+* [#45383](https://github.com/rancher/rancher/issues/45383) [Backport] v2.8: Excessive calls to access cache
+* [#45365](https://github.com/rancher/rancher/issues/45365) [BUG] : Requeing error messages in Logs when user create RoleTemplates without annotations
+* [#45005](https://github.com/rancher/rancher/issues/45005) [2.8] can't enable Azure AD because there is a timeout when our login code tries to do a simple GET on the user
+* [#44952](https://github.com/rancher/rancher/issues/44952) [Backport 2.8] Windows can't install apps in airgap setup
+* [#44917](https://github.com/rancher/rancher/issues/44917) [2.8] Shibboleth + LDAP small error when searching user and groups (shibbolethconfig-serviceAccountPassword) 
+* [#44651](https://github.com/rancher/rancher/issues/44651) [2.8] [BUG] Rancher pods are restarted too often
+* [#44478](https://github.com/rancher/rancher/issues/44478) [Backport v2.8] Default RKE1 Node template image for Linode fails to provision w/ Error installing Docker
+* [#44284](https://github.com/rancher/rancher/issues/44284) [2.8] Support authentication with service account tokens
+* [#44282](https://github.com/rancher/rancher/issues/44282) [2.8] Rancher CLI doesn't have a driver for AzureAD for authenticating with kubectl  
+* [#43185](https://github.com/rancher/rancher/issues/43185) [CLI] Update Go dependencies in `rancher/cli`
+-----
 # Release v2.8.5
 
 > **Important:** Review the [Install/Upgrade](#installupgrade-notes) notes before upgrading to any Rancher version.

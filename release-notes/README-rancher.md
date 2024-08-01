@@ -51,6 +51,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.15](rancher-v2.7.md#release-v2715) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 | [v2.7.14](rancher-v2.7.md#release-v2714) | Jun 17 2024 | 06/17/24 | 2024-06-17 |
 | [v2.7.13](rancher-v2.7.md#release-v2713) | May 15 2024 | 05/15/24 | 2024-05-15 |
 | [v2.7.12](rancher-v2.7.md#release-v2712) | Mar 28 2024 | 03/28/24 | 2024-03-28 |
@@ -71,6 +72,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.8.6](rancher-v2.8.md#release-v286) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 | [v2.8.5](rancher-v2.8.md#release-v285) | Jun 17 2024 | 06/17/24 | 2024-06-17 |
 | [v2.8.4](rancher-v2.8.md#release-v284) | May 16 2024 | 05/16/24 | 2024-05-16 |
 | [v2.8.3](rancher-v2.8.md#release-v283) | Mar 28 2024 | 03/28/24 | 2024-03-28 |
@@ -82,6 +84,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.9.0](rancher-v2.9.md#release-v290) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 
 
 
