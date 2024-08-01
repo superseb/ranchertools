@@ -657,6 +657,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#45812](https://github.com/rancher/rancher/issues/45812) [BUG] Need script | Secrets created via Fleet UI are not being backed up by BRO
 * [#45785](https://github.com/rancher/rancher/issues/45785) [v2.9] KDM Update for K8s June 2024 patch release
 * [#45770](https://github.com/rancher/rancher/issues/45770) [BUG] ETCD snapshot fails on RKE2 clusters
+* [#45764](https://github.com/rancher/rancher/issues/45764)  [Feature] k8s 1.30 support - apps and feature charts 
 * [#45763](https://github.com/rancher/rancher/issues/45763) k8s 1.30 support for Kubewarden
 * [#45762](https://github.com/rancher/rancher/issues/45762) k8s 1.30 support for NeuVector 
 * [#45760](https://github.com/rancher/rancher/issues/45760) k8s 1.30 support for longhorn
@@ -787,6 +788,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#44613](https://github.com/rancher/rancher/issues/44613) [BUG] Rancher is restarted in loop after a restore
 * [#44605](https://github.com/rancher/rancher/issues/44605) [RFE] Update monitoring to use prometheus 2.45
 * [#44598](https://github.com/rancher/rancher/issues/44598) [2.9 Forwardport] rancher-logging k8s 1.28 chart support
+* [#44569](https://github.com/rancher/rancher/issues/44569) [v2.9] `sriov` chart K8s 1.28 support
 * [#44552](https://github.com/rancher/rancher/issues/44552) [Documentation] Clarify expected monitoring views based on user roles.
 * [#44472](https://github.com/rancher/rancher/issues/44472) [v2.9] KDM Update for K8s February patch release
 * [#44409](https://github.com/rancher/rancher/issues/44409) [RFE] Upgrade alert manager to 0.26.x
