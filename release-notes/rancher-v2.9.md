@@ -798,6 +798,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#44332](https://github.com/rancher/rancher/issues/44332) [BUG] CLI panics when trying to `kubectl` after a login
 * [#44289](https://github.com/rancher/rancher/issues/44289) [v2.9] RKE1 - Update containerd and runc
 * [#44267](https://github.com/rancher/rancher/issues/44267) [BUG] [Release] The script for promoting charts to stable is broken
+* [#44226](https://github.com/rancher/rancher/issues/44226) Migrate to lighter base images
 * [#44210](https://github.com/rancher/rancher/issues/44210) [Research Spike] K8s 1.30 Support
 * [#44208](https://github.com/rancher/rancher/issues/44208) [RFE] rancher-monitoring use the deprecated API v2beta2.HorizontalPodAutoscaler and block k8s update to 1.26
 * [#44202](https://github.com/rancher/rancher/issues/44202) [ForwardPort] [v2.9] KDM Update for K8s January patch release #44086
@@ -834,6 +835,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43852](https://github.com/rancher/rancher/issues/43852) Complete branching steps for Rancher 2.9 for GKE Operator
 * [#43851](https://github.com/rancher/rancher/issues/43851) Complete branching steps for Rancher 2.9 for EKS Operator
 * [#43850](https://github.com/rancher/rancher/issues/43850) Complete branching steps for Rancher 2.9 for AKS Operator
+* [#43837](https://github.com/rancher/rancher/issues/43837) Complete branching steps for Rancher 2.9 for Fleet 
 * [#44097](https://github.com/rancher/rancher/issues/44097) Kubernetes 1.29 support for Backup/Restore Operator
 * [#43728](https://github.com/rancher/rancher/issues/43728) rancher-webhook k8s 1.28 chart support
 * [#43686](https://github.com/rancher/rancher/issues/43686) [BUG] rancher machines are not removed from the cluster after actual worker nodes removed
