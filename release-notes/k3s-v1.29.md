@@ -1,5 +1,6 @@
 | k3s version| Kubernetes | Kine | SQLite | Etcd | Containerd | Runc | Flannel | Metrics-server | Traefik | CoreDNS | Helm-controller | Local-path-provisioner  |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | -----  |
+| v1.29.7+k3s1 | [v1.29.7](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1297) | [v0.11.11](https://github.com/k3s-io/kine/releases/tag/v0.11.11) | [3.44.0](https://sqlite.org/releaselog/3_44_0.html) | [v3.5.13-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.13-k3s1) | [v1.7.17-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.17-k3s1) | [v1.1.12](https://github.com/opencontainers/runc/releases/tag/v1.1.12) | [v0.25.4](https://github.com/flannel-io/flannel/releases/tag/v0.25.4) | [v0.7.0](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.7.0) | [v2.10.7](https://github.com/traefik/traefik/releases/tag/v2.10.7) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.15.10](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.10) | [v0.0.28](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.28)  |
 | v1.29.6+k3s2 | [v1.29.6](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1296) | [v0.11.9](https://github.com/k3s-io/kine/releases/tag/v0.11.9) | [3.44.0](https://sqlite.org/releaselog/3_44_0.html) | [v3.5.13-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.13-k3s1) | [v1.7.17-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.17-k3s1) | [v1.1.12-](https://github.com/opencontainers/runc/releases/tag/v1.1.12) | [v0.25.4](https://github.com/flannel-io/flannel/releases/tag/v0.25.4) | [v0.7.0](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.7.0) | [v2.10.7](https://github.com/traefik/traefik/releases/tag/v2.10.7) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.15.10](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.10) | [v0.0.27](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.27)  |
 | v1.29.6+k3s1 | [v1.29.6](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1296) | [v0.11.9](https://github.com/k3s-io/kine/releases/tag/v0.11.9) | [3.44.0](https://sqlite.org/releaselog/3_44_0.html) | [v3.5.13-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.13-k3s1) | [v1.7.17-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.17-k3s1) | [v1.1.12](https://github.com/opencontainers/runc/releases/tag/v1.1.12) | [v0.25.2](https://github.com/flannel-io/flannel/releases/tag/v0.25.2) | [v0.7.0](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.7.0) | [v2.10.7](https://github.com/traefik/traefik/releases/tag/v2.10.7) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.15.10](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.10) | [v0.0.27](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.27)  |
 | v1.29.5+k3s1 | [v1.29.5](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1295) | [v0.11.7](https://github.com/k3s-io/kine/releases/tag/v0.11.7) | [3.44.0](https://sqlite.org/releaselog/3_44_0.html) | [v3.5.9-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.9-k3s1) | [v1.7.15-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.15-k3s1) | [v1.1.12-k3s1](https://github.com/opencontainers/runc/releases/tag/v1.1.12-k3s1) | [v0.24.2](https://github.com/flannel-io/flannel/releases/tag/v0.24.2) | [v0.7.0](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.7.0) | [v2.10.7](https://github.com/traefik/traefik/releases/tag/v2.10.7) | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | [v0.15.9](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.9) | [v0.0.26](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.26)  |
@@ -13,6 +14,7 @@
 
 | Version | Release date | US date | EU date | Upstream release date | US date | EU date | Days since upstream |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [v1.29.7+k3s1](k3s-v1.29.md#release-v1297k3s1) | Jul 31 2024 | 07/31/24 | 2024-07-31 | Jul 17 2024 | 07/17/24 | 2024-07-17 | 14 days |
 | [v1.29.6+k3s2](k3s-v1.29.md#release-v1296k3s2) | Jul 03 2024 | 07/03/24 | 2024-07-03 | Jun 12 2024 | 06/12/24 | 2024-06-12 | 21 days |
 | [v1.29.6+k3s1](k3s-v1.29.md#release-v1296k3s1) | Jun 25 2024 | 06/25/24 | 2024-06-25 | Jun 12 2024 | 06/12/24 | 2024-06-12 | 13 days |
 | [v1.29.5+k3s1](k3s-v1.29.md#release-v1295k3s1) | May 22 2024 | 05/22/24 | 2024-05-22 | May 15 2024 | 05/15/24 | 2024-05-15 | 7 days |
@@ -24,6 +26,50 @@
 
 
 
+# Release v1.29.7+k3s1
+<!-- v1.29.7+k3s1 -->
+
+This release updates Kubernetes to v1.29.7, and fixes a number of issues.
+
+For more details on what's new, see the [Kubernetes release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#changelog-since-v1296).
+
+## Changes since v1.29.6+k3s2:
+
+* Backports for 2024-07 release cycle [(#10498)](https://github.com/k3s-io/k3s/pull/10498)
+  * Bump k3s-root to v0.14.0
+  * Bump github.com/hashicorp/go-retryablehttp from 0.7.4 to 0.7.7
+  * Bump Local Path Provisioner version
+  * Ensure remotedialer kubelet connections use kubelet bind address
+  * Chore: Bump Trivy version
+  * Add etcd s3 config secret implementation
+* July Test Backports [(#10508)](https://github.com/k3s-io/k3s/pull/10508)
+* Update to v1.29.7-k3s1 and Go 1.22.5 [(#10539)](https://github.com/k3s-io/k3s/pull/10539)
+* Fix issues loading data-dir value from env vars or dropping config files [(#10597)](https://github.com/k3s-io/k3s/pull/10597)
+
+## Embedded Component Versions
+| Component | Version |
+|---|---|
+| Kubernetes | [v1.29.7](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v1297) |
+| Kine | [v0.11.11](https://github.com/k3s-io/kine/releases/tag/v0.11.11) |
+| SQLite | [3.44.0](https://sqlite.org/releaselog/3_44_0.html) |
+| Etcd | [v3.5.13-k3s1](https://github.com/k3s-io/etcd/releases/tag/v3.5.13-k3s1) |
+| Containerd | [v1.7.17-k3s1](https://github.com/k3s-io/containerd/releases/tag/v1.7.17-k3s1) |
+| Runc | [v1.1.12](https://github.com/opencontainers/runc/releases/tag/v1.1.12) |
+| Flannel | [v0.25.4](https://github.com/flannel-io/flannel/releases/tag/v0.25.4) | 
+| Metrics-server | [v0.7.0](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.7.0) |
+| Traefik | [v2.10.7](https://github.com/traefik/traefik/releases/tag/v2.10.7) |
+| CoreDNS | [v1.10.1](https://github.com/coredns/coredns/releases/tag/v1.10.1) | 
+| Helm-controller | [v0.15.10](https://github.com/k3s-io/helm-controller/releases/tag/v0.15.10) |
+| Local-path-provisioner | [v0.0.28](https://github.com/rancher/local-path-provisioner/releases/tag/v0.0.28) |
+
+## Helpful Links
+As always, we welcome and appreciate feedback from our community of users. Please feel free to:
+- [Open issues here](https://github.com/rancher/k3s/issues/new/choose)
+- [Join our Slack channel](https://slack.rancher.io/)
+- [Check out our documentation](https://rancher.com/docs/k3s/latest/en/) for guidance on how to get started or to dive deep into K3s.
+- [Read how you can contribute here](https://github.com/rancher/k3s/blob/master/CONTRIBUTING.md)
+
+-----
 # Release v1.29.6+k3s2
 <!-- v1.29.6+k3s2 -->
 
