@@ -27,6 +27,7 @@ Rancher v2.9.0 is the latest minor release of Rancher. This is a Community versi
 ### Known Issues
 
 - Rancher v2.9.0 does not currently support vSphere CSI charts in RKE2 v1.30.2 instances that run Kubernetes v1.30. A fix in RKE2 is in progress and being tracked by [#6334](https://github.com/rancher/rke2/issues/6334). Once the fix is completed, support for vSphere CSI charts while using RKE2 in Rancher v2.9.0 will be added via a KDM release. See [#46132](https://github.com/rancher/rancher/issues/46132).
+- After upgrading to v2.9.0, Rancher's pods may crash and fail to become available. This primarily affects clusters which have been upgraded from older Kubernetes versions, and can also result in disconnected downstream clusters. As a workaround, all CRDs in each affected cluster need to be updated to add a `version.Schema.openAPIV3Schema`. See [#46213](https://github.com/rancher/rancher/issues/46213).
 
 ## Rancher App (Global UI)
 
@@ -788,9 +789,11 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#44613](https://github.com/rancher/rancher/issues/44613) [BUG] Rancher is restarted in loop after a restore
 * [#44605](https://github.com/rancher/rancher/issues/44605) [RFE] Update monitoring to use prometheus 2.45
 * [#44598](https://github.com/rancher/rancher/issues/44598) [2.9 Forwardport] rancher-logging k8s 1.28 chart support
+* [#44577](https://github.com/rancher/rancher/issues/44577) [RFE] Add settings to customize login and landing page for non-logged in parameters to be passed to UI
 * [#44569](https://github.com/rancher/rancher/issues/44569) [v2.9] `sriov` chart K8s 1.28 support
 * [#44552](https://github.com/rancher/rancher/issues/44552) [Documentation] Clarify expected monitoring views based on user roles.
 * [#44472](https://github.com/rancher/rancher/issues/44472) [v2.9] KDM Update for K8s February patch release
+* [#44439](https://github.com/rancher/rancher/issues/44439) [RFE] Add support for separate UI banner settings
 * [#44409](https://github.com/rancher/rancher/issues/44409) [RFE] Upgrade alert manager to 0.26.x
 * [#44388](https://github.com/rancher/rancher/issues/44388) Add docker version v25.0.x
 * [#44359](https://github.com/rancher/rancher/issues/44359) [BUG] Rancher logs spamming error: "failed to write audit log"
@@ -855,6 +858,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43292](https://github.com/rancher/rancher/issues/43292) [BUG] removing permission from role template doesn't propagate to 'promoted' clusterRole in downstream cluster
 * [#43380](https://github.com/rancher/rancher/issues/43380) [BUG] rancher-monitoring-crd Helm lint fails on rancher-monitoring-crd chart
 * [#43150](https://github.com/rancher/rancher/issues/43150) [BUG] Built-in PSACT `rancher-restricted` is not updated to the new version after Rancher is upgraded
+* [#43131](https://github.com/rancher/rancher/issues/43131) [RFE]  Feature flag to have RKE1 disabled 
 * [#44177](https://github.com/rancher/rancher/issues/44177) [Documentation] Rancher read-only project member seeing 403 errors for monitoring endpoints in console
 * [#43113](https://github.com/rancher/rancher/issues/43113) [flaky-test] test_globalrolebinding_finalizer_cleanup
 * [#43110](https://github.com/rancher/rancher/issues/43110) [Feature] K8s 1.29 Support
