@@ -18,6 +18,12 @@ Rancher v2.8.6 is the latest patch release of Rancher. This is a Prime version r
 
 ## Highlights
 
+## Apps
+
+### Major Bug Fixes
+
+- Air-gapped installations with `useBundledSystemCharts` set to `true` have received an update to improve error reporting during sync operations. See [#45432](https://github.com/rancher/rancher/pull/45432).
+
 ## Authentication
 
 ### Major Bug Fixes
