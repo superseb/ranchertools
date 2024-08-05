@@ -61,6 +61,12 @@ Rancher v2.9.0 is the latest minor release of Rancher. This is a Community versi
   - Bring Your Own Cert - When set to `strict`, users must upload the Certificate Authority used to generate the cert and provide `privateCA=true` when installing the chart.
   - Proxy/External - When set to `strict`, users must upload the Certificate Authority used by the proxy and provide `privateCA=true` when installing the chart.
 
+## Apps
+
+### Major Bug Fixes
+
+- Air-gapped installations with `useBundledSystemCharts` set to `true` have received an update to improve error reporting during sync operations. See [#45280](https://github.com/rancher/rancher/pull/45280).
+
 ## RKE Provisioning
 
 **Important:** With the release of Rancher Kubernetes Engine (RKE) v1.6.0, we are informing customers that RKE is now deprecated. RKE will be maintained for two more versions, following our [deprecation policy](https://www.suse.com/support/rancher-prime/#Rancher-Prime-Deprecation-Policy).
