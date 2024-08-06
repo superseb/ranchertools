@@ -494,6 +494,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## All issues in v2.8.6 milestone
 
 * [#46263](https://github.com/rancher/rancher/issues/46263) [Backport] Agent fails to connect when using agent-tls-mode set to system-store
+* [#46256](https://github.com/rancher/rancher/issues/46256) [DOCS] Document how to manually pin webhook
 * [#46125](https://github.com/rancher/rancher/issues/46125) [2.8] LastLogin is not set for SAML providers 
 * [#46117](https://github.com/rancher/rancher/issues/46117) [v2.8] [RKE] Bump Components in rke-tools and confd 
 * [#46057](https://github.com/rancher/rancher/issues/46057) [Backport] Add a webhook check for the agent-tls-mode setting
@@ -513,6 +514,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#45576](https://github.com/rancher/rancher/issues/45576) [BUG] RKE2 custom cluster does not successfully provision when setting the CIS profile
 * [#45565](https://github.com/rancher/rancher/issues/45565) [v2.8] KDM Update for K8s May 2024 patch release
 * [#45550](https://github.com/rancher/rancher/issues/45550) RKE2 and K3S - KDM Update for K8s May 2024 patch release for Rancher 2.8
+* [#45543](https://github.com/rancher/rancher/issues/45543) [SURE-7372] [2.8] Reduce resource usage from Azure AD provider 
 * [#45539](https://github.com/rancher/rancher/issues/45539) [Backport v2.8] Unable scale an RKE1 cluster from 1 to 3 etcd nodes or nodes with etcd role
 * [#45418](https://github.com/rancher/rancher/issues/45418) [BUG] Rancher Webhook Version is not pinned
 * [#45383](https://github.com/rancher/rancher/issues/45383) [Backport] v2.8: Excessive calls to access cache

@@ -847,6 +847,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43837](https://github.com/rancher/rancher/issues/43837) Complete branching steps for Rancher 2.9 for Fleet 
 * [#44097](https://github.com/rancher/rancher/issues/44097) Kubernetes 1.29 support for Backup/Restore Operator
 * [#43728](https://github.com/rancher/rancher/issues/43728) rancher-webhook k8s 1.28 chart support
+* [#43690](https://github.com/rancher/rancher/issues/43690) [Feature] k8s 1.29 support - apps and feature charts
 * [#43686](https://github.com/rancher/rancher/issues/43686) [BUG] rancher machines are not removed from the cluster after actual worker nodes removed
 * [#43668](https://github.com/rancher/rancher/issues/43668) [BUG] OIDCConfig.Scopes struct field tag is not compatible with reflect.StructTag.Get
 * [#43621](https://github.com/rancher/rancher/issues/43621) Update Rancher Webhook Docs page
