@@ -65,7 +65,7 @@ Rancher v2.9.0 is the latest minor release of Rancher. This is a Community versi
 
 ### Major Bug Fixes
 
-- Air-gapped installations with `useBundledSystemCharts` set to `true` have received an update to improve error reporting during sync operations. See [#45280](https://github.com/rancher/rancher/pull/45280).
+- Air-gapped installations with `useBundledSystemCharts` set to `true` received an update to improve loading and installing apps in the upstream cluster. See [#45280](https://github.com/rancher/rancher/pull/45280).
 
 ## RKE Provisioning
 
