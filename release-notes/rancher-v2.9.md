@@ -640,6 +640,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46160](https://github.com/rancher/rancher/issues/46160) [BUG] Unable to provision downstream RKE2/K3s clusters, stuck at `waiting for cluster agent to connect`
 * [#46152](https://github.com/rancher/rancher/issues/46152) [BUG] [2.9] Unable to provision/import hosted provider clusters 
 * [#46124](https://github.com/rancher/rancher/issues/46124) [BUG] LastLogin is not set for SAML providers
+* [#46111](https://github.com/rancher/rancher/issues/46111) Feature Charts: Add Longhorn 1.5.5 Chart in 2.9.0
+* [#46110](https://github.com/rancher/rancher/issues/46110) Feature Charts: Add Longhorn 1.6.2 Chart in 2.9.0
 * [#46094](https://github.com/rancher/rancher/issues/46094) [BUG] update CLI
 * [#46068](https://github.com/rancher/rancher/issues/46068) [BUG] New Rancher CLI binaries are no longer published to releases.rancher.com
 * [#46062](https://github.com/rancher/rancher/issues/46062) [BUG] k3s node driver clusters is stuck on provisioning with the error validating data: failed to download openapi
@@ -832,6 +834,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43945](https://github.com/rancher/rancher/issues/43945) [Forwardport v2.9] [Feature] K8s 1.28 Support
 * [#43942](https://github.com/rancher/rancher/issues/43942) [Forwardport 2.9][BUG] Downstream RKE1 Digital Ocean cluster fails to provision with Ubuntu 22.04 image
 * [#43932](https://github.com/rancher/rancher/issues/43932) [BUG] Environment variables `https_proxy` and `no_proxy` are not correctly set in windows worker nodes of `custom` type `downstream` `RKE2` cluster with *Agent Environment Vars* `http_proxy`, `https_proxy` and `no_proxy`
+* [#43911](https://github.com/rancher/rancher/issues/43911) [Forwardport - v2.9] [BUG] Rancher can't start on air-gapped environments
 * [#43899](https://github.com/rancher/rancher/issues/43899) [ForwardPort] [v2.9] [RFE] Add CIS-1.8 (k8s v1.26) Scan capability #43898
 * [#43895](https://github.com/rancher/rancher/issues/43895) [Forwardport] [v2.9] [BUG] RKE1 Node driver cluster creation fails on SLE-15-SP5 and SP4
 * [#43864](https://github.com/rancher/rancher/issues/43864) [2.9] custom rke2 cluster upgraded to v1.26.8+rke2r1 has issues with limitranges and clusterauthtokens
@@ -845,6 +848,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43851](https://github.com/rancher/rancher/issues/43851) Complete branching steps for Rancher 2.9 for EKS Operator
 * [#43850](https://github.com/rancher/rancher/issues/43850) Complete branching steps for Rancher 2.9 for AKS Operator
 * [#43837](https://github.com/rancher/rancher/issues/43837) Complete branching steps for Rancher 2.9 for Fleet 
+* [#43831](https://github.com/rancher/rancher/issues/43831) Branching Exercise for rancher/charts
 * [#44097](https://github.com/rancher/rancher/issues/44097) Kubernetes 1.29 support for Backup/Restore Operator
 * [#43728](https://github.com/rancher/rancher/issues/43728) rancher-webhook k8s 1.28 chart support
 * [#43690](https://github.com/rancher/rancher/issues/43690) [Feature] k8s 1.29 support - apps and feature charts
@@ -873,6 +877,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43097](https://github.com/rancher/rancher/issues/43097) [BUG] Cluster breaks when scaling down etcd nodes in an RKE2 cluster
 * [#43090](https://github.com/rancher/rancher/issues/43090) Allow extensions to load before login
 * [#43089](https://github.com/rancher/rancher/issues/43089) Remove the need to install ui-plugin-operator
+* [#42971](https://github.com/rancher/rancher/issues/42971) Document expected failures for file permission issues on RKE and RKE2 Clusters when running CIS Scan
 * [#43036](https://github.com/rancher/rancher/issues/43036) Not able to see the apps in the rancher ui
 * [#42940](https://github.com/rancher/rancher/issues/42940) [RFE] Add optional filter on AzureAD auth group memberships
 * [#42939](https://github.com/rancher/rancher/issues/42939) [RFE] Rancher CLI doesn't have a driver for AzureAD for authenticating with kubectl
@@ -904,6 +909,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#38490](https://github.com/rancher/rancher/issues/38490) [SURE-7621] RKE2 + Calico + Project Network Isolation - Networkpolicies hn-nodes contain wrong node IP addresses
 * [#37328](https://github.com/rancher/rancher/issues/37328) Remove Alerts and Notifiers v1
 * [#31967](https://github.com/rancher/rancher/issues/31967) login command doesn't create cli2.json file
+* [#29105](https://github.com/rancher/rancher/issues/29105) Ability to use an OCI Helm Chart Registry on a Rancher Catalog
 * [#24343](https://github.com/rancher/rancher/issues/24343) Rancher-Monitoring: Query on Cluster Grafana Dashboard reports incorrect values
 * [#22417](https://github.com/rancher/rancher/issues/22417) Support authentication with service account tokens
 * [#20793](https://github.com/rancher/rancher/issues/20793) Logging: Add option for fluentd log level in helm chart
