@@ -871,6 +871,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43110](https://github.com/rancher/rancher/issues/43110) [Feature] K8s 1.29 Support
 * [#43103](https://github.com/rancher/rancher/issues/43103) [RFE] Label deprecated setting kubeconfig-token-ttl-minutes from v3 and v1 API for future removal
 * [#43097](https://github.com/rancher/rancher/issues/43097) [BUG] Cluster breaks when scaling down etcd nodes in an RKE2 cluster
+* [#43090](https://github.com/rancher/rancher/issues/43090) Allow extensions to load before login
+* [#43089](https://github.com/rancher/rancher/issues/43089) Remove the need to install ui-plugin-operator
 * [#43036](https://github.com/rancher/rancher/issues/43036) Not able to see the apps in the rancher ui
 * [#42940](https://github.com/rancher/rancher/issues/42940) [RFE] Add optional filter on AzureAD auth group memberships
 * [#42939](https://github.com/rancher/rancher/issues/42939) [RFE] Rancher CLI doesn't have a driver for AzureAD for authenticating with kubectl
