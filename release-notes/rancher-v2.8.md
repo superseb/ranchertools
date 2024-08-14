@@ -227,7 +227,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## Previous Rancher Behavior Changes - OPA Gatekeeper
 
 - **Rancher v2.8.0:**
-  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Previous Rancher Behavior Changes - Feature Charts
 
@@ -731,7 +731,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## Previous Rancher Behavior Changes - OPA Gatekeeper
 
 - **Rancher v2.8.0:**
-  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Previous Rancher Behavior Changes - Feature Charts
 
@@ -1227,7 +1227,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## Previous Rancher Behavior Changes - OPA Gatekeeper
 
 - **Rancher v2.8.0:**
-  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Previous Rancher Behavior Changes - Feature Charts
 
@@ -1727,7 +1727,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## Previous Rancher Behavior Changes - OPA Gatekeeper
 
 - **Rancher v2.8.0:**
-  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Previous Rancher Behavior Changes - Feature Charts
 
@@ -2275,7 +2275,7 @@ As a workaround:
 
 ### Behavior Changes
 
-- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Monitoring <!-- opni-->
 
@@ -2896,7 +2896,7 @@ As a workaround:
 
 ### Behavior Changes
 
-- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Monitoring <!-- opni-->
 
@@ -3505,7 +3505,7 @@ As a workaround:
 
 ### Behavior Changes
 
-- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+- OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Monitoring <!-- opni-->
 
