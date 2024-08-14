@@ -262,7 +262,7 @@ In Rancher v2.6.0 and later, in the **Apps & Marketplace** UI, many Rancher Helm
 
 ## Experimental Features
 
-Rancher now supports the ability to use an OCI Helm chart registry for Apps & Marketplace. View documentation on [using OCI based Helm chart repositories](https://ranchermanager.docs.rancher.com/v2.9/how-to-guides/new-user-guides/helm-charts-in-rancher/oci-registries) and note this feature is in an experimental stage. See [#29105](https://github.com/rancher/rancher/issues/29105) and [#45062](https://github.com/rancher/rancher/pull/45062)
+Rancher now supports the ability to use an OCI Helm chart registry for Apps & Marketplace. View documentation on [using OCI based Helm chart repositories](https://ranchermanager.docs.rancher.com/v2.9/how-to-guides/new-user-guides/helm-charts-in-rancher/oci-repositories) and note this feature is in an experimental stage. See [#29105](https://github.com/rancher/rancher/issues/29105) and [#45062](https://github.com/rancher/rancher/pull/45062)
 
 ## Deprecated Upstream Projects
 
@@ -387,7 +387,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 ## Previous Rancher Behavior Changes - OPA Gatekeeper
 
 - **Rancher v2.8.0:**
-  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
+  - OPA Gatekeeper is now deprecated and will be removed in a future release. As a replacement for OPA Gatekeeper, consider [switching to Kubewarden](https://docs.kubewarden.io/explanations/comparisons/opa-comparison). See [#42627](https://github.com/rancher/rancher/issues/42627).
 
 ## Previous Rancher Behavior Changes - Feature Charts
 
