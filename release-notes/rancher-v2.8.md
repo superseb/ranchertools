@@ -82,7 +82,7 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 ## Tools
 
 - CLI - [v2.8.6](https://github.com/rancher/cli/releases/tag/v2.8.6)
-- RKE - [v1.6.0](https://github.com/rancher/rke/releases/tag/v1.6.0)
+- RKE - [v1.5.11](https://github.com/rancher/rke/releases/tag/v1.5.11)
 
 ## Kubernetes Versions for RKE
 <!-- TODO verify -->
