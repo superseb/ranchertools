@@ -789,6 +789,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#44714](https://github.com/rancher/rancher/issues/44714) [Forwardport v2.9] [BUG] RKE2/K3S registration command not working on airgap setup
 * [#44679](https://github.com/rancher/rancher/issues/44679) [Forwardport] [2.9] COREDNS deployment manifest replicas: 1 in kontainer-driver-metadata will make cluster unstable during upgrade
 * [#44658](https://github.com/rancher/rancher/issues/44658) v2.9 [RFE] [RBAC] Upgrade Golang and the net package to fix CVE-2023-44487
+* [#44649](https://github.com/rancher/rancher/issues/44649) [BUG] Rancher pods are restarted too often
 * [#44638](https://github.com/rancher/rancher/issues/44638) [BUG] Cluster member cannot create/list projects using public API
 * [#44634](https://github.com/rancher/rancher/issues/44634) [BUG] Cattle Agent Instability -- Unable to cancel request for *client.addQuery
 * [#44630](https://github.com/rancher/rancher/issues/44630) [BUG] Fleet controller can't provision local cluster immediately
