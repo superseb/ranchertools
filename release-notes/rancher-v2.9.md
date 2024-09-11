@@ -196,6 +196,18 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 - **Rancher v2.7.0:**
   - When installing or upgrading an official Rancher Helm chart app in a RKE2/K3s cluster, if a private registry exists in the cluster configuration, that registry will be used for pulling images. If no cluster-scoped registry is found, the global container registry will be used. A custom default registry can be specified during the Helm chart install and upgrade workflows. Previously, only the global container registry was used when installing or upgrading an official Rancher Helm chart app for RKE2/K3s node driver clusters.<!-- no issue number --><!-- introduced in https://github.com/rancher/rancher/releases/tag/v2.7.0 -->
 
+## Previous Rancher Behavior Changes - Continuous Delivery
+
+- **Rancher v2.9.0:**
+  - Rancher now supports **monitoring of continuous delivery**.  Starting with version `v104.0.1` of the Fleet (`v0.10.1` of Fleet) and `rancher-monitoring` chart, continuous delivery provides metrics about the state of its resources and the `rancher-monitoring` chart contains dashboards to visualize those metrics. Installing the `rancher-monitoring` chart to the local/upstream cluster automatically configures Prometheus to scrape metrics from the continuous delivery controllers and installs Grafana dashboards. These dashboards are accessible via Grafana but are not yet integrated into the Rancher UI. You can open Grafana from the Rancher UI by navigating to the *Cluster > Monitoring > Grafana* view. See [rancher/fleet#1408](https://github.com/rancher/fleet/issues/1408) for implementation details.
+  - Continuous delivery in Rancher also introduces  **sharding with node selectors**. See [rancher/fleet#1740](https://github.com/rancher/fleet/issues/1740) for implementation details and the [Fleet documentation](https://fleet.rancher.io/installation#multi-controller-install-sharding) for instructions on how to use it.
+  - We have **reduced image size and complexity** by integrating the former external gitjob repository and by merging various controller codes. See [rancher/fleet#2342](https://github.com/rancher/fleet/issues/2342) for details.
+  - Continuous delivery also adds **experimental OCI content storage**. See [rancher/fleet#2561](https://github.com/rancher/fleet/pull/2561) for implementation details and [rancher/fleet-docs#179](https://github.com/rancher/fleet-docs/pull/179/files) for documentation.
+  - Continuous delivery now splits components into containers and has switched to the controller-runtime framework. The rewritten controllers switch to **structured logging**.
+  - Leader election can now be configured (see [rancher/fleet#1981](https://github.com/rancher/fleet/pull/1981)), as well as the worker count for the fleet-controller (see [rancher/fleet#2430](https://github.com/rancher/fleet/pull/2430)).
+  - The release deprecates the "fleet test" command in favor of "target" and "deploy" with a dry-run option (see [rancher/fleet#2102](https://github.com/rancher/fleet/pull/2102/files)).
+  - Bug fixes enhance drift detection, cluster status reporting, and various operational aspects.
+
 ## Previous Rancher Behavior Changes - Pod Security Standard (PSS) & Pod Security Admission (PSA) <!-- neo -->
 
 - **Rancher v2.7.2:**
