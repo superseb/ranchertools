@@ -567,7 +567,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#45815](https://github.com/rancher/rancher/issues/45815) Snapshots fail during creation in Sle Micro 6
 * [#45747](https://github.com/rancher/rancher/issues/45747) k8s 1.30 support for vSphere CSI 
 * [#45746](https://github.com/rancher/rancher/issues/45746) k8s 1.30 support for vSphere CPI
-* [#45726](https://github.com/rancher/rancher/issues/45726) Evaluate replacing loglevel's Go binary by a shell script implementation
 * [#45722](https://github.com/rancher/rancher/issues/45722) rancher-logging using deprecated fluentbit field in logging crd
 * [#45571](https://github.com/rancher/rancher/issues/45571) Validate SLE Micro 6 on Rancher
 * [#44780](https://github.com/rancher/rancher/issues/44780) [Forwardport v2.9] [BUG] Installing rancher on GKE with gce ingress class return "response 404 (backend NotFound)"
