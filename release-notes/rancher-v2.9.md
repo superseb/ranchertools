@@ -471,6 +471,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## Long-standing Known Issues - Continuous Delivery <!-- fleet --> <!-- use function based naming from https://jira.suse.com/browse/SURE-6864? e.g. "Continuous Deployment with Fleet?" -->
 
+- **Rancher v2.9.0:**
+  - The git-sync job that clones the repository does not have access to the CA bundle as a necessary secret is not created from the GitRepo resource data. Cloning from git repositories that require custom certificates will fail. See [#2824](https://github.com/rancher/fleet/issues/2824).
 - **Rancher v2.7.6:**
   - Target customization can produce custom resources that exceed the Rancher API's maximum bundle size. This results in `Request entity too large` errors when attempting to add a GitHub repo. Only target customizations that modify the Helm chart URL or version are affected. As a workaround, use multiple paths or GitHub repos instead of target customization. See [#1650](https://github.com/rancher/fleet/issues/1650).
 - **Rancher v2.6.1:**
@@ -1153,6 +1155,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## Long-standing Known Issues - Continuous Delivery <!-- fleet --> <!-- use function based naming from https://jira.suse.com/browse/SURE-6864? e.g. "Continuous Deployment with Fleet?" -->
 
+- **Rancher v2.9.0:**
+  - The git-sync job that clones the repository does not have access to the CA bundle as a necessary secret is not created from the GitRepo resource data. Cloning from git repositories that require custom certificates will fail. See [#2824](https://github.com/rancher/fleet/issues/2824).
 - **Rancher v2.7.6:**
   - Target customization can produce custom resources that exceed the Rancher API's maximum bundle size. This results in `Request entity too large` errors when attempting to add a GitHub repo. Only target customizations that modify the Helm chart URL or version are affected. As a workaround, use multiple paths or GitHub repos instead of target customization. See [#1650](https://github.com/rancher/fleet/issues/1650).
 - **Rancher v2.6.1:**
