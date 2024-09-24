@@ -540,6 +540,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46871](https://github.com/rancher/rancher/issues/46871) [Backport 2.9] use fixed stream server bind address for cri-dockerd
 * [#46869](https://github.com/rancher/rancher/issues/46869) [2.9] Rancher CLI panics when we try to switch context without any selection
 * [#46855](https://github.com/rancher/rancher/issues/46855) [BUG] Managed RKE2 clusters are broken after upgrade to 2.9.1 when KDM is not updated to `release-v2.9`
+* [#46809](https://github.com/rancher/rancher/issues/46809) [v2.9] Update ACI-CNI to 6.0.4.3
 * [#46778](https://github.com/rancher/rancher/issues/46778) [BUG] EKS public + private enabled clusters fail to come up active in Rancher `v2.9`
 * [#46775](https://github.com/rancher/rancher/issues/46775) [Backport release/v2.9] [BUG] `CATTLE_AGENT_FALLBACK_PATH` environment variable is way too prominent for custom clusters and can lead to confusion
 * [#46751](https://github.com/rancher/rancher/issues/46751) RKE2 and K3S - KDM Update for K8s August 2024 patch release for Rancher 2.9
