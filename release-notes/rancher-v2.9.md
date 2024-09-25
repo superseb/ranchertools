@@ -547,6 +547,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46715](https://github.com/rancher/rancher/issues/46715) [v2.9] KDM Update for K8s Aug 2024 patch release
 * [#46677](https://github.com/rancher/rancher/issues/46677) Generate and Publish sha256sum.txt in RKE Releases 
 * [#46661](https://github.com/rancher/rancher/issues/46661) [2.9] Update `ingress-nginx` to the latest applicable version
+* [#46621](https://github.com/rancher/rancher/issues/46621) [Backport v2.9] Transition `rancher/system-agent` to `bci-micro`
 * [#46616](https://github.com/rancher/rancher/issues/46616) [v2.9] Bump rke-tools for rke1 k8s august 2024 patches 
 * [#46582](https://github.com/rancher/rancher/issues/46582) [BUG] RKE1 agents provisionning fails when AWS IMDSv2 is set to required
 * [#46528](https://github.com/rancher/rancher/issues/46528) Automate updating go version in rancher/machine

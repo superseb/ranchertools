@@ -490,6 +490,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46928](https://github.com/rancher/rancher/issues/46928) [2.8] Update ingress-nginx to the latest applicable version
 * [#46918](https://github.com/rancher/rancher/issues/46918) [Backport 2.8] use fixed stream server bind address for cri-dockerd
 * [#46812](https://github.com/rancher/rancher/issues/46812) [BUG] RKE2 CIS scan failures on hardened as well as node driver clusters
+* [#46808](https://github.com/rancher/rancher/issues/46808) [v2.8] Update ACI-CNI to 6.0.4.3
 * [#46773](https://github.com/rancher/rancher/issues/46773) [Backport 2.8] [Windows] STRICT_VERIFY environment variable is not passed to windows nodes
 * [#46750](https://github.com/rancher/rancher/issues/46750) RKE2 and K3S - KDM Update for K8s August 2024 patch release for Rancher 2.8
 * [#46736](https://github.com/rancher/rancher/issues/46736) [BUG] [2.8] If project namespace is terminating, creating a CRTB produces an error in the logs
@@ -497,6 +498,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46713](https://github.com/rancher/rancher/issues/46713) [v2.8] KDM Update for K8s Aug 2024 patch release
 * [#46679](https://github.com/rancher/rancher/issues/46679) (Backport 1.5) Generate and Publish sha256sum.txt in RKE Releases
 * [#46663](https://github.com/rancher/rancher/issues/46663) [BUG] CIS Benchmark scan for k3s clusters fails on rancher v2.8.6.
+* [#46623](https://github.com/rancher/rancher/issues/46623) [Backport v2.8] Transition `rancher/system-agent` to `bci-micro`
 * [#46617](https://github.com/rancher/rancher/issues/46617) [Backport] [v2.8] Bump rke-tools for rke1 k8s august 2024 patches
 * [#46537](https://github.com/rancher/rancher/issues/46537) [2.8] Stale secrets for impersonation user in downstream cluster
 * [#46471](https://github.com/rancher/rancher/issues/46471) [2.8] Add debug to KDM args for k3s and rke2
