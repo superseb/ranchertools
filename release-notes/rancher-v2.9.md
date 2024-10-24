@@ -1140,6 +1140,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43293](https://github.com/rancher/rancher/issues/43293) [BUG] first kubectl command fails when no service account has been created
 * [#42611](https://github.com/rancher/rancher/issues/42611) [BUG]  failed to create mutating configuration
 * [#41929](https://github.com/rancher/rancher/issues/41929) [RFE] Simple Permissions endpoint for UI
+* [#41606](https://github.com/rancher/rancher/issues/41606) [BUG] rke2 clusters with invalid values for tolerations / affinity agent customization do not show error to user, stay in `updating` state on cluster create
 * [#43421](https://github.com/rancher/rancher/issues/43421) [RFE] [rancher-logging] Prefix systemDefaultRegistry to all images
 * [#40068](https://github.com/rancher/rancher/issues/40068) [BUG] Cattle-cleanup job for imported clusters not pulling from configured private registry
 -----
