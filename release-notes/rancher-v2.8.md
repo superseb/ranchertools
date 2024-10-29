@@ -482,7 +482,9 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#47470](https://github.com/rancher/rancher/issues/47470) [Backport v2.8] Enhance the secret-synchronization controller from Rancher's management cluster -> downstream clusters 
 * [#47396](https://github.com/rancher/rancher/issues/47396) [Backport v2.8] [BUG] Downstream K3s registry rewrites break fallback to upstream registry
 * [#47383](https://github.com/rancher/rancher/issues/47383) [v2.8] Update ACI-CNI to 6.1.1.1
+* [#47323](https://github.com/rancher/rancher/issues/47323) [2.8] Backport Logging Rebase
 * [#47295](https://github.com/rancher/rancher/issues/47295) [v2.8] update security-scan version in rancher-cis-benchmark chart
+* [#47265](https://github.com/rancher/rancher/issues/47265) [backport dev-v2.8] rancher/mirrored-kube-logging-logging-operator:4.4.0
 * [#47202](https://github.com/rancher/rancher/issues/47202) [Backport v2.8] Reduce `webhook`'s dependency on RKE1 type changes
 * [#47185](https://github.com/rancher/rancher/issues/47185) [BUG] Failed to remove etcd+controlplane node from RKE1 cluster
 * [#47169](https://github.com/rancher/rancher/issues/47169) [v2.8] KDM Update for K8s Sept 2024 patch release
