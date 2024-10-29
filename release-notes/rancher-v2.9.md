@@ -172,6 +172,8 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## Previous Rancher Behavior Changes - RKE2 Provisioning
 
+- **Rancher v2.9.2:**
+  - Fixed an issue where downstream RKE2 clusters may become corrupted if KDM data (from `rke-metadata-config` setting) is invalid. Note that per the fix these clusters' status may change to "Updating" with message indicating KDM data is missing instead of the cluster status stating "Active". See [#46855](https://github.com/rancher/rancher/issues/46855).
 - **Rancher v2.9.0:**
   - Rancher has added support for external Azure cloud providers in downstream RKE2 clusters. Note that [migration to an external Azure cloud provider](https://ranchermanager.docs.rancher.com/v2.9/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/migrate-to-an-out-of-tree-cloud-provider/migrate-to-out-of-tree-azure) is **required** when running Kubernetes v1.30 and **recommended** when running Kubernetes v1.29. See [#44856](https://github.com/rancher/rancher/issues/44856).
   - Added a new annotation, `provisioning.cattle.io/allow-dynamic-schema-drop`. When set to `true`, it drops the `dynamicSchemaSpec` field from machine pool definitions. This prevents cluster nodes from re-provisioning unintentionally when the cluster object is updated from an external source such as Terraform or Fleet. See [#44618](https://github.com/rancher/rancher/issues/44618).
@@ -570,6 +572,7 @@ Rancher v2.9.2 is the latest minor release of Rancher. This is a Community and P
 ### Major Bug Fixes
 
 - Fixed an issue where, when upgrading from Rancher v2.7.4 or earlier to a more recent Rancher version with provisioned RKE2/K3s clusters in an unhealthy state, you may have encountered the error message, `implausible joined server for entry`. This required manually marking the nodes in the cluster with a joined server. A [workaround](https://github.com/rancherlabs/support-tools/tree/master/windows-agent-strict-verify) was available. See [#42856](https://github.com/rancher/rancher/issues/42856).
+- Fixed an issue where downstream RKE2 clusters may become corrupted if KDM data (from `rke-metadata-config` setting) is invalid. Note that per the fix these clusters' status may change to "Updating" with a message indicating KDM data is missing instead of the cluster status stating "Active". See [#46855](https://github.com/rancher/rancher/issues/46855).
 
 ## Windows Cluster Provisioning Fixes <!-- hostbusters -->
 
