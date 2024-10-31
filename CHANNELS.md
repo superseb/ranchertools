@@ -5,7 +5,7 @@
 | Channel | k3s version | RKE2 version |
 | ------- | ----------- | ------------ |
 stable|v1.30.6+k3s1|v1.30.5+rke2r1
-latest|v1.31.2+k3s1|v1.31.1+rke2r2
+latest|v1.31.2+k3s1|v1.31.2+rke2r1
 testing|v1.31.2-rc2+k3s1|v1.31.2-rc4+rke2r1
 
 ## k3s
@@ -39,7 +39,7 @@ testing|v1.31.2-rc2+k3s1|v1.31.2-rc4+rke2r1
 
 | RKE2 channel | RKE2 version |
 | ------------ | ----------- |
-| latest | v1.31.1+rke2r2 |
+| latest | v1.31.2+rke2r1 |
 | stable | v1.30.5+rke2r1 |
 | testing | v1.31.2-rc4+rke2r1 |
 | v1.18 | v1.18.20+rke2r1 |
@@ -52,7 +52,7 @@ testing|v1.31.2-rc2+k3s1|v1.31.2-rc4+rke2r1
 | v1.25 | v1.25.16+rke2r2 |
 | v1.26 | v1.26.15+rke2r1 |
 | v1.27 | v1.27.16+rke2r2 |
-| v1.28 | v1.28.14+rke2r1 |
-| v1.29 | v1.29.9+rke2r1 |
-| v1.30 | v1.30.5+rke2r1 |
-| v1.31 | v1.31.1+rke2r2 |
+| v1.28 | v1.28.15+rke2r1 |
+| v1.29 | v1.29.10+rke2r1 |
+| v1.30 | v1.30.6+rke2r1 |
+| v1.31 | v1.31.2+rke2r1 |
