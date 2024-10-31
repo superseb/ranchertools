@@ -307,11 +307,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 <!-- Apply same headers as "Major Bug Fixes" but with "Long-standing Known Issues" suffix instead -->
 
-## Long-standing Known Issues - Rancher General
-
-- **Rancher v2.9.0:**
-  - After upgrading to v2.9.0, Rancher's pods may crash and fail to become available. This primarily affects clusters which have been upgraded from older Kubernetes versions, and can also result in disconnected downstream clusters. As a workaround, all CRDs in each affected cluster need to be updated to add a `version.Schema.openAPIV3Schema`. See [#46213](https://github.com/rancher/rancher/issues/46213).
-
 ## Long-standing Known Issues - Cluster Provisioning
 
 - Not all cluster tools can be installed on a hardened cluster.<!--no issue number available -->
@@ -855,11 +850,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 # Long-standing Known Issues
 
 <!-- Apply same headers as "Major Bug Fixes" but with "Long-standing Known Issues" suffix instead -->
-
-## Long-standing Known Issues - Rancher General
-
-- **Rancher v2.9.0:**
-  - After upgrading to v2.9.0, Rancher's pods may crash and fail to become available. This primarily affects clusters which have been upgraded from older Kubernetes versions, and can also result in disconnected downstream clusters. As a workaround, all CRDs in each affected cluster need to be updated to add a `version.Schema.openAPIV3Schema`. See [#46213](https://github.com/rancher/rancher/issues/46213).
 
 ## Long-standing Known Issues - Cluster Provisioning
 
@@ -1422,11 +1412,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 # Long-standing Known Issues
 
 <!-- Apply same headers as "Major Bug Fixes" but with "Long-standing Known Issues" suffix instead -->
-
-## Long-standing Known Issues - Rancher General
-
-- **Rancher v2.9.0:**
-  - After upgrading to v2.9.0, Rancher's pods may crash and fail to become available. This primarily affects clusters which have been upgraded from older Kubernetes versions, and can also result in disconnected downstream clusters. As a workaround, all CRDs in each affected cluster need to be updated to add a `version.Schema.openAPIV3Schema`. See [#46213](https://github.com/rancher/rancher/issues/46213).
 
 ## Long-standing Known Issues - Cluster Provisioning
 
