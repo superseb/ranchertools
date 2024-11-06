@@ -51,6 +51,7 @@
 
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.7.17](rancher-v2.7.md#release-v2717) | Nov 05 2024 | 11/05/24 | 2024-11-05 |
 | [v2.7.16](rancher-v2.7.md#release-v2716) | Oct 24 2024 | 10/24/24 | 2024-10-24 |
 | [v2.7.15](rancher-v2.7.md#release-v2715) | Jul 31 2024 | 07/31/24 | 2024-07-31 |
 | [v2.7.14](rancher-v2.7.md#release-v2714) | Jun 17 2024 | 06/17/24 | 2024-06-17 |
