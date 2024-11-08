@@ -244,6 +244,10 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
   - Removed legacy feature multi-cluster app. See [#39525](https://github.com/rancher/rancher/issues/39525).
 - **Legacy UI:**
   - When using the Rancher UI to add a new port of type ClusterIP to an existing Deployment created using the legacy UI, the new port will not be created upon saving. To work around this issue, repeat the procedure to add the port again. Users will notice the Service Type field will display as `Do not create a service`. Change this to ClusterIP and upon saving, the new port will be created successfully during this subsequent attempt. See [#4280](https://github.com/rancher/dashboard/issues/4280).
+
+## All issues in v2.7.17 milestone
+
+* [#47772](https://github.com/rancher/rancher/issues/47772) [BUG] Failed to install system chart rancher-webhook: no chart version found for rancher-webhook-2.0.12+up0.3.12-rc1
 -----
 # Release v2.7.16
 
