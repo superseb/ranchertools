@@ -479,6 +479,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## All issues in v2.8.9 milestone
 
+* [#47941](https://github.com/rancher/rancher/issues/47941) [Backport 2.8] Cannot Provision RKE1 on vSphere
 * [#47470](https://github.com/rancher/rancher/issues/47470) [Backport v2.8] Enhance the secret-synchronization controller from Rancher's management cluster -> downstream clusters 
 * [#47396](https://github.com/rancher/rancher/issues/47396) [Backport v2.8] [BUG] Downstream K3s registry rewrites break fallback to upstream registry
 * [#47383](https://github.com/rancher/rancher/issues/47383) [v2.8] Update ACI-CNI to 6.1.1.1
