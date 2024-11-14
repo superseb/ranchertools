@@ -2382,6 +2382,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#45749](https://github.com/rancher/rancher/issues/45749) k8s 1.30 support for rancher-logging 
 * [#45748](https://github.com/rancher/rancher/issues/45748) k8s 1.30 support for prometheus-federator 
 * [#45745](https://github.com/rancher/rancher/issues/45745) k8s 1.30 support for system-upgrade-controller
+* [#45741](https://github.com/rancher/rancher/issues/45741) k8s 1.30 support for Istio 
 * [#45714](https://github.com/rancher/rancher/issues/45714) [BUG] GlobalRole with just `inheritedClusterRoles` and no `rules` doesn't give any permissions
 * [#45676](https://github.com/rancher/rancher/issues/45676) Reduce reliance on Rancher Git mirror for running CI tests
 * [#45645](https://github.com/rancher/rancher/issues/45645) [BUG] Provisioning RKE1 node-driver cluster fails when extra_env is used for the kube-api service
