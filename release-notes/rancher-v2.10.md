@@ -10,6 +10,18 @@
 
 Rancher v2.10.0 is the latest minor release of Rancher. This is a Community version release that introduces new features, enhancements, and various updates.
 
+## Security Fixes for Rancher Vulnerabilities
+
+This release addresses the following Rancher security issues:
+
+- Permissions required to view, edit, and upgrade Apps have been revised. Users must now possess the "read" permission for the associated Helm secret in order to view the values used during an App's installation, as well as to edit or upgrade it. For more information, see [CVE-2024-52282](https://github.com/rancher/rancher/security/advisories/GHSA-9c5p-35gj-jqp4).
+- Fixed an issue where Rancher API watch requests ignored user permissions, enabling non-privileged Rancher users to view sensitive objects (including secrets and credentials) they do not own. For more information, see [CVE-2024-52280](https://github.com/rancher/steve/security/advisories/GHSA-j5hq-5jcr-xwx7).
+- Fixed an issue where namespace filters issued to watch requests through the Rancher API were sometimes ignored. Specifying multiple different namespaces in a watch request by ID now generates a warning, and will be disallowed in a future Rancher version. For more information, see [CVE-2024-52280](https://github.com/rancher/steve/security/advisories/GHSA-j5hq-5jcr-xwx7).
+- Several enhancements have been made to the cluster and node driver registration process to prevent the possibility of remote code execution (RCE) through untrusted third-party cluster and node drivers. For more information, see [CVE-2024-22036](https://github.com/rancher/rancher/security/advisories/GHSA-h99m-6755-rgwc).
+- To avoid credentials being stored in plain-text within the vSphere add-on config when creating a vSphere Rancher HA setup, the `provisioningprebootstrap` feature was added. For more information, see [CVE-2022-45157](https://github.com/rancher/rancher/security/advisories/GHSA-xj7w-r753-vj8v).
+
+For more details, see the Security Advisories and CVEs page in Rancher's [documentation](https://ranchermanager.docs.rancher.com/v2.10/reference-guides/rancher-security/security-advisories-and-cves) or in Rancher's [GitHub](https://github.com/rancher/rancher/security/advisories) repo.
+
 ## Highlights
 
 ## Rancher General
