@@ -16,6 +16,16 @@ Rancher v2.9.4 is the latest patch release of Rancher v2.9. This is a Prime vers
 
 For more information on new features in the general minor release see the [v2.9.0 release notes](https://github.com/rancher/rancher/releases/tag/v2.9.0).
 
+## Security Fixes for Rancher Vulnerabilities
+
+This release addresses the following Rancher security issues:
+
+- Permissions required to view, edit, and upgrade Apps have been revised. Users must now possess the "read" permission for the associated Helm secret in order to view the values used during an App's installation, as well as to edit or upgrade it. For more information, see [CVE-2024-52282](https://github.com/rancher/rancher/security/advisories/GHSA-9c5p-35gj-jqp4).
+- Fixed an issue where Rancher API watch requests ignored user permissions, enabling non-privileged Rancher users to view sensitive objects (including secrets and credentials) they do not own. For more information, see [CVE-2024-52280](https://github.com/rancher/steve/security/advisories/GHSA-j5hq-5jcr-xwx7).
+- Fixed an issue where namespace filters issued to watch requests through the Rancher API were sometimes ignored. Specifying multiple different namespaces in a watch request by ID now generates a warning, and will be disallowed in a future Rancher version. For more information, see [CVE-2024-52280](https://github.com/rancher/steve/security/advisories/GHSA-j5hq-5jcr-xwx7).
+
+For more details, see the Security Advisories and CVEs page in Rancher's [documentation](https://ranchermanager.docs.rancher.com/v2.9/reference-guides/rancher-security/security-advisories-and-cves) or in Rancher's [GitHub](https://github.com/rancher/rancher/security/advisories) repo.
+
 ## Rancher App (Global UI)
 
 ### Features and Enhancements
