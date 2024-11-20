@@ -323,6 +323,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## All issues in v2.10.0 milestone
 
+* [#48127](https://github.com/rancher/rancher/issues/48127) [v2.10] Remove deprecated globaldns command from CLI
 * [#47938](https://github.com/rancher/rancher/issues/47938) [BUG] Cannot Provision RKE1 on vSphere
 * [#47897](https://github.com/rancher/rancher/issues/47897) [BUG] Concurrent updates to ms-graph-sdk internals cause errors
 * [#47863](https://github.com/rancher/rancher/issues/47863) [BUG] [EKS] Unable to re-import a deleted cluster
