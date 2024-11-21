@@ -370,6 +370,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#47173](https://github.com/rancher/rancher/issues/47173) [2.10] Add support for docker 27.2.x
 * [#47170](https://github.com/rancher/rancher/issues/47170) [ForwardPort] [v2.10] KDM Update for K8s Sept 2024 patch release
 * [#47086](https://github.com/rancher/rancher/issues/47086) [Forwardport 2.10] Managed RKE2 clusters are broken after upgrade to 2.9.1 when KDM is not updated to release-v2.9
+* [#47081](https://github.com/rancher/rancher/issues/47081) [RFE] Create a yaml replacement for Restricted Admin
 * [#47066](https://github.com/rancher/rancher/issues/47066) [main] `C:\etc\rancher\wins\config` shows duplicate entries in a downstream vSphere Windows RKE2 cluster
 * [#47047](https://github.com/rancher/rancher/issues/47047) [v2.10] High CPU load due to calico errors on Ubuntu 20.04 - Update to calico needed
 * [#47032](https://github.com/rancher/rancher/issues/47032) Serve `/ext` in Rancher
