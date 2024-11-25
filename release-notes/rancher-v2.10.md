@@ -52,7 +52,7 @@ For more details, see the Security Advisories and CVEs page in Rancher's [docume
   
   See [#11560](https://github.com/rancher/dashboard/issues/11560).
 
-### Bug Fixes
+### Major Bug Fixes
 
 - Fixed an issue where when creating a GKE cluster in the Rancher UI you would see provisioning failures as the `clusterIpv4CidrBlock` and `clusterSecondaryRangeName` fields conflict. See [#8749](https://github.com/rancher/dashboard/issues/8749).
 
