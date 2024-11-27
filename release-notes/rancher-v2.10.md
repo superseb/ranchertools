@@ -82,7 +82,7 @@ RKE2 and K3s provide stronger security, and move away from upstream-deprecated D
 
 ### Behavior Changes
 
-The deprecated subcommand `globaldns` was removed from the Rancher CLI.
+The deprecated subcommand `globaldns` was removed from the Rancher CLI. See [#48127](https://github.com/rancher/rancher/issues/48127).
 
 ## Authentication
 
