@@ -410,7 +410,6 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#46830](https://github.com/rancher/rancher/issues/46830) K8s 1.31 support for Dynamic Listener
 * [#46829](https://github.com/rancher/rancher/issues/46829) K8's 1.31 Support for Gengo 
 * [#46828](https://github.com/rancher/rancher/issues/46828) [RFE] Respect creator's principal ID when creating projects and clusters
-* [#46827](https://github.com/rancher/rancher/issues/46827) [SURE-6988] Avoiding downstream secret caches in the upstream cluster
 * [#46752](https://github.com/rancher/rancher/issues/46752) RKE2 and K3S - KDM Update for K8s August 2024 patch release for Rancher 2.10
 * [#46743](https://github.com/rancher/rancher/issues/46743) [BUG]ui-offline-preferred 'dynamic' value not working
 * [#46720](https://github.com/rancher/rancher/issues/46720) [Forwardport 2.10] KDM Update for K8s Aug 2024 patch release
