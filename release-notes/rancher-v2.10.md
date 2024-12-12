@@ -129,8 +129,8 @@ The deprecated subcommand `globaldns` was removed from the Rancher CLI. See [#48
 
   Two new agent environment variables have been added for Windows nodes, `CATTLE_ENABLE_WINS_SERVICE_DEPENDENCY` and `CATTLE_ENABLE_WINS_DELAYED_START`. These changes can be configured in the Rancher UI, and will be respected by all nodes running `rancher-wins` version `v0.4.20` or greater.
 
-      - `CATTLE_ENABLE_WINS_SERVICE_DEPENDENCY` defines a service dependency between RKE2 and `rancher-wins`, ensuring RKE2 will not start before `rancher-wins`.
-      - `CATTLE_ENABLE_WINS_DELAYED_START` changes the start type of `rancher-wins` to `AUTOMATIC (DELAYED)`, ensuring it starts after other Windows services.
+    - `CATTLE_ENABLE_WINS_SERVICE_DEPENDENCY` defines a service dependency between RKE2 and `rancher-wins`, ensuring RKE2 will not start before `rancher-wins`.
+    - `CATTLE_ENABLE_WINS_DELAYED_START` changes the start type of `rancher-wins` to `AUTOMATIC (DELAYED)`, ensuring it starts after other Windows services.
 
   Additionally, Windows nodes will now attempt to execute plans multiple times if the initial application fails, up to 5 times. This change, as well as appropriate use of the above two agent environment variables, aims to address plan failures for Windows nodes after a node reboot.
 
