@@ -1,5 +1,6 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v1.6.5](rke-v1.6.md#release-v165) | Dec 16 2024 | 12/16/24 | 2024-12-16 |
 | [v1.6.4](rke-v1.6.md#release-v164) | Nov 12 2024 | 11/12/24 | 2024-11-12 |
 | [v1.6.3](rke-v1.6.md#release-v163) | Oct 21 2024 | 10/21/24 | 2024-10-21 |
 | [v1.6.2](rke-v1.6.md#release-v162) | Sep 17 2024 | 09/17/24 | 2024-09-17 |
@@ -8,6 +9,13 @@
 
 
 
+# RKE Kubernetes versions
+- `v1.27.16-rancher1-1`
+- `v1.28.15-rancher1-1`
+- `v1.29.11-rancher1-1`
+- `v1.30.7-rancher1-1` (default)
+
+-----
 ## What's Changed
 - Introduced `1.28.15`, `1.29.10`, `1.30.6`
 * bump go to v1.22.8
