@@ -79,7 +79,7 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 
 ## Tools
 
-- CLI - [v2.8.6](https://github.com/rancher/cli/releases/tag/v2.8.6)
+- CLI - [v2.8.8](https://github.com/rancher/cli/releases/tag/v2.8.8)
 - RKE - [v1.5.15](https://github.com/rancher/rke/releases/tag/v1.5.15)
 
 ## Kubernetes Versions for RKE
@@ -554,7 +554,7 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 <!-- TODO verify -->
 ## Tools
 
-- CLI - [v2.8.6](https://github.com/rancher/cli/releases/tag/v2.8.6)
+- CLI - [v2.8.8](https://github.com/rancher/cli/releases/tag/v2.8.8)
 - RKE - [v1.5.14](https://github.com/rancher/rke/releases/tag/v1.5.14)
 
 ## Kubernetes Versions for RKE
@@ -1038,7 +1038,7 @@ Please review our [version documentation](https://docs.ranchermanager.rancher.io
 <!-- TODO verify -->
 ## Tools
 
-- CLI - [v2.8.6](https://github.com/rancher/cli/releases/tag/v2.8.6)
+- CLI - [v2.8.8](https://github.com/rancher/cli/releases/tag/v2.8.8)
 - RKE - [v1.5.13](https://github.com/rancher/rke/releases/tag/v1.5.13)
 
 ## Kubernetes Versions for RKE
