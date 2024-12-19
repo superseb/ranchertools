@@ -1,9 +1,351 @@
 | Version | Date | US date | EU date |
 | ------- | ---- | ------- | ------- |
+| [v2.10.1](rancher-v2.10.md#release-v2101) | Dec 19 2024 | 12/19/24 | 2024-12-19 |
 | [v2.10.0](rancher-v2.10.md#release-v2100) | Nov 19 2024 | 11/19/24 | 2024-11-19 |
 
 
 
+# Release v2.10.1
+
+> **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
+
+Rancher v2.10.1 is the latest patch release of Rancher. This is a Community and Prime version release that introduces maintenance updates and bug fixes.
+For more information on new features in the general minor release see the [v2.10.0 release notes](https://github.com/rancher/rancher/releases/tag/v2.10.0).
+
+## Cluster Provisioning
+
+### Major Bug Fixes
+
+- Fixed a file permission issue where after upgrading to Rancher v2.9.3 or newer and deleting a node (i.e., scaling down a node pool) that was present before the upgrade would result in the node being removed from Rancher and the downstream cluster, but the underlying virtual machine is not removed from the infrastructure provider. See [#48341](https://github.com/rancher/rancher/issues/48341).
+- Fixed how ClusterIPs with IPv6 addresses were being handled incorrectly, which led to IPv6-based deployments getting `waiting for cluster agent to connect`. See [#43878](https://github.com/rancher/rancher/issues/43878).
+
+## K3s Provisioning
+
+### Major Bug Fixes
+
+- Fixed an issue where upgrading the K8s version of the downstream node driver and custom K3s clusters may result in an etcd node reporting `NodePressure`, and eventually the `rancher-system-agent` reporting failures to execute plans. If this issue is encountered, it can be resolved by performing a `systemctl restart k3s.service` on the affected etcd-only nodes. See [#48096](https://github.com/rancher/rancher/issues/48096).
+
+## RKE2 Provisioning
+
+### Known Issues
+
+- Clusters containing nodes with split etcd and control plane roles may fail to reconcile when upgrading Rancher. The following can be seen repeatedly in the control plane logs:
+
+  ```
+  time="(timestamp)" level=info msg="Starting rke2 v1.28.15+rke2r1 (96bb2a62fad8cb938a1761286b1d896623ac7014)"
+  time="(timestamp)" level=fatal msg="starting kubernetes: preparing server: failed to get CA certs: Get \"https://(etcd-init-node-ip):9345/cacerts\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+  ...
+  Failed to start Rancher Kubernetes Engine v2 (server).
+  rke2-server.service: Scheduled restart job, restart counter is at 173.
+  Stopped Rancher Kubernetes Engine v2 (server).
+  ```
+
+  In the event that a control plane node gets stuck during a Rancher upgrade, perform a `systemctl restart rke2-server.service` on the stuck control plane node, and then the etcd node that it is joined to (specified via the `"server"` field in `/etc/rancher/rke2/config.yaml.d/50-rancher.yaml`). This results in the cluster reconciling as normal.
+
+  See [#48389](https://github.com/rancher/rancher/issues/48389).
+
+## Rancher CLI
+
+### Known Issues
+
+- The Rancher CLI uses dedicated HTTP clients in login and SSH commands to download certificates and an SSH key respectively. However, the CLI currently does not respect proxy settings and does not set an HTTP timeout. See [#48321](https://github.com/rancher/rancher/issues/48321).
+
+## Rancher App (Global UI)
+
+### Major Bug Fixes
+
+- This release includes a major upgrade to the Dashboard (Cluster Explorer) Vue framework from Vue 2 to Vue 3. Please view our documentation on updating existing UI extensions to be compliant with the Rancher v2.10 UI framework in the [v2.10.0 UI extension changelog](https://extensions.rancher.io/extensions/next/rancher-2.10-support). If experiencing a page that fails to load please file an issue via the [Dashboard repository](https://github.com/rancher/dashboard/issues/new/choose) and choose the "Bug report" option for us to further investigate. See [#7653](https://github.com/rancher/dashboard/issues/7653).
+
+- As part of the Dashboard Vue framework transition to Vue 3 introduced in Rancher v2.10.0, [a migration script](https://extensions.rancher.io/extensions/next/rancher-2.10-support) was developed to allow extension developers to easily migrate their extensions to the minimum required setup required. A number of fixes and enhancements have been made to this script:
+  - Added a completion log to inform user to install dependencies.
+  - Resolved build errors that would appear after running the migration script by updating the libraries used.
+  - Fixed an issue where resolutions were not updating properly.
+
+  See [#12656](https://github.com/rancher/dashboard/issues/12656).
+
+### Known Issues
+
+- Users are able to create or edit clusters even when using an invalid Add-on YAML configuration. See [#12466](https://github.com/rancher/dashboard/issues/12466).
+
+# Install/Upgrade Notes
+
+> - If you're installing Rancher for the first time, your environment must fulfill the [installation requirements](https://docs.ranchermanager.rancher.io/pages-for-subheaders/installation-requirements).
+
+# Upgrade Requirements
+
+- **Creating backups:** [Create a backup](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher) before you upgrade Rancher. To roll back Rancher after an upgrade, you must first back up and restore Rancher to the previous Rancher version. Because Rancher will be restored to the same state as when the backup was created, any changes post-upgrade will not be included after the restore.
+- **CNI requirements:**
+  - For Kubernetes v1.19 and later, disable firewalld as it's incompatible with various CNI plugins. See [#28840](https://github.com/rancher/rancher/issues/28840).
+  - When upgrading or installing a Linux distribution that uses nf_tables as the backend packet filter, such as SLES 15, RHEL 8, Ubuntu 20.10, Debian 10, or later, upgrade to RKE v1.19.2 or later to get Flannel v0.13.0. Flannel v0.13.0 supports nf_tables. See Flannel [#1317](https://github.com/flannel-io/flannel/issues/1317).
+- **Requirements for air gapped environments:**
+  - When using a proxy in front of an air-gapped Rancher instance, you must pass additional parameters to `NO_PROXY`. See the [documentation](https://docs.ranchermanager.rancher.io/getting-started/installation-and-upgrade/other-installation-methods/rancher-behind-an-http-proxy/install-rancher) and  issue [#2725](https://github.com/rancher/docs/issues/2725#issuecomment-702454584).
+  - When installing Rancher with Docker in an air-gapped environment, you must supply a custom `registries.yaml` file to the `docker run` command, as shown in the [K3s documentation](https://docs.k3s.io/installation/private-registry). If the registry has certificates, then you'll also need to supply those. See [#28969](https://github.com/rancher/rancher/issues/28969#issuecomment-694474229).
+- **Requirements for general Docker installs:**
+  - When starting the Rancher Docker container, you must use the `privileged` flag. See [documentation](https://docs.ranchermanager.rancher.io/pages-for-subheaders/rancher-on-a-single-node-with-docker).
+  - When upgrading a Docker installation, a panic may occur in the container, which causes it to restart. After restarting, the container will come up and work as expected. See [#33685](https://github.com/rancher/rancher/issues/33685).
+
+# Versions
+
+Please refer to the [README](https://github.com/rancher/rancher#latest-release) for the latest and stable Rancher versions.
+
+Please review our [version documentation](https://docs.ranchermanager.rancher.io/getting-started/installation-and-upgrade/resources/choose-a-rancher-version) for more details on versioning and tagging conventions.
+
+**Important:** With the release of Rancher Kubernetes Engine (RKE) v1.6.0, we are informing customers that RKE is now deprecated. RKE will be maintained for two more versions, following our [deprecation policy](https://www.suse.com/support/rancher-prime/#Rancher-Prime-Deprecation-Policy).
+
+Please note, EOL for RKE is July 31st, 2025. Prime customers must replatform from RKE to RKE2 or K3s.
+
+RKE2 and K3s provide stronger security, and move away from upstream-deprecated Docker machine. Learn more about replatforming [here](https://www.suse.com/c/rke-end-of-life-by-july-2025-replatform-to-rke2-or-k3s/).
+
+## Images
+
+- rancher/rancher:v2.10.1
+
+## Tools
+
+- CLI - [v2.10.1](https://github.com/rancher/cli/releases/tag/v2.10.1)
+- RKE - [v1.7.1](https://github.com/rancher/rke/releases/tag/v1.7.1)
+
+## Kubernetes Versions for RKE
+
+- v1.31.3 (Default)
+- v1.30.7
+- v1.29.11
+- v1.28.15
+
+## Kubernetes Versions for RKE2/K3s
+
+- v1.31.3 (Default)
+- v1.30.7
+- v1.29.11
+- v1.28.15
+
+## Rancher Helm Chart Versions
+
+In Rancher v2.6.0 and later, in the **Apps & Marketplace** UI, many Rancher Helm charts are named with a major version that starts with *100*. This avoids simultaneous upstream changes and Rancher changes from causing conflicting version increments. This also complies with semantic versioning (SemVer), which is a requirement for Helm. You can see the upstream version number of a chart in the build metadata, for example: `100.0.0+up2.1.0`. See [#32294](https://github.com/rancher/rancher/issues/32294).
+
+# Other Notes
+
+## Experimental Features
+
+Rancher now supports the ability to use an OCI Helm chart registry for Apps & Marketplace. View documentation on [using OCI based Helm chart repositories](https://ranchermanager.docs.rancher.com/v2.9/how-to-guides/new-user-guides/helm-charts-in-rancher/oci-repositories) and note this feature is in an experimental stage. See [#29105](https://github.com/rancher/rancher/issues/29105) and [#45062](https://github.com/rancher/rancher/pull/45062)
+
+## Deprecated Upstream Projects
+
+In June 2023, Microsoft deprecated the Azure AD Graph API that Rancher had been using for authentication via Azure AD. When updating Rancher, update the configuration to make sure that users can still use Rancher with Azure AD. See [the documentation](https://docs.ranchermanager.rancher.io/how-to-guides/new-user-guides/authentication-permissions-and-global-configuration/authentication-config/configure-azure-ad#migrating-from-azure-ad-graph-api-to-microsoft-graph-api) and issue [#29306](https://github.com/rancher/rancher/issues/29306) for details.
+
+## Removed Legacy Features
+
+Apps functionality in the cluster manager has been deprecated as of the Rancher v2.7 line. This functionality has been replaced by the **Apps & Marketplace** section of the Rancher UI.
+
+Also, `rancher-external-dns` and `rancher-global-dns` have been deprecated as of the Rancher v2.7 line.
+
+The following legacy features have been removed as of Rancher v2.7.0. The deprecation and removal of these features was announced in previous releases. See [#6864](https://github.com/rancher/dashboard/issues/6864).
+
+**UI and Backend**
+
+- CIS Scans v1 (Cluster)
+- Pipelines (Project)
+- Istio v1 (Project)
+- Logging v1 (Project)
+- RancherD
+
+**UI**
+
+- Multiclusterapps (Global): Apps within the **Multicluster Apps** section of the Rancher UI. 
+
+# Previous Rancher Behavior Changes
+
+## Previous Rancher Behavior Changes - Rancher General
+
+- **Rancher v2.10.0:**
+  - Kubernetes v1.27 is no longer supported. Before you upgrade to Rancher v2.10.0, make sure that all clusters are running Kubernetes v1.28 or later. See [#47591](https://github.com/rancher/rancher/issues/47591).
+  - The new annotation `field.cattle.io/creator-principal-name` was introduced in addition to the existing `field.cattle.io/creatorId` that allows specifying the creator's principal name when creating a cluster or a project. If this annotation is used, the `userPrincipalName` field of the corresponding `ClusterRoleTemplateBinding` or `ProjectRoleTemplateBinding` will be set to the specified principal. The principal should belong to the creator's user, which is enforced by the webhook. See [#46828](https://github.com/rancher/rancher/issues/46828).
+  - When searching for group principals with a SAML authentication provider (with LDAP turned off), Rancher now returns a principal of correct type (group) with the name matching the search term. When searching principals with a SAML provider (with LDAP turned off) without specifying the desired type (as in Add cluster/project member), Rancher now returns both user and group principals with the name matching the search term. See [#44441](https://github.com/rancher/rancher/issues/44441).
+  - Rancher now captures the last used time for Tokens and stores it in the `lastUsedAt` field. If the Authorized Cluster Endpoint is enabled and used on a downstream cluster Rancher captures the last used time in the `ClusterAuthToken` object and makes the best effort to sync it back to the corresponding Token in the upstream. See [#45732](https://github.com/rancher/rancher/issues/45732).
+  - Rancher deploys the System Upgrade Controller (SUC) to facilitate Kubernetes upgrades for imported RKE2/K3s clusters. Starting with this version, the mechanism used to deploy this component in downstream clusters has transitioned from legacy V1 apps to fully supported V2 apps, providing a seamless upgrade process for Rancher. For more details, please see this [issue comment](https://github.com/rancher/rancher/issues/42448#issuecomment-2477309567).
+
+## Previous Rancher Behavior Changes - Rancher CLI
+
+- **Rancher v2.10.0:**
+  - The deprecated subcommand `globaldns` was removed from the Rancher CLI. See [#48127](https://github.com/rancher/rancher/issues/48127).
+
+## Previous Rancher Behavior Changes - Rancher App (Global UI)
+
+- **Rancher v2.10.0:**
+  - This release includes a major upgrade to the Dashboard (Cluster Explorer) Vue framework from Vue 2 to Vue 3. Please view our documentation on updating existing UI extensions to be compliant with the Rancher v2.10 UI framework in the [v2.10.0 UI extension changelog](https://extensions.rancher.io/extensions/next/rancher-2.10-support). If experiencing a page that fails to load please file an issue via the [Dashboard repository](https://github.com/rancher/dashboard/issues/new/choose) and choose the "Bug report" option for us to further investigate. See [#7653](https://github.com/rancher/dashboard/issues/7653).
+  - The performance of the Clusters lists in the Home page and the Side Menu has greatly improved when there are hundreds of clusters. See [#11995](https://github.com/rancher/dashboard/issues/11995) and [#11993](https://github.com/rancher/dashboard/issues/11993).
+  - The previous Dashboard Ember UI (Cluster Manager) will no longer be directly accessible. The relative pages that rely on the previous UI will continue to be embedded in the new Vue UI (Cluster Explorer). See [#11371](https://github.com/rancher/dashboard/issues/11371).
+  - Updated the data directory configuration by replacing the checkbox option with 3 user input options below:
+    1. `Use default data directory configuration`
+    2. `Use a common base directory for data directory configuration (sub-directories will be used for the system-agent, provisioning and distro paths)` - This option displays a text input where users can enter a base directory for all 3 subdirectories which Rancher programmatically appends to the correct subdirectories.
+    3. `Use custom data directories` - This option displays 3 text inputs, one for each subdirectory type where users can input each path individually.
+
+    See [#11560](https://github.com/rancher/dashboard/issues/11560).
+
+## Previous Rancher Behavior Changes - RKE Provisioning
+
+- **Rancher v2.10.0:**
+  - With the release of Rancher Kubernetes Engine (RKE) v1.6.0, we are informing customers that RKE is now deprecated. RKE will be maintained for two more versions, following our [deprecation policy](https://www.suse.com/support/rancher-prime/#Rancher-Prime-Deprecation-Policy).
+
+    Please note, End-of-Life (EOL) for RKE is July 31st, 2025. Prime customers must replatform from RKE to RKE2 or K3s.
+
+    RKE2 and K3s provide stronger security, and move away from upstream-deprecated Docker machine. Learn more about replatforming [here](https://www.suse.com/c/rke-end-of-life-by-july-2025-replatform-to-rke2-or-k3s/).
+
+## Previous Rancher Behavior Changes - Virtualization (Harvester)
+
+- **Rancher v2.10.0:**
+  - On the Cloud Credential list, you can now easily see if a Harvester Credential is about to expire or has expired and choose to renew it. You will also be notified on the Cluster Management Clusters list when an associated Harvester Cloud Credential is about to expire or has expired. When upgrading, an existing expired Harvester Credential will not contain a warning. You can still renew the token on the resources menu. See [#11332](https://github.com/rancher/dashboard/issues/11332).
+
+## Previous Rancher Behavior Changes - Windows
+
+- **Rancher v2.10.0:**
+  - Rancher v2.10.0 includes changes to how Windows nodes behave post node reboot, as well as provides two new settings to control how Windows services created by Rancher behave on startup.
+
+    Two new agent environment variables have been added for Windows nodes, `CATTLE_ENABLE_WINS_SERVICE_DEPENDENCY` and `CATTLE_ENABLE_WINS_DELAYED_START`. These changes can be configured in the Rancher UI, and will be respected by all nodes running `rancher-wins` version `v0.4.20` or greater.
+
+    - `CATTLE_ENABLE_WINS_SERVICE_DEPENDENCY` defines a service dependency between RKE2 and `rancher-wins`, ensuring RKE2 will not start before `rancher-wins`.
+    - `CATTLE_ENABLE_WINS_DELAYED_START` changes the start type of `rancher-wins` to `AUTOMATIC (DELAYED)`, ensuring it starts after other Windows services.
+
+    Additionally, Windows nodes will now attempt to execute plans multiple times if the initial application fails, up to 5 times. This change, as well as appropriate use of the above two agent environment variables, aims to address plan failures for Windows nodes after a node reboot.
+
+    See [#42458](https://github.com/rancher/rancher/issues/42458).
+  - A change was made starting with RKE2 versions `v1.28.15`, `v1.29.10`, `v1.30.6` and `v1.31.2` on Windows which allows the user to configure `*_PROXY` environment variables on the `rke2` service after the node has already been provisioned.
+
+    Previously any attempt to do so would be a no-op. With this change, If the `*_PROXY` environment variables are set on the cluster _after_ a Windows node is provisioned, they can be automatically removed from the `rke2` service. However, if the variables are set _before_ the node is provisioned, they cannot be removed.
+
+    More information can be found [here](https://github.com/rancher/rancher/issues/47839). A workaround is to remove the environment variables from the `rancher-wins` service and restart the service or node. At which point `*_PROXY` environment variables will no longer be set on either service.
+
+    ```shell
+    Remove-ItemProperty HKLM:SYSTEM\CurrentControlSet\Services\rancher-wins -Name Environment
+    Restart-Service rancher-wins
+    ```
+
+    See [#47544](https://github.com/rancher/rancher/issues/47544).
+
+# Long-standing Known Issues
+
+<!-- Apply same headers as "Major Bug Fixes" but with "Long-standing Known Issues" suffix instead -->
+
+## Long-standing Known Issues - Cluster Provisioning
+
+- Not all cluster tools can be installed on a hardened cluster.<!--no issue number available -->
+
+- **Rancher v2.8.1:**
+  - When you  attempt to register a new etcd/controlplane node in a CAPR-managed cluster after a failed etcd snapshot restoration, the node can become stuck in a perpetual paused state, displaying the error message `[ERROR]  000 received while downloading Rancher connection information. Sleeping for 5 seconds and trying again`. As a workaround, you can unpause the cluster by running `kubectl edit clusters.cluster clustername -n fleet-default` and set `spec.unpaused` to `false`.  See [#43735](https://github.com/rancher/rancher/issues/43735).
+- **Rancher v2.7.2:**
+  - If you upgrade or update any hosted cluster, and go to **Cluster Management > Clusters** while the cluster is still provisioning, the **Registration** tab is visible. Registering a cluster that is already registered with Rancher can cause data corruption. See [#8524](https://github.com/rancher/dashboard/issues/8524).
+
+## Long-standing Known Issues - RKE Provisioning
+
+- **Rancher v2.9.0:**
+  - The Weave CNI plugin for RKE v1.27 and later is now deprecated, due to the plugin being deprecated for upstream Kubernetes v1.27 and later. RKE creation will not go through as it will raise a validation warning. See [#11322](https://github.com/rancher/dashboard/issues/11322).
+
+## Long-standing Known Issues - RKE2 Provisioning <!-- hostbusters -->
+
+- **Rancher v2.9.0:**
+  - When adding the `provisioning.cattle.io/allow-dynamic-schema-drop` annotation through the cluster config UI, the annotation disappears before adding the value field. When viewing the YAML, the respective value field is not updated and is displayed as an empty string. As a workaround, when creating the cluster, set the annotation by using the **Edit Yaml** option located in the dropdown **⋮** attached to your respective cluster in the **Cluster Management** view. See [#11435](https://github.com/rancher/dashboard/issues/11435).
+- **Rancher v2.7.7:**
+  - Due to the backoff logic in various components, downstream provisioned K3s and RKE2 clusters may take longer to re-achieve `Active` status after a migration. If you see that a downstream cluster is still updating or in an error state immediately after a migration, please let it attempt to resolve itself. This might take up to an hour to complete. See [#34518](https://github.com/rancher/rancher/issues/34518) and [#42834](https://github.com/rancher/rancher/issues/42834).
+- **Rancher v2.7.6:**
+  - Provisioning RKE2/K3s clusters with added (not built-in) custom node drivers causes provisioning to fail. As a workaround, [fix](https://github.com/rancher/rancher/issues/37074#issuecomment-1664722305) the added node drivers after activating. See [#37074](https://github.com/rancher/rancher/issues/37074).
+- **Rancher v2.7.2:**
+  - When viewing or editing the YAML configuration of downstream RKE2 clusters through the UI, `spec.rkeConfig.machineGlobalConfig.profile` is set to `null`, which is an invalid configuration. See [#8480](https://github.com/rancher/dashboard/issues/8480).
+    - [RKE2 uninstall script](https://docs.rke2.io/install/uninstall?_highlight=uninstall#tarball-method).
+
+## Long-standing Known Issues - K3s Provisioning <!-- hostbusters -->
+
+- **Rancher v2.7.6:**
+  - Provisioning RKE2/K3s clusters with added (not built-in) custom node drivers causes provisioning to fail. As a workaround, [fix](https://github.com/rancher/rancher/issues/37074#issuecomment-1664722305) the added node drivers after activating. See [#37074](https://github.com/rancher/rancher/issues/37074).
+- **Rancher v2.7.2:**
+  - Clusters remain in an `Updating` state even when they contain nodes in an `Error` state. See [#39164](https://github.com/rancher/rancher/issues/39164).
+
+## Long-standing Known Issues - Rancher App (Global UI)
+
+- **Rancher v2.9.2**:
+  - Although system mode node pools must have at least one node, the Rancher UI allows a minimum node count of zero. Inputting a zero minimum node count through the UI can cause cluster creation to fail due to an invalid parameter error. To prevent this error from occurring, enter a minimum node count at least equal to the node count. See [#11922](https://github.com/rancher/dashboard/issues/11922).
+- **Rancher v2.7.7**:
+  - When creating a cluster in the Rancher UI it does not allow the use of an underscore `_` in the `Cluster Name` field. See [#9416](https://github.com/rancher/dashboard/issues/9416).
+
+## Long-standing Known Issues - Hosted Rancher <!-- hostbusters -->
+
+- **Rancher v2.7.5:**
+  - The **Cluster** page shows the **Registration** tab when updating or upgrading a hosted cluster. See [#8524](https://github.com/rancher/dashboard/issues/8524).
+
+## Long-standing Known Issues - EKS
+
+- **Rancher v2.7.0:**
+  - EKS clusters on Kubernetes v1.21 or below on Rancher v2.7 cannot be upgraded. See [#39392](https://github.com/rancher/rancher/issues/39392).
+
+## Long-standing Known Issues - Authentication <!-- night's watch -->
+
+- **Rancher v2.9.0:**
+  - There are some known issues with the OpenID Connect provider support:
+    - When the generic OIDC auth provider is enabled, and you attempt to add auth provider users to a cluster or project, users are not populated in the dropdown search bar. This is expected behavior as the OIDC auth provider alone is not searchable. See [#46104](https://github.com/rancher/rancher/issues/46104).
+    - When the generic OIDC auth provider is enabled, auth provider users that are added to a cluster/project by their username are not able to access resources upon logging in. A user will only have access to resources upon login if the user is added by their userID.  See [#46105](https://github.com/rancher/rancher/issues/46105).
+    - When the generic OIDC auth provider is enabled and an auth provider user in a nested group is logged into Rancher, the user will see the following error when they attempt to create a Project: `[projectroletemplatebindings.management.cattle.io](http://projectroletemplatebindings.management.cattle.io/) is forbidden: User "u-gcxatwsnku" cannot create resource "projectroletemplatebindings" in API group "[management.cattle.io](http://management.cattle.io/)" in the namespace "p-9t5pg"`. However, the project is still created. See [#46106](https://github.com/rancher/rancher/issues/46106).
+
+## Long-standing Known Issues - Rancher Webhook <!-- neo -->
+
+- **Rancher v2.7.2:**
+  - A webhook is installed in all downstream clusters. There are several issues that users may encounter with this functionality:
+    - If you rollback from a version of Rancher v2.7.2 or later, to a Rancher version earlier than v2.7.2, the webhooks will remain in downstream clusters. Since the webhook is designed to be 1:1 compatible with specific versions of Rancher, this can cause unexpected behaviors to occur downstream. The Rancher team has developed a [script](https://github.com/rancher/webhook/wiki/Remove-Webhook-from-downstream-clusters) which should be used after rollback is complete (meaning after a Rancher version earlier than v2.7.2 is running). This removes the webhook from affected downstream clusters. See [#40816](https://github.com/rancher/rancher/issues/40816).
+
+## Long-standing Known Issues - Harvester
+
+- **Rancher v2.7.2:**
+  - If you're using Rancher v2.7.2 with Harvester v1.1.1 clusters, you won't be able to select the Harvester cloud provider when deploying or updating guest clusters. The [Harvester release notes](https://github.com/harvester/release-notes/blob/main/v1.1.2.md#important-information-about-rancher-support) contain instructions on how to resolve this. See [#3750](https://github.com/harvester/harvester/issues/3750).
+
+## Long-standing Known Issues - Backup/Restore <!-- night's watch -->
+
+- When migrating to a cluster with the Rancher Backup feature, the server-url cannot be changed to a different location. It must continue to use the same URL.<!-- no issue number -->
+
+- **Rancher v2.7.7:**
+  - Due to the backoff logic in various components, downstream provisioned K3s and RKE2 clusters may take longer to re-achieve `Active` status after a migration. If you see that a downstream cluster is still updating or in an error state immediately after a migration, please let it attempt to resolve itself. This might take up to an hour to complete. See [#34518](https://github.com/rancher/rancher/issues/34518) and [#42834](https://github.com/rancher/rancher/issues/42834).
+
+## Long-standing Known Issues - Continuous Delivery (Fleet)
+
+- **Rancher v2.10.0:**
+  - Target customization for namespace labels and annotations cannot modify/remove labels when updating. See [#3064](https://github.com/rancher/fleet/issues/3064).
+  - In version 0.10, GitRepo resources provided a comprehensive list of all deployed resources across all clusters in their status. However, in version 0.11, this list has been modified to report resources only once until the feature is integrated into the Rancher UI. While this change addresses a UI freeze issue, it may result in potential inaccuracies in the list of resources and resource counts under some conditions. See [#3027](https://github.com/rancher/fleet/pull/3027).
+
+## All issues in v2.10.1 milestone
+
+* [#48431](https://github.com/rancher/rancher/issues/48431) [2.10] [BUG] Panic in nodesyncer
+* [#48413](https://github.com/rancher/rancher/issues/48413) [BUG] [v2.10] Failed to install system chart fleet: specified version 105.0.2+up0.11.2-rc.2 doesn't exist in the index
+* [#48375](https://github.com/rancher/rancher/issues/48375) [v2.10] [BUG] RKE cluster upgrade from v1.30 to v1.31 fails when drain is enabled in upgrade strategy option
+* [#48354](https://github.com/rancher/rancher/issues/48354) [BUG][2.10] script user-cluster.sh fails to cleanup Rancher Components from Registered Clusters
+* [#48341](https://github.com/rancher/rancher/issues/48341) [Backport v2.10] [BUG] VM of existing RKE1 node is not removed after the node is deleted from the cluster after upgrading to Rancher 2.9.3+
+* [#48264](https://github.com/rancher/rancher/issues/48264) [BUG][2.10] Azure AD China auth returning "error status code received from the API
+* [#48206](https://github.com/rancher/rancher/issues/48206) [Backport v2.10] [BUG] The state of the imported K3s cluster alternates between "Ready" and "Upgrading" at the start of the cluster upgrade process
+* [#48202](https://github.com/rancher/rancher/issues/48202) The system-upgrade-controller App is not marked as Managed on the Installed Apps Page 
+* [#48199](https://github.com/rancher/rancher/issues/48199) [BUG] rancher-monitoring ignoreNamespaceSelectors has wrong default value
+* [#48193](https://github.com/rancher/rancher/issues/48193) [Backport v2.10] [BUG] Unable to provision RKE1 node driver cluster using RHEL 9.2 and 9.0 amis
+* [#48184](https://github.com/rancher/rancher/issues/48184) [Backport v2.10] Transition rancher/machine to bci-busybox
+* [#48180](https://github.com/rancher/rancher/issues/48180) [BUG] "Oberved a panic" on Upgrade to 2.10.0
+* [#48157](https://github.com/rancher/rancher/issues/48157) [Backport v2.10] Stale Secret Fix
+* [#48155](https://github.com/rancher/rancher/issues/48155) [v2.10] Update ACI-CNI to 6.0.4.4
+* [#48112](https://github.com/rancher/rancher/issues/48112) [v2.10] CIS: Unexpected Failures in scans for gke 1.6.0 profile
+* [#48096](https://github.com/rancher/rancher/issues/48096) [Backport v2.10] Nodes may fail to reconnect after K8s upgrade for K3s clusters with multiple etcd-only nodes
+* [#48094](https://github.com/rancher/rancher/issues/48094) [Backport v2.10] Add managed annotation to Chart.yaml in rancher-provisioning-capi helm chart
+* [#48085](https://github.com/rancher/rancher/issues/48085) [Backport 2.10] [BUG] `legacy-rolebinding-ownerref-cleaner` handlers fire millions of times per hour
+* [#48083](https://github.com/rancher/rancher/issues/48083) [v2.10] KDM Update for K8s November 2024 patch
+* [#48075](https://github.com/rancher/rancher/issues/48075) k8s 1.31 support for Istio
+* [#48064](https://github.com/rancher/rancher/issues/48064) [Backport 2.10] [BUG] rancher-provisioning-capi chart version is not being pinned
+* [#48005](https://github.com/rancher/rancher/issues/48005) [Backport 2.10] Chart rancher-provisioning-capi doesn't add tolerations from chart values to post-install hook Job
+* [#48003](https://github.com/rancher/rancher/issues/48003) [Backport 2.10]ranchercli - readable warning that give no meaning on windows
+* [#47981](https://github.com/rancher/rancher/issues/47981) [Backport v2.10] Stale Secret Fix
+* [#47912](https://github.com/rancher/rancher/issues/47912) [BUG] Remove mirrored-prometheus-windows-exporter from rancher-images.txt
+* [#47783](https://github.com/rancher/rancher/issues/47783) [RFE] Rebase Logging
+* [#47766](https://github.com/rancher/rancher/issues/47766) Rebase pushprox to catch up with upstream 2.0
+* [#47641](https://github.com/rancher/rancher/issues/47641) [2.10] Bump calico & canal to support v1.31
+* [#47045](https://github.com/rancher/rancher/issues/47045) [BUG] Only apply "auth-prov-v2-" finalizers to necessary resources
+* [#46905](https://github.com/rancher/rancher/issues/46905) Update DynamicListener's CI and Renovate Config
+* [#46903](https://github.com/rancher/rancher/issues/46903) Update Norman's CI and Renovate Config
+* [#46902](https://github.com/rancher/rancher/issues/46902) Update APIServer's CI and Renovate Config
+* [#46899](https://github.com/rancher/rancher/issues/46899) Update Frameworks Branches for new versioning approach
+* [#46450](https://github.com/rancher/rancher/issues/46450) [Forwardport] Validate SLE Micro 6 on Rancher
+* [#43878](https://github.com/rancher/rancher/issues/43878) [BUG] cluster creation stuck waiting for cluster agent to connect ipv6
+-----
 # Release v2.10.0
 
 > **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
