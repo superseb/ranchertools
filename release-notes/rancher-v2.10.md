@@ -7,6 +7,9 @@
 
 # Release v2.10.1
 
+> [!CAUTION]
+> **Do not** upgrade to Rancher v2.10.1 if you're using Active Directory Federation Service (AD FS).
+
 > **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
 
 Rancher v2.10.1 is the latest patch release of Rancher. This is a Community and Prime version release that introduces maintenance updates and bug fixes.
@@ -310,6 +313,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 
 ## All issues in v2.10.1 milestone
 
+* [#48661](https://github.com/rancher/rancher/issues/48661) [flaky-test] Step `Uninstall existing Python versions` in the `validate` Workflow fails  
 * [#48431](https://github.com/rancher/rancher/issues/48431) [2.10] [BUG] Panic in nodesyncer
 * [#48413](https://github.com/rancher/rancher/issues/48413) [BUG] [v2.10] Failed to install system chart fleet: specified version 105.0.2+up0.11.2-rc.2 doesn't exist in the index
 * [#48375](https://github.com/rancher/rancher/issues/48375) [v2.10] [BUG] RKE cluster upgrade from v1.30 to v1.31 fails when drain is enabled in upgrade strategy option
@@ -347,6 +351,9 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 * [#43878](https://github.com/rancher/rancher/issues/43878) [BUG] cluster creation stuck waiting for cluster agent to connect ipv6
 -----
 # Release v2.10.0
+
+> [!CAUTION]
+> **Do not** upgrade to Rancher v2.10.1 if you're using Active Directory Federation Service (AD FS).
 
 > **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
 
