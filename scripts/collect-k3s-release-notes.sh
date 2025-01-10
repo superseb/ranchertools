@@ -17,7 +17,7 @@ function ghretry()
 touch release-notes/README-k3s.md
 > release-notes/README-k3s.md
 echo "# k3s" >> release-notes/README-k3s.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30 v1.31 v1.32; do
     product=k3s
     > release-notes/${product}-${minor}.md
     k3stable=$(mktemp)
