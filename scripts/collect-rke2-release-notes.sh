@@ -17,7 +17,7 @@ function ghretry()
 touch release-notes/README-rke2.md
 > release-notes/README-rke2.md
 echo "# RKE2" >> release-notes/README-rke2.md
-for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30; do
+for minor in v1.20 v1.21 v1.22 v1.23 v1.24 v1.25 v1.26 v1.27 v1.28 v1.29 v1.30 v1.31 v1.32; do
     product=rke2
     > release-notes/${product}-${minor}.md
     rke2table=$(mktemp)
