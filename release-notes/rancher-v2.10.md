@@ -8,7 +8,7 @@
 # Release v2.10.1
 
 > [!CAUTION]
-> **Do not** upgrade to Rancher v2.10.1 if you're using Active Directory Federation Service (AD FS).
+> **Note:** If you are using Active Directory Federation Service (AD FS) upgrading to Rancher v2.10.1 or later may cause issues with authentication caused by the AD FS Relying Party Trust not being able to pick up a signature verification certificate from the metadata, that requires manual intervention. This can be corrected by either trying to update Relying Party Trust information from federation metadata (Relying Party Trust -> Update from Federation Metadata...) or by directly adding the certificate (Relying Party Trust -> Properties -> Signature tab -> Add -> Select the certificate). For more information see #48655.
 
 > **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
 
@@ -353,7 +353,7 @@ The following legacy features have been removed as of Rancher v2.7.0. The deprec
 # Release v2.10.0
 
 > [!CAUTION]
-> **Do not** upgrade to Rancher v2.10.1 if you're using Active Directory Federation Service (AD FS).
+> **Note:** If you are using Active Directory Federation Service (AD FS) upgrading to Rancher v2.10.1 or later may cause issues with authentication caused by the AD FS Relying Party Trust not being able to pick up a signature verification certificate from the metadata, that requires manual intervention. This can be corrected by either trying to update Relying Party Trust information from federation metadata (Relying Party Trust -> Update from Federation Metadata...) or by directly adding the certificate (Relying Party Trust -> Properties -> Signature tab -> Add -> Select the certificate). For more information see #48655.
 
 > **Important:** Review the Install/Upgrade Notes before upgrading to any Rancher version.
 
